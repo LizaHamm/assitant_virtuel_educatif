@@ -850,3 +850,186 @@ body {
     font-size: 15px;
   }
 }
+
+/* =========================================================
+   HISTORIQUE DES CONVERSATIONS - US-002
+   ========================================================= */
+
+.app-layout {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+
+
+/* SIDEBAR */
+
+.conversation-sidebar {
+  width: 280px;
+  min-width: 280px;
+  height: 100vh;
+  padding: 24px 16px;
+
+  background: #ffffff;
+  border-right: 1px solid #e5e7eb;
+
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+}
+
+
+.sidebar-header {
+  margin-bottom: 20px;
+}
+
+
+.sidebar-header h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+/* NOUVELLE CONVERSATION */
+
+.new-conversation-button {
+  width: 100%;
+  padding: 12px 14px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: background 0.2s ease;
+}
+
+
+.new-conversation-button:hover {
+  background: #f3f4f6;
+}
+
+
+/* HISTORIQUE */
+
+.conversation-history {
+  margin-top: 28px;
+
+  flex: 1;
+
+  overflow-y: auto;
+}
+
+
+.conversation-history h3 {
+  margin: 0 0 12px 8px;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  color: #6b7280;
+}
+
+
+.conversation-item {
+  width: 100%;
+
+  padding: 11px 12px;
+  margin-bottom: 4px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: transparent;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  font-size: 14px;
+
+  transition: background 0.2s ease;
+}
+
+
+.conversation-item:hover {
+  background: #f3f4f6;
+}
+
+
+.conversation-item.active {
+  background: #e5e7eb;
+}
+
+
+.conversation-title {
+  display: block;
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+.empty-history {
+  padding: 8px;
+
+  color: #9ca3af;
+
+  font-size: 13px;
+}
+
+
+/* ZONE CHAT */
+
+.app-layout > .chat-container {
+  flex: 1;
+  min-width: 0;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+  .conversation-sidebar {
+    width: 230px;
+    min-width: 230px;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .conversation-sidebar {
+    width: 200px;
+    min-width: 200px;
+
+    padding: 18px 10px;
+  }
+
+  .sidebar-header h2 {
+    font-size: 17px;
+  }
+
+  .new-conversation-button {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .conversation-item {
+    font-size: 12px;
+  }
+
+}
