@@ -75,3 +75,10 @@ React
 ```
 
 Les datasets officiels du professeur seront intégrés ultérieurement.
+
+## US-002 : historique de conversation
+
+Le navigateur génère un identifiant de session aléatoire (UUID), conservé tant que l'onglet reste ouvert.
+Chaque question et sa réponse sont enregistrées en base (SQLite). Au chargement de la page,
+l'historique de la session est récupéré via `GET /api/history/{session_id}` et réaffiché dans l'ordre chronologique :
+un rafraîchissement de la page ne fait donc rien perdre.

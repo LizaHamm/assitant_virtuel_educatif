@@ -3,6 +3,11 @@ services:
     build: ./backend
     ports:
       - "8000:8000"
+    environment:
+      # Base SQLite stockée dans un volume : l'historique survit à un redémarrage du conteneur
+      - DATABASE_URL=sqlite:////app/db/chat.db
+    volumes:
+      - chat-db:/app/db
 
   frontend:
     build: ./frontend
@@ -10,3 +15,6 @@ services:
       - "5173:5173"
     depends_on:
       - backend
+
+volumes:
+  chat-db:

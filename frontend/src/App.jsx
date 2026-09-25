@@ -1,32 +1,106 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { getSessionId } from "./session";
 import "./styles.css";
 
+const API_URL = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
+
+const WELCOME_TEXT =
+  "Bonjour ! Je suis l'assistant virtuel éducatif ESIC. Comment puis-je vous aider ?";
+
+function formatTime(date) {
+  return date.toLocaleTimeString("fr-FR", {
+    hour: "2-digit",
+    minute: "2-digit",
+  });
+}
+
+// Transforme l'historique renvoyé par l'API en messages affichables,
+// dans l'ordre chronologique : question de l'utilisateur puis réponse du bot.
+function historyToMessages(items) {
+  return items.flatMap((item, index) => {
+    const time = formatTime(new Date(item.created_at));
+    return [
+      { id: `history-${index}-user`, sender: "user", text: item.question, time },
+      { id: `history-${index}-bot`, sender: "bot", text: item.answer, time },
+    ];
+  });
+}
+
 function App() {
+  // Identifiant de session, lu une seule fois au chargement (US-002)
+  const [sessionId] = useState(getSessionId);
+
   const [messages, setMessages] = useState([
     {
-      id: 1,
+      id: "welcome",
       sender: "bot",
-      text: "Bonjour ! Je suis l'assistant virtuel éducatif ESIC. Comment puis-je vous aider ?",
+      text: WELCOME_TEXT,
       time: getCurrentTime(),
     },
   ]);
 
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
+  const [historyLoading, setHistoryLoading] = useState(true);
+  const messagesEndRef = useRef(null);
 
   function getCurrentTime() {
-    return new Date().toLocaleTimeString("fr-FR", {
-      hour: "2-digit",
-      minute: "2-digit",
-    });
+    return formatTime(new Date());
   }
+
+  // Restauration de l'historique au chargement de la page (US-002)
+  useEffect(() => {
+    let cancelled = false;
+
+    async function loadHistory() {
+      try {
+        const response = await fetch(`${API_URL}/api/history/${sessionId}`);
+        if (!response.ok) {
+          throw new Error("Historique indisponible.");
+        }
+        const data = await response.json();
+        if (!cancelled && data.messages.length > 0) {
+          setMessages((previousMessages) => [
+            previousMessages[0], // message d'accueil conservé en tête
+            ...historyToMessages(data.messages),
+          ]);
+        }
+      } catch (error) {
+        if (!cancelled) {
+          setMessages((previousMessages) => [
+            ...previousMessages,
+            {
+              id: "history-error",
+              sender: "bot",
+              text: "L'historique de la conversation n'a pas pu être récupéré. Vous pouvez tout de même poser votre question.",
+              time: getCurrentTime(),
+            },
+          ]);
+        }
+      } finally {
+        if (!cancelled) {
+          setHistoryLoading(false);
+        }
+      }
+    }
+
+    loadHistory();
+    return () => {
+      cancelled = true;
+    };
+  }, [sessionId]);
+
+  // Défilement automatique vers le dernier message
+  useEffect(() => {
+    messagesEndRef.current?.scrollIntoView({ block: "end" });
+  }, [messages, loading]);
 
   async function sendMessage(event) {
     event.preventDefault();
 
     const question = input.trim();
 
-    if (!question || loading) {
+    if (!question || loading || historyLoading) {
       return;
     }
 
@@ -46,12 +120,13 @@ function App() {
     setLoading(true);
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/api/chat", {
+      const response = await fetch(`${API_URL}/api/chat`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
+          session_id: sessionId,
           message: question,
         }),
       });
@@ -202,6 +277,8 @@ function App() {
             </div>
           )}
 
+          <div ref={messagesEndRef} />
+
         </section>
 
 
@@ -217,8 +294,12 @@ function App() {
               type="text"
               value={input}
               onChange={(event) => setInput(event.target.value)}
-              placeholder="Écrivez votre question..."
-              disabled={loading}
+              placeholder={
+                historyLoading
+                  ? "Chargement de la conversation..."
+                  : "Écrivez votre question..."
+              }
+              disabled={loading || historyLoading}
               maxLength={1000}
               aria-label="Votre question"
             />
@@ -226,7 +307,7 @@ function App() {
             <button
               type="submit"
               className="send-button"
-              disabled={!input.trim() || loading}
+              disabled={!input.trim() || loading || historyLoading}
               aria-label="Envoyer la question"
             >
               <span>➤</span>
