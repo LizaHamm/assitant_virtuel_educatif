@@ -1,0 +1,1075 @@
+{
+  "metadata": {
+    "author": "Joel BANKA",
+    "purpose": "Document créé exclusivement pour le projet étudiant",
+    "etablissement": "ESIC - École Supérieure d'Informatique et du Commerce",
+    "annee_academique": "2024-2025",
+    "date_generation": "2024-09-01",
+    "version": "1.0",
+    "semestres": [
+      {
+        "semestre": "S1",
+        "debut": "2024-09-02",
+        "fin": "2025-01-17",
+        "vacances": [
+          {"nom": "Toussaint", "debut": "2024-10-28", "fin": "2024-11-03"},
+          {"nom": "Noël", "debut": "2024-12-23", "fin": "2025-01-05"}
+        ],
+        "examens": {"debut": "2025-01-06", "fin": "2025-01-17"}
+      },
+      {
+        "semestre": "S2",
+        "debut": "2025-02-10",
+        "fin": "2025-06-27",
+        "vacances": [
+          {"nom": "Hiver", "debut": "2025-02-24", "fin": "2025-03-02"},
+          {"nom": "Printemps", "debut": "2025-04-21", "fin": "2025-04-27"}
+        ],
+        "examens": {"debut": "2025-05-19", "fin": "2025-05-30"},
+        "stages": {"debut": "2025-06-02", "fin": "2025-08-29"}
+      }
+    ]
+  },
+  
+  "formations": [
+    {
+      "code": "B1",
+      "nom": "Bachelor 1",
+      "niveau": "Bac+1",
+      "groupes": ["B1-A", "B1-B", "B1-C", "B1-D"],
+      "effectif_total": 450
+    },
+    {
+      "code": "B2",
+      "nom": "Bachelor 2",
+      "niveau": "Bac+2",
+      "groupes": ["B2-A", "B2-B", "B2-C"],
+      "effectif_total": 420
+    },
+    {
+      "code": "B3-DEV",
+      "nom": "Bachelor 3 - Développement Informatique",
+      "niveau": "Bac+3",
+      "groupes": ["B3-DEV-1", "B3-DEV-2"],
+      "effectif_total": 120
+    },
+    {
+      "code": "B3-CYBER",
+      "nom": "Bachelor 3 - Cybersécurité",
+      "niveau": "Bac+3",
+      "groupes": ["B3-CYBER-1"],
+      "effectif_total": 60
+    },
+    {
+      "code": "B3-DATA",
+      "nom": "Bachelor 3 - Data Science",
+      "niveau": "Bac+3",
+      "groupes": ["B3-DATA-1", "B3-DATA-2"],
+      "effectif_total": 100
+    },
+    {
+      "code": "M1-IA",
+      "nom": "Master 1 - Intelligence Artificielle",
+      "niveau": "Bac+4",
+      "groupes": ["M1-IA-1"],
+      "effectif_total": 80
+    },
+    {
+      "code": "M1-CYBER",
+      "nom": "Master 1 - Cybersécurité",
+      "niveau": "Bac+4",
+      "groupes": ["M1-CYBER-1"],
+      "effectif_total": 70
+    },
+    {
+      "code": "M2-IA",
+      "nom": "Master 2 - Intelligence Artificielle",
+      "niveau": "Bac+5",
+      "groupes": ["M2-IA-1"],
+      "effectif_total": 75
+    }
+  ],
+  
+  "enseignants": [
+    {"id": "E001", "nom": "BERNARD", "prenom": "Jean-Michel", "titre": "Prof.", "specialite": "Algorithmique"},
+    {"id": "E002", "nom": "MARTIN", "prenom": "Sophie", "titre": "Dr.", "specialite": "Programmation"},
+    {"id": "E003", "nom": "DUBOIS", "prenom": "Pierre", "titre": "Prof.", "specialite": "Bases de données"},
+    {"id": "E004", "nom": "LAMBERT", "prenom": "Claire", "titre": "Dr.", "specialite": "Réseaux"},
+    {"id": "E005", "nom": "ROUSSEAU", "prenom": "Marc", "titre": "Prof.", "specialite": "Cybersécurité"},
+    {"id": "E006", "nom": "MOREAU", "prenom": "Julie", "titre": "Dr.", "specialite": "Machine Learning"},
+    {"id": "E007", "nom": "SIMON", "prenom": "Thomas", "titre": "Dr.", "specialite": "Développement Web"},
+    {"id": "E008", "nom": "LAURENT", "prenom": "Marie", "titre": "Prof.", "specialite": "Mathématiques"},
+    {"id": "E009", "nom": "GARCIA", "prenom": "David", "titre": "Dr.", "specialite": "Intelligence Artificielle"},
+    {"id": "E010", "nom": "ROUX", "prenom": "Isabelle", "titre": "Prof.", "specialite": "Gestion de projet"},
+    {"id": "E011", "nom": "FOURNIER", "prenom": "Antoine", "titre": "Dr.", "specialite": "Systèmes d'exploitation"},
+    {"id": "E012", "nom": "GIRARD", "prenom": "Nathalie", "titre": "Prof.", "specialite": "Droit du numérique"},
+    {"id": "E013", "nom": "BONNET", "prenom": "Éric", "titre": "Dr.", "specialite": "Cloud Computing"},
+    {"id": "E014", "nom": "ANDRE", "prenom": "Valérie", "titre": "Prof.", "specialite": "Marketing Digital"},
+    {"id": "E015", "nom": "MERCIER", "prenom": "Olivier", "titre": "Dr.", "specialite": "Big Data"},
+    {"id": "E016", "nom": "BLANC", "prenom": "Sandrine", "titre": "Prof.", "specialite": "UX/UI Design"},
+    {"id": "E017", "nom": "GUERIN", "prenom": "François", "titre": "Dr.", "specialite": "DevOps"},
+    {"id": "E018", "nom": "ROBIN", "prenom": "Christine", "titre": "Prof.", "specialite": "Anglais"},
+    {"id": "E019", "nom": "CLEMENT", "prenom": "Julien", "titre": "Dr.", "specialite": "Cryptographie"},
+    {"id": "E020", "nom": "GAUTHIER", "prenom": "Émilie", "titre": "Prof.", "specialite": "Communication"}
+  ],
+  
+  "salles": [
+    {"code": "A001", "nom": "Amphi A", "type": "Amphithéâtre", "capacite": 150, "batiment": "B"},
+    {"code": "A002", "nom": "Amphi B", "type": "Amphithéâtre", "capacite": 150, "batiment": "B"},
+    {"code": "A003", "nom": "Amphi C", "type": "Amphithéâtre", "capacite": 150, "batiment": "B"},
+    {"code": "B101", "nom": "Salle B101", "type": "Salle de cours", "capacite": 30, "batiment": "B"},
+    {"code": "B102", "nom": "Salle B102", "type": "Salle de cours", "capacite": 30, "batiment": "B"},
+    {"code": "B103", "nom": "Salle B103", "type": "Salle de cours", "capacite": 30, "batiment": "B"},
+    {"code": "B104", "nom": "Salle B104", "type": "Salle de cours", "capacite": 30, "batiment": "B"},
+    {"code": "B105", "nom": "Salle B105", "type": "Salle de cours", "capacite": 30, "batiment": "B"},
+    {"code": "B201", "nom": "Salle B201", "type": "Salle de cours", "capacite": 25, "batiment": "B"},
+    {"code": "B202", "nom": "Salle B202", "type": "Salle de cours", "capacite": 25, "batiment": "B"},
+    {"code": "C001", "nom": "Lab Dev", "type": "Salle informatique", "capacite": 30, "batiment": "C"},
+    {"code": "C002", "nom": "Lab Data", "type": "Salle informatique", "capacite": 30, "batiment": "C"},
+    {"code": "C003", "nom": "Lab Créa", "type": "Salle informatique", "capacite": 30, "batiment": "C"},
+    {"code": "C004", "nom": "Open Space", "type": "Salle informatique", "capacite": 30, "batiment": "C"},
+    {"code": "C101", "nom": "Lab Réseaux", "type": "Laboratoire", "capacite": 20, "batiment": "C"},
+    {"code": "C102", "nom": "Lab Cyber", "type": "Laboratoire", "capacite": 20, "batiment": "C"},
+    {"code": "C201", "nom": "FabLab", "type": "Atelier", "capacite": 15, "batiment": "C"}
+  ],
+  
+  "matieres": [
+    {
+      "code": "INFO101",
+      "nom": "Introduction à la Programmation (Python)",
+      "type": "CM+TD+TP",
+      "ects": 5,
+      "heures_totales": 48,
+      "formation": "B1",
+      "semestre": "S1"
+    },
+    {
+      "code": "INFO102",
+      "nom": "Algorithmique et Structures de Données",
+      "type": "CM+TD",
+      "ects": 4,
+      "heures_totales": 36,
+      "formation": "B1",
+      "semestre": "S1"
+    },
+    {
+      "code": "INFO103",
+      "nom": "Systèmes d'Exploitation (Linux/Windows)",
+      "type": "CM+TP",
+      "ects": 3,
+      "heures_totales": 30,
+      "formation": "B1",
+      "semestre": "S1"
+    },
+    {
+      "code": "MATH101",
+      "nom": "Mathématiques pour l'Informatique",
+      "type": "CM+TD",
+      "ects": 4,
+      "heures_totales": 36,
+      "formation": "B1",
+      "semestre": "S1"
+    },
+    {
+      "code": "MATH102",
+      "nom": "Statistiques Descriptives",
+      "type": "CM+TD",
+      "ects": 2,
+      "heures_totales": 24,
+      "formation": "B1",
+      "semestre": "S1"
+    },
+    {
+      "code": "MGMT101",
+      "nom": "Introduction au Management",
+      "type": "CM+TD",
+      "ects": 3,
+      "heures_totales": 30,
+      "formation": "B1",
+      "semestre": "S1"
+    },
+    {
+      "code": "COMM101",
+      "nom": "Communication Écrite et Orale",
+      "type": "TD",
+      "ects": 3,
+      "heures_totales": 24,
+      "formation": "B1",
+      "semestre": "S1"
+    },
+    {
+      "code": "LANG101",
+      "nom": "Anglais Professionnel Niveau 1",
+      "type": "TD",
+      "ects": 2,
+      "heures_totales": 24,
+      "formation": "B1",
+      "semestre": "S1"
+    }
+  ],
+  
+  "emploi_du_temps": [
+    {
+      "id": "EDT001",
+      "formation": "B1",
+      "groupe": "B1-A",
+      "semestre": "S1",
+      "cours": [
+        {
+          "jour": "Lundi",
+          "heure_debut": "08:00",
+          "heure_fin": "10:00",
+          "matiere_code": "INFO101",
+          "matiere_nom": "Introduction à la Programmation (Python)",
+          "type": "CM",
+          "enseignant": "E002",
+          "enseignant_nom": "Dr. Sophie MARTIN",
+          "salle": "A001",
+          "salle_nom": "Amphi A"
+        },
+        {
+          "jour": "Lundi",
+          "heure_debut": "10:15",
+          "heure_fin": "12:15",
+          "matiere_code": "MATH101",
+          "matiere_nom": "Mathématiques pour l'Informatique",
+          "type": "CM",
+          "enseignant": "E008",
+          "enseignant_nom": "Prof. Marie LAURENT",
+          "salle": "A001",
+          "salle_nom": "Amphi A"
+        },
+        {
+          "jour": "Lundi",
+          "heure_debut": "13:45",
+          "heure_fin": "15:45",
+          "matiere_code": "INFO101",
+          "matiere_nom": "Introduction à la Programmation (Python)",
+          "type": "TP",
+          "enseignant": "E002",
+          "enseignant_nom": "Dr. Sophie MARTIN",
+          "salle": "C001",
+          "salle_nom": "Lab Dev"
+        },
+        {
+          "jour": "Lundi",
+          "heure_debut": "16:00",
+          "heure_fin": "18:00",
+          "matiere_code": "COMM101",
+          "matiere_nom": "Communication Écrite et Orale",
+          "type": "TD",
+          "enseignant": "E020",
+          "enseignant_nom": "Prof. Émilie GAUTHIER",
+          "salle": "B101",
+          "salle_nom": "Salle B101"
+        },
+        {
+          "jour": "Mardi",
+          "heure_debut": "08:00",
+          "heure_fin": "10:00",
+          "matiere_code": "INFO102",
+          "matiere_nom": "Algorithmique et Structures de Données",
+          "type": "CM",
+          "enseignant": "E001",
+          "enseignant_nom": "Prof. Jean-Michel BERNARD",
+          "salle": "A001",
+          "salle_nom": "Amphi A"
+        },
+        {
+          "jour": "Mardi",
+          "heure_debut": "10:15",
+          "heure_fin": "12:15",
+          "matiere_code": "INFO102",
+          "matiere_nom": "Algorithmique et Structures de Données",
+          "type": "TD",
+          "enseignant": "E001",
+          "enseignant_nom": "Prof. Jean-Michel BERNARD",
+          "salle": "B101",
+          "salle_nom": "Salle B101"
+        },
+        {
+          "jour": "Mardi",
+          "heure_debut": "13:45",
+          "heure_fin": "15:45",
+          "matiere_code": "MATH101",
+          "matiere_nom": "Mathématiques pour l'Informatique",
+          "type": "TD",
+          "enseignant": "E008",
+          "enseignant_nom": "Prof. Marie LAURENT",
+          "salle": "B102",
+          "salle_nom": "Salle B102"
+        },
+        {
+          "jour": "Mardi",
+          "heure_debut": "16:00",
+          "heure_fin": "18:00",
+          "matiere_code": "LANG101",
+          "matiere_nom": "Anglais Professionnel Niveau 1",
+          "type": "TD",
+          "enseignant": "E018",
+          "enseignant_nom": "Prof. Christine ROBIN",
+          "salle": "B103",
+          "salle_nom": "Salle B103"
+        },
+        {
+          "jour": "Mercredi",
+          "heure_debut": "08:00",
+          "heure_fin": "10:00",
+          "matiere_code": "INFO103",
+          "matiere_nom": "Systèmes d'Exploitation",
+          "type": "CM",
+          "enseignant": "E011",
+          "enseignant_nom": "Dr. Antoine FOURNIER",
+          "salle": "A002",
+          "salle_nom": "Amphi B"
+        },
+        {
+          "jour": "Mercredi",
+          "heure_debut": "10:15",
+          "heure_fin": "12:15",
+          "matiere_code": "INFO103",
+          "matiere_nom": "Systèmes d'Exploitation",
+          "type": "TP",
+          "enseignant": "E011",
+          "enseignant_nom": "Dr. Antoine FOURNIER",
+          "salle": "C001",
+          "salle_nom": "Lab Dev"
+        },
+        {
+          "jour": "Mercredi",
+          "heure_debut": "13:45",
+          "heure_fin": "15:45",
+          "matiere_code": "MGMT101",
+          "matiere_nom": "Introduction au Management",
+          "type": "CM",
+          "enseignant": "E010",
+          "enseignant_nom": "Prof. Isabelle ROUX",
+          "salle": "A001",
+          "salle_nom": "Amphi A"
+        },
+        {
+          "jour": "Jeudi",
+          "heure_debut": "08:00",
+          "heure_fin": "10:00",
+          "matiere_code": "MATH102",
+          "matiere_nom": "Statistiques Descriptives",
+          "type": "CM",
+          "enseignant": "E008",
+          "enseignant_nom": "Prof. Marie LAURENT",
+          "salle": "A002",
+          "salle_nom": "Amphi B"
+        },
+        {
+          "jour": "Jeudi",
+          "heure_debut": "10:15",
+          "heure_fin": "12:15",
+          "matiere_code": "MATH102",
+          "matiere_nom": "Statistiques Descriptives",
+          "type": "TD",
+          "enseignant": "E008",
+          "enseignant_nom": "Prof. Marie LAURENT",
+          "salle": "B104",
+          "salle_nom": "Salle B104"
+        },
+        {
+          "jour": "Jeudi",
+          "heure_debut": "13:45",
+          "heure_fin": "15:45",
+          "matiere_code": "INFO101",
+          "matiere_nom": "Introduction à la Programmation (Python)",
+          "type": "TP",
+          "enseignant": "E002",
+          "enseignant_nom": "Dr. Sophie MARTIN",
+          "salle": "C001",
+          "salle_nom": "Lab Dev"
+        },
+        {
+          "jour": "Vendredi",
+          "heure_debut": "08:00",
+          "heure_fin": "10:00",
+          "matiere_code": "MGMT101",
+          "matiere_nom": "Introduction au Management",
+          "type": "TD",
+          "enseignant": "E010",
+          "enseignant_nom": "Prof. Isabelle ROUX",
+          "salle": "B105",
+          "salle_nom": "Salle B105"
+        },
+        {
+          "jour": "Vendredi",
+          "heure_debut": "10:15",
+          "heure_fin": "12:15",
+          "matiere_code": "COMM101",
+          "matiere_nom": "Communication Écrite et Orale",
+          "type": "TD",
+          "enseignant": "E020",
+          "enseignant_nom": "Prof. Émilie GAUTHIER",
+          "salle": "B101",
+          "salle_nom": "Salle B101"
+        }
+      ]
+    },
+    {
+      "id": "EDT002",
+      "formation": "B3-DATA",
+      "groupe": "B3-DATA-1",
+      "semestre": "S1",
+      "cours": [
+        {
+          "jour": "Lundi",
+          "heure_debut": "08:00",
+          "heure_fin": "10:00",
+          "matiere_code": "DATA301",
+          "matiere_nom": "Machine Learning Avancé",
+          "type": "CM",
+          "enseignant": "E006",
+          "enseignant_nom": "Dr. Julie MOREAU",
+          "salle": "A003",
+          "salle_nom": "Amphi C"
+        },
+        {
+          "jour": "Lundi",
+          "heure_debut": "10:15",
+          "heure_fin": "12:15",
+          "matiere_code": "DATA302",
+          "matiere_nom": "Big Data et Spark",
+          "type": "CM",
+          "enseignant": "E015",
+          "enseignant_nom": "Dr. Olivier MERCIER",
+          "salle": "A003",
+          "salle_nom": "Amphi C"
+        },
+        {
+          "jour": "Lundi",
+          "heure_debut": "13:45",
+          "heure_fin": "15:45",
+          "matiere_code": "DATA301",
+          "matiere_nom": "Machine Learning Avancé",
+          "type": "TP",
+          "enseignant": "E006",
+          "enseignant_nom": "Dr. Julie MOREAU",
+          "salle": "C002",
+          "salle_nom": "Lab Data"
+        },
+        {
+          "jour": "Lundi",
+          "heure_debut": "16:00",
+          "heure_fin": "18:00",
+          "matiere_code": "DATA303",
+          "matiere_nom": "Visualisation de Données",
+          "type": "TP",
+          "enseignant": "E015",
+          "enseignant_nom": "Dr. Olivier MERCIER",
+          "salle": "C002",
+          "salle_nom": "Lab Data"
+        },
+        {
+          "jour": "Mardi",
+          "heure_debut": "08:00",
+          "heure_fin": "10:00",
+          "matiere_code": "DATA304",
+          "matiere_nom": "NLP - Traitement du Langage Naturel",
+          "type": "CM",
+          "enseignant": "E009",
+          "enseignant_nom": "Dr. David GARCIA",
+          "salle": "B201",
+          "salle_nom": "Salle B201"
+        },
+        {
+          "jour": "Mardi",
+          "heure_debut": "10:15",
+          "heure_fin": "12:15",
+          "matiere_code": "DATA304",
+          "matiere_nom": "NLP - Traitement du Langage Naturel",
+          "type": "TP",
+          "enseignant": "E009",
+          "enseignant_nom": "Dr. David GARCIA",
+          "salle": "C002",
+          "salle_nom": "Lab Data"
+        },
+        {
+          "jour": "Mardi",
+          "heure_debut": "13:45",
+          "heure_fin": "15:45",
+          "matiere_code": "DATA302",
+          "matiere_nom": "Big Data et Spark",
+          "type": "TP",
+          "enseignant": "E015",
+          "enseignant_nom": "Dr. Olivier MERCIER",
+          "salle": "C002",
+          "salle_nom": "Lab Data"
+        },
+        {
+          "jour": "Mercredi",
+          "heure_debut": "08:00",
+          "heure_fin": "10:00",
+          "matiere_code": "PROJ301",
+          "matiere_nom": "Projet Data Science",
+          "type": "Projet",
+          "enseignant": "E006",
+          "enseignant_nom": "Dr. Julie MOREAU",
+          "salle": "C002",
+          "salle_nom": "Lab Data"
+        },
+        {
+          "jour": "Mercredi",
+          "heure_debut": "10:15",
+          "heure_fin": "12:15",
+          "matiere_code": "PROJ301",
+          "matiere_nom": "Projet Data Science",
+          "type": "Projet",
+          "enseignant": "E006",
+          "enseignant_nom": "Dr. Julie MOREAU",
+          "salle": "C002",
+          "salle_nom": "Lab Data"
+        },
+        {
+          "jour": "Jeudi",
+          "heure_debut": "08:00",
+          "heure_fin": "10:00",
+          "matiere_code": "DATA305",
+          "matiere_nom": "MLOps et Déploiement",
+          "type": "CM",
+          "enseignant": "E017",
+          "enseignant_nom": "Dr. François GUERIN",
+          "salle": "B202",
+          "salle_nom": "Salle B202"
+        },
+        {
+          "jour": "Jeudi",
+          "heure_debut": "10:15",
+          "heure_fin": "12:15",
+          "matiere_code": "DATA305",
+          "matiere_nom": "MLOps et Déploiement",
+          "type": "TP",
+          "enseignant": "E017",
+          "enseignant_nom": "Dr. François GUERIN",
+          "salle": "C001",
+          "salle_nom": "Lab Dev"
+        },
+        {
+          "jour": "Jeudi",
+          "heure_debut": "13:45",
+          "heure_fin": "15:45",
+          "matiere_code": "LANG301",
+          "matiere_nom": "Anglais Technique - Data Science",
+          "type": "TD",
+          "enseignant": "E018",
+          "enseignant_nom": "Prof. Christine ROBIN",
+          "salle": "B103",
+          "salle_nom": "Salle B103"
+        },
+        {
+          "jour": "Vendredi",
+          "heure_debut": "08:00",
+          "heure_fin": "10:00",
+          "matiere_code": "MGMT301",
+          "matiere_nom": "Gestion de Projet Data",
+          "type": "CM",
+          "enseignant": "E010",
+          "enseignant_nom": "Prof. Isabelle ROUX",
+          "salle": "B201",
+          "salle_nom": "Salle B201"
+        },
+        {
+          "jour": "Vendredi",
+          "heure_debut": "10:15",
+          "heure_fin": "12:15",
+          "matiere_code": "DATA303",
+          "matiere_nom": "Visualisation de Données",
+          "type": "CM",
+          "enseignant": "E015",
+          "enseignant_nom": "Dr. Olivier MERCIER",
+          "salle": "B202",
+          "salle_nom": "Salle B202"
+        }
+      ]
+    },
+    {
+      "id": "EDT003",
+      "formation": "M1-IA",
+      "groupe": "M1-IA-1",
+      "semestre": "S1",
+      "cours": [
+        {
+          "jour": "Lundi",
+          "heure_debut": "08:00",
+          "heure_fin": "10:00",
+          "matiere_code": "IA401",
+          "matiere_nom": "Deep Learning Avancé",
+          "type": "CM",
+          "enseignant": "E009",
+          "enseignant_nom": "Dr. David GARCIA",
+          "salle": "B201",
+          "salle_nom": "Salle B201"
+        },
+        {
+          "jour": "Lundi",
+          "heure_debut": "10:15",
+          "heure_fin": "12:15",
+          "matiere_code": "IA401",
+          "matiere_nom": "Deep Learning Avancé",
+          "type": "TP",
+          "enseignant": "E009",
+          "enseignant_nom": "Dr. David GARCIA",
+          "salle": "C002",
+          "salle_nom": "Lab Data"
+        },
+        {
+          "jour": "Lundi",
+          "heure_debut": "13:45",
+          "heure_fin": "15:45",
+          "matiere_code": "IA402",
+          "matiere_nom": "Computer Vision",
+          "type": "CM",
+          "enseignant": "E006",
+          "enseignant_nom": "Dr. Julie MOREAU",
+          "salle": "B202",
+          "salle_nom": "Salle B202"
+        },
+        {
+          "jour": "Mardi",
+          "heure_debut": "08:00",
+          "heure_fin": "10:00",
+          "matiere_code": "IA402",
+          "matiere_nom": "Computer Vision",
+          "type": "TP",
+          "enseignant": "E006",
+          "enseignant_nom": "Dr. Julie MOREAU",
+          "salle": "C002",
+          "salle_nom": "Lab Data"
+        },
+        {
+          "jour": "Mardi",
+          "heure_debut": "10:15",
+          "heure_fin": "12:15",
+          "matiere_code": "IA403",
+          "matiere_nom": "IA Générative (GANs, Transformers)",
+          "type": "CM",
+          "enseignant": "E009",
+          "enseignant_nom": "Dr. David GARCIA",
+          "salle": "B201",
+          "salle_nom": "Salle B201"
+        },
+        {
+          "jour": "Mardi",
+          "heure_debut": "13:45",
+          "heure_fin": "15:45",
+          "matiere_code": "IA403",
+          "matiere_nom": "IA Générative (GANs, Transformers)",
+          "type": "TP",
+          "enseignant": "E009",
+          "enseignant_nom": "Dr. David GARCIA",
+          "salle": "C002",
+          "salle_nom": "Lab Data"
+        },
+        {
+          "jour": "Mercredi",
+          "heure_debut": "08:00",
+          "heure_fin": "12:15",
+          "matiere_code": "PROJ401",
+          "matiere_nom": "Projet de Recherche en IA",
+          "type": "Projet",
+          "enseignant": "E009",
+          "enseignant_nom": "Dr. David GARCIA",
+          "salle": "C002",
+          "salle_nom": "Lab Data"
+        },
+        {
+          "jour": "Jeudi",
+          "heure_debut": "08:00",
+          "heure_fin": "10:00",
+          "matiere_code": "IA404",
+          "matiere_nom": "Éthique et IA Responsable",
+          "type": "CM",
+          "enseignant": "E006",
+          "enseignant_nom": "Dr. Julie MOREAU",
+          "salle": "B201",
+          "salle_nom": "Salle B201"
+        },
+        {
+          "jour": "Jeudi",
+          "heure_debut": "10:15",
+          "heure_fin": "12:15",
+          "matiere_code": "IA405",
+          "matiere_nom": "Reinforcement Learning",
+          "type": "CM",
+          "enseignant": "E009",
+          "enseignant_nom": "Dr. David GARCIA",
+          "salle": "B202",
+          "salle_nom": "Salle B202"
+        },
+        {
+          "jour": "Jeudi",
+          "heure_debut": "13:45",
+          "heure_fin": "15:45",
+          "matiere_code": "IA405",
+          "matiere_nom": "Reinforcement Learning",
+          "type": "TP",
+          "enseignant": "E009",
+          "enseignant_nom": "Dr. David GARCIA",
+          "salle": "C002",
+          "salle_nom": "Lab Data"
+        },
+        {
+          "jour": "Vendredi",
+          "heure_debut": "08:00",
+          "heure_fin": "10:00",
+          "matiere_code": "RECH401",
+          "matiere_nom": "Séminaire de Recherche",
+          "type": "Séminaire",
+          "enseignant": "E009",
+          "enseignant_nom": "Dr. David GARCIA",
+          "salle": "B201",
+          "salle_nom": "Salle B201"
+        },
+        {
+          "jour": "Vendredi",
+          "heure_debut": "10:15",
+          "heure_fin": "12:15",
+          "matiere_code": "MGMT401",
+          "matiere_nom": "Innovation et Product Management",
+          "type": "CM",
+          "enseignant": "E010",
+          "enseignant_nom": "Prof. Isabelle ROUX",
+          "salle": "B202",
+          "salle_nom": "Salle B202"
+        }
+      ]
+    },
+    {
+      "id": "EDT004",
+      "formation": "B3-CYBER",
+      "groupe": "B3-CYBER-1",
+      "semestre": "S1",
+      "cours": [
+        {
+          "jour": "Lundi",
+          "heure_debut": "08:00",
+          "heure_fin": "10:00",
+          "matiere_code": "CYBER301",
+          "matiere_nom": "Ethical Hacking et Pentesting",
+          "type": "CM",
+          "enseignant": "E005",
+          "enseignant_nom": "Prof. Marc ROUSSEAU",
+          "salle": "B201",
+          "salle_nom": "Salle B201"
+        },
+        {
+          "jour": "Lundi",
+          "heure_debut": "10:15",
+          "heure_fin": "12:15",
+          "matiere_code": "CYBER301",
+          "matiere_nom": "Ethical Hacking et Pentesting",
+          "type": "TP",
+          "enseignant": "E005",
+          "enseignant_nom": "Prof. Marc ROUSSEAU",
+          "salle": "C102",
+          "salle_nom": "Lab Cyber"
+        },
+        {
+          "jour": "Lundi",
+          "heure_debut": "13:45",
+          "heure_fin": "15:45",
+          "matiere_code": "CYBER302",
+          "matiere_nom": "Cryptographie Appliquée",
+          "type": "CM",
+          "enseignant": "E019",
+          "enseignant_nom": "Dr. Julien CLEMENT",
+          "salle": "B201",
+          "salle_nom": "Salle B201"
+        },
+        {
+          "jour": "Lundi",
+          "heure_debut": "16:00",
+          "heure_fin": "18:00",
+          "matiere_code": "CYBER302",
+          "matiere_nom": "Cryptographie Appliquée",
+          "type": "TP",
+          "enseignant": "E019",
+          "enseignant_nom": "Dr. Julien CLEMENT",
+          "salle": "C001",
+          "salle_nom": "Lab Dev"
+        },
+        {
+          "jour": "Mardi",
+          "heure_debut": "08:00",
+          "heure_fin": "10:00",
+          "matiere_code": "CYBER303",
+          "matiere_nom": "Sécurité des Applications Web",
+          "type": "CM",
+          "enseignant": "E007",
+          "enseignant_nom": "Dr. Thomas SIMON",
+          "salle": "B202",
+          "salle_nom": "Salle B202"
+        },
+        {
+          "jour": "Mardi",
+          "heure_debut": "10:15",
+          "heure_fin": "12:15",
+          "matiere_code": "CYBER303",
+          "matiere_nom": "Sécurité des Applications Web",
+          "type": "TP",
+          "enseignant": "E007",
+          "enseignant_nom": "Dr. Thomas SIMON",
+          "salle": "C102",
+          "salle_nom": "Lab Cyber"
+        },
+        {
+          "jour": "Mardi",
+          "heure_debut": "13:45",
+          "heure_fin": "15:45",
+          "matiere_code": "CYBER304",
+          "matiere_nom": "Forensics et Réponse aux Incidents",
+          "type": "CM",
+          "enseignant": "E005",
+          "enseignant_nom": "Prof. Marc ROUSSEAU",
+          "salle": "B201",
+          "salle_nom": "Salle B201"
+        },
+        {
+          "jour": "Mercredi",
+          "heure_debut": "08:00",
+          "heure_fin": "10:00",
+          "matiere_code": "CYBER304",
+          "matiere_nom": "Forensics et Réponse aux Incidents",
+          "type": "TP",
+          "enseignant": "E005",
+          "enseignant_nom": "Prof. Marc ROUSSEAU",
+          "salle": "C102",
+          "salle_nom": "Lab Cyber"
+        },
+        {
+          "jour": "Mercredi",
+          "heure_debut": "10:15",
+          "heure_fin": "12:15",
+          "matiere_code": "CYBER305",
+          "matiere_nom": "Sécurité des Réseaux",
+          "type": "CM",
+          "enseignant": "E004",
+          "enseignant_nom": "Dr. Claire LAMBERT",
+          "salle": "B201",
+          "salle_nom": "Salle B201"
+        },
+        {
+          "jour": "Mercredi",
+          "heure_debut": "13:45",
+          "heure_fin": "15:45",
+          "matiere_code": "CYBER305",
+          "matiere_nom": "Sécurité des Réseaux",
+          "type": "TP",
+          "enseignant": "E004",
+          "enseignant_nom": "Dr. Claire LAMBERT",
+          "salle": "C101",
+          "salle_nom": "Lab Réseaux"
+        },
+        {
+          "jour": "Jeudi",
+          "heure_debut": "08:00",
+          "heure_fin": "12:15",
+          "matiere_code": "PROJ301",
+          "matiere_nom": "Projet CTF et Challenges",
+          "type": "Projet",
+          "enseignant": "E005",
+          "enseignant_nom": "Prof. Marc ROUSSEAU",
+          "salle": "C102",
+          "salle_nom": "Lab Cyber"
+        },
+        {
+          "jour": "Jeudi",
+          "heure_debut": "13:45",
+          "heure_fin": "15:45",
+          "matiere_code": "LANG301",
+          "matiere_nom": "Anglais Technique - Cybersécurité",
+          "type": "TD",
+          "enseignant": "E018",
+          "enseignant_nom": "Prof. Christine ROBIN",
+          "salle": "B103",
+          "salle_nom": "Salle B103"
+        },
+        {
+          "jour": "Vendredi",
+          "heure_debut": "08:00",
+          "heure_fin": "10:00",
+          "matiere_code": "CYBER306",
+          "matiere_nom": "Conformité et Gouvernance (ISO 27001)",
+          "type": "CM",
+          "enseignant": "E012",
+          "enseignant_nom": "Prof. Nathalie GIRARD",
+          "salle": "B201",
+          "salle_nom": "Salle B201"
+        },
+        {
+          "jour": "Vendredi",
+          "heure_debut": "10:15",
+          "heure_fin": "12:15",
+          "matiere_code": "MGMT301",
+          "matiere_nom": "Gestion de Projet Cyber",
+          "type": "CM",
+          "enseignant": "E010",
+          "enseignant_nom": "Prof. Isabelle ROUX",
+          "salle": "B202",
+          "salle_nom": "Salle B202"
+        }
+      ]
+    }
+  ],
+  
+  "examens": [
+    {
+      "formation": "B1",
+      "semestre": "S1",
+      "session": "Session 1",
+      "epreuves": [
+        {
+          "matiere_code": "INFO101",
+          "matiere_nom": "Introduction à la Programmation (Python)",
+          "date": "2025-01-07",
+          "heure_debut": "09:00",
+          "duree": "3h",
+          "salle": "A001",
+          "type": "Écrit + Pratique",
+          "coefficient": 5
+        },
+        {
+          "matiere_code": "INFO102",
+          "matiere_nom": "Algorithmique et Structures de Données",
+          "date": "2025-01-09",
+          "heure_debut": "09:00",
+          "duree": "2h",
+          "salle": "A001",
+          "type": "Écrit",
+          "coefficient": 4
+        },
+        {
+          "matiere_code": "MATH101",
+          "matiere_nom": "Mathématiques pour l'Informatique",
+          "date": "2025-01-10",
+          "heure_debut": "14:00",
+          "duree": "3h",
+          "salle": "A001",
+          "type": "Écrit",
+          "coefficient": 4
+        },
+        {
+          "matiere_code": "MATH102",
+          "matiere_nom": "Statistiques Descriptives",
+          "date": "2025-01-13",
+          "heure_debut": "09:00",
+          "duree": "2h",
+          "salle": "A002",
+          "type": "Écrit",
+          "coefficient": 2
+        },
+        {
+          "matiere_code": "MGMT101",
+          "matiere_nom": "Introduction au Management",
+          "date": "2025-01-14",
+          "heure_debut": "14:00",
+          "duree": "2h",
+          "salle": "A001",
+          "type": "QCM + Questions ouvertes",
+          "coefficient": 3
+        },
+        {
+          "matiere_code": "COMM101",
+          "matiere_nom": "Communication Écrite et Orale",
+          "date": "2025-01-15",
+          "heure_debut": "09:00",
+          "duree": "1h30",
+          "salle": "B101-B105",
+          "type": "Oral",
+          "coefficient": 3
+        },
+        {
+          "matiere_code": "LANG101",
+          "matiere_nom": "Anglais Professionnel Niveau 1",
+          "date": "2025-01-16",
+          "heure_debut": "14:00",
+          "duree": "1h30",
+          "salle": "A003",
+          "type": "Écrit + Oral",
+          "coefficient": 2
+        }
+      ]
+    },
+    {
+      "formation": "B3-DATA",
+      "semestre": "S1",
+      "session": "Session 1",
+      "epreuves": [
+        {
+          "matiere_code": "DATA301",
+          "matiere_nom": "Machine Learning Avancé",
+          "date": "2025-01-08",
+          "heure_debut": "09:00",
+          "duree": "4h",
+          "salle": "C002",
+          "type": "Projet + Soutenance",
+          "coefficient": 6
+        },
+        {
+          "matiere_code": "DATA302",
+          "matiere_nom": "Big Data et Spark",
+          "date": "2025-01-10",
+          "heure_debut": "09:00",
+          "duree": "3h",
+          "salle": "C002",
+          "type": "Pratique",
+          "coefficient": 5
+        },
+        {
+          "matiere_code": "DATA304",
+          "matiere_nom": "NLP - Traitement du Langage Naturel",
+          "date": "2025-01-14",
+          "heure_debut": "09:00",
+          "duree": "3h",
+          "salle": "C002",
+          "type": "Projet",
+          "coefficient": 5
+        }
+      ]
+    }
+  ],
+  
+  "dates_importantes": [
+    {"date": "2024-09-02", "evenement": "Rentrée académique", "type": "Rentrée"},
+    {"date": "2024-09-03", "evenement": "Journée d'intégration Bachelor 1", "type": "Événement"},
+    {"date": "2024-09-10", "evenement": "Forum des associations", "type": "Vie étudiante"},
+    {"date": "2024-09-30", "evenement": "Date limite inscription pédagogique", "type": "Administratif"},
+    {"date": "2024-10-15", "evenement": "Forum entreprises - Stages/Alternance", "type": "Carrières"},
+    {"date": "2024-10-28", "evenement": "Début vacances Toussaint", "type": "Vacances"},
+    {"date": "2024-11-03", "evenement": "Fin vacances Toussaint", "type": "Vacances"},
+    {"date": "2024-11-20", "evenement": "Hackathon ESIC (48h)", "type": "Événement"},
+    {"date": "2024-12-15", "evenement": "Soirée de Noël", "type": "Vie étudiante"},
+    {"date": "2024-12-23", "evenement": "Début vacances Noël", "type": "Vacances"},
+    {"date": "2025-01-05", "evenement": "Fin vacances Noël", "type": "Vacances"},
+    {"date": "2025-01-06", "evenement": "Début examens S1", "type": "Examens"},
+    {"date": "2025-01-17", "evenement": "Fin examens S1", "type": "Examens"},
+    {"date": "2025-02-03", "evenement": "Début rattrapages S1", "type": "Examens"},
+    {"date": "2025-02-07", "evenement": "Fin rattrapages S1", "type": "Examens"},
+    {"date": "2025-02-10", "evenement": "Rentrée Semestre 2", "type": "Rentrée"},
+    {"date": "2025-02-24", "evenement": "Début vacances Hiver", "type": "Vacances"},
+    {"date": "2025-03-02", "evenement": "Fin vacances Hiver", "type": "Vacances"},
+    {"date": "2025-03-15", "evenement": "Forum entreprises - Emploi", "type": "Carrières"},
+    {"date": "2025-04-21", "evenement": "Début vacances Printemps", "type": "Vacances"},
+    {"date": "2025-04-27", "evenement": "Fin vacances Printemps", "type": "Vacances"},
+    {"date": "2025-05-19", "evenement": "Début examens S2", "type": "Examens"},
+    {"date": "2025-05-24", "evenement": "Course ESIC 5/10km", "type": "Sport"},
+    {"date": "2025-05-30", "evenement": "Fin examens S2", "type": "Examens"},
+    {"date": "2025-06-02", "evenement": "Début période stages", "type": "Stage"},
+    {"date": "2025-06-15", "evenement": "Gala de fin d'année", "type": "Vie étudiante"},
+    {"date": "2025-06-20", "evenement": "Remise des diplômes (promos sortantes)", "type": "Cérémonie"},
+    {"date": "2025-08-29", "evenement": "Fin période stages", "type": "Stage"},
+    {"date": "2025-09-01", "evenement": "Début rattrapages S2", "type": "Examens"},
+    {"date": "2025-09-12", "evenement": "Fin rattrapages S2", "type": "Examens"}
+  ],
+  
+  "notes": [
+    "Les emplois du temps peuvent être sujets à modifications. Consultez régulièrement l'ENT.",
+    "En cas d'absence d'un enseignant, vous serez prévenus par email au moins 48h avant (sauf urgence).",
+    "Les salles informatiques nécessitent une réservation pour les groupes de projets.",
+    "Pour toute question sur votre emploi du temps, contactez votre responsable de formation.",
+    "Les cours de langues se font par groupes de niveau (A2, B1, B2, C1) - voir votre groupe sur l'ENT."
+  ]
+}
