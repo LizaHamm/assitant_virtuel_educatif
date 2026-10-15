@@ -1,0 +1,1046 @@
+{
+  "metadata": {
+     "author": "Joel BANKA",
+    "purpose": "Document créé exclusivement pour le projet étudiant",
+    "etablissement": "ESIC - École Supérieure d'Informatique et du Commerce",
+    "annee_academique": "2024-2025",
+    "date_maj": "2024-09-01",
+    "version": "1.0",
+    "standard_telephonique": "01.53.90.15.00",
+    "email_general": "contact@esic.fr",
+    "adresse": {
+      "rue": "42 Avenue de la République",
+      "code_postal": "75011",
+      "ville": "Paris",
+      "pays": "France"
+    },
+    "horaires_accueil": {
+      "lundi_vendredi": "8h00-18h00",
+      "samedi": "Fermé",
+      "dimanche": "Fermé"
+    },
+    "reseaux_sociaux": {
+      "site_web": "https://www.esic.fr",
+      "linkedin": "https://www.linkedin.com/school/esic-paris",
+      "twitter": "https://twitter.com/ESIC_Paris",
+      "instagram": "https://www.instagram.com/esic_official",
+      "facebook": "https://www.facebook.com/ESICParis",
+      "youtube": "https://www.youtube.com/c/ESICParis"
+    }
+  },
+
+  "direction": [
+    {
+      "fonction": "Directeur Général",
+      "titre": "Professeur",
+      "nom": "BAZ",
+      "prenom": "Michel",
+      "email": "direction@esic.fr",
+      "telephone": "01.53.90.15.01",
+      "bureau": "A201",
+      "batiment": "A - Administration",
+      "horaires_rdv": "Sur rendez-vous uniquement",
+      "assistant": {
+        "nom": "LEFEBVRE",
+        "prenom": "Catherine",
+        "email": "c.lefebvre@esic.fr",
+        "telephone": "01.53.90.15.02"
+      }
+    },
+    {
+      "fonction": "Directrice des Études",
+      "titre": "Docteur",
+      "nom": "DURAND",
+      "prenom": "Sophie",
+      "email": "etudes@esic.fr",
+      "telephone": "01.53.90.15.03",
+      "bureau": "A202",
+      "batiment": "A - Administration",
+      "horaires_rdv": "Lundi-Vendredi 9h-12h / 14h-17h (sur RDV)"
+    },
+    {
+      "fonction": "Directeur des Relations Entreprises",
+      "titre": "Monsieur",
+      "nom": "MERCIER",
+      "prenom": "Laurent",
+      "email": "entreprises@esic.fr",
+      "telephone": "01.53.90.15.30",
+      "bureau": "A203",
+      "batiment": "A - Administration"
+    },
+    {
+      "fonction": "Directrice des Relations Internationales",
+      "titre": "Madame",
+      "nom": "MARTINEZ",
+      "prenom": "Elena",
+      "email": "international@esic.fr",
+      "telephone": "01.53.90.15.25",
+      "bureau": "A204",
+      "batiment": "A - Administration"
+    },
+    {
+      "fonction": "Directeur de la Recherche et Innovation",
+      "titre": "Professeur",
+      "nom": "LEFEVRE",
+      "prenom": "Philippe",
+      "email": "recherche@esic.fr",
+      "telephone": "01.53.90.15.35",
+      "bureau": "A205",
+      "batiment": "A - Administration"
+    }
+  ],
+
+  "services_administratifs": [
+    {
+      "service": "Scolarité",
+      "responsable": {
+        "nom": "PETIT",
+        "prenom": "Marie",
+        "email": "scolarite@esic.fr",
+        "telephone": "01.53.90.15.20"
+      },
+      "bureau": "A102",
+      "batiment": "A - Administration",
+      "horaires": "Lundi-Vendredi 9h-12h / 14h-17h",
+      "missions": [
+        "Inscriptions administratives",
+        "Certificats de scolarité",
+        "Relevés de notes",
+        "Conventions de stage",
+        "Gestion des absences"
+      ],
+      "equipe": [
+        {
+          "nom": "ROBERT",
+          "prenom": "Julie",
+          "poste": "Gestionnaire scolarité Bachelor",
+          "email": "j.robert@esic.fr",
+          "telephone": "01.53.90.15.21"
+        },
+        {
+          "nom": "THOMAS",
+          "prenom": "Marc",
+          "poste": "Gestionnaire scolarité Master",
+          "email": "m.thomas@esic.fr",
+          "telephone": "01.53.90.15.22"
+        },
+        {
+          "nom": "DUBOIS",
+          "prenom": "Amélie",
+          "poste": "Gestionnaire stages et alternance",
+          "email": "a.dubois@esic.fr",
+          "telephone": "01.53.90.15.23"
+        }
+      ]
+    },
+    {
+      "service": "Comptabilité et Finances",
+      "responsable": {
+        "nom": "BLANC",
+        "prenom": "François",
+        "email": "comptabilite@esic.fr",
+        "telephone": "01.53.90.15.21"
+      },
+      "bureau": "A103",
+      "batiment": "A - Administration",
+      "horaires": "Lundi-Vendredi 9h-17h",
+      "missions": [
+        "Frais de scolarité",
+        "Paiements et échéanciers",
+        "Remboursements",
+        "Attestations fiscales"
+      ]
+    },
+    {
+      "service": "Admissions",
+      "responsable": {
+        "nom": "MOREAU",
+        "prenom": "Claire",
+        "email": "admissions@esic.fr",
+        "telephone": "01.53.90.15.10"
+      },
+      "bureau": "A101",
+      "batiment": "A - Administration",
+      "horaires": "Lundi-Vendredi 9h-18h, Samedi 9h-13h (période admissions)",
+      "missions": [
+        "Candidatures",
+        "Concours d'entrée",
+        "Admissions parallèles",
+        "Information futurs étudiants"
+      ]
+    },
+    {
+      "service": "Communication",
+      "responsable": {
+        "nom": "LAMBERT",
+        "prenom": "Isabelle",
+        "email": "communication@esic.fr",
+        "telephone": "01.53.90.15.60"
+      },
+      "bureau": "A206",
+      "batiment": "A - Administration",
+      "missions": [
+        "Relations presse",
+        "Réseaux sociaux",
+        "Événements institutionnels",
+        "Publications"
+      ]
+    },
+    {
+      "service": "Informatique - Helpdesk IT",
+      "responsable": {
+        "nom": "ROUSSEAU",
+        "prenom": "Thomas",
+        "email": "support-it@esic.fr",
+        "telephone": "01.53.90.15.99"
+      },
+      "bureau": "C104",
+      "batiment": "C - Informatique",
+      "horaires": "Lundi-Vendredi 9h-12h / 14h-17h",
+      "chat_en_ligne": "ent.esic.fr (9h-18h)",
+      "missions": [
+        "Support ENT et email",
+        "Configuration WiFi/VPN",
+        "Problèmes techniques",
+        "Installations logicielles"
+      ]
+    }
+  ],
+
+  "services_etudiants": [
+    {
+      "service": "Santé - Infirmerie",
+      "responsable": {
+        "nom": "LAURENT",
+        "prenom": "Marie",
+        "titre": "Infirmière DE",
+        "email": "sante@esic.fr",
+        "telephone": "01.53.90.15.40"
+      },
+      "bureau": "D001",
+      "batiment": "D - Services",
+      "horaires": "Lundi, Mercredi, Vendredi 9h-17h",
+      "acces": "Libre sans rendez-vous",
+      "medecin": {
+        "nom": "Dr. LAURENT",
+        "prenom": "Marie",
+        "specialite": "Médecin scolaire",
+        "email": "medecin@esic.fr",
+        "horaires_rdv": "Mardi 14h-18h, Jeudi 10h-14h (sur RDV)"
+      }
+    },
+    {
+      "service": "Psychologie",
+      "responsable": {
+        "nom": "MARTIN",
+        "prenom": "Sophie",
+        "titre": "Psychologue",
+        "email": "psychologue@esic.fr",
+        "telephone": "01.53.90.15.41"
+      },
+      "bureau": "D102",
+      "batiment": "D - Services",
+      "horaires": "Mardi, Jeudi 10h-18h",
+      "prise_rdv": "sante@esic.fr ou 01.53.90.15.40",
+      "consultations": "Gratuites et confidentielles"
+    },
+    {
+      "service": "Service Social",
+      "responsable": {
+        "nom": "DUBOIS",
+        "prenom": "Isabelle",
+        "titre": "Assistante sociale",
+        "email": "social@esic.fr",
+        "telephone": "01.53.90.15.42"
+      },
+      "bureau": "A105",
+      "batiment": "A - Administration",
+      "horaires": "Lundi, Mercredi 14h-18h",
+      "missions": [
+        "Aides financières",
+        "Logement étudiant",
+        "Démarches administratives",
+        "Médiation familiale"
+      ]
+    },
+    {
+      "service": "Bureau de la Vie Étudiante (BVE)",
+      "responsable": {
+        "nom": "GARCIA",
+        "prenom": "Laura",
+        "email": "bve@esic.fr",
+        "telephone": "01.53.90.15.50"
+      },
+      "bureau": "A107",
+      "batiment": "A - Administration",
+      "horaires": "Lundi-Vendredi 10h-18h",
+      "missions": [
+        "Associations étudiantes",
+        "Événements campus",
+        "Aide aux projets étudiants"
+      ]
+    },
+    {
+      "service": "Service des Sports",
+      "responsable": {
+        "nom": "LEROY",
+        "prenom": "Thomas",
+        "email": "sports@esic.fr",
+        "telephone": "01.53.90.15.45"
+      },
+      "bureau": "E101",
+      "batiment": "E - Complexe sportif",
+      "horaires": "Lundi-Vendredi 12h-20h, Samedi 10h-13h",
+      "installations": {
+        "salle_musculation": "Accès libre avec carte étudiante",
+        "gymnase": "Réservation via ENT",
+        "terrains_exterieurs": "Accès libre 8h-21h"
+      }
+    },
+    {
+      "service": "Bibliothèque - Médiathèque",
+      "responsable": {
+        "nom": "GIRARD",
+        "prenom": "Nathalie",
+        "titre": "Bibliothécaire en chef",
+        "email": "bibliotheque@esic.fr",
+        "telephone": "01.53.90.15.50"
+      },
+      "bureau": "D101",
+      "batiment": "D - Services",
+      "horaires": "Lundi-Vendredi 8h-20h, Samedi 9h-17h",
+      "horaires_examens": "24h/24 (janvier et juin)",
+      "equipe": [
+        {
+          "nom": "BERNARD",
+          "prenom": "Stéphane",
+          "poste": "Bibliothécaire",
+          "specialite": "Sciences informatiques"
+        },
+        {
+          "nom": "ROUSSEAU",
+          "prenom": "Émilie",
+          "poste": "Bibliothécaire",
+          "specialite": "Management et économie"
+        }
+      ]
+    },
+    {
+      "service": "Service Carrières et Relations Entreprises",
+      "responsable": {
+        "nom": "MERCIER",
+        "prenom": "Laurent",
+        "email": "carrieres@esic.fr",
+        "telephone": "01.53.90.15.31"
+      },
+      "bureau": "A203",
+      "batiment": "A - Administration",
+      "horaires": "Lundi-Vendredi 9h-17h",
+      "missions": [
+        "Accompagnement recherche stage/alternance",
+        "Ateliers CV et entretiens",
+        "Forum entreprises",
+        "Suivi insertion professionnelle"
+      ],
+      "equipe": [
+        {
+          "nom": "DUVAL",
+          "prenom": "Sophie",
+          "poste": "Chargée de relations entreprises",
+          "email": "s.duval@esic.fr",
+          "telephone": "01.53.90.15.32"
+        },
+        {
+          "nom": "LEGRAND",
+          "prenom": "Pierre",
+          "poste": "Chargé alternance",
+          "email": "p.legrand@esic.fr",
+          "telephone": "01.53.90.15.33"
+        }
+      ]
+    },
+    {
+      "service": "Relations Internationales",
+      "responsable": {
+        "nom": "MARTINEZ",
+        "prenom": "Elena",
+        "email": "international@esic.fr",
+        "telephone": "01.53.90.15.25"
+      },
+      "bureau": "A204",
+      "batiment": "A - Administration",
+      "horaires": "Lundi-Vendredi 9h-17h",
+      "missions": [
+        "Mobilité sortante (échanges)",
+        "Accueil étudiants internationaux",
+        "Doubles diplômes",
+        "Cours de FLE (Français Langue Étrangère)"
+      ],
+      "equipe": [
+        {
+          "nom": "WANG",
+          "prenom": "Li",
+          "poste": "Coordinatrice Asie",
+          "email": "l.wang@esic.fr",
+          "telephone": "01.53.90.15.26"
+        },
+        {
+          "nom": "SCHMIDT",
+          "prenom": "Anna",
+          "poste": "Coordinatrice Europe",
+          "email": "a.schmidt@esic.fr",
+          "telephone": "01.53.90.15.27"
+        }
+      ]
+    },
+    {
+      "service": "Restaurant Universitaire",
+      "responsable": {
+        "nom": "MOREL",
+        "prenom": "Jean-Luc",
+        "email": "restauration@esic.fr",
+        "telephone": "01.53.90.15.70"
+      },
+      "localisation": "D - RDC",
+      "horaires": "Lundi-Vendredi 11h45-14h",
+      "tarifs": {
+        "etudiant_boursier": "1,00€",
+        "etudiant_non_boursier": "3,90€",
+        "personnel": "5,50€",
+        "visiteur": "8,00€"
+      }
+    },
+    {
+      "service": "Cafétéria",
+      "localisation": "D - RDC",
+      "horaires": "Lundi-Vendredi 8h-18h, Samedi 9h-17h"
+    }
+  ],
+
+  "responsables_pedagogiques": [
+    {
+      "formation": "Bachelor 1",
+      "responsable": {
+        "nom": "MARTIN",
+        "prenom": "Sophie",
+        "titre": "Dr.",
+        "email": "s.martin@esic.fr",
+        "telephone": "01.53.90.16.01",
+        "bureau": "A301",
+        "horaires_rdv": "Mardi, Jeudi 14h-17h (sur RDV)"
+      }
+    },
+    {
+      "formation": "Bachelor 2",
+      "responsable": {
+        "nom": "BERNARD",
+        "prenom": "Jean-Michel",
+        "titre": "Prof.",
+        "email": "jm.bernard@esic.fr",
+        "telephone": "01.53.90.16.02",
+        "bureau": "A302",
+        "horaires_rdv": "Lundi, Mercredi 10h-12h (sur RDV)"
+      }
+    },
+    {
+      "formation": "Bachelor 3 - Développement Informatique",
+      "responsable": {
+        "nom": "SIMON",
+        "prenom": "Thomas",
+        "titre": "Dr.",
+        "email": "t.simon@esic.fr",
+        "telephone": "01.53.90.16.03",
+        "bureau": "A303",
+        "horaires_rdv": "Mercredi, Vendredi 14h-17h (sur RDV)"
+      }
+    },
+    {
+      "formation": "Bachelor 3 - Cybersécurité",
+      "responsable": {
+        "nom": "ROUSSEAU",
+        "prenom": "Marc",
+        "titre": "Prof.",
+        "email": "m.rousseau@esic.fr",
+        "telephone": "01.53.90.16.04",
+        "bureau": "A304",
+        "horaires_rdv": "Mardi, Jeudi 10h-12h (sur RDV)"
+      }
+    },
+    {
+      "formation": "Bachelor 3 - Data Science",
+      "responsable": {
+        "nom": "MOREAU",
+        "prenom": "Julie",
+        "titre": "Dr.",
+        "email": "j.moreau@esic.fr",
+        "telephone": "01.53.90.16.05",
+        "bureau": "A305",
+        "horaires_rdv": "Lundi, Mercredi 14h-17h (sur RDV)"
+      }
+    },
+    {
+      "formation": "Master 1 - Intelligence Artificielle",
+      "responsable": {
+        "nom": "GARCIA",
+        "prenom": "David",
+        "titre": "Dr.",
+        "email": "d.garcia@esic.fr",
+        "telephone": "01.53.90.16.06",
+        "bureau": "A306",
+        "horaires_rdv": "Mardi, Jeudi 15h-18h (sur RDV)"
+      }
+    },
+    {
+      "formation": "Master 1 - Cybersécurité",
+      "responsable": {
+        "nom": "ROUSSEAU",
+        "prenom": "Marc",
+        "titre": "Prof.",
+        "email": "m.rousseau@esic.fr",
+        "telephone": "01.53.90.16.04",
+        "bureau": "A304",
+        "horaires_rdv": "Mardi, Jeudi 10h-12h (sur RDV)"
+      }
+    },
+    {
+      "formation": "Master 2 - Intelligence Artificielle",
+      "responsable": {
+        "nom": "GARCIA",
+        "prenom": "David",
+        "titre": "Dr.",
+        "email": "d.garcia@esic.fr",
+        "telephone": "01.53.90.16.06",
+        "bureau": "A306",
+        "horaires_rdv": "Mardi, Jeudi 15h-18h (sur RDV)"
+      }
+    }
+  ],
+
+  "enseignants": [
+    {
+      "id": "E001",
+      "nom": "BERNARD",
+      "prenom": "Jean-Michel",
+      "titre": "Prof.",
+      "specialite": "Algorithmique",
+      "email": "jm.bernard@esic.fr",
+      "telephone": "01.53.90.16.02",
+      "bureau": "A302",
+      "horaires_bureau": "Lundi, Mercredi 10h-12h",
+      "matieres": ["Algorithmique et Structures de Données", "Complexité algorithmique"]
+    },
+    {
+      "id": "E002",
+      "nom": "MARTIN",
+      "prenom": "Sophie",
+      "titre": "Dr.",
+      "specialite": "Programmation",
+      "email": "s.martin@esic.fr",
+      "telephone": "01.53.90.16.01",
+      "bureau": "A301",
+      "horaires_bureau": "Mardi, Jeudi 14h-17h",
+      "matieres": ["Introduction à la Programmation (Python)", "Programmation Orientée Objet (Java)", "Architecture Logicielle"]
+    },
+    {
+      "id": "E003",
+      "nom": "DUBOIS",
+      "prenom": "Pierre",
+      "titre": "Prof.",
+      "specialite": "Bases de données",
+      "email": "p.dubois@esic.fr",
+      "telephone": "01.53.90.16.10",
+      "bureau": "A310",
+      "horaires_bureau": "Lundi, Vendredi 9h-11h",
+      "matieres": ["Bases de données relationnelles", "Bases de données avancées", "NoSQL"]
+    },
+    {
+      "id": "E004",
+      "nom": "LAMBERT",
+      "prenom": "Claire",
+      "titre": "Dr.",
+      "specialite": "Réseaux",
+      "email": "c.lambert@esic.fr",
+      "telephone": "01.53.90.16.11",
+      "bureau": "A311",
+      "horaires_bureau": "Mercredi 14h-18h",
+      "matieres": ["Réseaux informatiques (TCP/IP)", "Sécurité des Réseaux", "Administration réseaux"]
+    },
+    {
+      "id": "E005",
+      "nom": "ROUSSEAU",
+      "prenom": "Marc",
+      "titre": "Prof.",
+      "specialite": "Cybersécurité",
+      "email": "m.rousseau@esic.fr",
+      "telephone": "01.53.90.16.04",
+      "bureau": "A304",
+      "horaires_bureau": "Mardi, Jeudi 10h-12h",
+      "matieres": ["Ethical Hacking et Pentesting", "Forensics", "Threat Intelligence", "Audit de Sécurité"]
+    },
+    {
+      "id": "E006",
+      "nom": "MOREAU",
+      "prenom": "Julie",
+      "titre": "Dr.",
+      "specialite": "Machine Learning",
+      "email": "j.moreau@esic.fr",
+      "telephone": "01.53.90.16.05",
+      "bureau": "A305",
+      "horaires_bureau": "Lundi, Mercredi 14h-17h",
+      "matieres": ["Introduction au Machine Learning", "Machine Learning Avancé", "Computer Vision", "Éthique et IA Responsable"]
+    },
+    {
+      "id": "E007",
+      "nom": "SIMON",
+      "prenom": "Thomas",
+      "titre": "Dr.",
+      "specialite": "Développement Web",
+      "email": "t.simon@esic.fr",
+      "telephone": "01.53.90.16.03",
+      "bureau": "A303",
+      "horaires_bureau": "Mercredi, Vendredi 14h-17h",
+      "matieres": ["HTML/CSS et JavaScript", "Frameworks web (React, Angular)", "Développement Mobile", "Sécurité des Applications Web"]
+    },
+    {
+      "id": "E008",
+      "nom": "LAURENT",
+      "prenom": "Marie",
+      "titre": "Prof.",
+      "specialite": "Mathématiques",
+      "email": "m.laurent@esic.fr",
+      "telephone": "01.53.90.16.12",
+      "bureau": "A312",
+      "horaires_bureau": "Lundi, Jeudi 10h-12h",
+      "matieres": ["Mathématiques pour l'Informatique", "Statistiques Descriptives", "Probabilités"]
+    },
+    {
+      "id": "E009",
+      "nom": "GARCIA",
+      "prenom": "David",
+      "titre": "Dr.",
+      "specialite": "Intelligence Artificielle",
+      "email": "d.garcia@esic.fr",
+      "telephone": "01.53.90.16.06",
+      "bureau": "A306",
+      "horaires_bureau": "Mardi, Jeudi 15h-18h",
+      "matieres": ["Deep Learning Avancé", "IA Générative", "NLP", "Reinforcement Learning", "Séminaire de Recherche"]
+    },
+    {
+      "id": "E010",
+      "nom": "ROUX",
+      "prenom": "Isabelle",
+      "titre": "Prof.",
+      "specialite": "Gestion de projet",
+      "email": "i.roux@esic.fr",
+      "telephone": "01.53.90.16.13",
+      "bureau": "A313",
+      "horaires_bureau": "Lundi, Mercredi 9h-12h",
+      "matieres": ["Introduction au Management", "Méthodologies Agile et Scrum", "Gestion de Projet", "Innovation et Product Management"]
+    },
+    {
+      "id": "E011",
+      "nom": "FOURNIER",
+      "prenom": "Antoine",
+      "titre": "Dr.",
+      "specialite": "Systèmes d'exploitation",
+      "email": "a.fournier@esic.fr",
+      "telephone": "01.53.90.16.14",
+      "bureau": "A314",
+      "horaires_bureau": "Mardi, Vendredi 10h-12h",
+      "matieres": ["Systèmes d'Exploitation (Linux/Windows)", "Administration système"]
+    },
+    {
+      "id": "E012",
+      "nom": "GIRARD",
+      "prenom": "Nathalie",
+      "titre": "Prof.",
+      "specialite": "Droit du numérique",
+      "email": "n.girard@esic.fr",
+      "telephone": "01.53.90.16.15",
+      "bureau": "A315",
+      "horaires_bureau": "Mercredi 14h-17h",
+      "matieres": ["Droit du numérique", "RGPD", "Conformité et Gouvernance (ISO 27001)", "Réglementation Cybersécurité"]
+    },
+    {
+      "id": "E013",
+      "nom": "BONNET",
+      "prenom": "Éric",
+      "titre": "Dr.",
+      "specialite": "Cloud Computing",
+      "email": "e.bonnet@esic.fr",
+      "telephone": "01.53.90.16.16",
+      "bureau": "A316",
+      "horaires_bureau": "Lundi, Jeudi 14h-17h",
+      "matieres": ["Cloud Computing (AWS)", "Sécurité Cloud et DevSecOps"]
+    },
+    {
+      "id": "E014",
+      "nom": "ANDRE",
+      "prenom": "Valérie",
+      "titre": "Prof.",
+      "specialite": "Marketing Digital",
+      "email": "v.andre@esic.fr",
+      "telephone": "01.53.90.16.17",
+      "bureau": "A317",
+      "horaires_bureau": "Mardi, Jeudi 9h-12h",
+      "matieres": ["Marketing digital", "SEO/SEA", "Growth Hacking"]
+    },
+    {
+      "id": "E015",
+      "nom": "MERCIER",
+      "prenom": "Olivier",
+      "titre": "Dr.",
+      "specialite": "Big Data",
+      "email": "o.mercier@esic.fr",
+      "telephone": "01.53.90.16.18",
+      "bureau": "A318",
+      "horaires_bureau": "Mercredi, Vendredi 10h-13h",
+      "matieres": ["Big Data et Spark", "Visualisation de Données", "Data Engineering"]
+    },
+    {
+      "id": "E016",
+      "nom": "BLANC",
+      "prenom": "Sandrine",
+      "titre": "Prof.",
+      "specialite": "UX/UI Design",
+      "email": "s.blanc@esic.fr",
+      "telephone": "01.53.90.16.19",
+      "bureau": "A319",
+      "horaires_bureau": "Lundi, Mercredi 14h-17h",
+      "matieres": ["UX/UI Design", "Design Thinking"]
+    },
+    {
+      "id": "E017",
+      "nom": "GUERIN",
+      "prenom": "François",
+      "titre": "Dr.",
+      "specialite": "DevOps",
+      "email": "f.guerin@esic.fr",
+      "telephone": "01.53.90.16.20",
+      "bureau": "A320",
+      "horaires_bureau": "Mardi, Jeudi 14h-18h",
+      "matieres": ["Git et DevOps de Base", "DevOps et CI/CD", "MLOps et Déploiement", "Microservices et Containers"]
+    },
+    {
+      "id": "E018",
+      "nom": "ROBIN",
+      "prenom": "Christine",
+      "titre": "Prof.",
+      "specialite": "Anglais",
+      "email": "c.robin@esic.fr",
+      "telephone": "01.53.90.16.21",
+      "bureau": "A321",
+      "horaires_bureau": "Lundi-Vendredi 10h-12h",
+      "matieres": ["Anglais Professionnel (tous niveaux)", "Anglais Technique"]
+    },
+    {
+      "id": "E019",
+      "nom": "CLEMENT",
+      "prenom": "Julien",
+      "titre": "Dr.",
+      "specialite": "Cryptographie",
+      "email": "j.clement@esic.fr",
+      "telephone": "01.53.90.16.22",
+      "bureau": "A322",
+      "horaires_bureau": "Mardi, Vendredi 9h-12h",
+      "matieres": ["Cryptographie Appliquée", "Cryptographie Avancée"]
+    },
+    {
+      "id": "E020",
+      "nom": "GAUTHIER",
+      "prenom": "Émilie",
+      "titre": "Prof.",
+      "specialite": "Communication",
+      "email": "e.gauthier@esic.fr",
+      "telephone": "01.53.90.16.23",
+      "bureau": "A323",
+      "horaires_bureau": "Lundi, Mercredi 9h-12h",
+      "matieres": ["Communication Écrite et Orale", "Prise de parole en public"]
+    }
+  ],
+
+  "delegues_etudiants": [
+    {
+      "formation": "Bachelor 1",
+      "delegue_principal": {
+        "nom": "ROUSSEAU",
+        "prenom": "Emma",
+        "email": "emma.rousseau@esic.fr"
+      },
+      "delegue_suppleant": {
+        "nom": "MARTINEZ",
+        "prenom": "Lucas",
+        "email": "lucas.martinez@esic.fr"
+      }
+    },
+    {
+      "formation": "Bachelor 2",
+      "delegue_principal": {
+        "nom": "BERNARD",
+        "prenom": "Léa",
+        "email": "lea.bernard@esic.fr"
+      },
+      "delegue_suppleant": {
+        "nom": "DUBOIS",
+        "prenom": "Tom",
+        "email": "tom.dubois@esic.fr"
+      }
+    },
+    {
+      "formation": "Bachelor 3 - Data Science",
+      "delegue_principal": {
+        "nom": "LAMBERT",
+        "prenom": "Sophie",
+        "email": "sophie.lambert@esic.fr"
+      },
+      "delegue_suppleant": {
+        "nom": "MOREAU",
+        "prenom": "Alexandre",
+        "email": "alexandre.moreau@esic.fr"
+      }
+    },
+    {
+      "formation": "Master 1 - IA",
+      "delegue_principal": {
+        "nom": "GARCIA",
+        "prenom": "Marie",
+        "email": "marie.garcia@esic.fr"
+      },
+      "delegue_suppleant": {
+        "nom": "SIMON",
+        "prenom": "Pierre",
+        "email": "pierre.simon@esic.fr"
+      }
+    }
+  ],
+
+  "associations_etudiantes": [
+    {
+      "nom": "Bureau des Étudiants (BDE)",
+      "president": {
+        "nom": "LAURENT",
+        "prenom": "Thomas",
+        "email": "bde@esic.fr"
+      },
+      "description": "Organisation des événements fédérateurs (soirées, gala, intégration)"
+    },
+    {
+      "nom": "Bureau des Sports (BDS)",
+      "president": {
+        "nom": "MERCIER",
+        "prenom": "Julie",
+        "email": "bds@esic.fr"
+      },
+      "description": "Coordination des activités sportives et tournois"
+    },
+    {
+      "nom": "DevCampus",
+      "president": {
+        "nom": "ROUSSEAU",
+        "prenom": "Marc",
+        "email": "devcampus@esic.fr"
+      },
+      "description": "Club de développeurs - Hackathons, coding dojos"
+    },
+    {
+      "nom": "ESICyber",
+      "president": {
+        "nom": "BLANC",
+        "prenom": "Sophie",
+        "email": "esicyber@esic.fr"
+      },
+      "description": "Club cybersécurité et CTF"
+    },
+    {
+      "nom": "ESIC Entrepreneurship",
+      "president": {
+        "nom": "DURAND",
+        "prenom": "Alexandre",
+        "email": "entrepreneurship@esic.fr"
+      },
+      "description": "Accompagnement projets startup"
+    },
+    {
+      "nom": "ESIC Green",
+      "president": {
+        "nom": "MARTIN",
+        "prenom": "Claire",
+        "email": "green@esic.fr"
+      },
+      "description": "Développement durable et écologie"
+    }
+  ],
+
+  "contacts_urgence": [
+    {
+      "service": "Urgence Campus ESIC",
+      "telephone": "01.53.90.15.00",
+      "disponibilite": "24h/7j",
+      "description": "Numéro d'urgence pour situations graves sur le campus"
+    },
+    {
+      "service": "Sécurité Campus",
+      "telephone": "01.53.90.15.01",
+      "disponibilite": "24h/7j"
+    },
+    {
+      "service": "SAMU",
+      "telephone": "15",
+      "description": "Urgences médicales"
+    },
+    {
+      "service": "Police",
+      "telephone": "17",
+      "description": "Police secours"
+    },
+    {
+      "service": "Pompiers",
+      "telephone": "18",
+      "description": "Incendie, accidents"
+    },
+    {
+      "service": "Numéro d'urgence européen",
+      "telephone": "112",
+      "description": "Depuis un mobile"
+    },
+    {
+      "service": "Fil Santé Jeunes",
+      "telephone": "0 800 235 236",
+      "disponibilite": "7j/7, 9h-23h",
+      "gratuit": true,
+      "anonyme": true,
+      "description": "Écoute et soutien pour les jeunes"
+    },
+    {
+      "service": "SOS Amitié",
+      "telephone": "09 72 39 40 50",
+      "disponibilite": "24h/7j",
+      "description": "Écoute en cas de détresse"
+    },
+    {
+      "service": "Violences Femmes Info",
+      "telephone": "3919",
+      "disponibilite": "7j/7, 9h-22h",
+      "gratuit": true,
+      "description": "Violences conjugales et familiales"
+    }
+  ],
+
+  "partenaires_externes": [
+    {
+      "organisme": "CROUS de Paris",
+      "contact": {
+        "telephone": "01.40.51.36.00",
+        "email": "contact@crous-paris.fr",
+        "site_web": "https://www.crous-paris.fr"
+      },
+      "services": ["Bourses", "Logement étudiant", "Restaurants universitaires"]
+    },
+    {
+      "organisme": "CAF - Caisse d'Allocations Familiales",
+      "contact": {
+        "telephone": "3230",
+        "site_web": "https://www.caf.fr"
+      },
+      "services": ["Aides au logement (APL, ALS)"]
+    },
+    {
+      "organisme": "Préfecture de Police de Paris",
+      "contact": {
+        "telephone": "01.53.71.53.71",
+        "site_web": "https://www.prefecturedepolice.interieur.gouv.fr"
+      },
+      "services": ["Titres de séjour étudiants internationaux"]
+    },
+    {
+      "organisme": "SUMPPS - Service Universitaire de Médecine Préventive",
+      "contact": {
+        "telephone": "01.40.51.10.00",
+        "site_web": "https://www.sumpps.fr"
+      },
+      "services": ["Consultations médicales et psychologiques gratuites"]
+    },
+    {
+      "organisme": "Campus France",
+      "contact": {
+        "telephone": "01.53.69.36.00",
+        "email": "info@campusfrance.org",
+        "site_web": "https://www.campusfrance.org"
+      },
+      "services": ["Mobilité internationale", "Étudiants étrangers en France"]
+    }
+  ],
+
+  "horaires_services": {
+    "accueil_general": {
+      "lundi_vendredi": "8h-18h",
+      "samedi": "Fermé",
+      "dimanche": "Fermé"
+    },
+    "scolarite": {
+      "lundi_vendredi": "9h-12h / 14h-17h"
+    },
+    "bibliotheque": {
+      "lundi_vendredi": "8h-20h",
+      "samedi": "9h-17h",
+      "dimanche": "Fermé",
+      "periode_examens": "24h/24 (janvier et juin)"
+    },
+    "restaurant_universitaire": {
+      "lundi_vendredi": "11h45-14h"
+    },
+    "cafeteria": {
+      "lundi_vendredi": "8h-18h",
+      "samedi": "9h-17h (si activités)"
+    },
+    "salle_musculation": {
+      "lundi_vendredi": "12h-14h et 18h-20h",
+      "samedi": "10h-13h"
+    },
+    "infirmerie": {
+      "lundi": "9h-17h",
+      "mercredi": "9h-17h",
+      "vendredi": "9h-17h"
+    },
+    "helpdesk_informatique": {
+      "lundi_vendredi": "9h-12h / 14h-17h",
+      "chat_en_ligne": "9h-18h"
+    }
+  },
+
+  "plans_acces": {
+    "transports_commun": {
+      "metro": [
+        {"ligne": "3", "station": "République", "distance": "5 min à pied"},
+        {"ligne": "9", "station": "Voltaire", "distance": "8 min à pied"}
+      ],
+      "bus": [
+        {"lignes": ["20", "56", "65"], "arret": "République"},
+        {"lignes": ["69"], "arret": "Voltaire"}
+      ],
+      "velib": [
+        {"station": "11023", "distance": "50m", "places": 20},
+        {"station": "11045", "distance": "150m", "places": 30}
+      ]
+    },
+    "parking": {
+      "etudiant": {
+        "places": 200,
+        "tarif": "Gratuit",
+        "inscription": "Sur inscription via ENT"
+      },
+      "visiteur": {
+        "places": 50,
+        "tarif": "3€/heure"
+      }
+    }
+  },
+
+  "notes_importantes": [
+    "Pour toute urgence sur le campus, composez le 01.53.90.15.00 (24h/7j)",
+    "Les horaires sont susceptibles de modifications pendant les vacances scolaires",
+    "En cas d'absence d'un service, consultez l'ENT pour les informations actualisées",
+    "Les rendez-vous avec les responsables pédagogiques se prennent via l'ENT",
+    "Pour les demandes administratives, privilégiez l'email pour un traitement plus rapide"
+  ]
+}

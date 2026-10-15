@@ -1,0 +1,5 @@
+venv/
+__pycache__/
+*.pyc
+chatbot.db
+logs_securite.txt
