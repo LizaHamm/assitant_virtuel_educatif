@@ -6,7 +6,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional
 
-from fastapi import FastAPI, HTTPException, Header
+from fastapi import FastAPI, HTTPException, Header, Query
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
@@ -30,11 +30,16 @@ from app.services.log_service import (
     init_log_database,
     log_question,
     log_security_event,
+    get_connection,
 )
 from app.services.security_service import check_message_security
 from app.services.rate_limit_service import check_rate_limit
 
 from app.kiosk import router as kiosk_router
+
+from collections import Counter
+from datetime import timedelta 
+
 
 # ============================================================
 # APPLICATION
@@ -388,6 +393,154 @@ def history(conversation_id: str):
         messages=get_history(conversation_id),
     )
 
+
+def _dashboard_normalize(text: str) -> str:
+    text = unicodedata.normalize("NFKD", text.lower())
+    text = "".join(c for c in text if not unicodedata.combining(c))
+    return " ".join(text.split())
+
+
+def _dashboard_category(question: str) -> str:
+    q = _dashboard_normalize(question)
+
+    rules = {
+        "Horaires": ("horaire", "heure", "ouverture", "fermeture"),
+        "Calendrier": ("calendrier", "date", "vacances", "rentre"),
+        "Formations": ("formation", "cours", "matiere", "diplome"),
+        "Contacts": ("contact", "telephone", "email", "adresse"),
+        "Règlement": ("reglement", "absence", "retard", "procedure"),
+    }
+
+    for category, keywords in rules.items():
+        if any(word in q for word in keywords):
+            return category
+
+    return "Général"
+
+
+def _dashboard_read_logs():
+    connection = get_connection()
+    try:
+        rows = connection.execute(
+            """
+            SELECT question, session_id, timestamp
+            FROM question_logs
+            ORDER BY timestamp ASC
+            """
+        ).fetchall()
+        return [dict(row) for row in rows]
+    finally:
+        connection.close()
+
+
+def _dashboard_parse_date(value: str):
+    try:
+        dt = datetime.fromisoformat(value.replace("Z", "+00:00"))
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        return dt.astimezone(timezone.utc)
+    except (ValueError, TypeError, AttributeError):
+        return None
+
+
+@app.get("/api/dashboard/top-questions")
+def dashboard_top_questions(limite: int = Query(10, ge=1, le=100)):
+    logs = _dashboard_read_logs()
+    counts = Counter()
+    labels = {}
+
+    for row in logs:
+        question = (row.get("question") or "").strip()
+        if not question:
+            continue
+        key = _dashboard_normalize(question)
+        counts[key] += 1
+        labels.setdefault(key, question)
+
+    return {
+        "top_questions": [
+            {"question": labels[key], "nombre": count}
+            for key, count in counts.most_common(limite)
+        ]
+    }
+
+
+@app.get("/api/dashboard/categories")
+def dashboard_categories():
+    counts = Counter(
+        _dashboard_category(row.get("question") or "")
+        for row in _dashboard_read_logs()
+    )
+    return {
+        "categories": [
+            {"categorie": name, "nombre": count}
+            for name, count in counts.most_common()
+        ]
+    }
+
+
+@app.get("/api/dashboard/evolution")
+def dashboard_evolution(jours: int = Query(14, ge=1, le=365)):
+    today = datetime.now(timezone.utc).date()
+    start = today - timedelta(days=jours - 1)
+    counts = Counter()
+
+    for row in _dashboard_read_logs():
+        dt = _dashboard_parse_date(row.get("timestamp"))
+        if dt and start <= dt.date() <= today:
+            counts[dt.date().isoformat()] += 1
+
+    return {
+        "evolution": [
+            {
+                "date": (start + timedelta(days=i)).isoformat(),
+                "nombre": counts[(start + timedelta(days=i)).isoformat()],
+            }
+            for i in range(jours)
+        ]
+    }
+
+
+@app.get("/api/dashboard/tendances")
+def dashboard_tendances():
+    today = datetime.now(timezone.utc).date()
+    current_start = today - timedelta(days=6)
+    previous_start = today - timedelta(days=13)
+    current = Counter()
+    previous = Counter()
+
+    for row in _dashboard_read_logs():
+        dt = _dashboard_parse_date(row.get("timestamp"))
+        if not dt:
+            continue
+
+        date = dt.date()
+        category = _dashboard_category(row.get("question") or "")
+
+        if current_start <= date <= today:
+            current[category] += 1
+        elif previous_start <= date < current_start:
+            previous[category] += 1
+
+    categories = sorted(set(current) | set(previous))
+    trends = []
+
+    for category in categories:
+        now = current[category]
+        before = previous[category]
+        evolution = (
+            round((now - before) / before * 100, 1)
+            if before
+            else (100.0 if now else 0.0)
+        )
+        trends.append({
+            "categorie": category,
+            "questions_7_derniers_jours": now,
+            "questions_7_jours_precedents": before,
+            "evolution": evolution,
+        })
+
+    return {"tendances": trends}
 
 # ============================================================
 # US-024 — ÉVALUATION DES RÉPONSES
