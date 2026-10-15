@@ -1,5 +1,5 @@
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./styles.css";
 
 const API_URL = "http://127.0.0.1:8000";
@@ -40,6 +40,37 @@ async function readResponse(response) {
   }
 
   return data;
+}
+
+// US-030 — identifiant pseudonyme de la borne et journalisation centralisée.
+function getKioskId() {
+  const storageKey = "esicKioskId";
+  let kioskId = localStorage.getItem(storageKey);
+  if (!kioskId) {
+    kioskId = typeof crypto !== "undefined" && crypto.randomUUID
+      ? crypto.randomUUID()
+      : `kiosk-${Date.now()}-${Math.random().toString(36).slice(2, 10)}`;
+    localStorage.setItem(storageKey, kioskId);
+  }
+  return kioskId;
+}
+
+function logKioskInteraction(eventType, details = {}, conversationId = null) {
+  // La journalisation ne doit jamais bloquer l'envoi d'une question au chatbot.
+  fetch(`${API_URL}/api/kiosk/interactions`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    keepalive: true,
+    body: JSON.stringify({
+      kiosk_id: getKioskId(),
+      event_type: eventType,
+      conversation_id: conversationId,
+      details,
+      occurred_at: new Date().toISOString(),
+    }),
+  }).catch((error) => {
+    console.warn("Journalisation borne indisponible :", error);
+  });
 }
 
 function ResponseFeedback({ conversationId, question, answer }) {
@@ -253,6 +284,8 @@ function AdminPanel({ onClose }) {
   const [escalations, setEscalations] = useState([]);
   const [knowledge, setKnowledge] = useState([]);
   const [statistics, setStatistics] = useState(null);
+  const [kioskStatuses, setKioskStatuses] = useState([]);
+  const [kioskStatusUpdatedAt, setKioskStatusUpdatedAt] = useState(null);
   const [error, setError] = useState("");
   const [notice, setNotice] = useState("");
   const [busy, setBusy] = useState(false);
@@ -278,18 +311,21 @@ function AdminPanel({ onClose }) {
     setBusy(true);
 
     try {
-      const [correctionData, escalationData, knowledgeData, statsData] =
+      const [correctionData, escalationData, knowledgeData, statsData, kioskData] =
         await Promise.all([
           adminFetch("/api/admin/corrections?status=pending"),
           adminFetch("/api/admin/escalations?status=pending"),
           adminFetch("/api/admin/knowledge"),
           adminFetch("/api/feedback/statistics"),
+          adminFetch("/api/kiosk/status"),
         ]);
 
       setCorrections(correctionData.corrections || []);
       setEscalations(escalationData.escalations || []);
       setKnowledge(knowledgeData.entries || []);
       setStatistics(statsData);
+      setKioskStatuses(kioskData.kiosks || []);
+      setKioskStatusUpdatedAt(new Date());
       setAuthenticated(true);
     } catch (err) {
       setAuthenticated(false);
@@ -393,6 +429,44 @@ function AdminPanel({ onClose }) {
 
         {authenticated && (
           <>
+            <div className="feature-panel kiosk-monitor-panel">
+              <div className="kiosk-monitor-heading">
+                <div>
+                  <h3>US-031 — État des bornes</h3>
+                  <p>Statut calculé à partir du dernier signal reçu.</p>
+                </div>
+                <button type="button" onClick={refreshAdminData} disabled={busy}>
+                  {busy ? "Actualisation…" : "Actualiser"}
+                </button>
+              </div>
+              <p className="kiosk-monitor-updated">
+                Dernière actualisation : {kioskStatusUpdatedAt
+                  ? kioskStatusUpdatedAt.toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit", second: "2-digit" })
+                  : "pas encore actualisé"}
+              </p>
+              {kioskStatuses.length === 0 ? (
+                <p>Aucune borne n’a encore envoyé de signal. Ouvre l’application dans le navigateur de la borne.</p>
+              ) : (
+                <div className="kiosk-status-list">
+                  {kioskStatuses.map((kiosk) => (
+                    <div className="kiosk-status-item" key={kiosk.kiosk_id}>
+                      <div className="kiosk-status-main">
+                        <span className={`kiosk-status-dot ${kiosk.status === "online" ? "online" : "offline"}`} />
+                        <div>
+                          <strong>Borne {kiosk.kiosk_id.slice(0, 8)}</strong>
+                          <span className="kiosk-status-label">{kiosk.status === "online" ? "En ligne" : "Hors ligne"}</span>
+                        </div>
+                      </div>
+                      <div className="kiosk-status-meta">
+                        <span>Dernier signal : {kiosk.last_seen ? new Date(kiosk.last_seen).toLocaleString("fr-FR") : "inconnu"}</span>
+                        <span>{kiosk.interactions_count} interaction(s)</span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+
             <div className="feature-panel">
               <h3>US-024 — Évaluations</h3>
               <p>Nombre d'évaluations : {statistics?.total ?? 0}</p>
@@ -508,10 +582,119 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [adminOpen, setAdminOpen] = useState(false);
   const [pageError, setPageError] = useState("");
+  const [isKioskMode, setIsKioskMode] = useState(false);
+  const [isListening, setIsListening] = useState(false);
+  const [speechSupported, setSpeechSupported] = useState(true);
+  const [speechMessage, setSpeechMessage] = useState("");
+  const recognitionRef = useRef(null);
 
   useEffect(() => {
     loadConversations();
   }, []);
+
+  // US-031 — signal périodique pour que l'administration sache si cette borne répond.
+  useEffect(() => {
+    const sendHeartbeat = () => {
+      fetch(`${API_URL}/api/kiosk/heartbeat`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        keepalive: true,
+        body: JSON.stringify({ kiosk_id: getKioskId(), mode: isKioskMode ? "kiosk" : "web" }),
+      }).catch((error) => console.warn("Signal de borne indisponible :", error));
+    };
+
+    sendHeartbeat();
+    const heartbeatTimer = window.setInterval(sendHeartbeat, 20000);
+    const onVisibilityChange = () => {
+      if (document.visibilityState === "visible") sendHeartbeat();
+    };
+    document.addEventListener("visibilitychange", onVisibilityChange);
+    return () => {
+      window.clearInterval(heartbeatTimer);
+      document.removeEventListener("visibilitychange", onVisibilityChange);
+    };
+  }, [isKioskMode]);
+
+  useEffect(() => {
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!SpeechRecognition) {
+      setSpeechSupported(false);
+      return undefined;
+    }
+
+    const recognition = new SpeechRecognition();
+    recognition.lang = "fr-FR";
+    recognition.continuous = false;
+    recognition.interimResults = true;
+    recognition.maxAlternatives = 1;
+
+    recognition.onstart = () => {
+      setIsListening(true);
+      setSpeechMessage("Je vous écoute… Parlez maintenant.");
+    };
+
+    recognition.onresult = (event) => {
+      let transcript = "";
+      for (let index = event.resultIndex; index < event.results.length; index += 1) {
+        transcript += event.results[index][0].transcript;
+      }
+      if (transcript.trim()) {
+        setInput(transcript.trim());
+        logKioskInteraction("voice_transcription", { character_count: transcript.trim().length }, currentConversationId);
+      }
+    };
+
+    recognition.onerror = (event) => {
+      setIsListening(false);
+      const messages = {
+        "not-allowed": "L'accès au microphone est refusé. Autorisez-le dans les paramètres du navigateur.",
+        "service-not-allowed": "La reconnaissance vocale n'est pas autorisée par le navigateur.",
+        "no-speech": "Aucune parole détectée. Réessayez en parlant après avoir activé le micro.",
+        "audio-capture": "Aucun microphone n'a été détecté.",
+        network: "La reconnaissance vocale nécessite une connexion réseau dans ce navigateur.",
+      };
+      setSpeechMessage(messages[event.error] || "La reconnaissance vocale a rencontré une erreur. Réessayez.");
+    };
+
+    recognition.onend = () => {
+      setIsListening(false);
+      setSpeechMessage((current) => current === "Je vous écoute… Parlez maintenant."
+        ? "Dictée terminée. Vous pouvez modifier le texte puis l'envoyer."
+        : current);
+    };
+
+    recognitionRef.current = recognition;
+    return () => {
+      recognition.onstart = null;
+      recognition.onresult = null;
+      recognition.onerror = null;
+      recognition.onend = null;
+      recognition.stop();
+      recognitionRef.current = null;
+    };
+  }, []);
+
+  function toggleVoiceInput() {
+    setSpeechMessage("");
+    if (!speechSupported || !recognitionRef.current) {
+      setSpeechMessage("La reconnaissance vocale n'est pas prise en charge par ce navigateur. Essayez Chrome ou Edge.");
+      return;
+    }
+
+    if (isListening) {
+      logKioskInteraction("voice_listening_stopped", {}, currentConversationId);
+      recognitionRef.current.stop();
+      setIsListening(false);
+      return;
+    }
+
+    try {
+      logKioskInteraction("voice_listening_started", {}, currentConversationId);
+      recognitionRef.current.start();
+    } catch (error) {
+      setSpeechMessage("Impossible de démarrer le microphone. Attendez un instant puis réessayez.");
+    }
+  }
 
   async function loadConversations() {
     try {
@@ -632,6 +815,13 @@ function App() {
 
     if (!question || loading) return;
 
+    if (isKioskMode) {
+      logKioskInteraction("question_submitted", {
+        question,
+        input_method: suggestion ? "touch_category_or_suggestion" : "text_or_voice",
+      }, currentConversationId);
+    }
+
     setPageError("");
 
     let activeId = currentConversationId;
@@ -680,6 +870,11 @@ function App() {
       }
 
       const data = await readResponse(response);
+      if (isKioskMode) {
+        logKioskInteraction("assistant_response_received", {
+          answer_character_count: (data.answer || "").length,
+        }, activeId);
+      }
 
       setMessages((previous) => [
         ...previous,
@@ -726,8 +921,12 @@ function App() {
   }
 
   return (
-    <div className="app-layout">
-      <aside className="conversation-sidebar">
+    <div className={`app-layout ${isKioskMode ? "kiosk-mode" : ""}`}>
+      <aside
+        className={`conversation-sidebar ${
+          isKioskMode ? "kiosk-sidebar-hidden" : ""
+        }`}
+      >
         <div className="sidebar-header">
           <h2>ESIC Assistant</h2>
         </div>
@@ -785,6 +984,19 @@ function App() {
             </div>
           </div>
 
+          <button
+            type="button"
+            className="kiosk-toggle-button"
+            onClick={() => {
+              const nextMode = !isKioskMode;
+              setIsKioskMode(nextMode);
+              logKioskInteraction(nextMode ? "kiosk_mode_entered" : "kiosk_mode_exited", {}, currentConversationId);
+            }}
+            aria-pressed={isKioskMode}
+          >
+            {isKioskMode ? "Quitter le mode Borne" : "Mode Borne"}
+          </button>
+
           <div className="status">
             <span className="status-dot" />
             <span>En ligne</span>
@@ -792,17 +1004,85 @@ function App() {
         </header>
 
         <main className="chat-container">
-          <section className="welcome-section">
-            <div className="bot-avatar large">
-              <img src="/esic-logo.png" alt="ESIC" />
-            </div>
-            <h2>ESIC Assistant</h2>
-            <p>
-              Je suis l’assistant virtuel éducatif ESIC.
-              <br />
-              Posez-moi votre question pour commencer.
-            </p>
-          </section>
+          {isKioskMode ? (
+            <section className="kiosk-welcome">
+              <p className="kiosk-eyebrow">ACCUEIL ESIC</p>
+              <h2>Bienvenue sur votre campus</h2>
+              <p>
+                Que recherchez-vous ? Touchez une catégorie pour commencer.
+              </p>
+
+              <div className="kiosk-grid">
+                <button
+                  type="button"
+                  className="kiosk-card"
+                  onClick={() => {
+                    logKioskInteraction("kiosk_category_selected", { category: "library" }, currentConversationId);
+                    sendMessage(null, "Quels sont les horaires de la bibliothèque ?");
+                  }}
+                  disabled={loading}
+                >
+                  <span className="kiosk-card-icon">01</span>
+                  <strong>Bibliothèque</strong>
+                  <span>Horaires et services</span>
+                </button>
+
+                <button
+                  type="button"
+                  className="kiosk-card"
+                  onClick={() => {
+                    logKioskInteraction("kiosk_category_selected", { category: "training" }, currentConversationId);
+                    sendMessage(null, "Quelles formations sont proposées à l'ESIC ?");
+                  }}
+                  disabled={loading}
+                >
+                  <span className="kiosk-card-icon">02</span>
+                  <strong>Formations</strong>
+                  <span>Parcours et programmes</span>
+                </button>
+
+                <button
+                  type="button"
+                  className="kiosk-card"
+                  onClick={() => {
+                    logKioskInteraction("kiosk_category_selected", { category: "contacts" }, currentConversationId);
+                    sendMessage(null, "Comment contacter le service de scolarité ?");
+                  }}
+                  disabled={loading}
+                >
+                  <span className="kiosk-card-icon">03</span>
+                  <strong>Contacts</strong>
+                  <span>Services et assistance</span>
+                </button>
+
+                <button
+                  type="button"
+                  className="kiosk-card"
+                  onClick={() => {
+                    logKioskInteraction("kiosk_category_selected", { category: "campus_services" }, currentConversationId);
+                    sendMessage(null, "Quels services sont disponibles sur le campus ?");
+                  }}
+                  disabled={loading}
+                >
+                  <span className="kiosk-card-icon">04</span>
+                  <strong>Vie du campus</strong>
+                  <span>Services et informations pratiques</span>
+                </button>
+              </div>
+            </section>
+          ) : (
+            <section className="welcome-section">
+              <div className="bot-avatar large">
+                <img src="/esic-logo.png" alt="ESIC" />
+              </div>
+              <h2>ESIC Assistant</h2>
+              <p>
+                Je suis l’assistant virtuel éducatif ESIC.
+                <br />
+                Posez-moi votre question pour commencer.
+              </p>
+            </section>
+          )}
 
           {pageError && (
             <div className="feature-error page-error" role="alert">
@@ -901,6 +1181,17 @@ function App() {
                 aria-label="Votre question"
               />
               <button
+                type="button"
+                className={`voice-button ${isListening ? "is-listening" : ""}`}
+                onClick={toggleVoiceInput}
+                disabled={loading}
+                aria-label={isListening ? "Arrêter la dictée vocale" : "Dicter une question"}
+                aria-pressed={isListening}
+                title={isListening ? "Arrêter la dictée" : "Dicter une question"}
+              >
+                <span aria-hidden="true">{isListening ? "■" : "🎙"}</span>
+              </button>
+              <button
                 type="submit"
                 className="send-button"
                 disabled={!input.trim() || loading}
@@ -909,7 +1200,12 @@ function App() {
                 <span>➤</span>
               </button>
             </div>
-            <p className="input-hint">Appuyez sur Entrée pour envoyer</p>
+            <p className="input-hint">Appuyez sur Entrée pour envoyer ou sur le microphone pour dicter votre question.</p>
+            {speechMessage && (
+              <p className={`speech-status ${isListening ? "speech-status-active" : ""}`} role="status" aria-live="polite">
+                {speechMessage}
+              </p>
+            )}
           </form>
         </main>
 

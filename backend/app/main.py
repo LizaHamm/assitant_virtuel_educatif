@@ -34,6 +34,7 @@ from app.services.log_service import (
 from app.services.security_service import check_message_security
 from app.services.rate_limit_service import check_rate_limit
 
+from app.kiosk import router as kiosk_router
 
 # ============================================================
 # APPLICATION
@@ -44,6 +45,8 @@ app = FastAPI(
     version="1.1.0",
     description="Assistant Virtuel Éducatif - ESIC",
 )
+
+app.include_router(kiosk_router)
 
 app.add_middleware(
     CORSMiddleware,
