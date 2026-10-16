@@ -6,3 +6,4 @@ httpx
 pypd
 recharts
 email-validator>=2.0.0
+deep-translator>=1.11.4
