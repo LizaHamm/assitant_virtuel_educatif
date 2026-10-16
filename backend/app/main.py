@@ -18,7 +18,7 @@ from app.models.chat import (
     HistoryResponse,
 )
 from app.services.question_service import process_question
-from app.services.response_service import generate_response
+from app.services.bilingual_service import generate_response, translate_text
 from app.services.history_service import (
     create_conversation,
     get_conversations,
@@ -36,6 +36,9 @@ from app.services.security_service import check_message_security
 from app.services.rate_limit_service import check_rate_limit
 
 from app.kiosk import router as kiosk_router
+from app.notifications import router as notifications_router
+from app.proactive import router as proactive_router
+from app.sso import router as sso_router
 
 from collections import Counter
 from datetime import timedelta 
@@ -52,6 +55,9 @@ app = FastAPI(
 )
 
 app.include_router(kiosk_router)
+app.include_router(notifications_router)
+app.include_router(proactive_router)
+app.include_router(sso_router)
 
 app.add_middleware(
     CORSMiddleware,
@@ -277,31 +283,36 @@ def get_one_conversation(conversation_id: str):
     if conversation is None:
         raise HTTPException(
             status_code=404,
-            detail="Conversation introuvable.",
+            detail=("Conversation not found." if request.language == "en" else "Conversation introuvable."),
         )
 
     return conversation
 
 
 # ============================================================
-# US-001 / US-011 / US-012 / US-013 — CHAT
+# US-001 / US-011 / US-012 / US-013 / US-032 — CHAT
 # ============================================================
 
+class Epic8ChatRequest(ChatRequest):
+    # Langue envoyée par le frontend. La génération doit ensuite respecter ce choix.
+    language: str = Field(default="fr", pattern="^(fr|en)$")
+
+
 @app.post("/api/chat", response_model=ChatResponse)
-def chat(request: ChatRequest):
+def chat(request: Epic8ChatRequest):
     conversation_id = request.conversation_id
     message = request.message.strip()
 
     if not message:
         raise HTTPException(
             status_code=422,
-            detail="Le message ne peut pas être vide.",
+            detail=("Message cannot be empty." if request.language == "en" else "Le message ne peut pas être vide."),
         )
 
     if get_conversation(conversation_id) is None:
         raise HTTPException(
             status_code=404,
-            detail="Conversation introuvable.",
+            detail=("Conversation not found." if request.language == "en" else "Conversation introuvable."),
         )
 
     # US-013 — Rate limiting
@@ -317,8 +328,9 @@ def chat(request: ChatRequest):
         raise HTTPException(
             status_code=429,
             detail=(
-                "Trop de questions envoyées. "
-                "Veuillez patienter une minute avant de continuer."
+                "Too many questions. Please wait one minute before trying again."
+                if request.language == "en" else
+                "Trop de questions envoyées. Veuillez patienter une minute avant de continuer."
             ),
         )
 
@@ -335,9 +347,9 @@ def chat(request: ChatRequest):
         raise HTTPException(
             status_code=400,
             detail=(
-                "Votre message a été bloqué car il contient "
-                "une instruction potentiellement dangereuse "
-                "ou non autorisée."
+                "Your message was blocked because it contains a potentially unsafe or unauthorized instruction."
+                if request.language == "en" else
+                "Votre message a été bloqué car il contient une instruction potentiellement dangereuse ou non autorisée."
             ),
         )
 
@@ -349,14 +361,32 @@ def chat(request: ChatRequest):
 
     # Les corrections validées et connaissances personnalisées
     # sont consultées avant le moteur de réponse habituel.
-    custom_answer = find_custom_answer(message)
+    # Les questions anglaises sont traduites pour retrouver les connaissances
+    # stockées en français. La réponse complète est ensuite traduite si besoin.
+    lookup_question = message
+    if request.language == "en":
+        try:
+            lookup_question = translate_text(message, target="fr", source="auto")
+        except Exception:
+            lookup_question = message
+
+    custom_answer = find_custom_answer(lookup_question)
 
     if custom_answer:
-        question = message
-        answer = custom_answer
+        question = lookup_question
+        if request.language == "en":
+            try:
+                answer = translate_text(custom_answer, target="en", source="auto")
+            except Exception:
+                answer = (
+                    "I couldn't translate this saved answer right now. "
+                    "Please try again or switch to French."
+                )
+        else:
+            answer = custom_answer
     else:
-        question = process_question(message)
-        answer = generate_response(question)
+        question = process_question(lookup_question)
+        answer = generate_response(question, language=request.language)
 
     # Historique
     add_message(
@@ -385,7 +415,7 @@ def history(conversation_id: str):
     if get_conversation(conversation_id) is None:
         raise HTTPException(
             status_code=404,
-            detail="Conversation introuvable.",
+            detail=("Conversation not found." if request.language == "en" else "Conversation introuvable."),
         )
 
     return HistoryResponse(
@@ -551,7 +581,7 @@ def submit_feedback(request: FeedbackRequest):
     if get_conversation(request.conversation_id) is None:
         raise HTTPException(
             status_code=404,
-            detail="Conversation introuvable.",
+            detail=("Conversation not found." if request.language == "en" else "Conversation introuvable."),
         )
 
     with get_db() as db:
@@ -755,7 +785,7 @@ def create_escalation(request: EscalationRequest):
     if get_conversation(request.conversation_id) is None:
         raise HTTPException(
             status_code=404,
-            detail="Conversation introuvable.",
+            detail=("Conversation not found." if request.language == "en" else "Conversation introuvable."),
         )
 
     with get_db() as db:

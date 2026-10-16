@@ -26,6 +26,22 @@ const SUGGESTIONS = [
   "Quelles sont les dates importantes ?",
 ];
 
+const UI_TEXT = {
+  fr: { subtitle: "Assistant virtuel éducatif", online: "En ligne", newChat: "+ Nouvelle conversation", history: "Historique", noHistory: "Aucune conversation", admin: "Administration", kiosk: "Mode Borne", exitKiosk: "Quitter le mode Borne", welcome: "Je suis l’assistant virtuel éducatif ESIC.", welcomePrompt: "Posez-moi votre question pour commencer.", suggestions: "Questions fréquentes", placeholder: "Écrivez votre question...", inputHint: "Appuyez sur Entrée pour envoyer ou sur le microphone pour dicter votre question.", user: "Vous", language: "Langue", emptyAnswer: "Je n'ai pas reçu de réponse du serveur." },
+  en: { subtitle: "Educational virtual assistant", online: "Online", newChat: "+ New conversation", history: "History", noHistory: "No conversations yet", admin: "Administration", kiosk: "Kiosk mode", exitKiosk: "Exit kiosk mode", welcome: "I’m the ESIC educational virtual assistant.", welcomePrompt: "Ask me a question to get started.", suggestions: "Frequently asked questions", placeholder: "Type your question...", inputHint: "Press Enter to send or use the microphone to dictate your question.", user: "You", language: "Language", emptyAnswer: "I did not receive a response from the server." }
+};
+
+const SUGGESTIONS_EN = [
+  "What are the library opening hours?",
+  "How can I contact the student office?",
+  "What are the campus rules?",
+  "What are the penalties for cheating?",
+  "When are the exams?",
+  "When are the holidays?",
+  "When are the resit exams?",
+  "What are the important dates?",
+];
+
 function currentTime() {
   return new Date().toLocaleTimeString("fr-FR", {
     hour: "2-digit",
@@ -43,24 +59,21 @@ async function readResponse(response) {
   return data;
 }
 
-// US-030 — identifiant pseudonyme de la borne.
+// US-030 — identifiant pseudonyme de la borne et journalisation centralisée.
 function getKioskId() {
   const storageKey = "esicKioskId";
   let kioskId = localStorage.getItem(storageKey);
-
   if (!kioskId) {
-    kioskId =
-      typeof crypto !== "undefined" && crypto.randomUUID
-        ? crypto.randomUUID()
-        : `kiosk-${Date.now()}-${Math.random().toString(36).slice(2, 10)}`;
-
+    kioskId = typeof crypto !== "undefined" && crypto.randomUUID
+      ? crypto.randomUUID()
+      : `kiosk-${Date.now()}-${Math.random().toString(36).slice(2, 10)}`;
     localStorage.setItem(storageKey, kioskId);
   }
-
   return kioskId;
 }
 
 function logKioskInteraction(eventType, details = {}, conversationId = null) {
+  // La journalisation ne doit jamais bloquer l'envoi d'une question au chatbot.
   fetch(`${API_URL}/api/kiosk/interactions`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
@@ -77,7 +90,7 @@ function logKioskInteraction(eventType, details = {}, conversationId = null) {
   });
 }
 
-function ResponseFeedback({ conversationId, question, answer }) {
+function ResponseFeedback({ conversationId, question, answer, language = "fr" }) {
   const [rating, setRating] = useState(0);
   const [comment, setComment] = useState("");
   const [sending, setSending] = useState(false);
@@ -89,7 +102,7 @@ function ResponseFeedback({ conversationId, question, answer }) {
     setError("");
 
     if (!rating) {
-      setError("Choisissez une note de 1 à 5.");
+      setError(language === "en" ? "Choose a rating from 1 to 5." : "Choisissez une note de 1 à 5.");
       return;
     }
 
@@ -119,12 +132,12 @@ function ResponseFeedback({ conversationId, question, answer }) {
   }
 
   if (submitted) {
-    return <p className="feature-success">Merci pour votre évaluation.</p>;
+    return <p className="feature-success">{language === "en" ? "Thank you for your feedback." : "Merci pour votre évaluation."}</p>;
   }
 
   return (
     <form className="feature-panel feedback-panel" onSubmit={submit}>
-      <p className="feature-title">Cette réponse vous a-t-elle aidé ?</p>
+      <p className="feature-title">{language === "en" ? "Was this answer helpful?" : "Cette réponse vous a-t-elle aidé ?"}</p>
 
       <div className="rating-buttons">
         {[1, 2, 3, 4, 5].map((value) => (
@@ -144,7 +157,7 @@ function ResponseFeedback({ conversationId, question, answer }) {
       <textarea
         value={comment}
         onChange={(event) => setComment(event.target.value)}
-        placeholder="Commentaire facultatif"
+        placeholder={language === "en" ? "Optional comment" : "Commentaire facultatif"}
         maxLength={1000}
         rows={2}
       />
@@ -152,13 +165,13 @@ function ResponseFeedback({ conversationId, question, answer }) {
       {error && <p className="feature-error">{error}</p>}
 
       <button type="submit" disabled={sending || rating === 0}>
-        {sending ? "Envoi..." : "Envoyer l'évaluation"}
+        {sending ? (language === "en" ? "Sending..." : "Envoi...") : (language === "en" ? "Submit feedback" : "Envoyer l'évaluation")}
       </button>
     </form>
   );
 }
 
-function MessageActions({ conversationId, question, answer }) {
+function MessageActions({ conversationId, question, answer, language = "fr" }) {
   const [mode, setMode] = useState("");
   const [correctedAnswer, setCorrectedAnswer] = useState("");
   const [reason, setReason] = useState("");
@@ -185,7 +198,7 @@ function MessageActions({ conversationId, question, answer }) {
         })
       );
 
-      setStatus("Correction transmise pour validation.");
+      setStatus(language === "en" ? "Correction submitted for review." : "Correction transmise pour validation.");
       setMode("");
       setCorrectedAnswer("");
     } catch (err) {
@@ -214,7 +227,7 @@ function MessageActions({ conversationId, question, answer }) {
         })
       );
 
-      setStatus("Votre demande a été enregistrée pour l'équipe ESIC.");
+      setStatus(language === "en" ? "Your request has been sent to the ESIC team." : "Votre demande a été enregistrée pour l'équipe ESIC.");
       setMode("");
       setReason("");
     } catch (err) {
@@ -227,60 +240,47 @@ function MessageActions({ conversationId, question, answer }) {
   return (
     <div className="message-actions">
       <div className="message-action-buttons">
-        <button
-          type="button"
-          onClick={() =>
-            setMode(mode === "correction" ? "" : "correction")
-          }
-        >
-          Signaler une réponse incorrecte
+        <button type="button" onClick={() => setMode(mode === "correction" ? "" : "correction")}>
+          {language === "en" ? "Report an incorrect answer" : "Signaler une réponse incorrecte"}
         </button>
-
-        <button
-          type="button"
-          onClick={() =>
-            setMode(mode === "escalation" ? "" : "escalation")
-          }
-        >
-          Demander une aide humaine
+        <button type="button" onClick={() => setMode(mode === "escalation" ? "" : "escalation")}>
+          {language === "en" ? "Request human assistance" : "Demander une aide humaine"}
         </button>
       </div>
 
       {mode === "correction" && (
         <form className="feature-panel" onSubmit={submitCorrection}>
-          <p className="feature-title">Proposer une correction</p>
-          <p className="feature-muted">Question : {question}</p>
-          <p className="feature-muted">Réponse actuelle : {answer}</p>
+          <p className="feature-title">{language === "en" ? "Suggest a correction" : "Proposer une correction"}</p>
+          <p className="feature-muted">{language === "en" ? "Question:" : "Question :"} {question}</p>
+          <p className="feature-muted">{language === "en" ? "Current answer:" : "Réponse actuelle :"} {answer}</p>
 
           <textarea
             value={correctedAnswer}
             onChange={(event) => setCorrectedAnswer(event.target.value)}
-            placeholder="Saisissez la réponse corrigée"
+            placeholder={language === "en" ? "Enter the corrected answer" : "Saisissez la réponse corrigée"}
             maxLength={5000}
             required
             rows={4}
           />
 
           <button type="submit" disabled={sending || !correctedAnswer.trim()}>
-            {sending ? "Envoi..." : "Envoyer la correction"}
+            {sending ? (language === "en" ? "Sending..." : "Envoi...") : (language === "en" ? "Submit correction" : "Envoyer la correction")}
           </button>
         </form>
       )}
 
       {mode === "escalation" && (
         <form className="feature-panel" onSubmit={submitEscalation}>
-          <p className="feature-title">Demander une prise en charge</p>
-
+          <p className="feature-title">{language === "en" ? "Request assistance" : "Demander une prise en charge"}</p>
           <textarea
             value={reason}
             onChange={(event) => setReason(event.target.value)}
-            placeholder="Expliquez pourquoi vous avez besoin d'aide (facultatif)"
+            placeholder={language === "en" ? "Explain why you need help (optional)" : "Expliquez pourquoi vous avez besoin d'aide (facultatif)"}
             maxLength={1000}
             rows={3}
           />
-
           <button type="submit" disabled={sending}>
-            {sending ? "Envoi..." : "Envoyer la demande"}
+            {sending ? (language === "en" ? "Sending..." : "Envoi...") : (language === "en" ? "Send request" : "Envoyer la demande")}
           </button>
         </form>
       )}
@@ -291,7 +291,7 @@ function MessageActions({ conversationId, question, answer }) {
   );
 }
 
-function AdminPanel({ onClose }) {
+function AdminPanel({ onClose, language = "fr" }) {
   const [token, setToken] = useState("");
   const [authenticated, setAuthenticated] = useState(false);
   const [question, setQuestion] = useState("");
@@ -328,19 +328,14 @@ function AdminPanel({ onClose }) {
     setBusy(true);
 
     try {
-      const [
-        correctionData,
-        escalationData,
-        knowledgeData,
-        statsData,
-        kioskData,
-      ] = await Promise.all([
-        adminFetch("/api/admin/corrections?status=pending"),
-        adminFetch("/api/admin/escalations?status=pending"),
-        adminFetch("/api/admin/knowledge"),
-        adminFetch("/api/feedback/statistics"),
-        adminFetch("/api/kiosk/status"),
-      ]);
+      const [correctionData, escalationData, knowledgeData, statsData, kioskData] =
+        await Promise.all([
+          adminFetch("/api/admin/corrections?status=pending"),
+          adminFetch("/api/admin/escalations?status=pending"),
+          adminFetch("/api/admin/knowledge"),
+          adminFetch("/api/feedback/statistics"),
+          adminFetch("/api/kiosk/status"),
+        ]);
 
       setCorrections(correctionData.corrections || []);
       setEscalations(escalationData.escalations || []);
@@ -419,8 +414,8 @@ function AdminPanel({ onClose }) {
     <div className="admin-overlay">
       <section className="admin-panel">
         <div className="admin-header">
-          <h2>Administration ESIC</h2>
-          <button type="button" onClick={onClose}>Fermer</button>
+          <h2>{language === "en" ? "ESIC Administration" : "Administration ESIC"}</h2>
+          <button type="button" onClick={onClose}>{language === "en" ? "Close" : "Fermer"}</button>
         </div>
 
         {!authenticated && (
@@ -431,7 +426,7 @@ function AdminPanel({ onClose }) {
               refreshAdminData();
             }}
           >
-            <label htmlFor="admin-token">Jeton administrateur</label>
+            <label htmlFor="admin-token">{language === "en" ? "Administrator token" : "Jeton administrateur"}</label>
             <input
               id="admin-token"
               type="password"
@@ -440,9 +435,8 @@ function AdminPanel({ onClose }) {
               autoComplete="current-password"
               required
             />
-
             <button type="submit" disabled={busy || !token}>
-              {busy ? "Connexion..." : "Ouvrir l'administration"}
+              {busy ? (language === "en" ? "Signing in..." : "Connexion...") : (language === "en" ? "Open administration" : "Ouvrir l'administration")}
             </button>
           </form>
         )}
@@ -455,57 +449,33 @@ function AdminPanel({ onClose }) {
             <div className="feature-panel kiosk-monitor-panel">
               <div className="kiosk-monitor-heading">
                 <div>
-                  <h3>US-031 — État des bornes</h3>
-                  <p>Statut calculé à partir du dernier signal reçu.</p>
+                  <h3>US-031 — {language === "en" ? "Kiosk status" : "État des bornes"}</h3>
+                  <p>{language === "en" ? "Status based on the latest heartbeat." : "Statut calculé à partir du dernier signal reçu."}</p>
                 </div>
-                <button
-                  type="button"
-                  onClick={refreshAdminData}
-                  disabled={busy}
-                >
-                  {busy ? "Actualisation…" : "Actualiser"}
+                <button type="button" onClick={refreshAdminData} disabled={busy}>
+                  {busy ? (language === "en" ? "Refreshing…" : "Actualisation…") : (language === "en" ? "Refresh" : "Actualiser")}
                 </button>
               </div>
-
               <p className="kiosk-monitor-updated">
-                Dernière actualisation :{" "}
-                {kioskStatusUpdatedAt
-                  ? kioskStatusUpdatedAt.toLocaleTimeString("fr-FR")
+                Dernière actualisation : {kioskStatusUpdatedAt
+                  ? kioskStatusUpdatedAt.toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit", second: "2-digit" })
                   : "pas encore actualisé"}
               </p>
-
               {kioskStatuses.length === 0 ? (
-                <p>
-                  Aucune borne n’a encore envoyé de signal. Ouvre l’application
-                  dans le navigateur de la borne.
-                </p>
+                <p>Aucune borne n’a encore envoyé de signal. Ouvre l’application dans le navigateur de la borne.</p>
               ) : (
                 <div className="kiosk-status-list">
                   {kioskStatuses.map((kiosk) => (
                     <div className="kiosk-status-item" key={kiosk.kiosk_id}>
                       <div className="kiosk-status-main">
-                        <span
-                          className={`kiosk-status-dot ${
-                            kiosk.status === "online" ? "online" : "offline"
-                          }`}
-                        />
+                        <span className={`kiosk-status-dot ${kiosk.status === "online" ? "online" : "offline"}`} />
                         <div>
                           <strong>Borne {kiosk.kiosk_id.slice(0, 8)}</strong>
-                          <span className="kiosk-status-label">
-                            {kiosk.status === "online"
-                              ? "En ligne"
-                              : "Hors ligne"}
-                          </span>
+                          <span className="kiosk-status-label">{kiosk.status === "online" ? "En ligne" : "Hors ligne"}</span>
                         </div>
                       </div>
-
                       <div className="kiosk-status-meta">
-                        <span>
-                          Dernier signal :{" "}
-                          {kiosk.last_seen
-                            ? new Date(kiosk.last_seen).toLocaleString("fr-FR")
-                            : "inconnu"}
-                        </span>
+                        <span>Dernier signal : {kiosk.last_seen ? new Date(kiosk.last_seen).toLocaleString("fr-FR") : "inconnu"}</span>
                         <span>{kiosk.interactions_count} interaction(s)</span>
                       </div>
                     </div>
@@ -515,26 +485,25 @@ function AdminPanel({ onClose }) {
             </div>
 
             <div className="feature-panel">
-              <h3>US-024 — Évaluations</h3>
-              <p>Nombre d'évaluations : {statistics?.total ?? 0}</p>
+              <h3>US-024 — {language === "en" ? "Feedback" : "Évaluations"}</h3>
+              <p>{language === "en" ? "Number of ratings:" : "Nombre d'évaluations :"} {statistics?.total ?? 0}</p>
               <p>
-                Note moyenne :{" "}
+                {language === "en" ? "Average rating:" : "Note moyenne :"}{" "}
                 {statistics?.average_rating == null
-                  ? "Aucune note"
+                  ? (language === "en" ? "No ratings" : "Aucune note")
                   : `${statistics.average_rating} / 5`}
               </p>
               <p>
-                Répartition :{" "}
+                {language === "en" ? "Breakdown:" : "Répartition :"}{" "}
                 {(statistics?.distribution || [])
                   .map((item) => `${item.rating}★ : ${item.count}`)
-                  .join(" · ") || "Aucune évaluation"}
+                  .join(" · ") || (language === "en" ? "No feedback" : "Aucune évaluation")}
               </p>
             </div>
 
             <form className="feature-panel" onSubmit={addKnowledge}>
-              <h3>US-025 — Ajouter une connaissance</h3>
-
-              <label htmlFor="knowledge-question">Question</label>
+              <h3>US-025 — {language === "en" ? "Add knowledge" : "Ajouter une connaissance"}</h3>
+              <label htmlFor="knowledge-question">{language === "en" ? "Question" : "Question"}</label>
               <input
                 id="knowledge-question"
                 value={question}
@@ -544,7 +513,7 @@ function AdminPanel({ onClose }) {
                 required
               />
 
-              <label htmlFor="knowledge-answer">Réponse</label>
+              <label htmlFor="knowledge-answer">{language === "en" ? "Answer" : "Réponse"}</label>
               <textarea
                 id="knowledge-answer"
                 value={answer}
@@ -554,7 +523,7 @@ function AdminPanel({ onClose }) {
                 rows={4}
               />
 
-              <label htmlFor="knowledge-category">Catégorie</label>
+              <label htmlFor="knowledge-category">{language === "en" ? "Category" : "Catégorie"}</label>
               <input
                 id="knowledge-category"
                 value={category}
@@ -565,36 +534,26 @@ function AdminPanel({ onClose }) {
               <button type="submit" disabled={busy}>
                 Ajouter à la base de connaissances
               </button>
-
               <p className="feature-muted">
                 Connaissances enregistrées : {knowledge.length}
               </p>
             </form>
 
             <div className="feature-panel">
-              <h3>US-026 — Corrections à valider</h3>
-              {corrections.length === 0 && (
-                <p>Aucune correction en attente.</p>
-              )}
+              <h3>US-026 — {language === "en" ? "Corrections to review" : "Corrections à valider"}</h3>
+              {corrections.length === 0 && <p>{language === "en" ? "No pending corrections." : "Aucune correction en attente."}</p>}
 
               {corrections.map((item) => (
                 <article className="admin-item" key={item.id}>
-                  <p><strong>Question :</strong> {item.question}</p>
-                  <p><strong>Réponse actuelle :</strong> {item.incorrect_answer}</p>
-                  <p><strong>Correction proposée :</strong> {item.corrected_answer}</p>
-
+                  <p><strong>{language === "en" ? "Question:" : "Question :"}</strong> {item.question}</p>
+                  <p><strong>{language === "en" ? "Current answer:" : "Réponse actuelle :"}</strong> {item.incorrect_answer}</p>
+                  <p><strong>{language === "en" ? "Suggested correction:" : "Correction proposée :"}</strong> {item.corrected_answer}</p>
                   <div className="admin-actions">
-                    <button
-                      type="button"
-                      onClick={() => reviewCorrection(item.id, "approved")}
-                    >
-                      Approuver
+                    <button type="button" onClick={() => reviewCorrection(item.id, "approved")}>
+                      {language === "en" ? "Approve" : "Approuver"}
                     </button>
-                    <button
-                      type="button"
-                      onClick={() => reviewCorrection(item.id, "rejected")}
-                    >
-                      Rejeter
+                    <button type="button" onClick={() => reviewCorrection(item.id, "rejected")}>
+                      {language === "en" ? "Reject" : "Rejeter"}
                     </button>
                   </div>
                 </article>
@@ -602,40 +561,27 @@ function AdminPanel({ onClose }) {
             </div>
 
             <div className="feature-panel">
-              <h3>US-027 — Demandes d'aide humaine</h3>
-              {escalations.length === 0 && (
-                <p>Aucune demande en attente.</p>
-              )}
+              <h3>US-027 — {language === "en" ? "Human assistance requests" : "Demandes d'aide humaine"}</h3>
+              {escalations.length === 0 && <p>{language === "en" ? "No pending requests." : "Aucune demande en attente."}</p>}
 
               {escalations.map((item) => (
                 <article className="admin-item" key={item.id}>
-                  <p><strong>Question :</strong> {item.question}</p>
-                  <p><strong>Motif :</strong> {item.reason || "Non précisé"}</p>
-                  <p><strong>Conversation :</strong> {item.conversation_id}</p>
-
+                  <p><strong>{language === "en" ? "Question:" : "Question :"}</strong> {item.question}</p>
+                  <p><strong>{language === "en" ? "Reason:" : "Motif :"}</strong> {item.reason || (language === "en" ? "Not specified" : "Non précisé")}</p>
+                  <p><strong>{language === "en" ? "Conversation:" : "Conversation :"}</strong> {item.conversation_id}</p>
                   <div className="admin-actions">
-                    <button
-                      type="button"
-                      onClick={() => reviewEscalation(item.id, "handled")}
-                    >
-                      Marquer comme traitée
+                    <button type="button" onClick={() => reviewEscalation(item.id, "handled")}>
+                      {language === "en" ? "Mark as handled" : "Marquer comme traitée"}
                     </button>
-                    <button
-                      type="button"
-                      onClick={() => reviewEscalation(item.id, "rejected")}
-                    >
-                      Rejeter
+                    <button type="button" onClick={() => reviewEscalation(item.id, "rejected")}>
+                      {language === "en" ? "Reject" : "Rejeter"}
                     </button>
                   </div>
                 </article>
               ))}
             </div>
 
-            <button
-              type="button"
-              onClick={refreshAdminData}
-              disabled={busy}
-            >
+            <button type="button" onClick={refreshAdminData} disabled={busy}>
               Actualiser les données
             </button>
           </>
@@ -652,44 +598,156 @@ function App() {
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
   const [adminOpen, setAdminOpen] = useState(false);
+  const [currentView, setCurrentView] = useState("chat");
+  const [sidebarOpen, setSidebarOpen] = useState(() => typeof window !== "undefined" && window.innerWidth > 768);
   const [pageError, setPageError] = useState("");
   const [isKioskMode, setIsKioskMode] = useState(false);
   const [isListening, setIsListening] = useState(false);
   const [speechSupported, setSpeechSupported] = useState(true);
   const [speechMessage, setSpeechMessage] = useState("");
-  const [currentView, setCurrentView] = useState("chat");
-
+  const [language, setLanguage] = useState(() => localStorage.getItem("esicLanguage") || "fr");
   const recognitionRef = useRef(null);
+  const ui = UI_TEXT[language] || UI_TEXT.fr;
+  // Epic 8 — notifications, simulation SSO ENT et informations contextuelles.
+  const [advancedInfo, setAdvancedInfo] = useState([]);
+  const [notificationStatus, setNotificationStatus] = useState("unsupported");
+  const [notificationMessage, setNotificationMessage] = useState("");
+  const [ssoUser, setSsoUser] = useState(() => {
+    try { return JSON.parse(localStorage.getItem("esicDemoSsoUser") || "null"); } catch { return null; }
+  });
+  const [ssoOpen, setSsoOpen] = useState(false);
+  const [ssoName, setSsoName] = useState("");
+  const [ssoEmail, setSsoEmail] = useState("");
+  const [ssoMessage, setSsoMessage] = useState("");
+  const [pushSubscription, setPushSubscription] = useState(null);
+
+  useEffect(() => {
+    localStorage.setItem("esicLanguage", language);
+  }, [language]);
+
+  useEffect(() => {
+    // Keep the untouched welcome screen aligned with the selected language.
+    setMessages((previous) => {
+      if (previous.length === 1 && previous[0]?.id === "welcome") {
+        return [{ ...previous[0], text: language === "en"
+          ? "Hello! I’m the ESIC educational virtual assistant. How can I help you?"
+          : "Bonjour ! Je suis l'assistant virtuel éducatif ESIC. Comment puis-je vous aider ?" }];
+      }
+      return previous;
+    });
+    refreshProactiveInfo();
+    refreshNotifications();
+  }, [language]);
 
   useEffect(() => {
     loadConversations();
+    refreshProactiveInfo();
+    refreshNotifications();
+    const timer = window.setInterval(() => {
+      refreshProactiveInfo();
+      refreshNotifications();
+    }, 60000);
+    return () => window.clearInterval(timer);
   }, []);
 
-  // US-031 — signal périodique de présence de la borne.
+  async function refreshProactiveInfo() {
+    try {
+      const response = await fetch(`${API_URL}/api/proactive/info?language=${language}`);
+      if (!response.ok) return;
+      const data = await response.json();
+      setAdvancedInfo(Array.isArray(data.items) ? data.items : []);
+    } catch (error) {
+      console.warn("Informations contextuelles indisponibles :", error);
+    }
+  }
+
+  async function refreshNotifications() {
+    try {
+      const response = await fetch(`${API_URL}/api/notifications?language=${language}`);
+      if (!response.ok) return;
+      const data = await response.json();
+      const items = Array.isArray(data.items) ? data.items : [];
+      const seenKey = "esicSeenNotificationIds";
+      const seen = new Set(JSON.parse(localStorage.getItem(seenKey) || "[]"));
+      if ("Notification" in window && Notification.permission === "granted") {
+        items.filter((item) => !seen.has(String(item.id))).forEach((item) => {
+          try { new Notification(item.title || "ESIC", { body: item.body || "Nouvelle information ESIC", tag: String(item.id) }); } catch {}
+          seen.add(String(item.id));
+        });
+        localStorage.setItem(seenKey, JSON.stringify([...seen].slice(-100)));
+      }
+      setNotificationStatus("ready");
+    } catch (error) {
+      console.warn("Notifications indisponibles :", error);
+    }
+  }
+
+  async function enableNotifications() {
+    setNotificationMessage("");
+    if (!("Notification" in window)) {
+      setNotificationStatus("unsupported");
+      setNotificationMessage("Ce navigateur ne prend pas en charge les notifications.");
+      return;
+    }
+    try {
+      const permission = await Notification.requestPermission();
+      if (permission !== "granted") {
+        setNotificationStatus(permission);
+        setNotificationMessage("Autorisation refusée. Vous pouvez l'activer dans les paramètres du navigateur.");
+        return;
+      }
+      setNotificationStatus("granted");
+      setNotificationMessage("Notifications du navigateur activées pendant que l'application fonctionne.");
+      new Notification("ESIC Assistant", { body: "Les notifications sont activées." });
+      await refreshNotifications();
+    } catch {
+      setNotificationMessage("Impossible d'activer les notifications sur cet appareil.");
+    }
+  }
+
+  async function demoSsoLogin(event) {
+    event.preventDefault();
+    setSsoMessage("");
+    try {
+      const response = await fetch(`${API_URL}/api/sso/demo-login`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name: ssoName.trim(), email: ssoEmail.trim() }),
+      });
+      const data = await readResponse(response);
+      const user = data.user;
+      localStorage.setItem("esicDemoSsoUser", JSON.stringify(user));
+      setSsoUser(user);
+      setSsoOpen(false);
+      setSsoMessage(`Connecté en mode démonstration : ${user.name}`);
+    } catch (error) {
+      setSsoMessage(error.message || "Connexion de démonstration impossible.");
+    }
+  }
+
+  function demoSsoLogout() {
+    localStorage.removeItem("esicDemoSsoUser");
+    setSsoUser(null);
+    setSsoMessage("Session de démonstration fermée.");
+  }
+
+  // US-031 — signal périodique pour que l'administration sache si cette borne répond.
   useEffect(() => {
     const sendHeartbeat = () => {
       fetch(`${API_URL}/api/kiosk/heartbeat`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         keepalive: true,
-        body: JSON.stringify({
-          kiosk_id: getKioskId(),
-          mode: isKioskMode ? "kiosk" : "web",
-        }),
-      }).catch((error) =>
-        console.warn("Signal de borne indisponible :", error)
-      );
+        body: JSON.stringify({ kiosk_id: getKioskId(), mode: isKioskMode ? "kiosk" : "web" }),
+      }).catch((error) => console.warn("Signal de borne indisponible :", error));
     };
 
     sendHeartbeat();
     const heartbeatTimer = window.setInterval(sendHeartbeat, 20000);
-
     const onVisibilityChange = () => {
       if (document.visibilityState === "visible") sendHeartbeat();
     };
-
     document.addEventListener("visibilitychange", onVisibilityChange);
-
     return () => {
       window.clearInterval(heartbeatTimer);
       document.removeEventListener("visibilitychange", onVisibilityChange);
@@ -697,16 +755,14 @@ function App() {
   }, [isKioskMode]);
 
   useEffect(() => {
-    const SpeechRecognition =
-      window.SpeechRecognition || window.webkitSpeechRecognition;
-
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
     if (!SpeechRecognition) {
       setSpeechSupported(false);
       return undefined;
     }
 
     const recognition = new SpeechRecognition();
-    recognition.lang = "fr-FR";
+    recognition.lang = language === "en" ? "en-US" : "fr-FR";
     recognition.continuous = false;
     recognition.interimResults = true;
     recognition.maxAlternatives = 1;
@@ -718,49 +774,35 @@ function App() {
 
     recognition.onresult = (event) => {
       let transcript = "";
-
       for (let index = event.resultIndex; index < event.results.length; index += 1) {
         transcript += event.results[index][0].transcript;
       }
-
       if (transcript.trim()) {
         setInput(transcript.trim());
-        logKioskInteraction(
-          "voice_transcription",
-          { character_count: transcript.trim().length },
-          currentConversationId
-        );
+        logKioskInteraction("voice_transcription", { character_count: transcript.trim().length }, currentConversationId);
       }
     };
 
     recognition.onerror = (event) => {
       setIsListening(false);
-
-      const errorMessages = {
+      const messages = {
         "not-allowed": "L'accès au microphone est refusé. Autorisez-le dans les paramètres du navigateur.",
         "service-not-allowed": "La reconnaissance vocale n'est pas autorisée par le navigateur.",
-        "no-speech": "Aucune parole détectée. Réessayez après avoir activé le micro.",
+        "no-speech": "Aucune parole détectée. Réessayez en parlant après avoir activé le micro.",
         "audio-capture": "Aucun microphone n'a été détecté.",
         network: "La reconnaissance vocale nécessite une connexion réseau dans ce navigateur.",
       };
-
-      setSpeechMessage(
-        errorMessages[event.error] ||
-          "La reconnaissance vocale a rencontré une erreur. Réessayez."
-      );
+      setSpeechMessage(messages[event.error] || "La reconnaissance vocale a rencontré une erreur. Réessayez.");
     };
 
     recognition.onend = () => {
       setIsListening(false);
-      setSpeechMessage((current) =>
-        current === "Je vous écoute… Parlez maintenant."
-          ? "Dictée terminée. Vous pouvez modifier le texte puis l'envoyer."
-          : current
-      );
+      setSpeechMessage((current) => current === "Je vous écoute… Parlez maintenant."
+        ? "Dictée terminée. Vous pouvez modifier le texte puis l'envoyer."
+        : current);
     };
 
     recognitionRef.current = recognition;
-
     return () => {
       recognition.onstart = null;
       recognition.onresult = null;
@@ -769,40 +811,27 @@ function App() {
       recognition.stop();
       recognitionRef.current = null;
     };
-  }, []);
+  }, [language]);
 
   function toggleVoiceInput() {
     setSpeechMessage("");
-
     if (!speechSupported || !recognitionRef.current) {
-      setSpeechMessage(
-        "La reconnaissance vocale n'est pas prise en charge par ce navigateur. Essayez Chrome ou Edge."
-      );
+      setSpeechMessage("La reconnaissance vocale n'est pas prise en charge par ce navigateur. Essayez Chrome ou Edge.");
       return;
     }
 
     if (isListening) {
-      logKioskInteraction(
-        "voice_listening_stopped",
-        {},
-        currentConversationId
-      );
+      logKioskInteraction("voice_listening_stopped", {}, currentConversationId);
       recognitionRef.current.stop();
       setIsListening(false);
       return;
     }
 
     try {
-      logKioskInteraction(
-        "voice_listening_started",
-        {},
-        currentConversationId
-      );
+      logKioskInteraction("voice_listening_started", {}, currentConversationId);
       recognitionRef.current.start();
-    } catch {
-      setSpeechMessage(
-        "Impossible de démarrer le microphone. Attendez un instant puis réessayez."
-      );
+    } catch (error) {
+      setSpeechMessage("Impossible de démarrer le microphone. Attendez un instant puis réessayez.");
     }
   }
 
@@ -866,9 +895,7 @@ function App() {
           }))
         : [];
 
-      setMessages(
-        loadedMessages.length ? loadedMessages : [WELCOME_MESSAGE]
-      );
+      setMessages(loadedMessages.length ? loadedMessages : [WELCOME_MESSAGE]);
       setInput("");
       setPageError("");
       return true;
@@ -893,15 +920,12 @@ function App() {
 
       setCurrentConversationId(conversation.id);
       localStorage.setItem("currentConversationId", conversation.id);
-
-      setMessages([
-        {
-          ...WELCOME_MESSAGE,
-          id: `welcome-${Date.now()}`,
-          time: currentTime(),
-        },
-      ]);
-
+      setMessages([{
+        ...WELCOME_MESSAGE,
+        text: language === "en" ? "Hello! I’m the ESIC educational virtual assistant. How can I help you?" : WELCOME_MESSAGE.text,
+        id: `welcome-${Date.now()}`,
+        time: currentTime(),
+      }]);
       setInput("");
       setPageError("");
       return conversation;
@@ -916,10 +940,7 @@ function App() {
       const data = await readResponse(
         await fetch(`${API_URL}/api/conversations`)
       );
-
-      setConversations(
-        Array.isArray(data.conversations) ? data.conversations : []
-      );
+      setConversations(Array.isArray(data.conversations) ? data.conversations : []);
     } catch (err) {
       setPageError(err.message);
     }
@@ -928,22 +949,17 @@ function App() {
   async function sendMessage(event, suggestion = null) {
     if (event?.preventDefault) event.preventDefault();
 
-    const question =
-      typeof suggestion === "string" ? suggestion.trim() : input.trim();
+    const question = typeof suggestion === "string"
+      ? suggestion.trim()
+      : input.trim();
 
     if (!question || loading) return;
 
     if (isKioskMode) {
-      logKioskInteraction(
-        "question_submitted",
-        {
-          question,
-          input_method: suggestion
-            ? "touch_category_or_suggestion"
-            : "text_or_voice",
-        },
-        currentConversationId
-      );
+      logKioskInteraction("question_submitted", {
+        question,
+        input_method: suggestion ? "touch_category_or_suggestion" : "text_or_voice",
+      }, currentConversationId);
     }
 
     setPageError("");
@@ -977,6 +993,8 @@ function App() {
           body: JSON.stringify({
             message: question,
             conversation_id: conversationId,
+            language, // US-032 : le backend doit respecter la langue demandée.
+
           }),
         });
 
@@ -986,9 +1004,7 @@ function App() {
         localStorage.removeItem("currentConversationId");
         const created = await createNewConversation();
 
-        if (!created) {
-          throw new Error("Impossible de recréer la conversation.");
-        }
+        if (!created) throw new Error("Impossible de recréer la conversation.");
 
         activeId = created.id;
         setCurrentConversationId(activeId);
@@ -996,13 +1012,10 @@ function App() {
       }
 
       const data = await readResponse(response);
-
       if (isKioskMode) {
-        logKioskInteraction(
-          "assistant_response_received",
-          { answer_character_count: (data.answer || "").length },
-          activeId
-        );
+        logKioskInteraction("assistant_response_received", {
+          answer_character_count: (data.answer || "").length,
+        }, activeId);
       }
 
       setMessages((previous) => [
@@ -1010,7 +1023,7 @@ function App() {
         {
           id: `bot-${Date.now()}`,
           sender: "bot",
-          text: data.answer || "Je n'ai pas reçu de réponse du serveur.",
+          text: data.answer || ui.emptyAnswer,
           time: currentTime(),
           question,
         },
@@ -1049,23 +1062,15 @@ function App() {
     return "";
   }
 
-  function navigateTo(view) {
-    setCurrentView(view);
-    setAdminOpen(false);
-    setPageError("");
-  }
-
   return (
-    <div className={`app-layout ${isKioskMode ? "kiosk-mode" : ""}`}>
+    <div className={`app-layout ${isKioskMode ? "kiosk-mode" : ""} ${sidebarOpen ? "sidebar-is-open" : "sidebar-is-collapsed"}`}>
+      {sidebarOpen && <button type="button" className="sidebar-backdrop" aria-label={language === "en" ? "Close history sidebar" : "Fermer l’historique"} onClick={() => setSidebarOpen(false)} />}
       <aside
-        className={`conversation-sidebar ${
-          isKioskMode || currentView === "dashboard"
-            ? "kiosk-sidebar-hidden"
-            : ""
-        }`}
+        className={`conversation-sidebar ${isKioskMode ? "kiosk-sidebar-hidden" : ""} ${sidebarOpen ? "conversation-sidebar-open" : ""}`}
       >
         <div className="sidebar-header">
           <h2>ESIC Assistant</h2>
+          <button type="button" className="sidebar-close-button" onClick={() => setSidebarOpen(false)} aria-label={language === "en" ? "Close history" : "Fermer l’historique"}>×</button>
         </div>
 
         <button
@@ -1074,14 +1079,14 @@ function App() {
           onClick={createNewConversation}
           disabled={loading}
         >
-          + Nouvelle conversation
+          {language === "en" ? "+ New conversation" : "+ Nouvelle conversation"}
         </button>
 
         <div className="conversation-history">
-          <h3>Historique</h3>
+          <h3>{ui.history}</h3>
 
           {conversations.length === 0 ? (
-            <p className="empty-history">Aucune conversation</p>
+            <p className="empty-history">{ui.noHistory}</p>
           ) : (
             conversations.map((conversation) => (
               <button
@@ -1090,11 +1095,11 @@ function App() {
                 className={`conversation-item ${
                   conversation.id === currentConversationId ? "active" : ""
                 }`}
-                onClick={() => loadConversation(conversation.id)}
+                onClick={() => { loadConversation(conversation.id); setSidebarOpen(false); }}
                 disabled={loading}
               >
                 <span className="conversation-title">
-                  {conversation.title || "Nouvelle conversation"}
+                  {conversation.title || (language === "en" ? "New conversation" : "Nouvelle conversation")}
                 </span>
               </button>
             ))
@@ -1106,352 +1111,300 @@ function App() {
           className="admin-open-button"
           onClick={() => setAdminOpen(true)}
         >
-          Administration
+          {language === "en" ? "Administration" : "Administration"}
         </button>
       </aside>
 
       <div className="app">
         <header className="topbar">
+          <button type="button" className="sidebar-toggle-button" onClick={() => setSidebarOpen((open) => !open)} aria-label={sidebarOpen ? (language === "en" ? "Hide history" : "Masquer l’historique") : (language === "en" ? "Show history" : "Afficher l’historique")} aria-expanded={sidebarOpen} title={sidebarOpen ? (language === "en" ? "Hide history" : "Masquer l’historique") : (language === "en" ? "Show history" : "Afficher l’historique")}>☰</button>
           <div className="brand">
-            <img
-              src="/esic-logo.png"
-              alt="Logo ESIC"
-              className="esic-logo"
-            />
+            <img src="/esic-logo.png" alt="ESIC logo" className="esic-logo" />
             <div className="brand-divider" />
             <div className="assistant-brand">
               <h1>Campus Assistant</h1>
-              <span>Assistant virtuel éducatif</span>
+              <span>{ui.subtitle}</span>
             </div>
           </div>
 
-          <nav className="main-navigation" aria-label="Navigation principale">
-            <button
-              type="button"
-              className={`navigation-button ${
-                currentView === "chat" ? "navigation-button-active" : ""
-              }`}
-              onClick={() => navigateTo("chat")}
-              aria-current={currentView === "chat" ? "page" : undefined}
-            >
-              Chatbot
-            </button>
-
-            <button
-              type="button"
-              className={`navigation-button ${
-                currentView === "dashboard" ? "navigation-button-active" : ""
-              }`}
-              onClick={() => navigateTo("dashboard")}
-              aria-current={currentView === "dashboard" ? "page" : undefined}
-            >
-              Tableau de bord
-            </button>
+          <nav className="main-navigation" aria-label={language === "en" ? "Main navigation" : "Navigation principale"}>
+            <button type="button" className={`navigation-button ${currentView === "chat" ? "navigation-button-active" : ""}`} onClick={() => { setCurrentView("chat"); setAdminOpen(false); setSidebarOpen(false); }} aria-current={currentView === "chat" ? "page" : undefined}>{language === "en" ? "Chat" : "Chatbot"}</button>
+            <button type="button" className={`navigation-button ${currentView === "dashboard" ? "navigation-button-active" : ""}`} onClick={() => { setCurrentView("dashboard"); setAdminOpen(false); setSidebarOpen(false); }} aria-current={currentView === "dashboard" ? "page" : undefined}>{language === "en" ? "Dashboard" : "Tableau de bord"}</button>
           </nav>
 
-          {currentView === "chat" && (
-            <>
-              <button
-                type="button"
-                className="kiosk-toggle-button"
-                onClick={() => {
-                  const nextMode = !isKioskMode;
-                  setIsKioskMode(nextMode);
-                  logKioskInteraction(
-                    nextMode ? "kiosk_mode_entered" : "kiosk_mode_exited",
-                    {},
-                    currentConversationId
-                  );
-                }}
-                aria-pressed={isKioskMode}
-              >
-                {isKioskMode ? "Quitter le mode Borne" : "Mode Borne"}
-              </button>
+          <label className="language-selector" htmlFor="esic-language">
+            <span>{ui.language}</span>
+            <select id="esic-language" value={language} onChange={(event) => setLanguage(event.target.value)} aria-label={ui.language}>
+              <option value="fr">Français</option>
+              <option value="en">English</option>
+            </select>
+          </label>
 
-              <div className="status">
-                <span className="status-dot" />
-                <span>En ligne</span>
-              </div>
-            </>
-          )}
+          {currentView === "chat" && <>
+          <button
+            type="button"
+            className="kiosk-toggle-button"
+            onClick={() => {
+              const nextMode = !isKioskMode;
+              setIsKioskMode(nextMode);
+              logKioskInteraction(nextMode ? "kiosk_mode_entered" : "kiosk_mode_exited", {}, currentConversationId);
+            }}
+            aria-pressed={isKioskMode}
+          >
+            {isKioskMode ? ui.exitKiosk : ui.kiosk}
+          </button>
+
+          <div className="status">
+            <span className="status-dot" />
+            <span>{ui.online}</span>
+          </div>
+          </>}
         </header>
 
         {currentView === "dashboard" ? (
-          <div className="dashboard-view">
-            <Dashboard />
-          </div>
+          <div className="dashboard-view"><Dashboard language={language} /></div>
         ) : (
           <>
-            <main className="chat-container">
-              {isKioskMode ? (
-                <section className="kiosk-welcome">
-                  <p className="kiosk-eyebrow">ACCUEIL ESIC</p>
-                  <h2>Bienvenue sur votre campus</h2>
-                  <p>
-                    Que recherchez-vous ? Touchez une catégorie pour commencer.
-                  </p>
+        <section className="epic8-toolbar" aria-label="Fonctionnalités avancées">
+          <div className="epic8-user-status">
+            {ssoUser ? <><span className="epic8-status-dot" /> Connecté ENT (démo) : <strong>{ssoUser.name}</strong></> : <span>{language === "en" ? "Visitor session" : "Session visiteur"}</span>}
+          </div>
+          <div className="epic8-actions">
+            {ssoUser ? <button type="button" className="epic8-button" onClick={demoSsoLogout}>{language === "en" ? "Sign out of ENT" : "Déconnexion ENT"}</button> : <button type="button" className="epic8-button" onClick={() => setSsoOpen(true)}>{language === "en" ? "Sign in to ENT" : "Connexion ENT"}</button>}
+            <button type="button" className="epic8-button secondary" onClick={enableNotifications}>{language === "en" ? "Enable notifications" : "Activer les notifications"}</button>
+          </div>
+        </section>
+        {ssoMessage && <p className="epic8-inline-message" role="status">{ssoMessage}</p>}
+        {notificationMessage && <p className="epic8-inline-message" role="status">{notificationMessage}</p>}
+        {advancedInfo.length > 0 && <section className="epic8-context" aria-label="Informations utiles selon le contexte">
+          <div><span className="epic8-context-label">{language === "en" ? "Good to know" : "À retenir"}</span><h3>{language === "en" ? "Useful campus updates" : "Informations utiles du campus"}</h3></div>
+          <div className="epic8-context-items">{advancedInfo.map((item) => <article className="epic8-context-card" key={item.id}><strong>{item.title}</strong><p>{item.body}</p>{item.date && <small>{item.date}</small>}</article>)}</div>
+        </section>}
+        {ssoOpen && <div className="epic8-modal-backdrop" role="presentation" onClick={() => setSsoOpen(false)}><section className="epic8-modal" role="dialog" aria-modal="true" aria-labelledby="epic8-sso-title" onClick={(event) => event.stopPropagation()}>
+          <button type="button" className="epic8-modal-close" onClick={() => setSsoOpen(false)} aria-label={language === "en" ? "Close" : "Fermer"}>×</button>
+          <h2 id="epic8-sso-title">{language === "en" ? "Sign in to ENT" : "Connexion à l'ENT"}</h2>
+          <p>{language === "en" ? "SSO sign-in prototype: use a demo profile. This does not validate real ENT credentials." : "Prototype de connexion SSO : utilisez un profil de démonstration. Cette étape ne valide pas de vrais identifiants ENT."}</p>
+          <form onSubmit={demoSsoLogin} className="epic8-sso-form"><label>{language === "en" ? "Display name" : "Nom affiché"}<input value={ssoName} onChange={(event) => setSsoName(event.target.value)} required maxLength={80} placeholder={language === "en" ? "e.g. Alex Martin" : "Ex. Alex Martin"} /></label><label>{language === "en" ? "Email address" : "Adresse e-mail"}<input type="email" value={ssoEmail} onChange={(event) => setSsoEmail(event.target.value)} required maxLength={160} placeholder={language === "en" ? "first.last@example.com" : "prenom.nom@exemple.fr"} /></label><button type="submit" className="epic8-button">{language === "en" ? "Continue in demo mode" : "Continuer en mode démo"}</button></form>
+        </section></div>}
 
-                  <div className="kiosk-grid">
-                    <button
-                      type="button"
-                      className="kiosk-card"
-                      onClick={() => {
-                        logKioskInteraction(
-                          "kiosk_category_selected",
-                          { category: "library" },
-                          currentConversationId
-                        );
-                        sendMessage(
-                          null,
-                          "Quels sont les horaires de la bibliothèque ?"
-                        );
-                      }}
-                      disabled={loading}
-                    >
-                      <span className="kiosk-card-icon">01</span>
-                      <strong>Bibliothèque</strong>
-                      <span>Horaires et services</span>
-                    </button>
+        <main className="chat-container">
+          {isKioskMode ? (
+            <section className="kiosk-welcome">
+              <p className="kiosk-eyebrow">{language === "en" ? "WELCOME TO ESIC" : "ACCUEIL ESIC"}</p>
+              <h2>{language === "en" ? "Welcome to your campus" : "Bienvenue sur votre campus"}</h2>
+              <p>
+                {language === "en" ? "What are you looking for? Select a category to get started." : "Que recherchez-vous ? Touchez une catégorie pour commencer."}
+              </p>
 
-                    <button
-                      type="button"
-                      className="kiosk-card"
-                      onClick={() => {
-                        logKioskInteraction(
-                          "kiosk_category_selected",
-                          { category: "training" },
-                          currentConversationId
-                        );
-                        sendMessage(
-                          null,
-                          "Quelles formations sont proposées à l'ESIC ?"
-                        );
-                      }}
-                      disabled={loading}
-                    >
-                      <span className="kiosk-card-icon">02</span>
-                      <strong>Formations</strong>
-                      <span>Parcours et programmes</span>
-                    </button>
+              <div className="kiosk-grid">
+                <button
+                  type="button"
+                  className="kiosk-card"
+                  onClick={() => {
+                    logKioskInteraction("kiosk_category_selected", { category: "library" }, currentConversationId);
+                    sendMessage(null, "Quels sont les horaires de la bibliothèque ?");
+                  }}
+                  disabled={loading}
+                >
+                  <span className="kiosk-card-icon">01</span>
+                  <strong>{language === "en" ? "Library" : "Bibliothèque"}</strong>
+                  <span>{language === "en" ? "Opening hours and services" : "Horaires et services"}</span>
+                </button>
 
-                    <button
-                      type="button"
-                      className="kiosk-card"
-                      onClick={() => {
-                        logKioskInteraction(
-                          "kiosk_category_selected",
-                          { category: "contacts" },
-                          currentConversationId
-                        );
-                        sendMessage(
-                          null,
-                          "Comment contacter le service de scolarité ?"
-                        );
-                      }}
-                      disabled={loading}
-                    >
-                      <span className="kiosk-card-icon">03</span>
-                      <strong>Contacts</strong>
-                      <span>Services et assistance</span>
-                    </button>
+                <button
+                  type="button"
+                  className="kiosk-card"
+                  onClick={() => {
+                    logKioskInteraction("kiosk_category_selected", { category: "training" }, currentConversationId);
+                    sendMessage(null, "Quelles formations sont proposées à l'ESIC ?");
+                  }}
+                  disabled={loading}
+                >
+                  <span className="kiosk-card-icon">02</span>
+                  <strong>{language === "en" ? "Programs" : "Formations"}</strong>
+                  <span>{language === "en" ? "Courses and programs" : "Parcours et programmes"}</span>
+                </button>
 
-                    <button
-                      type="button"
-                      className="kiosk-card"
-                      onClick={() => {
-                        logKioskInteraction(
-                          "kiosk_category_selected",
-                          { category: "campus_services" },
-                          currentConversationId
-                        );
-                        sendMessage(
-                          null,
-                          "Quels services sont disponibles sur le campus ?"
-                        );
-                      }}
-                      disabled={loading}
-                    >
-                      <span className="kiosk-card-icon">04</span>
-                      <strong>Vie du campus</strong>
-                      <span>Services et informations pratiques</span>
-                    </button>
-                  </div>
-                </section>
-              ) : (
-                <section className="welcome-section">
-                  <div className="bot-avatar large">
-                    <img src="/esic-logo.png" alt="ESIC" />
-                  </div>
-                  <h2>ESIC Assistant</h2>
-                  <p>
-                    Je suis l’assistant virtuel éducatif ESIC.
-                    <br />
-                    Posez-moi votre question pour commencer.
-                  </p>
-                </section>
-              )}
+                <button
+                  type="button"
+                  className="kiosk-card"
+                  onClick={() => {
+                    logKioskInteraction("kiosk_category_selected", { category: "contacts" }, currentConversationId);
+                    sendMessage(null, "Comment contacter le service de scolarité ?");
+                  }}
+                  disabled={loading}
+                >
+                  <span className="kiosk-card-icon">03</span>
+                  <strong>{language === "en" ? "Contacts" : "Contacts"}</strong>
+                  <span>{language === "en" ? "Services and support" : "Services et assistance"}</span>
+                </button>
 
-              {pageError && (
-                <div className="feature-error page-error" role="alert">
-                  {pageError}
-                </div>
-              )}
+                <button
+                  type="button"
+                  className="kiosk-card"
+                  onClick={() => {
+                    logKioskInteraction("kiosk_category_selected", { category: "campus_services" }, currentConversationId);
+                    sendMessage(null, "Quels services sont disponibles sur le campus ?");
+                  }}
+                  disabled={loading}
+                >
+                  <span className="kiosk-card-icon">04</span>
+                  <strong>{language === "en" ? "Campus life" : "Vie du campus"}</strong>
+                  <span>{language === "en" ? "Services and useful information" : "Services et informations pratiques"}</span>
+                </button>
+              </div>
+            </section>
+          ) : (
+            <section className="welcome-section">
+              <div className="bot-avatar large">
+                <img src="/esic-logo.png" alt="ESIC" />
+              </div>
+              <h2>ESIC Assistant</h2>
+              <p>
+                {ui.welcome}
+                <br />
+                {ui.welcomePrompt}
+              </p>
+            </section>
+          )}
 
-              <section className="messages-container">
-                {messages.map((message, index) => {
-                  const isBot = message.sender === "bot";
-                  const question = isBot ? getQuestionForMessage(index) : "";
+          {pageError && (
+            <div className="feature-error page-error" role="alert">
+              {pageError}
+            </div>
+          )}
 
-                  return (
-                    <div
-                      key={message.id ?? `${message.sender}-${index}`}
-                      className={`message-row ${message.sender}`}
-                    >
-                      {isBot && (
-                        <div className="bot-avatar small">
-                          <img src="/esic-logo.png" alt="ESIC" />
-                        </div>
-                      )}
+          <section className="messages-container">
+            {messages.map((message, index) => {
+              const isBot = message.sender === "bot";
+              const question = isBot ? getQuestionForMessage(index) : "";
 
-                      <div className="message-content">
-                        <div className="message-label">
-                          {isBot ? "ESIC Assistant" : "Vous"}
-                        </div>
-
-                        <div className="message-bubble">{message.text}</div>
-                        <span className="message-time">{message.time}</span>
-
-                        {isBot &&
-                          !message.isError &&
-                          question &&
-                          currentConversationId && (
-                            <>
-                              <ResponseFeedback
-                                key={`feedback-${message.id}`}
-                                conversationId={currentConversationId}
-                                question={question}
-                                answer={message.text}
-                              />
-                              <MessageActions
-                                key={`actions-${message.id}`}
-                                conversationId={currentConversationId}
-                                question={question}
-                                answer={message.text}
-                              />
-                            </>
-                          )}
-                      </div>
-                    </div>
-                  );
-                })}
-
-                {loading && (
-                  <div className="message-row bot">
+              return (
+                <div
+                  key={message.id ?? `${message.sender}-${index}`}
+                  className={`message-row ${message.sender}`}
+                >
+                  {isBot && (
                     <div className="bot-avatar small">
                       <img src="/esic-logo.png" alt="ESIC" />
                     </div>
-                    <div className="message-content">
-                      <div className="message-label">ESIC Assistant</div>
-                      <div className="message-bubble typing-bubble">
-                        <span className="typing-dot" />
-                        <span className="typing-dot" />
-                        <span className="typing-dot" />
-                      </div>
+                  )}
+
+                  <div className="message-content">
+                    <div className="message-label">
+                      {isBot ? "ESIC Assistant" : ui.user}
                     </div>
+
+                    <div className="message-bubble">{message.text}</div>
+                    <span className="message-time">{message.time}</span>
+
+                    {isBot && !message.isError && question && currentConversationId && (
+                      <>
+                        <ResponseFeedback
+                          language={language}
+                          key={`feedback-${message.id}`}
+                          conversationId={currentConversationId}
+                          question={question}
+                          answer={message.text}
+                        />
+                        <MessageActions
+                          language={language}
+                          key={`actions-${message.id}`}
+                          conversationId={currentConversationId}
+                          question={question}
+                          answer={message.text}
+                        />
+                      </>
+                    )}
                   </div>
-                )}
-              </section>
-
-              <section className="suggestions-section">
-                <h3>Questions fréquentes</h3>
-                <div className="suggestions-list">
-                  {SUGGESTIONS.map((suggestion) => (
-                    <button
-                      key={suggestion}
-                      type="button"
-                      className="suggestion-button"
-                      onClick={() => sendMessage(null, suggestion)}
-                      disabled={loading}
-                    >
-                      {suggestion}
-                    </button>
-                  ))}
                 </div>
-              </section>
+              );
+            })}
 
-              <form className="input-area" onSubmit={sendMessage}>
-                <div className="input-wrapper">
-                  <input
-                    type="text"
-                    value={input}
-                    onChange={(event) => setInput(event.target.value)}
-                    placeholder="Écrivez votre question..."
-                    disabled={loading}
-                    maxLength={1000}
-                    aria-label="Votre question"
-                  />
-
-                  <button
-                    type="button"
-                    className={`voice-button ${
-                      isListening ? "is-listening" : ""
-                    }`}
-                    onClick={toggleVoiceInput}
-                    disabled={loading}
-                    aria-label={
-                      isListening
-                        ? "Arrêter la dictée vocale"
-                        : "Dicter une question"
-                    }
-                    aria-pressed={isListening}
-                    title={
-                      isListening ? "Arrêter la dictée" : "Dicter une question"
-                    }
-                  >
-                    <span aria-hidden="true">{isListening ? "■" : "🎙"}</span>
-                  </button>
-
-                  <button
-                    type="submit"
-                    className="send-button"
-                    disabled={!input.trim() || loading}
-                    aria-label="Envoyer la question"
-                  >
-                    <span>➤</span>
-                  </button>
+            {loading && (
+              <div className="message-row bot">
+                <div className="bot-avatar small">
+                  <img src="/esic-logo.png" alt="ESIC" />
                 </div>
+                <div className="message-content">
+                  <div className="message-label">ESIC Assistant</div>
+                  <div className="message-bubble typing-bubble">
+                    <span className="typing-dot" />
+                    <span className="typing-dot" />
+                    <span className="typing-dot" />
+                  </div>
+                </div>
+              </div>
+            )}
+          </section>
 
-                <p className="input-hint">
-                  Appuyez sur Entrée pour envoyer ou sur le microphone pour
-                  dicter votre question.
-                </p>
+          <section className="suggestions-section">
+            <h3>{ui.suggestions}</h3>
+            <div className="suggestions-list">
+              {(language === "en" ? SUGGESTIONS_EN : SUGGESTIONS).map((suggestion) => (
+                <button
+                  key={suggestion}
+                  type="button"
+                  className="suggestion-button"
+                  onClick={() => sendMessage(null, suggestion)}
+                  disabled={loading}
+                >
+                  {suggestion}
+                </button>
+              ))}
+            </div>
+          </section>
 
-                {speechMessage && (
-                  <p
-                    className={`speech-status ${
-                      isListening ? "speech-status-active" : ""
-                    }`}
-                    role="status"
-                    aria-live="polite"
-                  >
-                    {speechMessage}
-                  </p>
-                )}
-              </form>
-            </main>
+          <form className="input-area" onSubmit={sendMessage}>
+            <div className="input-wrapper">
+              <input
+                type="text"
+                value={input}
+                onChange={(event) => setInput(event.target.value)}
+                placeholder={ui.placeholder}
+                disabled={loading}
+                maxLength={1000}
+                aria-label={ui.placeholder}
+              />
+              <button
+                type="button"
+                className={`voice-button ${isListening ? "is-listening" : ""}`}
+                onClick={toggleVoiceInput}
+                disabled={loading}
+                aria-label={isListening ? (language === "en" ? "Stop voice dictation" : "Arrêter la dictée vocale") : (language === "en" ? "Dictate a question" : "Dicter une question")}
+                aria-pressed={isListening}
+                title={isListening ? (language === "en" ? "Stop dictation" : "Arrêter la dictée") : (language === "en" ? "Dictate a question" : "Dicter une question")}
+              >
+                <span aria-hidden="true">{isListening ? "■" : "🎙"}</span>
+              </button>
+              <button
+                type="submit"
+                className="send-button"
+                disabled={!input.trim() || loading}
+                aria-label={language === "en" ? "Send question" : "Envoyer la question"}
+              >
+                <span>➤</span>
+              </button>
+            </div>
+            <p className="input-hint">{ui.inputHint}</p>
+            {speechMessage && (
+              <p className={`speech-status ${isListening ? "speech-status-active" : ""}`} role="status" aria-live="polite">
+                {speechMessage}
+              </p>
+            )}
+          </form>
+        </main>
 
-            <footer className="footer">
-              <span>ESIC</span>
-              <span className="footer-separator">•</span>
-              <span>Assistant virtuel éducatif</span>
-            </footer>
+        <footer className="footer">
+          <span>ESIC</span>
+          <span className="footer-separator">•</span>
+          <span>{ui.subtitle}</span>
+        </footer>
           </>
         )}
       </div>
 
-      {adminOpen && currentView === "chat" && (
-        <AdminPanel onClose={() => setAdminOpen(false)} />
-      )}
+      {adminOpen && currentView === "chat" && <AdminPanel language={language} onClose={() => setAdminOpen(false)} />}
     </div>
   );
 }

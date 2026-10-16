@@ -1,9 +1,18 @@
+
 .dashboard-page {
-  min-height: 100%;
-  padding: 32px;
-  background: #f5f6fb;
-  color: #20243a;
-  font-family: inherit;
+  width: 100%;
+  max-width: 1500px;
+  min-width: 0;
+  margin: 0 auto;
+  padding: clamp(16px, 3vw, 36px);
+  color: #20213a;
+  box-sizing: border-box;
+}
+
+.dashboard-page *,
+.dashboard-page *::before,
+.dashboard-page *::after {
+  box-sizing: border-box;
 }
 
 .dashboard-header {
@@ -17,42 +26,62 @@
 .dashboard-eyebrow {
   margin: 0 0 8px;
   color: #5145cd;
-  font-size: 12px;
+  font-size: 0.76rem;
   font-weight: 800;
-  letter-spacing: 2px;
+  letter-spacing: 0.13em;
 }
 
 .dashboard-header h1 {
   margin: 0;
-  font-size: clamp(26px, 3vw, 34px);
-  font-weight: 750;
-  letter-spacing: -1px;
+  font-size: clamp(1.7rem, 3vw, 2.5rem);
+  line-height: 1.2;
+  overflow-wrap: anywhere;
 }
 
 .dashboard-subtitle {
-  margin: 9px 0 0;
-  color: #777d91;
-  font-size: 14px;
+  margin: 10px 0 0;
+  color: #73758a;
+  font-size: 0.98rem;
+  line-height: 1.6;
 }
 
 .dashboard-live {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 9px;
+  flex-shrink: 0;
   padding: 10px 14px;
-  border: 1px solid #e5e7f0;
+  border: 1px solid #d8f0e5;
   border-radius: 999px;
-  background: white;
-  color: #626a80;
-  font-size: 12px;
-  white-space: nowrap;
+  background: #f0fbf6;
+  color: #18794e;
+  font-size: 0.85rem;
+  font-weight: 650;
 }
 
-.dashboard-live > span {
+.dashboard-live-dot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #20aa77;
+  background: #22a06b;
+}
+
+.dashboard-loading {
+  padding: 30px 0;
+  color: #73758a;
+}
+
+.dashboard-error {
+  padding: 20px;
+  border: 1px solid #ffd5d5;
+  border-radius: 14px;
+  background: #fff7f7;
+  color: #9e2a2b;
+  overflow-wrap: anywhere;
+}
+
+.dashboard-error p {
+  line-height: 1.6;
 }
 
 .dashboard-stats {
@@ -65,106 +94,129 @@
 .dashboard-stat {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
   gap: 12px;
-  min-height: 130px;
-  padding: 23px;
-  border: 1px solid #e9eaf2;
+  padding: 22px;
+  border: 1px solid #e9e8f3;
   border-radius: 18px;
   background: #fff;
-  box-shadow: 0 5px 20px rgb(31 37 74 / 3%);
+  box-shadow: 0 5px 20px rgb(36 31 90 / 4%);
 }
 
 .dashboard-stat-label {
-  color: #777d91;
-  font-size: 13px;
-  font-weight: 600;
+  color: #6e7085;
+  font-size: 0.9rem;
+  font-weight: 650;
+  line-height: 1.5;
 }
 
 .dashboard-stat-value {
-  color: #272447;
-  font-size: 32px;
+  color: #5145cd;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
   line-height: 1.1;
+  overflow-wrap: anywhere;
 }
 
 .dashboard-stat-description {
-  color: #9297a7;
-  font-size: 12px;
+  color: #85869a;
+  font-size: 0.83rem;
+  line-height: 1.55;
 }
 
 .dashboard-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 20px;
-  align-items: start;
+  align-items: stretch;
 }
 
 .dashboard-panel {
   min-width: 0;
   padding: 22px;
-  overflow: hidden;
-  border: 1px solid #e9eaf2;
+  border: 1px solid #e9e8f3;
   border-radius: 18px;
   background: #fff;
-  box-shadow: 0 5px 20px rgb(31 37 74 / 3%);
+  box-shadow: 0 5px 20px rgb(36 31 90 / 4%);
 }
 
 .dashboard-panel-wide {
-  grid-column: span 1;
+  grid-column: span 2;
 }
 
 .dashboard-panel-heading {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
+  gap: 12px;
   margin-bottom: 20px;
 }
 
 .dashboard-panel-heading h2 {
   margin: 0;
-  font-size: 16px;
-  font-weight: 750;
+  color: #282844;
+  font-size: 1.08rem;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
 }
 
 .dashboard-panel-heading p {
-  margin: 7px 0 0;
-  color: #9297a7;
-  font-size: 12px;
+  margin: 6px 0 0;
+  color: #85869a;
+  font-size: 0.86rem;
+  line-height: 1.55;
 }
 
 .dashboard-chart {
   width: 100%;
-  height: 260px;
+  height: 290px;
   min-width: 0;
 }
 
+.dashboard-pie-chart {
+  height: 230px;
+}
+
 .dashboard-bar-chart {
-  height: 320px;
+  height: 330px;
 }
 
 .dashboard-legend {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin-top: 8px;
+  margin-top: 16px;
 }
 
 .dashboard-legend-item {
   display: grid;
-  grid-template-columns: 9px minmax(0, 1fr) auto;
+  grid-template-columns: 10px minmax(0, 1fr) auto;
   align-items: center;
   gap: 10px;
-  color: #686f83;
-  font-size: 12px;
+  color: #67697e;
+  font-size: 0.86rem;
 }
 
-.dashboard-legend-item > span:first-child {
-  width: 8px;
-  height: 8px;
+.dashboard-legend-color {
+  width: 9px;
+  height: 9px;
   border-radius: 3px;
 }
 
+.dashboard-legend-name {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
 .dashboard-legend-item strong {
-  color: #272447;
+  color: #292943;
+}
+
+.dashboard-empty {
+  padding: 20px 0;
+  color: #85869a;
+  font-size: 0.9rem;
+  line-height: 1.6;
 }
 
 .dashboard-trends {
@@ -174,89 +226,198 @@
 
 .dashboard-trend-row {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 12px;
-  padding: 15px 0;
-  border-bottom: 1px solid #f0f1f6;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid #efedf6;
 }
 
 .dashboard-trend-row:last-child {
   border-bottom: 0;
 }
 
-.dashboard-trend-row strong {
-  font-size: 13px;
+.dashboard-trend-info {
+  min-width: 0;
 }
 
-.dashboard-trend-row p {
+.dashboard-trend-info strong {
+  display: block;
+  color: #292943;
+  overflow-wrap: anywhere;
+}
+
+.dashboard-trend-info p {
   margin: 6px 0 0;
-  color: #9297a7;
-  font-size: 12px;
+  color: #85869a;
+  font-size: 0.84rem;
 }
 
-.dashboard-trend-row > span {
-  color: #777d91;
-  font-size: 13px;
+.trend-up,
+.trend-down,
+.trend-neutral {
+  flex-shrink: 0;
+  padding: 6px 9px;
+  border-radius: 8px;
+  font-size: 0.85rem;
   font-weight: 750;
 }
 
-.dashboard-trend-row .trend-up {
-  color: #159a73;
+.trend-up {
+  background: #e9f8ef;
+  color: #18794e;
 }
 
-.dashboard-trend-row .trend-down {
-  color: #d34d65;
+.trend-down {
+  background: #fff0f0;
+  color: #bd3333;
 }
 
-.dashboard-empty {
-  padding: 25px 0;
-  color: #9297a7;
-  font-size: 13px;
-  text-align: center;
+.trend-neutral {
+  background: #f0eff8;
+  color: #66617f;
 }
 
-.dashboard-error {
-  padding: 14px;
-  border: 1px solid #f0caca;
-  border-radius: 10px;
-  background: #fff3f3;
-  color: #a52d3a;
-}
-
-@media (max-width: 900px) {
+/* Tablettes */
+@media (max-width: 1000px) {
   .dashboard-page {
     padding: 22px;
   }
 
-  .dashboard-grid {
-    grid-template-columns: minmax(0, 1fr);
+  .dashboard-stats {
+    gap: 12px;
   }
 
-  .dashboard-stats {
-    grid-template-columns: 1fr;
+  .dashboard-stat,
+  .dashboard-panel {
+    padding: 18px;
+  }
+
+  .dashboard-grid {
+    gap: 14px;
+  }
+
+  .dashboard-chart {
+    height: 260px;
+  }
+
+  .dashboard-bar-chart {
+    height: 330px;
   }
 }
 
-@media (max-width: 560px) {
+/* Téléphones */
+@media (max-width: 650px) {
   .dashboard-page {
-    padding: 15px;
+    padding: 16px 12px 24px;
   }
 
   .dashboard-header {
     align-items: flex-start;
     flex-direction: column;
+    gap: 14px;
+    margin-bottom: 20px;
   }
 
-  .dashboard-panel {
-    padding: 16px;
+  .dashboard-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .dashboard-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .dashboard-live {
+    padding: 8px 11px;
+    font-size: 0.78rem;
+  }
+
+  .dashboard-stats {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+
+  .dashboard-stat {
+    gap: 8px;
+    padding: 17px;
+    border-radius: 14px;
+  }
+
+  .dashboard-stat-value {
+    font-size: 2rem;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+  }
+
+  .dashboard-panel,
+  .dashboard-panel-wide {
+    grid-column: auto;
+    min-width: 0;
+    padding: 16px 12px;
+    border-radius: 14px;
+  }
+
+  .dashboard-panel-heading {
+    margin-bottom: 14px;
+  }
+
+  .dashboard-panel-heading h2 {
+    font-size: 1rem;
+  }
+
+  .dashboard-panel-heading p {
+    font-size: 0.81rem;
   }
 
   .dashboard-chart {
-    height: 230px;
+    height: 240px;
+  }
+
+  .dashboard-pie-chart {
+    height: 220px;
   }
 
   .dashboard-bar-chart {
-    height: 300px;
+    height: 360px;
+  }
+
+  .dashboard-bar-chart .recharts-yAxis .recharts-cartesian-axis-tick text {
+    font-size: 10px;
+  }
+
+  .dashboard-trend-row {
+    gap: 8px;
+  }
+}
+
+/* Très petits téléphones */
+@media (max-width: 380px) {
+  .dashboard-page {
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+
+  .dashboard-stat {
+    padding: 14px;
+  }
+
+  .dashboard-panel {
+    padding: 14px 8px;
+  }
+
+  .dashboard-chart {
+    height: 210px;
+  }
+
+  .dashboard-bar-chart {
+    height: 340px;
+  }
+
+  .dashboard-trend-info p {
+    font-size: 0.78rem;
   }
 }
