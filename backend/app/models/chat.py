@@ -1,3 +1,4 @@
+
 from pydantic import BaseModel, Field
 
 
@@ -8,6 +9,21 @@ class ChatRequest(BaseModel):
 
 class ChatResponse(BaseModel):
     answer: str
+
+    # US-014 : classification de la question
+    category: str | None = None
+    category_confidence: float | None = None
+
+    # US-017 : détection de l'intention
+    intent: str | None = None
+    intent_confidence: float | None = None
+
+    # US-015 : extraction des entités
+    entities: dict | None = None
+
+    # US-018 : clarification des questions ambiguës
+    clarification_required: bool = False
+    clarification_question: str | None = None
 
 
 class Conversation(BaseModel):

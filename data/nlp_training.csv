@@ -1,0 +1,1046 @@
+﻿text,category,intent
+Je n’arrive pas à comprendre comment justifier une absence. Pouvez-vous m’aider ?,Règlement et vie étudiante,aide
+Est-ce que quelqu’un peut m’aider à retrouver le planning des rattrapages ?,Emplois du temps et planning,aide
+Je souhaite signaler un problème : l’accueil général ne répond pas aux appels ni aux messages.,Contacts et information générale,reclamation
+Est-ce que vous avez des informations concernant la modification d’un choix de cours ?,Procédures administratives,info
+Je veux faire remonter ce dysfonctionnement : la validation de mon stage prend du retard sans explication.,Procédures administratives,reclamation
+Je voudrais savoir ce qu’il en est concernant les justificatifs à fournir pour une aide financière.,Procédures administratives,info
+Cela pose problème : les cours et examens sont programmés au même moment. À qui puis-je le signaler ?,Emplois du temps et planning,reclamation
+Je voudrais savoir ce qu’il en est concernant la procédure de demande de duplicata de document.,Procédures administratives,info
+J’aurais besoin d’aide pour comprendre comment justifier une absence.,Règlement et vie étudiante,aide
+Cela pose problème : les renseignements reçus pour les visiteurs étaient contradictoires. À qui puis-je le signaler ?,Contacts et information générale,reclamation
+J’aimerais obtenir des informations sur le calendrier des rattrapages.,Emplois du temps et planning,info
+Où puis-je consulter les dispositifs de soutien psychologique étudiant ?,Services campus,info
+Comment connaître les étapes pour faire valider un stage ?,Procédures administratives,info
+"J’ai déjà signalé que le support informatique ne répond pas à mes demandes, mais rien ne change.",Services campus,reclamation
+Je ne comprends pas comment identifier les modules de Data Science ; pouvez-vous m’expliquer ?,Orientation et formation,aide
+"Cette situation doit être examinée, puisque mon dossier déposé semble avoir été perdu.",Procédures administratives,reclamation
+J’ai du mal à retrouver l’adresse e-mail de la scolarité ; comment dois-je faire ?,Contacts et information générale,aide
+Savez-vous où sont publiées les informations sur les horaires du groupe CPDIA ?,Emplois du temps et planning,info
+Où puis-je consulter les modalités pour prendre rendez-vous avec l’école ?,Contacts et information générale,info
+Pouvez-vous enregistrer ma réclamation : l’accès à un espace de travail est bloqué malgré mon autorisation ?,Services campus,reclamation
+Je suis un peu perdu(e) pour contacter la personne qui suit les admissions ; par où commencer ?,Contacts et information générale,aide
+Cela pose problème : le soutien pédagogique demandé ne m’a pas été proposé. À qui puis-je le signaler ?,Orientation et formation,reclamation
+Je bloque quand j’essaie de choisir une langue pour dialoguer avec l’assistant. Quelle est la marche à suivre ?,Contacts et information générale,aide
+Pouvez-vous enregistrer ma réclamation : je ne parviens pas à joindre le service des admissions ?,Contacts et information générale,reclamation
+"Je suis mécontent(e), car les informations publiées sur les formations sont contradictoires.",Orientation et formation,reclamation
+Pouvez-vous m’indiquer les services de santé et l’infirmerie ?,Services campus,info
+Pouvez-vous enregistrer ma réclamation : un comportement perturbateur répété n’a pas été traité ?,Règlement et vie étudiante,reclamation
+Où trouver les renseignements sur les formations proposées par ESIC ?,Orientation et formation,info
+"Cette situation doit être examinée, puisque les horaires d’accès au campus annoncés sont contradictoires.",Emplois du temps et planning,reclamation
+J’aurais besoin d’aide pour confirmer la date de la rentrée.,Emplois du temps et planning,aide
+Je souhaite signaler un problème : mon emploi du temps affiche des horaires qui se chevauchent.,Emplois du temps et planning,reclamation
+Je ne trouve pas normal que mes droits d’étudiant ne semblent pas avoir été respectés.,Règlement et vie étudiante,reclamation
+Pouvez-vous enregistrer ma réclamation : l’accueil était fermé alors qu’il devait être ouvert ?,Services campus,reclamation
+Où trouver les renseignements sur la procédure de première inscription à ESIC ?,Procédures administratives,info
+Pourriez-vous m’accompagner pour trouver de l’aide pour réussir ma formation ?,Orientation et formation,aide
+Vous proposez quoi comme formations en intelligence artificielle ?,Orientation et formation,info
+Je n’arrive pas à trouver le service de santé adapté à ma situation. Pouvez-vous m’aider ?,Services campus,aide
+J’ai du mal à utiliser le service d’impression du campus ; comment dois-je faire ?,Services campus,aide
+Je conteste la situation suivante : les informations sur les stages liés à ma formation sont insuffisantes.,Orientation et formation,reclamation
+Où déposer mon dossier administratif ?,Procédures administratives,info
+Où trouver les renseignements sur les coordonnées générales de l’accueil ESIC ?,Contacts et information générale,info
+Je ne trouve pas l’adresse mail du service des admissions.,Contacts et information générale,aide
+Pouvez-vous enregistrer ma réclamation : la description d’un parcours ne correspond pas à la formation dispensée ?,Orientation et formation,reclamation
+Pouvez-vous m’indiquer les langues disponibles dans l’assistant virtuel ?,Contacts et information générale,info
+Je souhaite signaler un problème : une absence justifiée a été comptée comme non justifiée.,Règlement et vie étudiante,reclamation
+Où trouver les renseignements sur les conditions d’utilisation des bornes interactives ?,Services campus,info
+Cela pose problème : une sanction pour retard ne semble pas conforme aux règles annoncées. À qui puis-je le signaler ?,Règlement et vie étudiante,reclamation
+Je souhaite signaler un problème : le support informatique ne répond pas à mes demandes.,Services campus,reclamation
+Pouvez-vous m’indiquer les moyens de contacter un service en dehors des horaires d’ouverture ?,Contacts et information générale,info
+J’ai du mal à effectuer ma réinscription ; comment dois-je faire ?,Procédures administratives,aide
+Vous pouvez me renseigner sur l’accès aux locaux et aux espaces de travail ?,Services campus,info
+J’aurais besoin d’aide pour retrouver les coordonnées d’un enseignant.,Contacts et information générale,aide
+Je ne trouve pas normal que ma demande de rendez-vous d’orientation n’a pas été traitée.,Orientation et formation,reclamation
+"J’ai déjà signalé que les matières enseignées diffèrent de celles présentées avant l’inscription, mais rien ne change.",Orientation et formation,reclamation
+Pourriez-vous m’accompagner pour vérifier les cours maintenus pendant les examens ?,Emplois du temps et planning,aide
+Mon dossier administratif est bloqué depuis un mois,Procédures administratives,reclamation
+"Cette situation doit être examinée, puisque les renseignements reçus pour les visiteurs étaient contradictoires.",Contacts et information générale,reclamation
+J’aimerais obtenir des informations sur la procédure de candidature à une formation.,Procédures administratives,info
+Cela pose problème : un accident signalé n’a pas été pris en charge rapidement. À qui puis-je le signaler ?,Règlement et vie étudiante,reclamation
+"Je veux signaler un comportement déplacé, mais je ne sais pas à qui parler.",Règlement et vie étudiante,aide
+Est-ce que quelqu’un peut m’aider à retrouver le détail des enseignements CPDIA ?,Orientation et formation,aide
+Pourriez-vous m’accompagner pour régulariser ma situation administrative après une absence ?,Procédures administratives,aide
+"J’ai déjà signalé que les informations sur l’alternance ne correspondent pas aux conditions communiquées, mais rien ne change.",Orientation et formation,reclamation
+Je cherche des informations fiables sur la procédure de réclamation auprès de l’établissement.,Règlement et vie étudiante,info
+J’ai du mal à consulter les dates des examens ; comment dois-je faire ?,Emplois du temps et planning,aide
+Est-ce que vous avez des informations concernant le dépôt d’un dossier administratif ?,Procédures administratives,info
+Je voudrais faire une réclamation car ma demande d’aide sociale n’a pas été examinée correctement.,Règlement et vie étudiante,reclamation
+Cela pose problème : l’accueil était fermé alors qu’il devait être ouvert. À qui puis-je le signaler ?,Services campus,reclamation
+Je voudrais savoir ce qu’il en est concernant les démarches pour signaler une erreur dans une information publiée.,Contacts et information générale,info
+Où puis-je consulter le planning des salles de cours ?,Emplois du temps et planning,info
+Où puis-je consulter les bourses et les aides financières étudiantes ?,Procédures administratives,info
+Je ne comprends pas comment comprendre mes droits et obligations en tant qu’étudiant ; pouvez-vous m’expliquer ?,Règlement et vie étudiante,aide
+Je cherche des informations fiables sur les coordonnées d’un enseignant.,Contacts et information générale,info
+Où trouver les renseignements sur les poursuites d’études après un Bachelor ?,Orientation et formation,info
+Est-ce que quelqu’un peut m’aider à comprendre les conséquences de retards répétés ?,Règlement et vie étudiante,aide
+Je cherche des informations fiables sur les dates importantes à retenir pour le semestre.,Emplois du temps et planning,info
+Pourriez-vous m’accompagner pour m’inscrire à une visite ou à une journée portes ouvertes ?,Orientation et formation,aide
+"Cette situation doit être examinée, puisque les tarifs affichés au restaurant universitaire ne correspondent pas au montant demandé.",Services campus,reclamation
+"Je suis mécontent(e), car les indications pour trouver le bureau administratif sont insuffisantes.",Contacts et information générale,reclamation
+Je voudrais faire une réclamation car ma demande de réinscription est bloquée.,Procédures administratives,reclamation
+Je souhaite signaler un problème : je conteste la sanction disciplinaire qui m’a été notifiée.,Règlement et vie étudiante,reclamation
+Je ne trouve pas normal que les horaires de réponse téléphonique ne correspondent pas aux horaires annoncés.,Contacts et information générale,reclamation
+J’aimerais obtenir des informations sur le contenu de la formation CPDIA.,Orientation et formation,info
+"Je suis mécontent(e), car la bibliothèque était fermée pendant les horaires annoncés.",Services campus,reclamation
+Je voudrais savoir ce qu’il en est concernant les installations sportives du campus.,Services campus,info
+"Cette situation doit être examinée, puisque la réinitialisation du mot de passe échoue à chaque tentative.",Services campus,reclamation
+Je suis un peu perdu(e) pour constituer un dossier de demande de bourse ; par où commencer ?,Procédures administratives,aide
+J’aurais besoin d’aide pour savoir si mon parcours permet une passerelle.,Orientation et formation,aide
+Je voudrais savoir ce qu’il en est concernant le numéro de téléphone du service administratif.,Contacts et information générale,info
+"J’ai déjà signalé que mon inscription pédagogique n’a pas été enregistrée correctement, mais rien ne change.",Procédures administratives,reclamation
+Je cherche des informations fiables sur les règles de vie dans les espaces collectifs.,Règlement et vie étudiante,info
+Je suis un peu perdu(e) pour vérifier les dates limites de paiement ; par où commencer ?,Procédures administratives,aide
+"Je suis mécontent(e), car aucune solution de contact n’est indiquée en dehors des horaires d’ouverture.",Contacts et information générale,reclamation
+Pouvez-vous enregistrer ma réclamation : l’adresse utilisée dans un document officiel semble incorrecte ?,Contacts et information générale,reclamation
+Je ne comprends pas comment comprendre les formalités administratives pour étudiant international ; pouvez-vous m’expliquer ?,Procédures administratives,aide
+J’aimerais obtenir des informations sur les règles de comportement dans les salles de cours.,Règlement et vie étudiante,info
+Je veux faire remonter ce dysfonctionnement : les informations sur les modules de Data Science sont inexactes.,Orientation et formation,reclamation
+Pourriez-vous m’accompagner pour identifier les métiers possibles après le Master IA ?,Orientation et formation,aide
+Je suis un peu perdu(e) pour identifier un contact à prévenir pour une question urgente ; par où commencer ?,Contacts et information générale,aide
+Je veux faire remonter ce dysfonctionnement : la borne interactive ne permet pas de terminer une demande.,Services campus,reclamation
+Je souhaite signaler un problème : mon attestation de réussite n’a toujours pas été délivrée.,Procédures administratives,reclamation
+"Je suis mécontent(e), car les coordonnées de l’enseignant dans l’annuaire ne sont plus valables.",Contacts et information générale,reclamation
+"Je galère à savoir quand la cafétéria est ouverte, vous pouvez m’orienter ?",Services campus,aide
+"Je ne comprends pas le règlement, pouvez-vous m’aider ?",Règlement et vie étudiante,aide
+Pourriez-vous m’accompagner pour connaître les horaires et les tarifs du restaurant universitaire ?,Services campus,aide
+Vous pouvez me renseigner sur l’adresse électronique du service scolarité ?,Contacts et information générale,info
+J’aurais besoin d’aide pour trouver un interlocuteur pour mes démarches en tant qu’étudiant international.,Contacts et information générale,aide
+J’aimerais obtenir des informations sur les clubs et associations étudiantes.,Services campus,info
+J’ai du mal à vérifier les dates limites de paiement ; comment dois-je faire ?,Procédures administratives,aide
+Où puis-je consulter les horaires de cours selon mon année d’étude ?,Emplois du temps et planning,info
+"Je galère à savoir quel comportement est attendu en classe, vous pouvez m’orienter ?",Règlement et vie étudiante,aide
+Je n’arrive pas à comprendre comment régler les frais de scolarité. Pouvez-vous m’aider ?,Procédures administratives,aide
+Je bloque quand j’essaie de choisir une spécialité selon mon projet professionnel. Quelle est la marche à suivre ?,Orientation et formation,aide
+J’aurais besoin d’aide pour comprendre les règles appliquées en cas de fraude.,Règlement et vie étudiante,aide
+Je cherche des informations fiables sur les étapes pour faire valider un stage.,Procédures administratives,info
+Je ne trouve pas normal que les règles des espaces collectifs ne sont pas respectées et aucun suivi n’est fait.,Règlement et vie étudiante,reclamation
+"Cette situation doit être examinée, puisque ma demande d’aide sociale n’a pas été examinée correctement.",Règlement et vie étudiante,reclamation
+Pourriez-vous m’accompagner pour identifier où consulter les annonces officielles ?,Contacts et information générale,aide
+Pourriez-vous m’accompagner pour obtenir les renseignements utiles avant une visite ?,Contacts et information générale,aide
+Comment connaître la procédure à suivre en cas de retard ?,Règlement et vie étudiante,info
+J’aurais besoin d’aide pour terminer ma première inscription.,Procédures administratives,aide
+Je ne trouve pas normal que ma demande d’orientation vers l’aide sociale est restée sans suite.,Services campus,reclamation
+La formation annoncée ne correspond pas à ce qui est enseigné,Orientation et formation,reclamation
+J’ai du mal à connaître les étapes pour changer de parcours ; comment dois-je faire ?,Procédures administratives,aide
+Est-ce que quelqu’un peut m’aider à trouver le bon service pour une question de logement ?,Services campus,aide
+À quelle heure ferme la bibliothèque ?,Services campus,info
+"Cette situation doit être examinée, puisque le soutien pédagogique demandé ne m’a pas été proposé.",Orientation et formation,reclamation
+Où puis-je consulter les services d’aide au logement étudiant ?,Services campus,info
+Je souhaite signaler un problème : les prérequis indiqués ont changé après ma candidature.,Orientation et formation,reclamation
+Je ne comprends pas comment savoir à quel moment appeler l’école ; pouvez-vous m’expliquer ?,Contacts et information générale,aide
+J’aimerais obtenir des informations sur les informations pratiques pour les visiteurs et les futurs étudiants.,Contacts et information générale,info
+Où trouver les renseignements sur les horaires et l’accès à la bibliothèque ?,Services campus,info
+Je veux faire remonter ce dysfonctionnement : les équipements communs sont régulièrement indisponibles ou détériorés.,Règlement et vie étudiante,reclamation
+J’ai du mal à trouver comment contacter l’enseignant d’un module ; comment dois-je faire ?,Orientation et formation,aide
+Je souhaite signaler un problème : la bibliothèque était fermée pendant les horaires annoncés.,Services campus,reclamation
+Pouvez-vous m’indiquer les conditions de candidature à une alternance ?,Procédures administratives,info
+Je veux faire remonter ce dysfonctionnement : le Wi-Fi du campus ne fonctionne pas dans les salles de cours.,Services campus,reclamation
+"J’ai déjà signalé que les coordonnées du responsable pédagogique ne sont pas à jour, mais rien ne change.",Orientation et formation,reclamation
+Où puis-je consulter les justificatifs acceptés en cas d’absence ?,Règlement et vie étudiante,info
+Où trouver les renseignements sur les formalités pour un étudiant international ?,Procédures administratives,info
+Est-ce que vous avez des informations concernant les dispositifs d’accompagnement pédagogique ?,Orientation et formation,info
+Cela pose problème : les coordonnées d’une association étudiante semblent obsolètes. À qui puis-je le signaler ?,Services campus,reclamation
+Je cherche des informations fiables sur les menus et les options alimentaires du restaurant universitaire.,Services campus,info
+"Je galère à préparer les démarches administratives de mon alternance, vous pouvez m’orienter ?",Procédures administratives,aide
+Où trouver les renseignements sur les règles concernant le bruit et le respect des espaces communs ?,Règlement et vie étudiante,info
+"Je suis mécontent(e), car plusieurs dates importantes manquent dans le calendrier.",Emplois du temps et planning,reclamation
+Je suis un peu perdu(e) pour vérifier les conditions de présence à un examen ; par où commencer ?,Règlement et vie étudiante,aide
+J’aurais besoin d’aide pour comprendre les formalités administratives pour étudiant international.,Procédures administratives,aide
+Pourriez-vous m’accompagner pour modifier mon inscription pédagogique ?,Procédures administratives,aide
+Je souhaite signaler un problème : les services se renvoient ma demande concernant le stage.,Contacts et information générale,reclamation
+"Je suis mécontent(e), car les consignes des projets pédagogiques sont incomplètes ou tardives.",Orientation et formation,reclamation
+Pourriez-vous m’accompagner pour savoir à qui signaler un accident sur le campus ?,Règlement et vie étudiante,aide
+J’ai du mal à vérifier les conditions de présence à un examen ; comment dois-je faire ?,Règlement et vie étudiante,aide
+Je ne trouve pas normal que les conseils d’orientation reçus ne répondent pas à mon projet.,Orientation et formation,reclamation
+Je n’arrive pas à savoir comment signaler une nuisance dans les espaces communs. Pouvez-vous m’aider ?,Règlement et vie étudiante,aide
+Je voudrais savoir ce qu’il en est concernant les prérequis nécessaires pour intégrer une formation.,Orientation et formation,info
+Vous pouvez me renseigner sur la délivrance d’un certificat de scolarité ?,Procédures administratives,info
+Où puis-je consulter l’adresse électronique du service scolarité ?,Contacts et information générale,info
+Je n’arrive pas à repérer les cours prévus cette semaine. Pouvez-vous m’aider ?,Emplois du temps et planning,aide
+Pourriez-vous m’accompagner pour identifier un créneau disponible pour le travail de groupe ?,Emplois du temps et planning,aide
+Je ne trouve pas normal que le numéro communiqué ne permet pas de joindre le service.,Contacts et information générale,reclamation
+Est-ce que quelqu’un peut m’aider à connaître les horaires et les tarifs du restaurant universitaire ?,Services campus,aide
+"Je suis mécontent(e), car les instructions reçues pour mon dossier international se contredisent.",Procédures administratives,reclamation
+Je voudrais savoir ce qu’il en est concernant les aménagements d’accessibilité dans les locaux.,Services campus,info
+Je ne sais pas comment prendre rendez-vous pour discuter de mon orientation. Vous pouvez m’aider ?,Orientation et formation,aide
+"J’ai déjà signalé que le calendrier semestriel comporte des informations incohérentes, mais rien ne change.",Emplois du temps et planning,reclamation
+Vous pouvez me renseigner sur les règles de respect et de lutte contre le harcèlement ?,Règlement et vie étudiante,info
+Je bloque quand j’essaie de trouver le numéro du service administratif. Quelle est la marche à suivre ?,Contacts et information générale,aide
+J’ai cours demain mais je ne sais plus dans quelle salle aller.,Emplois du temps et planning,aide
+Je voudrais savoir ce qu’il en est concernant la procédure à suivre en cas de retard.,Règlement et vie étudiante,info
+J’aimerais obtenir des informations sur les horaires du groupe CPDIA.,Emplois du temps et planning,info
+Savez-vous où sont publiées les informations sur les horaires de la cafétéria ?,Services campus,info
+Pouvez-vous enregistrer ma réclamation : les modalités d’évaluation ont changé sans explication ?,Orientation et formation,reclamation
+Les ordinateurs de la salle info ne fonctionnent jamais.,Services campus,reclamation
+Est-ce que vous avez des informations concernant les conséquences des retards répétés ?,Règlement et vie étudiante,info
+Je voudrais savoir ce qu’il en est concernant les démarches en cas de perte d’un objet sur le campus.,Services campus,info
+Quelle est la procédure en cas de retard ?,Règlement et vie étudiante,info
+Comment connaître les démarches en cas de perte d’un objet sur le campus ?,Services campus,info
+"Cette situation doit être examinée, puisque les coordonnées d’une association étudiante semblent obsolètes.",Services campus,reclamation
+Je cherche des informations fiables sur les informations destinées aux étudiants internationaux qui découvrent le système français.,Orientation et formation,info
+Je ne sais pas comment m’orienter vers un service d’aide sociale. Vous pouvez m’aider ?,Services campus,aide
+Où trouver les renseignements sur le prêt de matériel et d’équipements ?,Services campus,info
+Pourriez-vous m’accompagner pour retrouver le planning des rattrapages ?,Emplois du temps et planning,aide
+Je conteste la situation suivante : un comportement que j’ai signalé continue malgré mon signalement.,Règlement et vie étudiante,reclamation
+Comment connaître les dates et les étapes de candidature ?,Orientation et formation,info
+Est-ce que quelqu’un peut m’aider à vérifier si le campus reste ouvert pendant les vacances ?,Emplois du temps et planning,aide
+Pouvez-vous enregistrer ma réclamation : les cours et examens sont programmés au même moment ?,Emplois du temps et planning,reclamation
+Je suis un peu perdu(e) pour savoir quel justificatif transmettre après une absence ; par où commencer ?,Règlement et vie étudiante,aide
+Je cherche des informations fiables sur les ressources officielles pour trouver une réponse à une question fréquente.,Contacts et information générale,info
+J’aimerais obtenir des informations sur les horaires de cours pendant la période des examens.,Emplois du temps et planning,info
+J’ai envoyé mes papiers trois fois et personne ne répond.,Procédures administratives,reclamation
+Je cherche des informations fiables sur la salle où se déroule le cours de demain.,Emplois du temps et planning,info
+Je ne comprends pas comment retrouver la source officielle d’une information scolaire ; pouvez-vous m’expliquer ?,Contacts et information générale,aide
+Je ne sais pas comment accéder aux installations sportives. Vous pouvez m’aider ?,Services campus,aide
+Je souhaite signaler un problème : mon dossier de première inscription reste sans réponse.,Procédures administratives,reclamation
+J’ai du mal à faire établir ma convention de stage ; comment dois-je faire ?,Procédures administratives,aide
+"Je galère à savoir comment demander une médiation après un désaccord, vous pouvez m’orienter ?",Règlement et vie étudiante,aide
+"Je galère à réserver ou utiliser un ordinateur du campus, vous pouvez m’orienter ?",Services campus,aide
+"Cette situation doit être examinée, puisque mon recours contre une sanction n’a reçu aucune réponse.",Règlement et vie étudiante,reclamation
+Je ne comprends pas comment prendre rendez-vous pour discuter de mon orientation ; pouvez-vous m’expliquer ?,Orientation et formation,aide
+Savez-vous où sont publiées les informations sur les canaux officiels pour recevoir les annonces de l’école ?,Contacts et information générale,info
+"J’ai déjà signalé que ma demande de duplicata n’a pas été traitée, mais rien ne change.",Procédures administratives,reclamation
+J’aurais besoin d’aide pour comprendre le parcours d’études français proposé par ESIC.,Orientation et formation,aide
+Je ne comprends pas comment retrouver la date d’une évaluation ; pouvez-vous m’expliquer ?,Emplois du temps et planning,aide
+Pourriez-vous m’accompagner pour identifier les compétences que je dois acquérir ?,Orientation et formation,aide
+Je ne trouve pas normal que une salle ou un équipement réservé n’est pas disponible.,Emplois du temps et planning,reclamation
+Je souhaite signaler un comportement inacceptable sur le campus,Règlement et vie étudiante,reclamation
+Pourriez-vous m’accompagner pour préparer mon dossier de candidature ?,Procédures administratives,aide
+Vous pouvez me renseigner sur le planning des cours de la semaine prochaine ?,Emplois du temps et planning,info
+Je cherche des informations fiables sur la prise de rendez-vous avec le service administratif.,Procédures administratives,info
+Vous pouvez me renseigner sur les périodes de vacances et les jours sans cours ?,Emplois du temps et planning,info
+"Je suis mécontent(e), car les équipements communs sont régulièrement indisponibles ou détériorés.",Règlement et vie étudiante,reclamation
+"Cette situation doit être examinée, puisque les réponses obtenues restent générales même lorsque je précise ma demande.",Contacts et information générale,reclamation
+"Je n'arrive pas à joindre la scolarité, aidez-moi",Services campus,aide
+J’aimerais obtenir des informations sur les procédures pour signaler une discrimination.,Règlement et vie étudiante,info
+Je bloque quand j’essaie de trouver les informations sur l’accessibilité des locaux. Quelle est la marche à suivre ?,Services campus,aide
+Je voudrais savoir ce qu’il en est concernant les contacts des responsables pédagogiques.,Orientation et formation,info
+Comment connaître l’inscription pédagogique aux unités d’enseignement ?,Procédures administratives,info
+Comment connaître les projets professionnels liés à une spécialité ?,Orientation et formation,info
+"Je suis mécontent(e), car la borne interactive ne permet pas de terminer une demande.",Services campus,reclamation
+Je conteste la situation suivante : ma demande urgente a été redirigée plusieurs fois sans réponse.,Contacts et information générale,reclamation
+"Je n'arrive pas à finaliser mon inscription, aidez-moi",Procédures administratives,aide
+Je conteste la situation suivante : une accusation de plagiat me paraît injustifiée.,Règlement et vie étudiante,reclamation
+J’aurais besoin d’aide pour trouver le bureau du service dont j’ai besoin.,Contacts et information générale,aide
+Je souhaite signaler un problème : le service de santé annoncé est impossible à joindre.,Services campus,reclamation
+Je bloque quand j’essaie de identifier le bon interlocuteur pour mon stage. Quelle est la marche à suivre ?,Contacts et information générale,aide
+Je voudrais faire une réclamation car la date limite affichée a changé sans explication.,Emplois du temps et planning,reclamation
+Je suis un peu perdu(e) pour effectuer ma réinscription ; par où commencer ?,Procédures administratives,aide
+Quels services sont ouverts sur le campus ?,Services campus,info
+Pouvez-vous m’indiquer les frais de scolarité et les moyens de paiement ?,Procédures administratives,info
+Quel est le programme du Master IA ?,Orientation et formation,info
+Je conteste la situation suivante : ma demande de certificat de scolarité reste sans réponse.,Procédures administratives,reclamation
+Savez-vous où sont publiées les informations sur les périodes de vacances et les jours sans cours ?,Emplois du temps et planning,info
+Je ne trouve pas normal que le Wi-Fi du campus ne fonctionne pas dans les salles de cours.,Services campus,reclamation
+Je suis un peu perdu(e) pour trouver comment demander un soutien psychologique ; par où commencer ?,Services campus,aide
+Je conteste la situation suivante : ma demande de réinscription est bloquée.,Procédures administratives,reclamation
+Je cherche des informations fiables sur les informations générales sur la vie du campus.,Contacts et information générale,info
+J’aimerais obtenir des informations sur les journées portes ouvertes et les visites de l’école.,Orientation et formation,info
+Vous pouvez me renseigner sur les impressions et photocopies sur le campus ?,Services campus,info
+Je veux faire remonter ce dysfonctionnement : les instructions reçues pour mon dossier international se contredisent.,Procédures administratives,reclamation
+Cela pose problème : les informations pratiques sur la visite annoncée sont erronées. À qui puis-je le signaler ?,Orientation et formation,reclamation
+Pouvez-vous m’indiquer le prêt de matériel et d’équipements ?,Services campus,info
+"Cette situation doit être examinée, puisque une sanction pour retard ne semble pas conforme aux règles annoncées.",Règlement et vie étudiante,reclamation
+Je conteste la situation suivante : je ne parviens pas à joindre le service des admissions.,Contacts et information générale,reclamation
+Cela pose problème : mon désaccord avec un enseignant n’a pas été traité équitablement. À qui puis-je le signaler ?,Règlement et vie étudiante,reclamation
+"Cette situation doit être examinée, puisque je n’ai obtenu aucune réponse à ma demande d’aide au logement.",Services campus,reclamation
+Pouvez-vous enregistrer ma réclamation : les jours de fermeture ne sont pas indiqués clairement ?,Emplois du temps et planning,reclamation
+Où trouver les renseignements sur les menus et les options alimentaires du restaurant universitaire ?,Services campus,info
+Je voudrais faire une réclamation car les réponses obtenues restent générales même lorsque je précise ma demande.,Contacts et information générale,reclamation
+Je ne sais pas comment prendre rendez-vous avec le service administratif. Vous pouvez m’aider ?,Procédures administratives,aide
+Je n’arrive pas à récupérer mon relevé de notes. Pouvez-vous m’aider ?,Procédures administratives,aide
+Où trouver les renseignements sur les horaires des cours de ma formation ?,Emplois du temps et planning,info
+Je ne comprends pas comment prendre rendez-vous avec le service administratif ; pouvez-vous m’expliquer ?,Procédures administratives,aide
+Savez-vous où sont publiées les informations sur l’accès aux locaux et aux espaces de travail ?,Services campus,info
+Est-ce que vous avez des informations concernant les compétences attendues à la fin de la formation ?,Orientation et formation,info
+Où puis-je consulter les règles d’accès aux bâtiments du campus ?,Règlement et vie étudiante,info
+Cela pose problème : la modification de mon choix de cours n’a pas été prise en compte. À qui puis-je le signaler ?,Procédures administratives,reclamation
+Comment faire ma réinscription ?,Procédures administratives,info
+Je ne comprends pas comment retrouver les coordonnées d’un enseignant ; pouvez-vous m’expliquer ?,Contacts et information générale,aide
+Pourriez-vous m’accompagner pour préparer les démarches administratives de mon alternance ?,Procédures administratives,aide
+Je ne trouve pas normal que la salle du cours a été changée sans information visible.,Emplois du temps et planning,reclamation
+"J’ai déjà signalé que la langue sélectionnée n’est pas conservée pendant la conversation, mais rien ne change.",Contacts et information générale,reclamation
+Est-ce que vous avez des informations concernant les horaires d’ouverture du campus pendant les périodes sans cours ?,Emplois du temps et planning,info
+Je suis un peu perdu(e) pour faire corriger une erreur dans mon dossier ; par où commencer ?,Procédures administratives,aide
+"Je suis mécontent(e), car le matériel réservé n’était pas disponible au moment prévu.",Services campus,reclamation
+J’ai du mal à connaître les conditions d’accès à une aide sociale ; comment dois-je faire ?,Règlement et vie étudiante,aide
+Je suis un peu perdu(e) pour comparer les parcours en cybersécurité et en développement ; par où commencer ?,Orientation et formation,aide
+Je ne comprends pas comment comprendre le parcours d’études français proposé par ESIC ; pouvez-vous m’expliquer ?,Orientation et formation,aide
+Je voudrais faire une réclamation car ma demande urgente a été redirigée plusieurs fois sans réponse.,Contacts et information générale,reclamation
+Je voudrais faire une réclamation car je n’ai reçu aucune réponse concernant ma demande de bourse.,Procédures administratives,reclamation
+Je veux faire remonter ce dysfonctionnement : les coordonnées de l’enseignant dans l’annuaire ne sont plus valables.,Contacts et information générale,reclamation
+Je veux faire remonter ce dysfonctionnement : je ne trouve aucun contact qui puisse répondre à mes questions d’étudiant international.,Contacts et information générale,reclamation
+"J’ai déjà signalé que mon attestation de réussite n’a toujours pas été délivrée, mais rien ne change.",Procédures administratives,reclamation
+Je veux faire remonter ce dysfonctionnement : mes droits d’étudiant ne semblent pas avoir été respectés.,Règlement et vie étudiante,reclamation
+Je veux faire remonter ce dysfonctionnement : plusieurs dates importantes manquent dans le calendrier.,Emplois du temps et planning,reclamation
+"Cette situation doit être examinée, puisque un accident signalé n’a pas été pris en charge rapidement.",Règlement et vie étudiante,reclamation
+Comment connaître les informations générales sur la vie du campus ?,Contacts et information générale,info
+"Je suis mécontent(e), car le service de santé annoncé est impossible à joindre.",Services campus,reclamation
+À quelle date commence la rentrée ?,Emplois du temps et planning,info
+J’aimerais obtenir des informations sur la modification d’un choix de cours.,Procédures administratives,info
+J’ai du mal à trouver comment demander un soutien psychologique ; comment dois-je faire ?,Services campus,aide
+Je n’arrive pas à comprendre les règles concernant mes données personnelles. Pouvez-vous m’aider ?,Règlement et vie étudiante,aide
+Pouvez-vous m’indiquer les horaires des cours de ma formation ?,Emplois du temps et planning,info
+Je ne sais pas comment repérer les consignes de sécurité à suivre. Vous pouvez m’aider ?,Règlement et vie étudiante,aide
+Je ne comprends pas comment comprendre les projets à réaliser pendant ma formation ; pouvez-vous m’expliquer ?,Orientation et formation,aide
+Je voudrais savoir ce qu’il en est concernant la demande d’attestation de réussite.,Procédures administratives,info
+Pouvez-vous enregistrer ma réclamation : une accusation de plagiat me paraît injustifiée ?,Règlement et vie étudiante,reclamation
+Pouvez-vous m’indiquer le service à contacter pour une question de stage ?,Contacts et information générale,info
+"J’ai déjà signalé que une information erronée reste publiée malgré mon signalement, mais rien ne change.",Contacts et information générale,reclamation
+Vous pouvez me renseigner sur les possibilités de stage selon la formation ?,Orientation et formation,info
+Est-ce que quelqu’un peut m’aider à réinitialiser mon mot de passe étudiant ?,Services campus,aide
+Je voudrais faire une réclamation car la salle indiquée sur le planning est occupée par un autre groupe.,Emplois du temps et planning,reclamation
+Je veux faire remonter ce dysfonctionnement : les informations sur les menus ne sont pas mises à jour.,Services campus,reclamation
+"Deux examens sont prévus en même temps, c’est inadmissible.",Emplois du temps et planning,reclamation
+Comment connaître les droits et les devoirs des étudiants ?,Règlement et vie étudiante,info
+Je suis un peu perdu(e) pour trouver le bon interlocuteur pour signaler un comportement déplacé ; par où commencer ?,Règlement et vie étudiante,aide
+Je suis un peu perdu(e) pour consulter les dates des examens ; par où commencer ?,Emplois du temps et planning,aide
+Je ne trouve pas normal que les informations générales sur le campus ne sont pas à jour.,Contacts et information générale,reclamation
+Est-ce que vous avez des informations concernant les coordonnées du responsable pédagogique ?,Contacts et information générale,info
+Vous pouvez me renseigner sur la manière de poser une question à l’assistant ESIC ?,Contacts et information générale,info
+Je cherche des informations fiables sur la disponibilité des salles et des équipements.,Emplois du temps et planning,info
+Vous pouvez me renseigner sur les horaires de la cafétéria ?,Services campus,info
+Savez-vous où sont publiées les informations sur l’utilisation des ordinateurs et des salles informatiques ?,Services campus,info
+Je voudrais faire une réclamation car les dates des examens affichées semblent incorrectes.,Emplois du temps et planning,reclamation
+Je bloque quand j’essaie de comprendre quelles formations peuvent se faire en alternance. Quelle est la marche à suivre ?,Orientation et formation,aide
+Je ne comprends pas comment trouver une salle équipée pour un travail de groupe ; pouvez-vous m’expliquer ?,Emplois du temps et planning,aide
+J’aurais besoin d’aide pour savoir quelles règles s’appliquent au matériel pédagogique.,Règlement et vie étudiante,aide
+Je ne comprends pas comment trouver un interlocuteur pour mes démarches en tant qu’étudiant international ; pouvez-vous m’expliquer ?,Contacts et information générale,aide
+Pourriez-vous m’accompagner pour savoir comment demander une médiation après un désaccord ?,Règlement et vie étudiante,aide
+Vous pouvez me renseigner sur les contacts pour une question sur les admissions ?,Contacts et information générale,info
+Pouvez-vous enregistrer ma réclamation : le planning de la semaine prochaine n’est pas à jour ?,Emplois du temps et planning,reclamation
+Je souhaite signaler un problème : le calendrier semestriel comporte des informations incohérentes.,Emplois du temps et planning,reclamation
+Où trouver les renseignements sur les projets pédagogiques prévus dans mon cursus ?,Orientation et formation,info
+Vous pouvez me renseigner sur les personnes à contacter en cas de question urgente ?,Contacts et information générale,info
+Je ne trouve pas normal que les règles de retard sont appliquées de façon incohérente.,Règlement et vie étudiante,reclamation
+Le programme présenté lors de la réunion ne correspond pas aux cours.,Orientation et formation,reclamation
+J’ai du mal à comprendre le programme du Master IA ; comment dois-je faire ?,Orientation et formation,aide
+Je voudrais savoir ce qu’il en est concernant les règles de respect de la vie privée des étudiants.,Règlement et vie étudiante,info
+"J’ai déjà signalé que mon dossier d’aide financière a été refusé sans explication claire, mais rien ne change.",Procédures administratives,reclamation
+Comment connaître la procédure de demande de duplicata de document ?,Procédures administratives,info
+J’aimerais obtenir des informations sur les conséquences des retards répétés.,Règlement et vie étudiante,info
+Je conteste la situation suivante : mon année d’étude n’apparaît pas correctement dans le planning.,Emplois du temps et planning,reclamation
+Où trouver les renseignements sur les frais de scolarité et les moyens de paiement ?,Procédures administratives,info
+Où puis-je consulter la procédure de transfert ou de changement de parcours ?,Procédures administratives,info
+"Je galère à trouver le bon interlocuteur pour signaler un comportement déplacé, vous pouvez m’orienter ?",Règlement et vie étudiante,aide
+J’ai du mal à organiser un rendez-vous avec un interlocuteur ESIC ; comment dois-je faire ?,Contacts et information générale,aide
+Je bloque quand j’essaie de vérifier si un jour férié entraîne une journée sans cours. Quelle est la marche à suivre ?,Emplois du temps et planning,aide
+J’aimerais obtenir des informations sur les horaires et les tarifs du restaurant universitaire.,Services campus,info
+Est-ce que vous avez des informations concernant les procédures pour signaler une discrimination ?,Règlement et vie étudiante,info
+Je ne sais pas comment connaître les matières du Bachelor. Vous pouvez m’aider ?,Orientation et formation,aide
+Je veux faire remonter ce dysfonctionnement : les liens proposés ne conduisent pas vers les informations attendues.,Contacts et information générale,reclamation
+"Je suis étudiant international, quel service peut répondre à mes questions ?",Contacts et information générale,info
+Pouvez-vous enregistrer ma réclamation : mon dossier d’alternance n’avance pas malgré mes relances ?,Procédures administratives,reclamation
+Où trouver les renseignements sur le suivi de l’état de mon dossier étudiant ?,Procédures administratives,info
+Cela pose problème : les horaires du groupe CPDIA ne correspondent pas au planning reçu. À qui puis-je le signaler ?,Emplois du temps et planning,reclamation
+Où trouver les renseignements sur les coordonnées d’un enseignant ?,Contacts et information générale,info
+Comment connaître les horaires de l’accueil téléphonique ?,Contacts et information générale,info
+"Cette situation doit être examinée, puisque les informations sur les rattrapages sont contradictoires.",Emplois du temps et planning,reclamation
+Où puis-je consulter le programme du Master en intelligence artificielle ?,Orientation et formation,info
+Je ne comprends pas comment me connecter au Wi-Fi du campus ; pouvez-vous m’expliquer ?,Services campus,aide
+Je ne sais pas comment connaître la marche à suivre après un retard. Vous pouvez m’aider ?,Règlement et vie étudiante,aide
+Savez-vous où sont publiées les informations sur le planning des cours de la semaine prochaine ?,Emplois du temps et planning,info
+Je suis un peu perdu(e) pour utiliser le service d’impression du campus ; par où commencer ?,Services campus,aide
+J’aurais besoin d’aide pour comprendre les projets à réaliser pendant ma formation.,Orientation et formation,aide
+Je suis un peu perdu(e) pour comprendre comment les modules sont évalués ; par où commencer ?,Orientation et formation,aide
+Je veux faire remonter ce dysfonctionnement : je n’ai pas reçu les informations annoncées sur ma candidature.,Orientation et formation,reclamation
+Je ne trouve pas normal que aucun créneau de rendez-vous n’est proposé malgré l’urgence de mon dossier.,Procédures administratives,reclamation
+Je ne sais pas comment savoir à quel moment appeler l’école. Vous pouvez m’aider ?,Contacts et information générale,aide
+Je suis un peu perdu(e) pour obtenir un certificat de scolarité ; par où commencer ?,Procédures administratives,aide
+Où puis-je consulter la manière de demander une réponse plus précise ?,Contacts et information générale,info
+Où puis-je consulter le calendrier des examens ?,Emplois du temps et planning,info
+Je conteste la situation suivante : les échéances de paiement communiquées ne sont pas cohérentes.,Procédures administratives,reclamation
+Je voudrais faire une réclamation car l’adresse de contact de la scolarité semble invalide.,Contacts et information générale,reclamation
+"Je galère à consulter le planning de la semaine prochaine, vous pouvez m’orienter ?",Emplois du temps et planning,aide
+Je voudrais de l’aide pour choisir mon parcours,Orientation et formation,aide
+"Cette situation doit être examinée, puisque le problème signalé dans le bâtiment n’a toujours pas été pris en charge.",Services campus,reclamation
+"J’ai déjà signalé que des informations personnelles semblent avoir été communiquées sans mon accord, mais rien ne change.",Règlement et vie étudiante,reclamation
+Je suis un peu perdu(e) pour filtrer le planning selon ma formation Data Science ; par où commencer ?,Emplois du temps et planning,aide
+Où trouver les renseignements sur les dates des évaluations continues ?,Emplois du temps et planning,info
+Savez-vous où sont publiées les informations sur les modalités d’évaluation des différents modules ?,Orientation et formation,info
+Je bloque quand j’essaie de signaler une information erronée sur le site ou le portail. Quelle est la marche à suivre ?,Contacts et information générale,aide
+Je veux faire remonter ce dysfonctionnement : une évaluation a été ajoutée au planning sans annonce claire.,Emplois du temps et planning,reclamation
+Je bloque quand j’essaie de connaître la date de ma soutenance. Quelle est la marche à suivre ?,Emplois du temps et planning,aide
+Cela pose problème : les horaires d’accès au campus annoncés sont contradictoires. À qui puis-je le signaler ?,Emplois du temps et planning,reclamation
+Je bloque quand j’essaie de demander un duplicata de document scolaire. Quelle est la marche à suivre ?,Procédures administratives,aide
+"Cette situation doit être examinée, puisque ma situation reste non régularisée alors que j’ai envoyé les justificatifs.",Procédures administratives,reclamation
+"Je suis mécontent(e), car du matériel commun a été endommagé sans que le problème soit signalé.",Règlement et vie étudiante,reclamation
+Est-ce que quelqu’un peut m’aider à déposer mon dossier au bon endroit ?,Procédures administratives,aide
+Savez-vous où sont publiées les informations sur les horaires de cours pendant la période des examens ?,Emplois du temps et planning,info
+Comment connaître les dates des soutenances ?,Emplois du temps et planning,info
+"Je suis mécontent(e), car les règles annoncées concernant la fraude ne m’ont pas été expliquées clairement.",Règlement et vie étudiante,reclamation
+"Je galère à consulter les horaires de mon groupe CPDIA, vous pouvez m’orienter ?",Emplois du temps et planning,aide
+Comment on fait pour avoir une convention de stage ?,Procédures administratives,info
+Je bloque quand j’essaie de demander à consulter ma copie d’examen. Quelle est la marche à suivre ?,Règlement et vie étudiante,aide
+Je bloque quand j’essaie de repérer les consignes de sécurité à suivre. Quelle est la marche à suivre ?,Règlement et vie étudiante,aide
+Je ne trouve pas normal que les ressources numériques sont inaccessibles avec mon compte.,Services campus,reclamation
+Je conteste la situation suivante : l’accès à un espace de travail est bloqué malgré mon autorisation.,Services campus,reclamation
+Où puis-je consulter la procédure de demande de convention de stage ?,Procédures administratives,info
+Je n’arrive pas à choisir une langue pour dialoguer avec l’assistant. Pouvez-vous m’aider ?,Contacts et information générale,aide
+Je ne sais pas comment vérifier si un cours est annulé ou déplacé. Vous pouvez m’aider ?,Emplois du temps et planning,aide
+J’aurais besoin d’aide pour accéder à la bibliothèque.,Services campus,aide
+J’ai du mal à déposer un recours contre une sanction ; comment dois-je faire ?,Règlement et vie étudiante,aide
+Est-ce que quelqu’un peut m’aider à reformuler ma question pour obtenir une réponse pertinente ?,Contacts et information générale,aide
+Je ne comprends pas comment trouver les événements ouverts aux étudiants ; pouvez-vous m’expliquer ?,Services campus,aide
+Je bloque quand j’essaie de vérifier si une salle a été modifiée. Quelle est la marche à suivre ?,Emplois du temps et planning,aide
+Où puis-je consulter les personnes à contacter en cas de question urgente ?,Contacts et information générale,info
+J’aurais besoin d’aide pour retrouver les dates officielles du semestre.,Emplois du temps et planning,aide
+Pouvez-vous m’indiquer les aménagements d’accessibilité dans les locaux ?,Services campus,info
+Pouvez-vous m’indiquer la demande d’attestation de réussite ?,Procédures administratives,info
+"Je suis mécontent(e), car la liste des documents demandés change selon les interlocuteurs.",Procédures administratives,reclamation
+Où trouver les renseignements sur les dates de début et de fin du semestre ?,Emplois du temps et planning,info
+Pouvez-vous m’indiquer les formations proposées par ESIC ?,Orientation et formation,info
+Est-ce que quelqu’un peut m’aider à déposer un recours contre une sanction ?,Règlement et vie étudiante,aide
+C’est quoi la règle pour une absence justifiée ?,Règlement et vie étudiante,info
+Je ne sais pas comment me connecter au Wi-Fi du campus. Vous pouvez m’aider ?,Services campus,aide
+Est-ce que quelqu’un peut m’aider à identifier les compétences que je dois acquérir ?,Orientation et formation,aide
+Je cherche des informations fiables sur les règles concernant l’utilisation des bornes et équipements partagés.,Règlement et vie étudiante,info
+"Je suis mécontent(e), car un événement annoncé a été annulé sans information.",Services campus,reclamation
+Je conteste la situation suivante : les conditions d’accès à l’examen m’ont été communiquées trop tard.,Règlement et vie étudiante,reclamation
+Est-ce que vous avez des informations concernant les consignes en cas de problème dans un bâtiment ?,Services campus,info
+"Cette situation doit être examinée, puisque les consignes d’accès destinées aux visiteurs ne sont pas claires.",Contacts et information générale,reclamation
+Je ne trouve pas normal que ma demande de consultation de copie a été refusée sans motif.,Règlement et vie étudiante,reclamation
+Je voudrais faire une réclamation car mon recours contre une sanction n’a reçu aucune réponse.,Règlement et vie étudiante,reclamation
+J’aurais besoin d’aide pour trouver les informations sur les menus.,Services campus,aide
+J’aurais besoin d’aide pour préparer les justificatifs demandés pour mon inscription.,Procédures administratives,aide
+Je bloque quand j’essaie de préparer ma première visite du campus. Quelle est la marche à suivre ?,Contacts et information générale,aide
+"Cette situation doit être examinée, puisque la situation discriminatoire que j’ai signalée n’a pas été prise au sérieux.",Règlement et vie étudiante,reclamation
+Je souhaite signaler un problème : les coordonnées du responsable pédagogique ne sont pas à jour.,Orientation et formation,reclamation
+"Je galère à vérifier comment éviter le plagiat dans un devoir, vous pouvez m’orienter ?",Règlement et vie étudiante,aide
+J’aimerais obtenir des informations sur le dépôt d’un dossier administratif.,Procédures administratives,info
+Je souhaite signaler un problème : les dates de semestre diffèrent selon les documents consultés.,Emplois du temps et planning,reclamation
+"Je galère à savoir comment accéder aux espaces de travail, vous pouvez m’orienter ?",Services campus,aide
+Je conteste la situation suivante : les jours de fermeture ne sont pas indiqués clairement.,Emplois du temps et planning,reclamation
+Je voudrais faire une réclamation car mon emprunt de livre n’a pas été enregistré correctement.,Services campus,reclamation
+Où puis-je consulter les dispositifs d’aide sociale et financière ?,Règlement et vie étudiante,info
+"Je galère à comprendre comment les modules sont évalués, vous pouvez m’orienter ?",Orientation et formation,aide
+Où puis-je consulter les impressions et photocopies sur le campus ?,Services campus,info
+Vous pouvez me renseigner sur les modalités d’emprunt et de retour des livres ?,Services campus,info
+Je bloque quand j’essaie de signaler la perte d’un objet. Quelle est la marche à suivre ?,Services campus,aide
+J’aimerais obtenir des informations sur les informations d’accès au campus pour une personne extérieure.,Contacts et information générale,info
+"Je suis mécontent(e), car mon dossier de première inscription reste sans réponse.",Procédures administratives,reclamation
+Est-ce que vous avez des informations concernant le contenu de la formation CPDIA ?,Orientation et formation,info
+Comment connaître l’accès aux ressources numériques de la bibliothèque ?,Services campus,info
+Je cherche des informations fiables sur les règles concernant la fraude aux examens.,Règlement et vie étudiante,info
+Je suis un peu perdu(e) pour apprendre à utiliser l’assistant virtuel ; par où commencer ?,Contacts et information générale,aide
+Je bloque quand j’essaie de contacter le support informatique. Quelle est la marche à suivre ?,Services campus,aide
+Pouvez-vous m’indiquer les poursuites d’études après un Bachelor ?,Orientation et formation,info
+"Je galère à faire corriger une erreur dans mon dossier, vous pouvez m’orienter ?",Procédures administratives,aide
+Est-ce que vous avez des informations concernant les critères d’admission à ESIC ?,Orientation et formation,info
+J’aurais besoin d’aide pour vérifier l’avancement de mon dossier.,Procédures administratives,aide
+"Je suis mécontent(e), car les informations concernant les équivalences sont contradictoires.",Orientation et formation,reclamation
+Je cherche des informations fiables sur les dates et les étapes de candidature.,Orientation et formation,info
+Où trouver les renseignements sur les contacts utiles pour un étudiant international ?,Contacts et information générale,info
+Quelle formation choisir pour travailler en data science ?,Orientation et formation,aide
+Où puis-je consulter les possibilités de stage selon la formation ?,Orientation et formation,info
+Où puis-je consulter l’emploi du temps de la formation Data Science ?,Emplois du temps et planning,info
+Savez-vous où sont publiées les informations sur la procédure de candidature à une formation ?,Procédures administratives,info
+Je bloque quand j’essaie de choisir et valider mes unités d’enseignement. Quelle est la marche à suivre ?,Procédures administratives,aide
+J’aurais besoin d’aide pour connaître la procédure de prêt de matériel.,Services campus,aide
+Cela pose problème : mon dossier déposé semble avoir été perdu. À qui puis-je le signaler ?,Procédures administratives,reclamation
+Vous pouvez me renseigner sur les échéances de paiement des frais de scolarité ?,Procédures administratives,info
+Le resto U est ouvert à midi ? Et c’est combien ?,Services campus,info
+Vous pouvez me renseigner sur les horaires de cours selon mon année d’étude ?,Emplois du temps et planning,info
+Je conteste la situation suivante : je n’arrive pas à obtenir une réponse concernant le soutien psychologique.,Services campus,reclamation
+Est-ce que vous avez des informations concernant la procédure de recours après une sanction ?,Règlement et vie étudiante,info
+J’aurais besoin d’aide pour faire le point sur les prochaines échéances universitaires.,Emplois du temps et planning,aide
+J’aurais besoin d’aide pour utiliser les équipements communs dans le respect des règles.,Règlement et vie étudiante,aide
+Je voudrais savoir ce qu’il en est concernant les projets professionnels liés à une spécialité.,Orientation et formation,info
+"Je galère à identifier où consulter les annonces officielles, vous pouvez m’orienter ?",Contacts et information générale,aide
+Je voudrais faire une réclamation car le justificatif envoyé a été refusé sans explication.,Règlement et vie étudiante,reclamation
+Je n’arrive pas à identifier le bon interlocuteur pour mon stage. Pouvez-vous m’aider ?,Contacts et information générale,aide
+Pouvez-vous enregistrer ma réclamation : ma candidature n’est pas visible dans le système ?,Procédures administratives,reclamation
+Je ne comprends pas comment comprendre les règles appliquées en cas de fraude ; pouvez-vous m’expliquer ?,Règlement et vie étudiante,aide
+Pourriez-vous m’accompagner pour savoir quel comportement est attendu en classe ?,Règlement et vie étudiante,aide
+Pourriez-vous m’accompagner pour contacter ou rejoindre l’accueil du campus ?,Services campus,aide
+Où trouver les renseignements sur les règles concernant l’utilisation des bornes et équipements partagés ?,Règlement et vie étudiante,info
+Quels documents faut-il pour une inscription ?,Procédures administratives,info
+Est-ce que quelqu’un peut m’aider à trouver comment contacter l’enseignant d’un module ?,Orientation et formation,aide
+J’aimerais obtenir des informations sur l’adresse postale de l’établissement.,Contacts et information générale,info
+Je n’arrive pas à trouver les informations sur l’accessibilité des locaux. Pouvez-vous m’aider ?,Services campus,aide
+Je bloque quand j’essaie de vérifier si mon niveau correspond aux prérequis. Quelle est la marche à suivre ?,Orientation et formation,aide
+Cela pose problème : le problème signalé dans le bâtiment n’a toujours pas été pris en charge. À qui puis-je le signaler ?,Services campus,reclamation
+Pourriez-vous m’accompagner pour déposer mon dossier au bon endroit ?,Procédures administratives,aide
+Je cherche des informations fiables sur les formalités pour un étudiant international.,Procédures administratives,info
+Pouvez-vous m’indiquer les règles concernant les absences en cours ?,Règlement et vie étudiante,info
+Je souhaite signaler un problème : des informations personnelles semblent avoir été communiquées sans mon accord.,Règlement et vie étudiante,reclamation
+J’aurais besoin d’aide pour trouver le service de santé adapté à ma situation.,Services campus,aide
+J’aurais besoin d’aide pour retrouver l'emploi du temps à jour.,Emplois du temps et planning,aide
+J’ai du mal à comprendre les conditions d’accès aux bâtiments ; comment dois-je faire ?,Règlement et vie étudiante,aide
+Je souhaite signaler un problème : les indications pour trouver le bureau administratif sont insuffisantes.,Contacts et information générale,reclamation
+Je voudrais faire une réclamation car le programme communiqué ne correspond pas aux modules annoncés.,Orientation et formation,reclamation
+"Cette situation doit être examinée, puisque la modification de mon choix de cours n’a pas été prise en compte.",Procédures administratives,reclamation
+J’ai du mal à filtrer le planning selon ma formation Data Science ; comment dois-je faire ?,Emplois du temps et planning,aide
+Où puis-je consulter les modalités d’emprunt et de retour des livres ?,Services campus,info
+Je veux faire remonter ce dysfonctionnement : les règles annoncées concernant la fraude ne m’ont pas été expliquées clairement.,Règlement et vie étudiante,reclamation
+Je ne sais pas comment comprendre mes droits et obligations en tant qu’étudiant. Vous pouvez m’aider ?,Règlement et vie étudiante,aide
+J’aurais besoin d’aide pour retrouver la date d’une évaluation.,Emplois du temps et planning,aide
+Vous pouvez me renseigner sur les justificatifs acceptés en cas d’absence ?,Règlement et vie étudiante,info
+Je bloque quand j’essaie de accéder aux installations sportives. Quelle est la marche à suivre ?,Services campus,aide
+Où puis-je consulter les critères d’admission à ESIC ?,Orientation et formation,info
+Je suis un peu perdu(e) pour identifier les connaissances à acquérir avant une spécialisation ; par où commencer ?,Orientation et formation,aide
+Je ne comprends pas comment faire le point sur les prochaines échéances universitaires ; pouvez-vous m’expliquer ?,Emplois du temps et planning,aide
+J’aimerais obtenir des informations sur les compétences attendues à la fin de la formation.,Orientation et formation,info
+Où trouver les renseignements sur les moyens de contacter un service en dehors des horaires d’ouverture ?,Contacts et information générale,info
+Je cherche des informations fiables sur les activités et événements organisés sur le campus.,Services campus,info
+Savez-vous où sont publiées les informations sur les journées portes ouvertes et les visites de l’école ?,Orientation et formation,info
+Est-ce que quelqu’un peut m’aider à identifier un créneau disponible pour le travail de groupe ?,Emplois du temps et planning,aide
+Où puis-je consulter les règles relatives à la présence aux examens ?,Règlement et vie étudiante,info
+Je cherche des informations fiables sur les dispositifs d’aide sociale pour les étudiants.,Services campus,info
+Je n’arrive pas à savoir si mon parcours permet une passerelle. Pouvez-vous m’aider ?,Orientation et formation,aide
+"Je galère à contacter ou rejoindre l’accueil du campus, vous pouvez m’orienter ?",Services campus,aide
+Je ne trouve pas normal que mon inscription pédagogique n’a pas été enregistrée correctement.,Procédures administratives,reclamation
+Je ne comprends pas comment préparer les étapes de ma candidature ; pouvez-vous m’expliquer ?,Orientation et formation,aide
+Je ne comprends pas comment trouver les informations sur les menus ; pouvez-vous m’expliquer ?,Services campus,aide
+Comment connaître les installations sportives du campus ?,Services campus,info
+Est-ce que vous avez des informations concernant la manière de demander une réponse plus précise ?,Contacts et information générale,info
+Où puis-je consulter la date limite des inscriptions pédagogiques ?,Emplois du temps et planning,info
+Je n’arrive pas à trouver une solution pour contacter un service fermé. Pouvez-vous m’aider ?,Contacts et information générale,aide
+Où trouver les renseignements sur les activités et événements organisés sur le campus ?,Services campus,info
+Où puis-je consulter la procédure pour réinitialiser un mot de passe étudiant ?,Services campus,info
+Comment connaître les dispositifs d’aide sociale pour les étudiants ?,Services campus,info
+Je conteste la situation suivante : mon emprunt de livre n’a pas été enregistré correctement.,Services campus,reclamation
+Je suis un peu perdu(e) pour comprendre le programme du Master IA ; par où commencer ?,Orientation et formation,aide
+Je veux faire remonter ce dysfonctionnement : la liste des documents demandés change selon les interlocuteurs.,Procédures administratives,reclamation
+J’aurais besoin d’aide pour utiliser la borne interactive pour trouver une information.,Services campus,aide
+Vous pouvez me renseigner sur les dispositifs de soutien psychologique étudiant ?,Services campus,info
+Je conteste la situation suivante : ma demande de rendez-vous reste sans réponse.,Contacts et information générale,reclamation
+"Je suis mécontent(e), car les informations sur les modules de Data Science sont inexactes.",Orientation et formation,reclamation
+J’ai du mal à réinitialiser mon mot de passe étudiant ; comment dois-je faire ?,Services campus,aide
+Pouvez-vous m’indiquer les cours de Master IA prévus cette semaine ?,Emplois du temps et planning,info
+"Mon emploi du temps est incorrect, je veux signaler le problème",Emplois du temps et planning,reclamation
+Je suis un peu perdu(e) pour savoir comment accéder aux espaces de travail ; par où commencer ?,Services campus,aide
+Pouvez-vous m’indiquer la procédure de première inscription à ESIC ?,Procédures administratives,info
+Je conteste la situation suivante : l’assistant ne comprend pas ma demande et ne m’indique pas quoi faire.,Contacts et information générale,reclamation
+Je bloque quand j’essaie de connaître les matières du Bachelor. Quelle est la marche à suivre ?,Orientation et formation,aide
+Je ne comprends pas comment utiliser les équipements communs dans le respect des règles ; pouvez-vous m’expliquer ?,Règlement et vie étudiante,aide
+Je ne trouve pas normal que les matières enseignées diffèrent de celles présentées avant l’inscription.,Orientation et formation,reclamation
+Je voudrais faire une réclamation car les critères d’admission m’ont été communiqués de façon contradictoire.,Orientation et formation,reclamation
+Je ne trouve pas normal que les changements de salle ne sont pas communiqués à temps.,Emplois du temps et planning,reclamation
+Je n’arrive pas à contacter l’accueil général de l’école. Pouvez-vous m’aider ?,Contacts et information générale,aide
+Est-ce que vous avez des informations concernant les informations pratiques pour les visiteurs et les futurs étudiants ?,Contacts et information générale,info
+Pouvez-vous enregistrer ma réclamation : la cafétéria n’était pas ouverte aux horaires indiqués ?,Services campus,reclamation
+Pouvez-vous m’indiquer les règles concernant l’utilisation du matériel de l’école ?,Règlement et vie étudiante,info
+Savez-vous où sont publiées les informations sur la manière de poser une question à l’assistant ESIC ?,Contacts et information générale,info
+Je ne trouve pas normal que ma demande de duplicata n’a pas été traitée.,Procédures administratives,reclamation
+Je conteste la situation suivante : les dates des examens affichées semblent incorrectes.,Emplois du temps et planning,reclamation
+Pouvez-vous m’indiquer le calendrier du semestre ?,Emplois du temps et planning,info
+Je ne comprends pas comment m’orienter vers un service d’aide sociale ; pouvez-vous m’expliquer ?,Services campus,aide
+Pouvez-vous m’indiquer les dates de début et de fin du semestre ?,Emplois du temps et planning,info
+Je suis un peu perdu(e) pour organiser un rendez-vous avec un interlocuteur ESIC ; par où commencer ?,Contacts et information générale,aide
+"Je suis mécontent(e), car mon emploi du temps affiche des horaires qui se chevauchent.",Emplois du temps et planning,reclamation
+Je n’arrive pas à retrouver les dates officielles du semestre. Pouvez-vous m’aider ?,Emplois du temps et planning,aide
+Comment connaître les informations pour préparer une première visite du campus ?,Contacts et information générale,info
+Pouvez-vous m’indiquer les équivalences et passerelles entre formations ?,Orientation et formation,info
+J’ai signalé le problème d’accessibilité mais rien n’a été fait.,Services campus,reclamation
+J’ai du mal à trouver le bon service pour une question de logement ; comment dois-je faire ?,Services campus,aide
+Je n’arrive pas à connaître la procédure de prêt de matériel. Pouvez-vous m’aider ?,Services campus,aide
+Le numéro qu’on m’a donné est faux et je n’arrive à joindre personne.,Contacts et information générale,reclamation
+Je cherche des informations fiables sur le suivi de l’état de mon dossier étudiant.,Procédures administratives,info
+Est-ce que vous avez des informations concernant la date limite des inscriptions pédagogiques ?,Emplois du temps et planning,info
+Je suis un peu perdu(e) pour emprunter un livre et connaître la durée du prêt ; par où commencer ?,Services campus,aide
+Où trouver les renseignements sur les informations destinées aux étudiants internationaux qui découvrent le système français ?,Orientation et formation,info
+Je ne trouve pas normal que la date de ma soutenance a changé sans que je sois prévenu.,Emplois du temps et planning,reclamation
+Est-ce que vous avez des informations concernant la procédure de transfert ou de changement de parcours ?,Procédures administratives,info
+Je n’arrive pas à comparer les formations proposées par ESIC. Pouvez-vous m’aider ?,Orientation et formation,aide
+Je ne trouve pas normal que une information erronée reste publiée malgré mon signalement.,Contacts et information générale,reclamation
+Est-ce que vous avez des informations concernant le calendrier des rattrapages ?,Emplois du temps et planning,info
+Je conteste la situation suivante : l’adresse de contact de la scolarité semble invalide.,Contacts et information générale,reclamation
+Je souhaite signaler un problème : les informations concernant les équivalences sont contradictoires.,Orientation et formation,reclamation
+Je ne sais pas à qui envoyer mon dossier d’alternance.,Procédures administratives,aide
+J’aimerais obtenir des informations sur la conduite à tenir en cas d’accident sur le campus.,Règlement et vie étudiante,info
+Je cherche des informations fiables sur les documents requis pour une inscription.,Procédures administratives,info
+Cela pose problème : les tarifs affichés au restaurant universitaire ne correspondent pas au montant demandé. À qui puis-je le signaler ?,Services campus,reclamation
+"Je galère à obtenir un certificat de scolarité, vous pouvez m’orienter ?",Procédures administratives,aide
+Je voudrais faire une réclamation car ma demande de changement de parcours n’a pas été traitée.,Procédures administratives,reclamation
+Je bloque quand j’essaie de obtenir une attestation de réussite. Quelle est la marche à suivre ?,Procédures administratives,aide
+Pourriez-vous m’accompagner pour savoir comment accéder au campus en tant que visiteur ?,Contacts et information générale,aide
+J’aimerais obtenir des informations sur les créneaux prévus pour les projets et les travaux de groupe.,Emplois du temps et planning,info
+Je cherche des informations fiables sur les dates des évaluations continues.,Emplois du temps et planning,info
+J’ai du mal à identifier un contact à prévenir pour une question urgente ; comment dois-je faire ?,Contacts et information générale,aide
+J’ai du mal à vérifier la date limite d’inscription pédagogique ; comment dois-je faire ?,Emplois du temps et planning,aide
+Je voudrais savoir ce qu’il en est concernant les changements de salle de dernière minute.,Emplois du temps et planning,info
+"Je suis mécontent(e), car le montant facturé ne correspond pas aux informations reçues.",Procédures administratives,reclamation
+Quand ont lieu les prochains cours ?,Emplois du temps et planning,info
+Comment connaître le numéro de téléphone du service administratif ?,Contacts et information générale,info
+Je voudrais faire une réclamation car les échéances de paiement communiquées ne sont pas cohérentes.,Procédures administratives,reclamation
+Je voudrais savoir ce qu’il en est concernant les consignes de sécurité et d’évacuation.,Règlement et vie étudiante,info
+Je veux faire remonter ce dysfonctionnement : les consignes des projets pédagogiques sont incomplètes ou tardives.,Orientation et formation,reclamation
+Je ne sais pas comment demander à consulter ma copie d’examen. Vous pouvez m’aider ?,Règlement et vie étudiante,aide
+Je veux faire remonter ce dysfonctionnement : aucun créneau de rendez-vous n’est proposé malgré l’urgence de mon dossier.,Procédures administratives,reclamation
+Je voudrais faire une réclamation car la réinitialisation du mot de passe échoue à chaque tentative.,Services campus,reclamation
+"J’ai déjà signalé que les consignes reçues avant ma visite étaient incomplètes, mais rien ne change.",Contacts et information générale,reclamation
+Je voudrais faire une réclamation car les conditions d’accès à l’examen m’ont été communiquées trop tard.,Règlement et vie étudiante,reclamation
+"Je suis mécontent(e), car les informations sur les menus ne sont pas mises à jour.",Services campus,reclamation
+Cela pose problème : les débouchés présentés ne correspondent pas aux informations du programme. À qui puis-je le signaler ?,Orientation et formation,reclamation
+J’aimerais obtenir des informations sur les débouchés professionnels après le Master IA.,Orientation et formation,info
+Je bloque quand j’essaie de comprendre les étapes d’une procédure disciplinaire. Quelle est la marche à suivre ?,Règlement et vie étudiante,aide
+Est-ce que quelqu’un peut m’aider à obtenir les coordonnées du responsable pédagogique ?,Contacts et information générale,aide
+Vous pouvez me renseigner sur les règles d’accès aux bâtiments du campus ?,Règlement et vie étudiante,info
+"Cette situation doit être examinée, puisque la salle indiquée sur le planning est occupée par un autre groupe.",Emplois du temps et planning,reclamation
+Je conteste la situation suivante : le planning Data Science contient des créneaux impossibles.,Emplois du temps et planning,reclamation
+Pouvez-vous enregistrer ma réclamation : un comportement que j’ai signalé continue malgré mon signalement ?,Règlement et vie étudiante,reclamation
+J’ai du mal à trouver le bon contact pour une question de bourse ; comment dois-je faire ?,Contacts et information générale,aide
+Dans quelle salle se déroule le cours de demain ?,Emplois du temps et planning,info
+Est-ce que quelqu’un peut m’aider à trouver la salle prévue pour mon cours ?,Emplois du temps et planning,aide
+Savez-vous où sont publiées les informations sur la procédure à suivre lors d’un désaccord avec un enseignant ?,Règlement et vie étudiante,info
+"J’ai déjà signalé que mon signalement d’objet perdu n’a reçu aucune réponse, mais rien ne change.",Services campus,reclamation
+Où puis-je consulter les échéances de paiement des frais de scolarité ?,Procédures administratives,info
+Est-ce que quelqu’un peut m’aider à vérifier la date limite d’inscription pédagogique ?,Emplois du temps et planning,aide
+Je cherche des informations fiables sur les horaires de l’accueil téléphonique.,Contacts et information générale,info
+J’aurais besoin d’aide pour comparer les formations proposées par ESIC.,Orientation et formation,aide
+Où trouver les renseignements sur les conditions de candidature à une alternance ?,Procédures administratives,info
+Je n’arrive pas à obtenir les coordonnées du responsable pédagogique. Pouvez-vous m’aider ?,Orientation et formation,aide
+Je ne comprends pas comment préparer les justificatifs demandés pour mon inscription ; pouvez-vous m’expliquer ?,Procédures administratives,aide
+"Je suis mécontent(e), car le statut de mon dossier n’a pas changé depuis plusieurs semaines.",Procédures administratives,reclamation
+Cela pose problème : l’adresse utilisée dans un document officiel semble incorrecte. À qui puis-je le signaler ?,Contacts et information générale,reclamation
+Savez-vous où sont publiées les informations sur les règles de comportement dans les salles de cours ?,Règlement et vie étudiante,info
+Je bloque quand j’essaie de comprendre les règles concernant mes données personnelles. Quelle est la marche à suivre ?,Règlement et vie étudiante,aide
+"Je galère à contacter la personne qui suit les admissions, vous pouvez m’orienter ?",Contacts et information générale,aide
+"Je ne comprends rien au calendrier des examens, aidez-moi.",Emplois du temps et planning,aide
+Je ne sais pas comment retrouver le numéro de la salle du prochain cours. Vous pouvez m’aider ?,Emplois du temps et planning,aide
+Vous pouvez me renseigner sur le calendrier des examens ?,Emplois du temps et planning,info
+Comment connaître les règles de vie dans les espaces collectifs ?,Règlement et vie étudiante,info
+Est-ce que vous avez des informations concernant le service à contacter pour les bourses ?,Contacts et information générale,info
+Est-ce que vous avez des informations concernant les dispositifs d’aide sociale et financière ?,Règlement et vie étudiante,info
+Je suis un peu perdu(e) pour consulter le planning de la semaine prochaine ; par où commencer ?,Emplois du temps et planning,aide
+Est-ce que quelqu’un peut m’aider à prendre contact avec une association étudiante ?,Services campus,aide
+Cela pose problème : mon dossier d’alternance n’avance pas malgré mes relances. À qui puis-je le signaler ?,Procédures administratives,reclamation
+Pouvez-vous enregistrer ma réclamation : une annonce importante n’a pas été diffusée sur les canaux habituels ?,Contacts et information générale,reclamation
+Je veux faire remonter ce dysfonctionnement : ma demande de rendez-vous d’orientation n’a pas été traitée.,Orientation et formation,reclamation
+Vous pouvez me renseigner sur la réinscription pour l’année prochaine ?,Procédures administratives,info
+Comment connaître la salle où se déroule le cours de demain ?,Emplois du temps et planning,info
+Pouvez-vous m’indiquer les sanctions disciplinaires prévues par le règlement ?,Règlement et vie étudiante,info
+Pourriez-vous m’accompagner pour trouver comment signaler une situation discriminatoire ?,Règlement et vie étudiante,aide
+"Je suis mécontent(e), car les liens proposés ne conduisent pas vers les informations attendues.",Contacts et information générale,reclamation
+Où puis-je consulter les contenus de cours nécessaires avant une spécialisation ?,Orientation et formation,info
+Savez-vous où sont publiées les informations sur la définition du plagiat dans les travaux étudiants ?,Règlement et vie étudiante,info
+J’ai du mal à savoir quel justificatif transmettre après une absence ; comment dois-je faire ?,Règlement et vie étudiante,aide
+Je voudrais savoir ce qu’il en est concernant le service à contacter pour une question de stage.,Contacts et information générale,info
+Cela pose problème : le contenu de la formation CPDIA n’a pas été présenté clairement. À qui puis-je le signaler ?,Orientation et formation,reclamation
+Je cherche des informations fiables sur la date de la rentrée de ma formation.,Emplois du temps et planning,info
+Cela pose problème : ma situation reste non régularisée alors que j’ai envoyé les justificatifs. À qui puis-je le signaler ?,Procédures administratives,reclamation
+Pouvez-vous m’indiquer les prérequis nécessaires pour intégrer une formation ?,Orientation et formation,info
+Je ne trouve pas normal que les consignes de sécurité ne sont pas affichées clairement.,Règlement et vie étudiante,reclamation
+Je ne sais pas comment comprendre les règles des espaces collectifs. Vous pouvez m’aider ?,Règlement et vie étudiante,aide
+J’aurais besoin d’aide pour trouver une solution pour contacter un service fermé.,Contacts et information générale,aide
+Je souhaite signaler un problème : mon relevé de notes comporte une erreur.,Procédures administratives,reclamation
+Je souhaite signaler un problème : le montant facturé ne correspond pas aux informations reçues.,Procédures administratives,reclamation
+Savez-vous où sont publiées les informations sur les formations en cybersécurité et en développement ?,Orientation et formation,info
+J’ai du mal à filtrer le planning par année d’étude ; comment dois-je faire ?,Emplois du temps et planning,aide
+"J’ai déjà signalé que les règles de retard sont appliquées de façon incohérente, mais rien ne change.",Règlement et vie étudiante,reclamation
+Je ne comprends pas comment savoir déposer une réclamation officielle ; pouvez-vous m’expliquer ?,Règlement et vie étudiante,aide
+J’ai du mal à reformuler ma question pour obtenir une réponse pertinente ; comment dois-je faire ?,Contacts et information générale,aide
+Comment connaître la prise de rendez-vous avec le service administratif ?,Procédures administratives,info
+Je ne trouve pas normal que mon signalement d’objet perdu n’a reçu aucune réponse.,Services campus,reclamation
+Les dates des rattrapages ont encore changé sans explication.,Emplois du temps et planning,reclamation
+Je voudrais faire une réclamation car je n’arrive pas à obtenir une réponse concernant le soutien psychologique.,Services campus,reclamation
+Comment contacter le service informatique ?,Services campus,info
+Je ne trouve pas normal que les consignes reçues avant ma visite étaient incomplètes.,Contacts et information générale,reclamation
+"J’ai déjà signalé que l’annulation d’un cours n’a pas été annoncée, mais rien ne change.",Emplois du temps et planning,reclamation
+Comment connaître les possibilités d’alternance dans les parcours proposés ?,Orientation et formation,info
+Pourriez-vous m’accompagner pour retrouver l’adresse postale officielle de l’école ?,Contacts et information générale,aide
+Je bloque quand j’essaie de récupérer mon relevé de notes. Quelle est la marche à suivre ?,Procédures administratives,aide
+Je conteste la situation suivante : le justificatif envoyé a été refusé sans explication.,Règlement et vie étudiante,reclamation
+Je souhaite signaler un problème : les possibilités de poursuite d’études annoncées ne sont pas confirmées.,Orientation et formation,reclamation
+Je ne trouve pas normal que je n’ai pas reçu les informations annoncées sur ma candidature.,Orientation et formation,reclamation
+Pourriez-vous m’accompagner pour vérifier si le campus reste ouvert pendant les vacances ?,Emplois du temps et planning,aide
+Je n’arrive pas à vérifier les pièces à fournir pour une candidature en alternance. Pouvez-vous m’aider ?,Procédures administratives,aide
+Je n’arrive plus à me connecter au Wi-Fi du campus.,Services campus,aide
+Comment obtenir un certificat de scolarité ?,Procédures administratives,info
+Comment connaître les consignes de sécurité et d’évacuation ?,Règlement et vie étudiante,info
+Cela pose problème : les informations sur les rattrapages sont contradictoires. À qui puis-je le signaler ?,Emplois du temps et planning,reclamation
+Je veux faire remonter ce dysfonctionnement : les horaires de réponse téléphonique ne correspondent pas aux horaires annoncés.,Contacts et information générale,reclamation
+Est-ce que quelqu’un peut m’aider à savoir à qui signaler un accident sur le campus ?,Règlement et vie étudiante,aide
+Je souhaite signaler un problème : le matériel réservé n’était pas disponible au moment prévu.,Services campus,reclamation
+J’ai du mal à trouver la salle prévue pour mon cours ; comment dois-je faire ?,Emplois du temps et planning,aide
+Je ne trouve pas normal que mon dossier d’aide financière a été refusé sans explication claire.,Procédures administratives,reclamation
+Je voudrais savoir ce qu’il en est concernant les informations pour préparer une première visite du campus.,Contacts et information générale,info
+J’aurais besoin d’aide pour comparer les possibilités de poursuite d’études.,Orientation et formation,aide
+Où puis-je consulter la réinscription pour l’année prochaine ?,Procédures administratives,info
+Pourriez-vous m’accompagner pour obtenir les coordonnées du responsable pédagogique ?,Contacts et information générale,aide
+Je ne sais pas comment trouver une salle équipée pour un travail de groupe. Vous pouvez m’aider ?,Emplois du temps et planning,aide
+"On a changé la salle sans prévenir, je veux le signaler.",Emplois du temps et planning,reclamation
+J’aurais besoin d’aide pour contacter l’accueil général de l’école.,Contacts et information générale,aide
+Je ne sais pas comment préparer les étapes de ma candidature. Vous pouvez m’aider ?,Orientation et formation,aide
+Je veux faire remonter ce dysfonctionnement : les informations générales sur le campus ne sont pas à jour.,Contacts et information générale,reclamation
+Je ne sais pas comment réunir les justificatifs pour une aide financière. Vous pouvez m’aider ?,Procédures administratives,aide
+Cela pose problème : les créneaux de projet se superposent à mes cours. À qui puis-je le signaler ?,Emplois du temps et planning,reclamation
+Je bloque quand j’essaie de me connecter aux ressources numériques. Quelle est la marche à suivre ?,Services campus,aide
+Est-ce que vous avez des informations concernant les clubs et associations étudiantes ?,Services campus,info
+Je suis un peu perdu(e) pour consulter le calendrier des vacances ; par où commencer ?,Emplois du temps et planning,aide
+Vous pouvez me renseigner sur l’emploi du temps de la formation Data Science ?,Emplois du temps et planning,info
+Vous pouvez me renseigner sur les formations en cybersécurité et en développement ?,Orientation et formation,info
+"J’ai déjà signalé que les prérequis indiqués ont changé après ma candidature, mais rien ne change.",Orientation et formation,reclamation
+Où trouver les renseignements sur la date de la rentrée de ma formation ?,Emplois du temps et planning,info
+Je cherche des informations fiables sur les conditions d’utilisation des bornes interactives.,Services campus,info
+Je veux faire remonter ce dysfonctionnement : un événement annoncé a été annulé sans information.,Services campus,reclamation
+Pouvez-vous m’indiquer les contacts des responsables pédagogiques ?,Orientation et formation,info
+Je suis un peu perdu(e) pour savoir quand la cafétéria est ouverte ; par où commencer ?,Services campus,aide
+Je veux faire remonter ce dysfonctionnement : ma demande d’orientation vers l’aide sociale est restée sans suite.,Services campus,reclamation
+Est-ce que quelqu’un peut m’aider à vérifier les conditions d’admission ?,Orientation et formation,aide
+"Je conteste cette sanction, personne ne m’a expliqué les raisons.",Règlement et vie étudiante,reclamation
+"Je suis mécontent(e), car des cours prévus cette semaine ont disparu du planning.",Emplois du temps et planning,reclamation
+Je ne sais pas comment choisir et valider mes unités d’enseignement. Vous pouvez m’aider ?,Procédures administratives,aide
+J’aurais besoin d’aide pour trouver les événements ouverts aux étudiants.,Services campus,aide
+Je conteste la situation suivante : les modalités d’évaluation ont changé sans explication.,Orientation et formation,reclamation
+J’ai du mal à constituer un dossier de demande de bourse ; comment dois-je faire ?,Procédures administratives,aide
+Où trouver les renseignements sur les règles concernant les absences en cours ?,Règlement et vie étudiante,info
+Je ne comprends pas comment comprendre les règles des espaces collectifs ; pouvez-vous m’expliquer ?,Règlement et vie étudiante,aide
+Est-ce que quelqu’un peut m’aider à connaître les conditions d’accès à une aide sociale ?,Règlement et vie étudiante,aide
+"Cette situation doit être examinée, puisque la date limite affichée a changé sans explication.",Emplois du temps et planning,reclamation
+Je bloque quand j’essaie de obtenir les coordonnées du responsable pédagogique. Quelle est la marche à suivre ?,Orientation et formation,aide
+"J’ai déjà signalé que mon relevé de notes comporte une erreur, mais rien ne change.",Procédures administratives,reclamation
+Comment connaître les rendez-vous d’orientation avec un responsable ?,Orientation et formation,info
+Savez-vous où sont publiées les informations sur les débouchés professionnels après le Master IA ?,Orientation et formation,info
+"Cette situation doit être examinée, puisque ma demande de changement de parcours n’a pas été traitée.",Procédures administratives,reclamation
+Je souhaite signaler un problème : les consignes de candidature en alternance sont contradictoires.,Procédures administratives,reclamation
+Où puis-je consulter la procédure de recours après une sanction ?,Règlement et vie étudiante,info
+Je ne trouve pas normal que les informations sur l’alternance ne correspondent pas aux conditions communiquées.,Orientation et formation,reclamation
+J’ai du mal à emprunter un livre et connaître la durée du prêt ; comment dois-je faire ?,Services campus,aide
+Je n’arrive pas à trouver le bureau du service dont j’ai besoin. Pouvez-vous m’aider ?,Contacts et information générale,aide
+"J’ai déjà signalé que le calendrier ne tient pas compte d’un jour férié annoncé, mais rien ne change.",Emplois du temps et planning,reclamation
+Où trouver les renseignements sur la localisation des bureaux administratifs ?,Contacts et information générale,info
+Je veux faire remonter ce dysfonctionnement : la date de rentrée communiquée ne correspond pas aux informations reçues.,Emplois du temps et planning,reclamation
+Je voudrais savoir ce qu’il en est concernant les matières enseignées en Bachelor.,Orientation et formation,info
+Je souhaite signaler un problème : le calendrier ne tient pas compte d’un jour férié annoncé.,Emplois du temps et planning,reclamation
+Quel est mon emploi du temps cette semaine ?,Emplois du temps et planning,info
+Les partiels c’est quand pour ma promo ?,Emplois du temps et planning,info
+Cela pose problème : les compétences promises dans la présentation ne sont pas abordées en cours. À qui puis-je le signaler ?,Orientation et formation,reclamation
+Savez-vous où sont publiées les informations sur les démarches liées à un contrat d’alternance ?,Procédures administratives,info
+"Je suis mécontent(e), car ma réclamation reste sans réponse depuis plusieurs semaines.",Règlement et vie étudiante,reclamation
+Je n’arrive pas à savoir quelles règles s’appliquent au matériel pédagogique. Pouvez-vous m’aider ?,Règlement et vie étudiante,aide
+Quelles sont les matières du Bachelor ?,Orientation et formation,info
+Je voudrais savoir ce qu’il en est concernant l’accès aux ressources numériques de la bibliothèque.,Services campus,info
+"J’ai déjà signalé que le numéro communiqué ne permet pas de joindre le service, mais rien ne change.",Contacts et information générale,reclamation
+Je ne comprends pas comment faire valider mon stage par l’école ; pouvez-vous m’expliquer ?,Procédures administratives,aide
+Comment connaître les justificatifs à fournir pour une aide financière ?,Procédures administratives,info
+Je conteste la situation suivante : le planning de la semaine prochaine n’est pas à jour.,Emplois du temps et planning,reclamation
+Je conteste la situation suivante : le service d’impression ne fonctionne plus.,Services campus,reclamation
+Je cherche des informations fiables sur les droits et les devoirs des étudiants.,Règlement et vie étudiante,info
+J’aimerais obtenir des informations sur les horaires de l’accueil du campus.,Services campus,info
+Vous pouvez me renseigner sur les contenus de cours nécessaires avant une spécialisation ?,Orientation et formation,info
+"Mon planning en ligne ne s’affiche pas, je fais comment ?",Emplois du temps et planning,aide
+Pouvez-vous enregistrer ma réclamation : les débouchés présentés ne correspondent pas aux informations du programme ?,Orientation et formation,reclamation
+Savez-vous où sont publiées les informations sur les contacts pour une question sur les admissions ?,Contacts et information générale,info
+J’aimerais obtenir des informations sur les démarches à suivre après une absence administrative.,Procédures administratives,info
+Où trouver les renseignements sur les documents requis pour une inscription ?,Procédures administratives,info
+Je voudrais savoir ce qu’il en est concernant les possibilités d’alternance dans les parcours proposés.,Orientation et formation,info
+Est-ce que le plagiat est considéré comme une fraude ?,Règlement et vie étudiante,info
+"Je galère à retrouver l’adresse postale officielle de l’école, vous pouvez m’orienter ?",Contacts et information générale,aide
+Est-ce que vous avez des informations concernant les services d’aide au logement étudiant ?,Services campus,info
+Cela pose problème : la situation discriminatoire que j’ai signalée n’a pas été prise au sérieux. À qui puis-je le signaler ?,Règlement et vie étudiante,reclamation
+Cela pose problème : un comportement perturbateur répété n’a pas été traité. À qui puis-je le signaler ?,Règlement et vie étudiante,reclamation
+J’aurais besoin d’aide pour retrouver la source officielle d’une information scolaire.,Contacts et information générale,aide
+J’aimerais obtenir des informations sur les horaires d’ouverture du campus pendant les périodes sans cours.,Emplois du temps et planning,info
+Est-ce que vous avez des informations concernant la conduite à tenir en cas d’accident sur le campus ?,Règlement et vie étudiante,info
+"Je suis mécontent(e), car une absence justifiée a été comptée comme non justifiée.",Règlement et vie étudiante,reclamation
+"Cette situation doit être examinée, puisque les critères d’admission m’ont été communiqués de façon contradictoire.",Orientation et formation,reclamation
+Je n’arrive pas à comprendre les différentes périodes du semestre. Pouvez-vous m’aider ?,Emplois du temps et planning,aide
+Je bloque quand j’essaie de comprendre les différentes périodes du semestre. Quelle est la marche à suivre ?,Emplois du temps et planning,aide
+J’aurais besoin d’aide pour savoir comment signaler une nuisance dans les espaces communs.,Règlement et vie étudiante,aide
+Pouvez-vous m’indiquer les jours fériés pris en compte dans le calendrier scolaire ?,Emplois du temps et planning,info
+Je bloque quand j’essaie de connaître la marche à suivre après un retard. Quelle est la marche à suivre ?,Règlement et vie étudiante,aide
+Pouvez-vous enregistrer ma réclamation : les horaires du groupe CPDIA ne correspondent pas au planning reçu ?,Emplois du temps et planning,reclamation
+Cela pose problème : une annonce importante n’a pas été diffusée sur les canaux habituels. À qui puis-je le signaler ?,Contacts et information générale,reclamation
+Savez-vous où sont publiées les informations sur l’adresse postale de l’établissement ?,Contacts et information générale,info
+"Je suis mécontent(e), car les consignes de candidature en alternance sont contradictoires.",Procédures administratives,reclamation
+Je ne comprends pas comment confirmer la date de la rentrée ; pouvez-vous m’expliquer ?,Emplois du temps et planning,aide
+J’aurais besoin d’aide pour vérifier les pièces à fournir pour une candidature en alternance.,Procédures administratives,aide
+Je ne sais pas comment demander un duplicata de document scolaire. Vous pouvez m’aider ?,Procédures administratives,aide
+Je n’arrive pas à contacter le support informatique. Pouvez-vous m’aider ?,Services campus,aide
+Je veux faire remonter ce dysfonctionnement : les explications données aux étudiants internationaux sont difficiles à comprendre.,Orientation et formation,reclamation
+Quelles formations propose ESIC ?,Orientation et formation,info
+Pourriez-vous m’accompagner pour comprendre les conséquences de retards répétés ?,Règlement et vie étudiante,aide
+Pouvez-vous m’indiquer les horaires et l’accès à la bibliothèque ?,Services campus,info
+Comment connaître les modalités de consultation d’une copie d’examen ?,Règlement et vie étudiante,info
+Quels sont les horaires de la scolarité ?,Services campus,info
+Je souhaite signaler un problème : les nuisances signalées dans les espaces communs continuent.,Règlement et vie étudiante,reclamation
+Je conteste la situation suivante : l’accès au bâtiment m’a été refusé malgré les consignes reçues.,Règlement et vie étudiante,reclamation
+Je ne trouve pas normal que l’annulation d’un cours n’a pas été annoncée.,Emplois du temps et planning,reclamation
+Comment connaître l’accès au Wi-Fi du campus ?,Services campus,info
+"Cette situation doit être examinée, puisque les coordonnées du responsable pédagogique sont erronées.",Contacts et information générale,reclamation
+Quels documents je dois donner pour m’inscrire ?,Procédures administratives,info
+Est-ce que quelqu’un peut m’aider à obtenir les renseignements utiles avant une visite ?,Contacts et information générale,aide
+J’aimerais obtenir des informations sur les dispositifs d’accompagnement pédagogique.,Orientation et formation,info
+J’ai demandé un rendez-vous plusieurs fois et je n’ai jamais eu de retour.,Contacts et information générale,reclamation
+J’aurais besoin d’aide pour comprendre comment régler les frais de scolarité.,Procédures administratives,aide
+Vous pouvez me renseigner sur le programme du Master en intelligence artificielle ?,Orientation et formation,info
+"J’ai déjà signalé que les changements de salle ne sont pas communiqués à temps, mais rien ne change.",Emplois du temps et planning,reclamation
+"J’ai déjà signalé que je conteste la sanction disciplinaire qui m’a été notifiée, mais rien ne change.",Règlement et vie étudiante,reclamation
+Je n’arrive pas à terminer ma première inscription. Pouvez-vous m’aider ?,Procédures administratives,aide
+Je suis un peu perdu(e) pour vérifier comment éviter le plagiat dans un devoir ; par où commencer ?,Règlement et vie étudiante,aide
+"J’ai déjà signalé que les services se renvoient ma demande concernant le stage, mais rien ne change.",Contacts et information générale,reclamation
+Où puis-je consulter les contacts des enseignants d’un module ?,Orientation et formation,info
+Je cherche des informations fiables sur les rendez-vous d’orientation avec un responsable.,Orientation et formation,info
+Où se trouve le secrétariat pédagogique ?,Services campus,info
+Je voudrais savoir ce qu’il en est concernant les langues disponibles dans l’assistant virtuel.,Contacts et information générale,info
+Je suis un peu perdu(e) pour filtrer le planning par année d’étude ; par où commencer ?,Emplois du temps et planning,aide
+Savez-vous où sont publiées les informations sur les horaires de l’accueil du campus ?,Services campus,info
+J’aimerais obtenir des informations sur les canaux officiels pour recevoir les annonces de l’école.,Contacts et information générale,info
+Je voudrais prendre rendez-vous avec quelqu’un pour parler de ma situation.,Contacts et information générale,aide
+Est-ce que vous avez des informations concernant les informations d’accès au campus pour une personne extérieure ?,Contacts et information générale,info
+J’aurais besoin d’aide pour identifier les modules de Data Science.,Orientation et formation,aide
+Je cherche des informations fiables sur les contacts utiles pour un étudiant international.,Contacts et information générale,info
+"J’ai déjà signalé que les conseils d’orientation reçus ne répondent pas à mon projet, mais rien ne change.",Orientation et formation,reclamation
+Je souhaite signaler un problème : aucune solution de contact n’est indiquée en dehors des horaires d’ouverture.,Contacts et information générale,reclamation
+J’ai du mal à choisir un stage cohérent avec mon parcours ; comment dois-je faire ?,Orientation et formation,aide
+"Je suis mécontent(e), car une évaluation a été ajoutée au planning sans annonce claire.",Emplois du temps et planning,reclamation
+Je voudrais faire une réclamation car mes messages à l’enseignant restent sans réponse malgré plusieurs relances.,Orientation et formation,reclamation
+Cela pose problème : les coordonnées du responsable pédagogique sont erronées. À qui puis-je le signaler ?,Contacts et information générale,reclamation
+Pouvez-vous m’aider à trouver mon planning ?,Emplois du temps et planning,aide
+J’aurais besoin d’aide pour savoir déposer une réclamation officielle.,Règlement et vie étudiante,aide
+Je bloque quand j’essaie de réunir les justificatifs pour une aide financière. Quelle est la marche à suivre ?,Procédures administratives,aide
+Pouvez-vous m’indiquer les règles concernant le bruit et le respect des espaces communs ?,Règlement et vie étudiante,info
+Je ne comprends pas comment utiliser la borne interactive pour trouver une information ; pouvez-vous m’expliquer ?,Services campus,aide
+J’aimerais obtenir des informations sur les coordonnées du responsable pédagogique.,Contacts et information générale,info
+Cela pose problème : les ordinateurs disponibles ne fonctionnent pas correctement. À qui puis-je le signaler ?,Services campus,reclamation
+Où trouver les renseignements sur les services de santé et l’infirmerie ?,Services campus,info
+"Je galère à consulter le calendrier des vacances, vous pouvez m’orienter ?",Emplois du temps et planning,aide
+Vous pouvez me renseigner sur les règles relatives à la présence aux examens ?,Règlement et vie étudiante,info
+Est-ce que quelqu’un peut m’aider à savoir comment accéder au campus en tant que visiteur ?,Contacts et information générale,aide
+"Je suis mécontent(e), car les possibilités de poursuite d’études annoncées ne sont pas confirmées.",Orientation et formation,reclamation
+Où trouver les renseignements sur les ressources officielles pour trouver une réponse à une question fréquente ?,Contacts et information générale,info
+Je conteste la situation suivante : le programme communiqué ne correspond pas aux modules annoncés.,Orientation et formation,reclamation
+"Je suis mécontent(e), car les dates de semestre diffèrent selon les documents consultés.",Emplois du temps et planning,reclamation
+Est-ce que vous avez des informations concernant les créneaux prévus pour les projets et les travaux de groupe ?,Emplois du temps et planning,info
+"J’ai déjà signalé que la date de ma soutenance a changé sans que je sois prévenu, mais rien ne change.",Emplois du temps et planning,reclamation
+Est-ce que quelqu’un peut m’aider à trouver de l’aide pour réussir ma formation ?,Orientation et formation,aide
+Je souhaite signaler un problème : des cours prévus cette semaine ont disparu du planning.,Emplois du temps et planning,reclamation
+Où trouver les renseignements sur les règles concernant la fraude aux examens ?,Règlement et vie étudiante,info
+Je n’arrive pas à comprendre les étapes d’une procédure disciplinaire. Pouvez-vous m’aider ?,Règlement et vie étudiante,aide
+Je veux faire remonter ce dysfonctionnement : une salle ou un équipement réservé n’est pas disponible.,Emplois du temps et planning,reclamation
+Vous pouvez me renseigner sur les modalités pour prendre rendez-vous avec l’école ?,Contacts et information générale,info
+Je ne sais pas comment trouver un aperçu des services et activités du campus. Vous pouvez m’aider ?,Contacts et information générale,aide
+"J’ai déjà signalé que l’accès aux installations sportives a été refusé sans explication, mais rien ne change.",Services campus,reclamation
+Pouvez-vous enregistrer ma réclamation : mon désaccord avec un enseignant n’a pas été traité équitablement ?,Règlement et vie étudiante,reclamation
+Je voudrais faire une réclamation car je n’ai obtenu aucune réponse à ma demande d’aide au logement.,Services campus,reclamation
+J’aimerais obtenir des informations sur la procédure à suivre lors d’un désaccord avec un enseignant.,Règlement et vie étudiante,info
+Je ne sais pas comment choisir une spécialité selon mon projet professionnel. Vous pouvez m’aider ?,Orientation et formation,aide
+Je ne comprends pas comment vérifier l’avancement de mon dossier ; pouvez-vous m’expliquer ?,Procédures administratives,aide
+Je suis un peu perdu(e) pour comprendre les conditions d’accès aux bâtiments ; par où commencer ?,Règlement et vie étudiante,aide
+Je suis bloqué au moment de valider mon dossier.,Procédures administratives,aide
+Je conteste la situation suivante : les prérequis de spécialisation n’ont pas été annoncés à temps.,Orientation et formation,reclamation
+Je conteste la situation suivante : je n’ai reçu aucune réponse concernant ma demande de bourse.,Procédures administratives,reclamation
+Je ne sais pas si mon parcours me permet d’entrer en Master IA.,Orientation et formation,aide
+Vous pouvez me renseigner sur la correction d’une erreur sur mes informations administratives ?,Procédures administratives,info
+"Je galère à vérifier les cours maintenus pendant les examens, vous pouvez m’orienter ?",Emplois du temps et planning,aide
+J’aimerais obtenir des informations sur les consignes en cas de problème dans un bâtiment.,Services campus,info
+Je cherche des informations fiables sur les modules de Data Science.,Orientation et formation,info
+Je ne trouve pas normal que l’accès aux installations sportives a été refusé sans explication.,Services campus,reclamation
+Vous pouvez me renseigner sur la définition du plagiat dans les travaux étudiants ?,Règlement et vie étudiante,info
+Je n’arrive pas à vérifier si mon niveau correspond aux prérequis. Pouvez-vous m’aider ?,Orientation et formation,aide
+Je voudrais savoir ce qu’il en est concernant l’obtention d’un relevé de notes.,Procédures administratives,info
+Est-ce que vous avez des informations concernant les démarches à suivre après une absence administrative ?,Procédures administratives,info
+"Cette situation doit être examinée, puisque mes messages à l’enseignant restent sans réponse malgré plusieurs relances.",Orientation et formation,reclamation
+Pouvez-vous m’indiquer les règles de respect de la vie privée des étudiants ?,Règlement et vie étudiante,info
+Pouvez-vous enregistrer ma réclamation : ma demande de certificat de scolarité reste sans réponse ?,Procédures administratives,reclamation
+Je voudrais savoir ce qu’il en est concernant les jours fériés pris en compte dans le calendrier scolaire.,Emplois du temps et planning,info
+Savez-vous où sont publiées les informations sur la correction d’une erreur sur mes informations administratives ?,Procédures administratives,info
+Pourriez-vous m’accompagner pour prendre contact avec une association étudiante ?,Services campus,aide
+Est-ce que quelqu’un peut m’aider à régulariser ma situation administrative après une absence ?,Procédures administratives,aide
+Est-ce que quelqu’un peut m’aider à trouver le bon contact pour une question de bourse ?,Contacts et information générale,aide
+Est-ce qu’il existe un service de soutien psychologique étudiant ?,Services campus,info
+Pouvez-vous m’indiquer la localisation des bureaux administratifs ?,Contacts et information générale,info
+Je ne trouve pas normal que la validation de mon stage prend du retard sans explication.,Procédures administratives,reclamation
+"Je suis mécontent(e), car la date de rentrée communiquée ne correspond pas aux informations reçues.",Emplois du temps et planning,reclamation
+Je ne sais pas comment trouver le numéro du service administratif. Vous pouvez m’aider ?,Contacts et information générale,aide
+"Je suis mécontent(e), car l’accueil général ne répond pas aux appels ni aux messages.",Contacts et information générale,reclamation
+Je n’arrive pas à accéder à la bibliothèque. Pouvez-vous m’aider ?,Services campus,aide
+Je suis un peu perdu(e) pour choisir un stage cohérent avec mon parcours ; par où commencer ?,Orientation et formation,aide
+Est-ce que quelqu’un peut m’aider à faire établir ma convention de stage ?,Procédures administratives,aide
+Je veux faire remonter ce dysfonctionnement : ma réclamation reste sans réponse depuis plusieurs semaines.,Règlement et vie étudiante,reclamation
+Je ne sais pas comment comprendre quelles formations peuvent se faire en alternance. Vous pouvez m’aider ?,Orientation et formation,aide
+Où trouver les renseignements sur les modules de Data Science ?,Orientation et formation,info
+Pouvez-vous enregistrer ma réclamation : une erreur administrative persiste malgré ma demande de correction ?,Procédures administratives,reclamation
+J’aimerais obtenir des informations sur l’utilisation des ordinateurs et des salles informatiques.,Services campus,info
+Est-ce que quelqu’un peut m’aider à savoir quel service contacter en cas de problème dans un bâtiment ?,Services campus,aide
+Je bloque quand j’essaie de vérifier si un cours est annulé ou déplacé. Quelle est la marche à suivre ?,Emplois du temps et planning,aide
+Comment je peux contacter un responsable pédagogique ?,Contacts et information générale,info
+"Je galère à m’inscrire à une visite ou à une journée portes ouvertes, vous pouvez m’orienter ?",Orientation et formation,aide
+"Je suis mécontent(e), car les nuisances signalées dans les espaces communs continuent.",Règlement et vie étudiante,reclamation
+Où trouver les renseignements sur les dates importantes à retenir pour le semestre ?,Emplois du temps et planning,info
+Pouvez-vous enregistrer ma réclamation : l’assistant ne comprend pas ma demande et ne m’indique pas quoi faire ?,Contacts et information générale,reclamation
+Est-ce que quelqu’un peut m’aider à trouver comment signaler une situation discriminatoire ?,Règlement et vie étudiante,aide
+Est-ce que vous avez des informations concernant le planning des salles de cours ?,Emplois du temps et planning,info
+Je conteste la situation suivante : la description d’un parcours ne correspond pas à la formation dispensée.,Orientation et formation,reclamation
+Je voudrais faire une réclamation car les informations sur les stages liés à ma formation sont insuffisantes.,Orientation et formation,reclamation
+C’est où déjà le planning du groupe ?,Emplois du temps et planning,info
+Je conteste la situation suivante : une erreur administrative persiste malgré ma demande de correction.,Procédures administratives,reclamation
+"Je galère à identifier les métiers possibles après le Master IA, vous pouvez m’orienter ?",Orientation et formation,aide
+Savez-vous où sont publiées les informations sur la délivrance d’un certificat de scolarité ?,Procédures administratives,info
+Je conteste la situation suivante : la cafétéria n’était pas ouverte aux horaires indiqués.,Services campus,reclamation
+Je cherche des informations fiables sur l’accès au Wi-Fi du campus.,Services campus,info
+Je voudrais savoir ce qu’il en est concernant les cours annulés ou déplacés.,Emplois du temps et planning,info
+Est-ce que vous avez des informations concernant la procédure pour réinitialiser un mot de passe étudiant ?,Services campus,info
+Je ne sais pas comment préparer ma première visite du campus. Vous pouvez m’aider ?,Contacts et information générale,aide
+Pourriez-vous m’accompagner pour retrouver le détail des enseignements CPDIA ?,Orientation et formation,aide
+Je ne sais pas comment signaler la perte d’un objet. Vous pouvez m’aider ?,Services campus,aide
+Cela pose problème : les consignes d’accès destinées aux visiteurs ne sont pas claires. À qui puis-je le signaler ?,Contacts et information générale,reclamation
+Je ne sais pas comment signaler une information erronée sur le site ou le portail. Vous pouvez m’aider ?,Contacts et information générale,aide
+Comment connaître les changements de salle de dernière minute ?,Emplois du temps et planning,info
+Mon certificat est demandé depuis longtemps et je ne l’ai toujours pas.,Procédures administratives,reclamation
+"Je galère à apprendre à utiliser l’assistant virtuel, vous pouvez m’orienter ?",Contacts et information générale,aide
+Je veux faire remonter ce dysfonctionnement : la salle du cours a été changée sans information visible.,Emplois du temps et planning,reclamation
+"Je galère à préparer mon dossier de candidature, vous pouvez m’orienter ?",Procédures administratives,aide
+Je suis un peu perdu(e) pour retrouver l’adresse e-mail de la scolarité ; par où commencer ?,Contacts et information générale,aide
+Je ne sais pas comment faire valider mon stage par l’école. Vous pouvez m’aider ?,Procédures administratives,aide
+J’ai du mal à vérifier les conditions d’admission ; comment dois-je faire ?,Orientation et formation,aide
+Je voudrais savoir ce qu’il en est concernant les dates des soutenances.,Emplois du temps et planning,info
+Je n’arrive pas à vérifier si un jour férié entraîne une journée sans cours. Pouvez-vous m’aider ?,Emplois du temps et planning,aide
+Vous pouvez me renseigner sur les modalités d’évaluation des différents modules ?,Orientation et formation,info
+Je voudrais savoir ce qu’il en est concernant l’inscription pédagogique aux unités d’enseignement.,Procédures administratives,info
+Je veux faire remonter ce dysfonctionnement : les règles des espaces collectifs ne sont pas respectées et aucun suivi n’est fait.,Règlement et vie étudiante,reclamation
+Pouvez-vous m’indiquer les coordonnées du service informatique ?,Services campus,info
+Je souhaite signaler un problème : la langue sélectionnée n’est pas conservée pendant la conversation.,Contacts et information générale,reclamation
+Je souhaite signaler un problème : les informations publiées sur les formations sont contradictoires.,Orientation et formation,reclamation
+Comment connaître les matières enseignées en Bachelor ?,Orientation et formation,info
+Je voudrais faire une réclamation car ma demande de rendez-vous reste sans réponse.,Contacts et information générale,reclamation
+Cela pose problème : ma candidature n’est pas visible dans le système. À qui puis-je le signaler ?,Procédures administratives,reclamation
+Où trouver les renseignements sur la procédure de réclamation auprès de l’établissement ?,Règlement et vie étudiante,info
+Je ne comprends pas comment retrouver le numéro de la salle du prochain cours ; pouvez-vous m’expliquer ?,Emplois du temps et planning,aide
+Pouvez-vous enregistrer ma réclamation : les ordinateurs disponibles ne fonctionnent pas correctement ?,Services campus,reclamation
+Je voudrais savoir ce qu’il en est concernant le calendrier du semestre.,Emplois du temps et planning,info
+Je voudrais faire une réclamation car l’accès au bâtiment m’a été refusé malgré les consignes reçues.,Règlement et vie étudiante,reclamation
+Pourriez-vous m’accompagner pour savoir quel service contacter en cas de problème dans un bâtiment ?,Services campus,aide
+Pouvez-vous enregistrer ma réclamation : les informations pratiques sur la visite annoncée sont erronées ?,Orientation et formation,reclamation
+Je ne sais pas comment connaître la date de ma soutenance. Vous pouvez m’aider ?,Emplois du temps et planning,aide
+Où puis-je consulter le service à contacter pour les bourses ?,Contacts et information générale,info
+Je veux faire remonter ce dysfonctionnement : le statut de mon dossier n’a pas changé depuis plusieurs semaines.,Procédures administratives,reclamation
+"J’ai déjà signalé que ma demande de consultation de copie a été refusée sans motif, mais rien ne change.",Règlement et vie étudiante,reclamation
+Est-ce que vous avez des informations concernant les horaires et les tarifs du restaurant universitaire ?,Services campus,info
+"Je suis mécontent(e), car je ne trouve aucun contact qui puisse répondre à mes questions d’étudiant international.",Contacts et information générale,reclamation
+Je voudrais savoir ce qu’il en est concernant les coordonnées du service informatique.,Services campus,info
+Je voudrais faire une réclamation car le planning Data Science contient des créneaux impossibles.,Emplois du temps et planning,reclamation
+Pourriez-vous m’accompagner pour réserver ou utiliser un ordinateur du campus ?,Services campus,aide
+Où trouver les renseignements sur les cours de Master IA prévus cette semaine ?,Emplois du temps et planning,info
+J’ai fait un signalement de harcèlement et il n’y a eu aucun suivi.,Règlement et vie étudiante,reclamation
+Je ne sais pas comment me connecter aux ressources numériques. Vous pouvez m’aider ?,Services campus,aide
+Pouvez-vous m’indiquer les coordonnées générales de l’accueil ESIC ?,Contacts et information générale,info
+Pouvez-vous m’indiquer l’obtention d’un relevé de notes ?,Procédures administratives,info
+Je voudrais faire une réclamation car mon année d’étude n’apparaît pas correctement dans le planning.,Emplois du temps et planning,reclamation
+"Yo, où je peux voir les horaires de mes cours ?",Emplois du temps et planning,info
+"J’ai déjà signalé que les ressources numériques sont inaccessibles avec mon compte, mais rien ne change.",Services campus,reclamation
+Je voudrais de l’aide pour trouver le service qui s’occupe du logement.,Services campus,aide
+"Cette situation doit être examinée, puisque les compétences promises dans la présentation ne sont pas abordées en cours.",Orientation et formation,reclamation
+Comment connaître les cours annulés ou déplacés ?,Emplois du temps et planning,info
+"Cette situation doit être examinée, puisque personne ne répond à ma demande concernant la bourse.",Contacts et information générale,reclamation
+"Je suis mécontent(e), car les explications données aux étudiants internationaux sont difficiles à comprendre.",Orientation et formation,reclamation
+J'ai un problème avec le service informatique,Services campus,reclamation
+Je ne comprends pas comment trouver un aperçu des services et activités du campus ; pouvez-vous m’expliquer ?,Contacts et information générale,aide
+Je voudrais faire une réclamation car personne ne répond à ma demande concernant la bourse.,Contacts et information générale,reclamation
+Est-ce que quelqu’un peut m’aider à connaître les étapes pour changer de parcours ?,Procédures administratives,aide
+Je souhaite signaler un problème : du matériel commun a été endommagé sans que le problème soit signalé.,Règlement et vie étudiante,reclamation
+Je voudrais faire une réclamation car le service d’impression ne fonctionne plus.,Services campus,reclamation
+"Cette situation doit être examinée, puisque ma convention de stage est bloquée malgré l’envoi des documents.",Procédures administratives,reclamation
+"J’ai déjà signalé que un problème d’accessibilité empêche l’utilisation normale des locaux, mais rien ne change.",Services campus,reclamation
+J’ai reçu une sanction et je ne comprends pas comment faire un recours.,Règlement et vie étudiante,aide
+Je cherche des informations fiables sur les projets pédagogiques prévus dans mon cursus.,Orientation et formation,info
+"Je galère à comparer les parcours en cybersécurité et en développement, vous pouvez m’orienter ?",Orientation et formation,aide
+Est-ce que vous avez des informations concernant les contacts des enseignants d’un module ?,Orientation et formation,info
+Est-ce que quelqu’un peut m’aider à modifier mon inscription pédagogique ?,Procédures administratives,aide
+Savez-vous où sont publiées les informations sur les règles de respect et de lutte contre le harcèlement ?,Règlement et vie étudiante,info
+Que risque-t-on en cas de fraude à un examen ?,Règlement et vie étudiante,info
+Je voudrais savoir ce qu’il en est concernant les modalités de consultation d’une copie d’examen.,Règlement et vie étudiante,info
+Je voudrais savoir ce qu’il en est concernant les sanctions disciplinaires prévues par le règlement.,Règlement et vie étudiante,info
+J’aimerais obtenir des informations sur les démarches liées à un contrat d’alternance.,Procédures administratives,info
+Est-ce que vous avez des informations concernant la procédure de demande de convention de stage ?,Procédures administratives,info
+J’aurais besoin d’aide pour repérer les cours prévus cette semaine.,Emplois du temps et planning,aide
+Je conteste la sanction reçue après un examen,Règlement et vie étudiante,reclamation
+Je n’arrive pas à retrouver l'emploi du temps à jour. Pouvez-vous m’aider ?,Emplois du temps et planning,aide
+Je souhaite signaler un problème : un problème d’accessibilité empêche l’utilisation normale des locaux.,Services campus,reclamation
+Où trouver les renseignements sur les règles concernant l’utilisation du matériel de l’école ?,Règlement et vie étudiante,info
+Pourriez-vous m’accompagner pour consulter les horaires de mon groupe CPDIA ?,Emplois du temps et planning,aide
+"J’ai déjà signalé que les consignes de sécurité ne sont pas affichées clairement, mais rien ne change.",Règlement et vie étudiante,reclamation
+Comment connaître les démarches pour signaler une erreur dans une information publiée ?,Contacts et information générale,info
+J’ai du mal à identifier les connaissances à acquérir avant une spécialisation ; comment dois-je faire ?,Orientation et formation,aide
+Je n’arrive pas à comparer les possibilités de poursuite d’études. Pouvez-vous m’aider ?,Orientation et formation,aide
+Je ne sais pas comment vérifier si une salle a été modifiée. Vous pouvez m’aider ?,Emplois du temps et planning,aide
+Où trouver les renseignements sur les équivalences et passerelles entre formations ?,Orientation et formation,info
+Comment connaître la disponibilité des salles et des équipements ?,Emplois du temps et planning,info
+Je voudrais faire une réclamation car ma convention de stage est bloquée malgré l’envoi des documents.,Procédures administratives,reclamation
+Vous pouvez me renseigner sur les bourses et les aides financières étudiantes ?,Procédures administratives,info
+Je n’arrive pas à obtenir une attestation de réussite. Pouvez-vous m’aider ?,Procédures administratives,aide
+Je voudrais faire une réclamation car les prérequis de spécialisation n’ont pas été annoncés à temps.,Orientation et formation,reclamation
+Quelles sont les règles concernant les absences ?,Règlement et vie étudiante,info
+"Cette situation doit être examinée, puisque les créneaux de projet se superposent à mes cours.",Emplois du temps et planning,reclamation
+"Cette situation doit être examinée, puisque le contenu de la formation CPDIA n’a pas été présenté clairement.",Orientation et formation,reclamation
+"Je suis en CPDIA, est-ce que j'ai cours jeudi matin ?",Emplois du temps et planning,info
+"Est-ce que j'ai cours demain matin ?",Emplois du temps et planning,info
+"Est-ce qu'il y a cours vendredi après-midi ?",Emplois du temps et planning,info
+"Je voudrais savoir si j'ai cours lundi",Emplois du temps et planning,info
+"Mon prochain cours est à quelle heure ?",Emplois du temps et planning,info
+"Dans quelle salle est mon cours cet après-midi ?",Emplois du temps et planning,info
+"Est-ce que les examens commencent la semaine prochaine ?",Emplois du temps et planning,info
+"Quand est prévue ma soutenance ?",Emplois du temps et planning,info
+"Qui contacter pour prendre rendez-vous avec la scolarité ?",Contacts et information générale,info
+"Qui dois-je contacter à la scolarité ?",Contacts et information générale,info
+"Comment joindre le responsable pédagogique ?",Contacts et information générale,info
+"Comment joindre un responsable de formation ?",Contacts et information générale,info
+"Quel est le contact du responsable de formation ?",Contacts et information générale,info
+"Quelle est l'adresse mail du responsable pédagogique ?",Contacts et information générale,info
+"Quel numéro appeler pour joindre l'accueil ?",Contacts et information générale,info
+"À qui m'adresser pour une question administrative ?",Contacts et information générale,info
+"Qui est le bon interlocuteur pour mon dossier ?",Contacts et information générale,info
+"Comment contacter le secrétariat pédagogique ?",Contacts et information générale,info
+"Où trouver les coordonnées de la scolarité ?",Contacts et information générale,info
+"Je cherche le numéro du service informatique",Contacts et information générale,info
+"Qui contacter au sujet de mon alternance ?",Contacts et information générale,info
+"À qui écrire pour une question sur ma formation ?",Contacts et information générale,info
+"Est-ce que la bibliothèque ouvre le samedi ?",Services campus,info
+"Où se trouve le service de santé étudiante ?",Services campus,info
+"Quels sont les horaires du restaurant universitaire ?",Services campus,info
+"Le campus dispose-t-il d'un service d'aide psychologique ?",Services campus,info
+"Combien d'absences sont autorisées ?",Règlement et vie étudiante,info
+"Combien de retards peut-on avoir ?",Règlement et vie étudiante,info
+"Quelles sont les règles d'assiduité ?",Règlement et vie étudiante,info
+"Quels sont les prérequis pour le Master IA ?",Orientation et formation,info
+
+"Je ne retrouve pas la salle de mon cours de demain",Emplois du temps et planning,aide
+"Je ne trouve plus mon emploi du temps",Emplois du temps et planning,aide
+"Je n'arrive pas à retrouver mon prochain cours",Emplois du temps et planning,aide
+"Mon planning ne s'affiche pas, pouvez-vous m'aider ?",Emplois du temps et planning,aide
+"Je suis perdu avec mon emploi du temps",Emplois du temps et planning,aide
+"Je ne sais pas où a lieu mon cours",Emplois du temps et planning,aide
+"Le wifi du campus ne fonctionne pas sur mon ordinateur",Services campus,aide
+"Le wifi ne marche pas, que dois-je faire ?",Services campus,aide
+"Je n'arrive pas à me connecter au wifi",Services campus,aide
+"Mon compte informatique ne fonctionne plus, aidez-moi",Services campus,aide
+"Je n'arrive pas à accéder aux ressources numériques",Services campus,aide
+"Je ne peux pas me connecter à la plateforme, que faire ?",Services campus,aide
+"Je ne trouve pas l'adresse mail du responsable pédagogique",Contacts et information générale,aide
+"Je ne trouve pas le bon contact pour mon problème",Contacts et information générale,aide
+"Pouvez-vous m'aider à trouver qui contacter ?",Contacts et information générale,aide
+"Je ne sais pas à qui écrire pour mon dossier",Contacts et information générale,aide
+"Je cherche le bon interlocuteur et je suis perdu",Contacts et information générale,aide
+"Je n'arrive pas à joindre la bonne personne, pouvez-vous m'orienter ?",Contacts et information générale,aide
+"Je n'arrive pas à télécharger mon certificat de scolarité",Procédures administratives,aide
+"Je ne comprends pas comment déposer ma convention de stage",Procédures administratives,aide
+"Je suis bloqué pendant mon inscription, que dois-je faire ?",Procédures administratives,aide
+"Je ne sais pas comment faire ma demande de bourse",Procédures administratives,aide
+"Je n'arrive pas à compléter mon dossier administratif",Procédures administratives,aide
+"Je ne comprends pas la règle sur les absences",Règlement et vie étudiante,aide
+"Pouvez-vous m'expliquer la procédure après un retard ?",Règlement et vie étudiante,aide
+"Je ne sais pas quelle formation correspond à mon projet",Orientation et formation,aide
+"Je suis perdu entre le Bachelor et le CPDIA",Orientation et formation,aide
+"Pouvez-vous m'aider à choisir une formation en data ?",Orientation et formation,aide
+
+"Le planning affiché est faux et je veux signaler l'erreur",Emplois du temps et planning,reclamation
+"Mon emploi du temps contient encore des erreurs malgré mon signalement",Emplois du temps et planning,reclamation
+"La salle indiquée était incorrecte, je souhaite le signaler",Emplois du temps et planning,reclamation
+"Le service informatique ne répond jamais à mes demandes",Services campus,reclamation
+"Je veux signaler les pannes répétées du wifi",Services campus,reclamation
+"Le wifi tombe en panne tous les jours, c'est inadmissible",Services campus,reclamation
+"L'accueil m'a donné une mauvaise information, je souhaite le signaler",Services campus,reclamation
+"Le numéro indiqué pour l'accueil ne fonctionne pas",Contacts et information générale,reclamation
+"L'adresse mail publiée est incorrecte, je veux le signaler",Contacts et information générale,reclamation
+"Personne ne répond au numéro de la scolarité depuis plusieurs jours",Contacts et information générale,reclamation
+"Mon dossier est bloqué depuis plusieurs semaines malgré mes relances",Procédures administratives,reclamation
+"Je souhaite contester le refus de mon dossier",Procédures administratives,reclamation
+"Mon certificat contient une erreur, je veux faire une réclamation",Procédures administratives,reclamation
+"Je conteste la sanction reçue pour absence",Règlement et vie étudiante,reclamation
+"Je veux signaler un comportement irrespectueux sur le campus",Règlement et vie étudiante,reclamation
+"Cette sanction est injustifiée et je souhaite la contester",Règlement et vie étudiante,reclamation
+"Le contenu de la formation ne correspond pas au programme annoncé",Orientation et formation,reclamation
+"Je souhaite signaler un problème récurrent dans ma formation",Orientation et formation,reclamation

@@ -63,6 +63,9 @@ def log_question(question, session_id):
     - session_id
     - timestamp UTC
 
+    Retourne l'identifiant SQLite du log pour permettre au dashboard
+    de rattacher les métadonnées NLP et la latence.
+
     Une erreur de logging ne doit jamais empêcher
     le chatbot de répondre.
     """
@@ -70,7 +73,7 @@ def log_question(question, session_id):
     try:
         connection = get_connection()
 
-        connection.execute(
+        cursor = connection.execute(
             """
             INSERT INTO question_logs (
                 question,
@@ -87,12 +90,15 @@ def log_question(question, session_id):
         )
 
         connection.commit()
+        log_id = cursor.lastrowid
         connection.close()
+        return log_id
 
     except Exception as error:
         print(
             f"[LOG] Erreur lors de l'enregistrement de la question : {error}"
         )
+        return None
 
 
 def log_security_event(

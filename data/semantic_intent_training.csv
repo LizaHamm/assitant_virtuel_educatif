@@ -1,0 +1,643 @@
+﻿text,semantic_intent
+"Bonjour, À quelle heure ouvre le restaurant universitaire ? Pouvez-vous m'aider ?",service_campus
+"S'il vous plaît, Quels sont les prérequis du Master IA ? C'est pour ma situation étudiante.",formation
+"S'il vous plaît, Quelles démarches faut-il faire pour une alternance ? J'ai besoin de cette information.",stage_alternance
+Pouvez-vous me renseigner : Comment participer à la vie associative ? J'ai besoin de cette information.,vie_etudiante
+"S'il vous plaît, Comment récupérer une attestation de réussite ? J'ai besoin de cette information.",procedure_admin
+J'aimerais savoir : Je cherche une aide pour financer mes études.,aide_financiere
+"Bonjour, Comment contacter la scolarité ? Merci.",contact
+"S'il vous plaît, Quelles aides financières existent pour les étudiants ? J'ai besoin de cette information.",aide_financiere
+Pouvez-vous me renseigner : Que peut faire l'assistant virtuel ? Merci.,information_generale
+J'aimerais savoir : Quand seront publiées les dates d'examen ? C'est pour ma situation étudiante.,examen
+"S'il vous plaît, Que prévoit le règlement intérieur ? C'est pour ma situation étudiante.",reglement
+"S'il vous plaît, Je rencontre un problème avec l'accès informatique. J'ai besoin de cette information.",aide_technique
+"S'il vous plaît, Quels événements étudiants sont prévus ?",vie_etudiante
+"Bonjour, Quels sont les horaires de la bibliothèque ? Merci.",service_campus
+"Bonjour, À qui dois-je écrire pour cette question ? Pouvez-vous m'aider ?",contact
+J'aimerais savoir : Comment me réinscrire l'année prochaine ?,inscription
+Pouvez-vous me renseigner : Quels documents faut-il pour démarrer un stage ? J'ai besoin de cette information.,stage_alternance
+"Bonjour, Mon compte étudiant est bloqué. Merci.",aide_technique
+Pouvez-vous me renseigner : Quel est le délai de traitement de ma demande ? C'est pour ma situation étudiante.,procedure_admin
+Dans quelle salle ai-je cours demain ? Pouvez-vous m'aider ?,emploi_du_temps
+"S'il vous plaît, Qui est le responsable de cette formation ?",contact
+J'aimerais savoir : Où déposer un document administratif ? Pouvez-vous m'aider ?,procedure_admin
+À quelle heure commence mon épreuve ?,examen
+Pouvez-vous me renseigner : Comment demander un relevé de notes ? Merci.,procedure_admin
+Mon dossier d'inscription est-il complet ? J'ai besoin de cette information.,inscription
+J'aimerais savoir : Mon mot de passe étudiant ne fonctionne plus. C'est pour ma situation étudiante.,aide_technique
+Comment me réinscrire l'année prochaine ? Pouvez-vous m'aider ?,inscription
+"Bonjour, La cafétéria est-elle ouverte aujourd'hui ?",service_campus
+J'aimerais savoir : Où se trouve l'infirmerie ?,service_campus
+"Bonjour, Où se déroule mon cours cet après-midi ? Pouvez-vous m'aider ?",emploi_du_temps
+"Bonjour, Le Wi-Fi du campus ne marche pas sur mon ordinateur. J'ai besoin de cette information.",aide_technique
+Quelle est la procédure pour modifier mon dossier ? J'ai besoin de cette information.,procedure_admin
+J'aimerais savoir : Je conteste la réponse donnée par le service. Merci.,reclamation
+Pouvez-vous me renseigner : À qui dois-je écrire pour cette question ?,contact
+"Bonjour, Où déposer mon dossier de réinscription ? Pouvez-vous m'aider ?",inscription
+"Bonjour, Les retards répétés sont-ils autorisés par le règlement ?",reglement
+J'aimerais savoir : Comment utiliser les ressources numériques du campus ? J'ai besoin de cette information.,service_campus
+Hey,salutation
+J'aimerais savoir : Quelle poursuite d'études est possible après le Bachelor ? J'ai besoin de cette information.,formation
+Quels services sont proposés aux étudiants ? Merci.,service_campus
+J'aimerais savoir : Puis-je contester une sanction disciplinaire ? C'est pour ma situation étudiante.,reglement
+Pouvez-vous me renseigner : Le Wi-Fi du campus ne marche pas sur mon ordinateur. Merci.,aide_technique
+Pouvez-vous me renseigner : Comment utiliser les ressources numériques du campus ? C'est pour ma situation étudiante.,service_campus
+"Bonjour, Je cherche les étapes d'une démarche administrative. J'ai besoin de cette information.",procedure_admin
+Pouvez-vous me renseigner : Je cherche les étapes pour mon contrat d'alternance. C'est pour ma situation étudiante.,stage_alternance
+"S'il vous plaît, À quelle heure commence mon cours lundi ? Pouvez-vous m'aider ?",emploi_du_temps
+Pouvez-vous me renseigner : À qui demander une aide sociale ? J'ai besoin de cette information.,aide_financiere
+J'aimerais savoir : Où trouver le contact d'un responsable pédagogique ?,contact
+"S'il vous plaît, Je suis mécontent du traitement de ma demande. C'est pour ma situation étudiante.",reclamation
+À qui dois-je écrire pour cette question ? Merci.,contact
+Comment devenir membre d'un club du campus ? C'est pour ma situation étudiante.,vie_etudiante
+J'aimerais savoir : Mon compte étudiant est bloqué. J'ai besoin de cette information.,aide_technique
+Pouvez-vous me renseigner : Quelles conséquences sont prévues en cas de triche ? Pouvez-vous m'aider ?,reglement
+Quels sont mes droits et devoirs ? J'ai besoin de cette information.,reglement
+Où se déroule mon cours cet après-midi ? Merci.,emploi_du_temps
+"Bonjour, Dans quelle salle se déroule mon examen ? J'ai besoin de cette information.",examen
+Pouvez-vous me renseigner : Je veux connaître les étapes pour finaliser mon inscription. Merci.,inscription
+"S'il vous plaît, Je veux connaître le programme de CPDIA. J'ai besoin de cette information.",formation
+Pouvez-vous me renseigner : Comment obtenir un certificat de scolarité ? C'est pour ma situation étudiante.,procedure_admin
+Que prévoit le règlement intérieur ? Pouvez-vous m'aider ?,reglement
+J'aimerais savoir : Je cherche les étapes d'une démarche administrative.,procedure_admin
+"Bonjour, Quelles formations sont proposées par ESIC ? Merci.",formation
+Je cherche une aide pour financer mes études. Pouvez-vous m'aider ?,aide_financiere
+Quels enseignements vais-je suivre en CPDIA ? J'ai besoin de cette information.,formation
+J'aimerais savoir : Comment rejoindre le BDE ? C'est pour ma situation étudiante.,vie_etudiante
+"S'il vous plaît, Mon mot de passe étudiant ne fonctionne plus. J'ai besoin de cette information.",aide_technique
+"Bonjour, Je veux signaler un dysfonctionnement. Merci.",reclamation
+Au revoir et merci,salutation
+"S'il vous plaît, À qui demander une aide sociale ? Merci.",aide_financiere
+"S'il vous plaît, Comment proposer un événement étudiant ? C'est pour ma situation étudiante.",vie_etudiante
+Quel est le délai de traitement de ma demande ?,procedure_admin
+"Bonjour, Mon problème n'a toujours pas été résolu.",reclamation
+Pouvez-vous me renseigner : Quels documents faut-il fournir pour cette démarche ?,procedure_admin
+"Bonjour, Je cherche les coordonnées de la bibliothèque. Merci.",contact
+Pouvez-vous me renseigner : Qui est le responsable de cette formation ? Pouvez-vous m'aider ?,contact
+Pouvez-vous me renseigner : Mon planning de cours a-t-il changé ? Merci.,emploi_du_temps
+Quel est l'email du service informatique ? Merci.,contact
+J'aimerais savoir : Où se trouve le campus ESIC ? J'ai besoin de cette information.,information_generale
+"Bonjour, Quel est mon planning de la semaine ? Pouvez-vous m'aider ?",emploi_du_temps
+"Bonjour, Quand auront lieu les examens ? Merci.",examen
+Comment accéder à la salle de sport ? Pouvez-vous m'aider ?,service_campus
+J'aimerais savoir : Comment faire valider mon entreprise d'accueil ? Merci.,stage_alternance
+"S'il vous plaît, Comment rejoindre le BDE ? J'ai besoin de cette information.",vie_etudiante
+Pouvez-vous me renseigner : Je cherche le calendrier des soutenances. J'ai besoin de cette information.,examen
+Bonne soirée,salutation
+"Bonjour, Comment proposer un événement étudiant ? J'ai besoin de cette information.",vie_etudiante
+Quelles consignes de sécurité dois-je respecter ?,reglement
+"Bonjour, Je veux connaître les étapes pour finaliser mon inscription. J'ai besoin de cette information.",inscription
+Pouvez-vous me renseigner : Quelles associations étudiantes existent ? C'est pour ma situation étudiante.,vie_etudiante
+"Bonjour, Où se trouve le campus ESIC ? Merci.",information_generale
+"Bonjour, Mon dossier d'inscription est-il complet ? C'est pour ma situation étudiante.",inscription
+"Bonjour, Comment obtenir un certificat de scolarité ? Merci.",procedure_admin
+Quand auront lieu les examens ?,examen
+Merci bien,salutation
+"Bonjour, Quelle est la procédure pour modifier mon dossier ? C'est pour ma situation étudiante.",procedure_admin
+Comment constituer un dossier de bourse ? J'ai besoin de cette information.,aide_financiere
+"S'il vous plaît, Quelles sont les règles concernant les absences ? Pouvez-vous m'aider ?",reglement
+Où trouver le contact d'un responsable pédagogique ? Pouvez-vous m'aider ?,contact
+"Bonjour, À qui demander une aide sociale ?",aide_financiere
+"Bonjour, Comment devenir membre d'un club du campus ?",vie_etudiante
+Pouvez-vous me renseigner : Quand a lieu mon prochain cours ? J'ai besoin de cette information.,emploi_du_temps
+"S'il vous plaît, Qu'est-ce qu'on apprend dans ce cursus ? Merci.",formation
+"Bonjour, Quelles sont les règles concernant les absences ? Merci.",reglement
+"S'il vous plaît, Quels documents faut-il pour démarrer un stage ? Merci.",stage_alternance
+J'aimerais savoir : Quelle est la date de mon partiel ? C'est pour ma situation étudiante.,examen
+"S'il vous plaît, Quels sont les horaires de la bibliothèque ? Pouvez-vous m'aider ?",service_campus
+"Bonjour, Comment obtenir une convention de stage ? Merci.",stage_alternance
+J'aimerais savoir : Quelles consignes de sécurité dois-je respecter ? J'ai besoin de cette information.,reglement
+"S'il vous plaît, Je cherche les étapes d'une démarche administrative. C'est pour ma situation étudiante.",procedure_admin
+J'aimerais savoir : Comment faire mon inscription pédagogique ? J'ai besoin de cette information.,inscription
+Comment récupérer une attestation de réussite ? Merci.,procedure_admin
+J'aimerais savoir : Quels sont les principaux services de l'établissement ? J'ai besoin de cette information.,information_generale
+Pouvez-vous me renseigner : Quel est le numéro de téléphone de l'accueil ? Merci.,contact
+Pouvez-vous me renseigner : Quels modules sont enseignés en cybersécurité ? J'ai besoin de cette information.,formation
+"S'il vous plaît, Comment accéder au campus ? Merci.",information_generale
+Où déposer un document administratif ? C'est pour ma situation étudiante.,procedure_admin
+Que dit le règlement sur les retards ? Merci.,reglement
+Pouvez-vous me renseigner : Où se trouve le campus ESIC ? C'est pour ma situation étudiante.,information_generale
+Pouvez-vous me renseigner : Je souhaite faire une réclamation.,reclamation
+Comment joindre le service des admissions ? C'est pour ma situation étudiante.,contact
+Pouvez-vous me renseigner : Quels événements étudiants sont prévus ? Pouvez-vous m'aider ?,vie_etudiante
+J'aimerais savoir : Quelles sont les règles concernant les absences ? J'ai besoin de cette information.,reglement
+J'aimerais savoir : Je veux connaître le programme de CPDIA. C'est pour ma situation étudiante.,formation
+Pouvez-vous me renseigner : Quand auront lieu les examens ? C'est pour ma situation étudiante.,examen
+Comment fonctionne ESIC Assistant ? Pouvez-vous m'aider ?,information_generale
+"S'il vous plaît, Les retards répétés sont-ils autorisés par le règlement ? Merci.",reglement
+Quels documents sont nécessaires pour m'inscrire ? Merci.,inscription
+Pouvez-vous me renseigner : Quelle procédure suivre pour une mission en entreprise ? Merci.,stage_alternance
+J'aimerais savoir : Je souhaite faire une réclamation. C'est pour ma situation étudiante.,reclamation
+Pouvez-vous me renseigner : Quels cours sont prévus mercredi ? C'est pour ma situation étudiante.,emploi_du_temps
+J'aimerais savoir : Quels sont mes droits et devoirs ? Merci.,reglement
+Comment participer à la vie associative ? C'est pour ma situation étudiante.,vie_etudiante
+Je veux connaître le programme de CPDIA. Merci.,formation
+Pouvez-vous me renseigner : Mon compte étudiant est bloqué. C'est pour ma situation étudiante.,aide_technique
+Quelles informations puis-je demander au chatbot ? J'ai besoin de cette information.,information_generale
+J'aimerais savoir : Je n'arrive pas à m'authentifier sur le Wi-Fi étudiant. Pouvez-vous m'aider ?,aide_technique
+Je veux signaler une erreur dans mon dossier.,reclamation
+"Bonjour, Qui doit signer ma convention de stage ? J'ai besoin de cette information.",stage_alternance
+"Bonjour, Je n'arrive pas à accéder à la plateforme numérique. C'est pour ma situation étudiante.",aide_technique
+Comment rejoindre le BDE ? Merci.,vie_etudiante
+À qui demander une aide sociale ? C'est pour ma situation étudiante.,aide_financiere
+Le portail étudiant affiche une erreur de connexion. Pouvez-vous m'aider ?,aide_technique
+Pouvez-vous me renseigner : Comment rejoindre le BDE ?,vie_etudiante
+"Bonjour, L'authentification au réseau du campus est refusée. C'est pour ma situation étudiante.",aide_technique
+"S'il vous plaît, Quelles activités sportives sont proposées ? C'est pour ma situation étudiante.",vie_etudiante
+Je rencontre un problème avec l'accès informatique. Merci.,aide_technique
+"Bonjour, Quel est l'email du service informatique ? Pouvez-vous m'aider ?",contact
+Pouvez-vous me renseigner : La procédure annoncée n'a pas été respectée.,reclamation
+Pouvez-vous me renseigner : La cafétéria est-elle ouverte aujourd'hui ? J'ai besoin de cette information.,service_campus
+Pouvez-vous me renseigner : Quels services sont proposés aux étudiants ?,service_campus
+"Bonjour, Quelles associations étudiantes existent ? Merci.",vie_etudiante
+"Bonjour, Je souhaite faire une réclamation. Pouvez-vous m'aider ?",reclamation
+"S'il vous plaît, Quel est mon planning de la semaine ? J'ai besoin de cette information.",emploi_du_temps
+Pouvez-vous me renseigner : Je n'arrive pas à accéder à la plateforme numérique. Pouvez-vous m'aider ?,aide_technique
+"S'il vous plaît, Quand seront publiées les dates d'examen ? J'ai besoin de cette information.",examen
+"Bonjour, Les informations affichées sont incorrectes. J'ai besoin de cette information.",reclamation
+Pouvez-vous me renseigner : Quand sont les rattrapages ? Pouvez-vous m'aider ?,examen
+"S'il vous plaît, Quand auront lieu les examens ? Pouvez-vous m'aider ?",examen
+Je conteste la réponse donnée par le service. J'ai besoin de cette information.,reclamation
+Où se trouve le campus ESIC ?,information_generale
+Quelles sanctions sont prévues en cas de fraude ? Pouvez-vous m'aider ?,reglement
+"Bonjour, Je veux connaître le programme de CPDIA. Pouvez-vous m'aider ?",formation
+J'aimerais savoir : Comment obtenir un certificat de scolarité ? J'ai besoin de cette information.,procedure_admin
+"S'il vous plaît, Comment obtenir un certificat de scolarité ? Pouvez-vous m'aider ?",procedure_admin
+J'aimerais savoir : Comment récupérer une attestation de réussite ? C'est pour ma situation étudiante.,procedure_admin
+"S'il vous plaît, Je souhaite faire une réclamation. J'ai besoin de cette information.",reclamation
+Quelles aides financières existent pour les étudiants ? Merci.,aide_financiere
+"Bonjour, Quel est le délai de traitement de ma demande ? Merci.",procedure_admin
+"Bonjour, Dans quelle salle ai-je cours demain ? J'ai besoin de cette information.",emploi_du_temps
+Salut assistant,salutation
+Pouvez-vous me renseigner : Comment demander une bourse ? C'est pour ma situation étudiante.,aide_financiere
+L'authentification au réseau du campus est refusée. J'ai besoin de cette information.,aide_technique
+Quelles activités sont organisées pour les étudiants ? Merci.,vie_etudiante
+"S'il vous plaît, Je cherche les coordonnées de la bibliothèque. Pouvez-vous m'aider ?",contact
+"S'il vous plaît, Où se trouve le campus ESIC ? Pouvez-vous m'aider ?",information_generale
+J'aimerais savoir : Quel est l'email du service informatique ? C'est pour ma situation étudiante.,contact
+"Bonjour, Comment accéder au campus ?",information_generale
+J'aimerais savoir : Quels sont les horaires de la bibliothèque ? J'ai besoin de cette information.,service_campus
+J'aimerais savoir : Quelles aides sont disponibles en cas de difficulté financière ? J'ai besoin de cette information.,aide_financiere
+J'aimerais savoir : Quelles activités sont organisées pour les étudiants ? C'est pour ma situation étudiante.,vie_etudiante
+Que peut faire l'assistant virtuel ? Pouvez-vous m'aider ?,information_generale
+Pouvez-vous me renseigner : Je cherche les étapes d'une démarche administrative. Merci.,procedure_admin
+J'aimerais savoir : Quand a lieu mon prochain cours ? Pouvez-vous m'aider ?,emploi_du_temps
+Mon problème n'a toujours pas été résolu. C'est pour ma situation étudiante.,reclamation
+"S'il vous plaît, Les informations affichées sont incorrectes. C'est pour ma situation étudiante.",reclamation
+J'aimerais savoir : Quelles compétences développe cette formation ?,formation
+Pouvez-vous me renseigner : Comment contacter la scolarité ? C'est pour ma situation étudiante.,contact
+"Bonjour, Je veux signaler une erreur dans mon dossier. Merci.",reclamation
+Qui doit signer ma convention de stage ? Pouvez-vous m'aider ?,stage_alternance
+Quelle est la date de mon partiel ? Merci.,examen
+"S'il vous plaît, Que dit le règlement sur les retards ? J'ai besoin de cette information.",reglement
+Pouvez-vous me renseigner : Comment constituer un dossier de bourse ? Pouvez-vous m'aider ?,aide_financiere
+Comment faire valider mon entreprise d'accueil ? J'ai besoin de cette information.,stage_alternance
+Pouvez-vous me renseigner : Quels métiers peut-on faire après cette formation ? Pouvez-vous m'aider ?,formation
+Pouvez-vous me renseigner : Quelle poursuite d'études est possible après le Bachelor ? C'est pour ma situation étudiante.,formation
+Pouvez-vous me renseigner : Quel est mon planning de la semaine ?,emploi_du_temps
+J'aimerais savoir : Quelles associations étudiantes existent ? J'ai besoin de cette information.,vie_etudiante
+"S'il vous plaît, Quelle procédure suivre pour une mission en entreprise ? C'est pour ma situation étudiante.",stage_alternance
+Hello assistant,salutation
+Comment proposer un événement étudiant ? Pouvez-vous m'aider ?,vie_etudiante
+"Bonjour, Comment réinitialiser mon mot de passe ?",aide_technique
+Pouvez-vous me renseigner : Quels sont les horaires de la bibliothèque ? C'est pour ma situation étudiante.,service_campus
+"S'il vous plaît, Comment réinitialiser mon mot de passe ? Merci.",aide_technique
+Quelles compétences développe cette formation ? Pouvez-vous m'aider ?,formation
+J'aimerais savoir : Quels modules sont enseignés en cybersécurité ? Pouvez-vous m'aider ?,formation
+"Bonjour, Quels métiers peut-on faire après cette formation ? C'est pour ma situation étudiante.",formation
+Pouvez-vous me renseigner : Je n'arrive pas à me connecter à l'ENT. C'est pour ma situation étudiante.,aide_technique
+J'aimerais savoir : Comment accéder à la salle de sport ?,service_campus
+Pouvez-vous me renseigner : Je cherche les coordonnées de la bibliothèque. C'est pour ma situation étudiante.,contact
+"Bonjour, Quels enseignements vais-je suivre en CPDIA ? C'est pour ma situation étudiante.",formation
+J'aimerais savoir : Comment connaître les conditions d'une bourse ? C'est pour ma situation étudiante.,aide_financiere
+J'aimerais savoir : Quels cours sont prévus mercredi ? J'ai besoin de cette information.,emploi_du_temps
+Pouvez-vous me renseigner : Quelles formations sont proposées par ESIC ? C'est pour ma situation étudiante.,formation
+Pouvez-vous me renseigner : Comment faire mon inscription pédagogique ? C'est pour ma situation étudiante.,inscription
+J'aimerais savoir : Les retards répétés sont-ils autorisés par le règlement ? Pouvez-vous m'aider ?,reglement
+À plus tard,salutation
+J'aimerais savoir : Quelle est la règle concernant le plagiat ? Pouvez-vous m'aider ?,reglement
+Je cherche les étapes d'une démarche administrative. Pouvez-vous m'aider ?,procedure_admin
+J'aimerais savoir : La procédure annoncée n'a pas été respectée. C'est pour ma situation étudiante.,reclamation
+"S'il vous plaît, Comment accéder à la salle de sport ? C'est pour ma situation étudiante.",service_campus
+Pouvez-vous me renseigner : Je veux signaler un dysfonctionnement. C'est pour ma situation étudiante.,reclamation
+J'aimerais savoir : Quel est le délai de traitement de ma demande ? J'ai besoin de cette information.,procedure_admin
+"S'il vous plaît, L'authentification au réseau du campus est refusée.",aide_technique
+"Bonjour, Comment faire mon inscription pédagogique ? Merci.",inscription
+J'aimerais savoir : Quel est le contenu de la formation Data Science ? C'est pour ma situation étudiante.,formation
+Je veux consulter mon emploi du temps. J'ai besoin de cette information.,emploi_du_temps
+"S'il vous plaît, Quels sont les horaires généraux de l'école ? J'ai besoin de cette information.",information_generale
+J'aimerais savoir : Quelles activités sportives sont proposées ?,vie_etudiante
+J'aimerais savoir : À quelle heure ouvre le restaurant universitaire ? C'est pour ma situation étudiante.,service_campus
+"Bonjour, Comment modifier mon inscription ? Merci.",inscription
+"S'il vous plaît, Où se trouve l'infirmerie ? C'est pour ma situation étudiante.",service_campus
+Je cherche le calendrier des soutenances. C'est pour ma situation étudiante.,examen
+J'aimerais savoir : Quelles démarches faut-il faire pour une alternance ? C'est pour ma situation étudiante.,stage_alternance
+J'aimerais savoir : Où se déroule mon cours cet après-midi ? C'est pour ma situation étudiante.,emploi_du_temps
+À quelle heure commence mon cours lundi ?,emploi_du_temps
+"S'il vous plaît, Je voudrais adhérer à une association étudiante.",vie_etudiante
+J'aimerais savoir : Qui est le responsable de cette formation ? Merci.,contact
+"Bonsoir, j'espère que vous allez bien",salutation
+"S'il vous plaît, Je veux connaître les étapes pour finaliser mon inscription. C'est pour ma situation étudiante.",inscription
+"Bonjour, Comment connaître les conditions d'une bourse ? Pouvez-vous m'aider ?",aide_financiere
+Hello,salutation
+"S'il vous plaît, Quand a lieu mon prochain cours ? Merci.",emploi_du_temps
+"Bonjour, Où déposer un document administratif ?",procedure_admin
+"Bonjour, Où se trouve l'infirmerie ? J'ai besoin de cette information.",service_campus
+"Bonjour, Quand sont les rattrapages ? C'est pour ma situation étudiante.",examen
+J'aimerais savoir : Qu'est-ce qu'on apprend dans ce cursus ? Pouvez-vous m'aider ?,formation
+Pouvez-vous me renseigner : À quelle heure ouvre le restaurant universitaire ?,service_campus
+"S'il vous plaît, Quelles formations sont proposées par ESIC ? Pouvez-vous m'aider ?",formation
+"Bonjour, Je n'arrive pas à me connecter à l'ENT. Merci.",aide_technique
+"Bonjour, Comment faire valider mon entreprise d'accueil ? C'est pour ma situation étudiante.",stage_alternance
+J'aimerais savoir : Je veux consulter mon emploi du temps. Merci.,emploi_du_temps
+Mon mot de passe étudiant ne fonctionne plus. Merci.,aide_technique
+Quels événements étudiants sont prévus ? J'ai besoin de cette information.,vie_etudiante
+Pouvez-vous me renseigner : Quelles sanctions sont prévues en cas de fraude ? Merci.,reglement
+J'aimerais savoir : Les informations affichées sont incorrectes.,reclamation
+Bonne fin de journée,salutation
+"Bonjour, Quelles aides sont disponibles en cas de difficulté financière ? Merci.",aide_financiere
+Hi,salutation
+Dans quelle salle se déroule mon examen ? Pouvez-vous m'aider ?,examen
+"Bonjour, Quels documents faut-il fournir pour cette démarche ? Pouvez-vous m'aider ?",procedure_admin
+Quels métiers peut-on faire après cette formation ? J'ai besoin de cette information.,formation
+Pouvez-vous me renseigner : Comment devenir membre d'un club du campus ? J'ai besoin de cette information.,vie_etudiante
+"Bonjour, Quelle est la date limite d'inscription ?",inscription
+"S'il vous plaît, Comment utiliser les ressources numériques du campus ? Pouvez-vous m'aider ?",service_campus
+J'aimerais savoir : Mon dossier d'inscription est-il complet ? Merci.,inscription
+J'aimerais savoir : Quand sont les rattrapages ? Merci.,examen
+"Bonjour, Je conteste la réponse donnée par le service. C'est pour ma situation étudiante.",reclamation
+Je veux connaître le planning des partiels. Pouvez-vous m'aider ?,examen
+Pouvez-vous me renseigner : Je rencontre un problème avec l'accès informatique.,aide_technique
+Comment réinitialiser mon mot de passe ? C'est pour ma situation étudiante.,aide_technique
+Quelles démarches faut-il faire pour une alternance ? Merci.,stage_alternance
+Pouvez-vous me renseigner : Les informations affichées sont incorrectes. Merci.,reclamation
+Pouvez-vous me renseigner : Quels sont mes droits et devoirs ? Pouvez-vous m'aider ?,reglement
+Pouvez-vous me renseigner : Comment prendre rendez-vous avec le psychologue du campus ? Pouvez-vous m'aider ?,service_campus
+Quelle procédure suivre pour une mission en entreprise ? Pouvez-vous m'aider ?,stage_alternance
+Comment demander une bourse ?,aide_financiere
+Quel est le contenu de la formation Data Science ? Merci.,formation
+"Bonjour, Que peut faire l'assistant virtuel ? J'ai besoin de cette information.",information_generale
+Pouvez-vous me renseigner : Mon problème n'a toujours pas été résolu. J'ai besoin de cette information.,reclamation
+Je voudrais adhérer à une association étudiante. J'ai besoin de cette information.,vie_etudiante
+Pouvez-vous me renseigner : Je cherche une aide pour financer mes études. Merci.,aide_financiere
+"S'il vous plaît, Quelles sanctions sont prévues en cas de fraude ? C'est pour ma situation étudiante.",reglement
+"Bonjour, Quelles sanctions sont prévues en cas de fraude ? J'ai besoin de cette information.",reglement
+J'aimerais savoir : À qui demander une aide sociale ? Pouvez-vous m'aider ?,aide_financiere
+Pouvez-vous me renseigner : Je veux consulter mon emploi du temps. Pouvez-vous m'aider ?,emploi_du_temps
+"S'il vous plaît, Quelles conséquences sont prévues en cas de triche ?",reglement
+"S'il vous plaît, Quels documents sont nécessaires pour m'inscrire ? J'ai besoin de cette information.",inscription
+"S'il vous plaît, Dans quelle salle ai-je cours demain ? C'est pour ma situation étudiante.",emploi_du_temps
+Quels cours sont prévus mercredi ?,emploi_du_temps
+"S'il vous plaît, Dans quelle salle se déroule mon examen ? C'est pour ma situation étudiante.",examen
+Pouvez-vous me renseigner : Que prévoit le règlement intérieur ? Merci.,reglement
+"Bonjour, Quels documents faut-il pour démarrer un stage ?",stage_alternance
+La procédure annoncée n'a pas été respectée. Merci.,reclamation
+Qui est le responsable de cette formation ? J'ai besoin de cette information.,contact
+Pouvez-vous me renseigner : Comment fonctionne ESIC Assistant ? Merci.,information_generale
+"S'il vous plaît, Je n'arrive pas à me connecter à l'ENT. Pouvez-vous m'aider ?",aide_technique
+Pouvez-vous me renseigner : Quelle est la règle concernant le plagiat ? J'ai besoin de cette information.,reglement
+"Bonjour, Le service de psychologie reçoit-il sur rendez-vous ?",service_campus
+Bonjour ESIC Assistant,salutation
+"S'il vous plaît, Je n'arrive pas à accéder à la plateforme numérique.",aide_technique
+J'aimerais savoir : Quels services sont proposés aux étudiants ? C'est pour ma situation étudiante.,service_campus
+Pouvez-vous me renseigner : Je n'arrive pas à m'authentifier sur le Wi-Fi étudiant. J'ai besoin de cette information.,aide_technique
+J'aimerais savoir : Quelles conséquences sont prévues en cas de triche ? Merci.,reglement
+"S'il vous plaît, Quelle est la procédure pour modifier mon dossier ?",procedure_admin
+Comment accéder au campus ? C'est pour ma situation étudiante.,information_generale
+"S'il vous plaît, Quels enseignements vais-je suivre en CPDIA ?",formation
+Le Wi-Fi du campus ne marche pas sur mon ordinateur. Pouvez-vous m'aider ?,aide_technique
+"S'il vous plaît, Je veux consulter mon emploi du temps.",emploi_du_temps
+"S'il vous plaît, La procédure annoncée n'a pas été respectée. J'ai besoin de cette information.",reclamation
+Je cherche les coordonnées de la bibliothèque.,contact
+Merci,salutation
+J'aimerais savoir : Je voudrais adhérer à une association étudiante. Merci.,vie_etudiante
+Quels sont les prérequis du Master IA ? Pouvez-vous m'aider ?,formation
+"S'il vous plaît, Quelles informations puis-je demander au chatbot ?",information_generale
+"Bonjour, Puis-je obtenir une aide au logement ? J'ai besoin de cette information.",aide_financiere
+"S'il vous plaît, Je veux signaler une erreur dans mon dossier. Pouvez-vous m'aider ?",reclamation
+Pouvez-vous me renseigner : Comment accéder à la salle de sport ? Merci.,service_campus
+Quelles formations sont proposées par ESIC ?,formation
+"Bonjour, Je rencontre un problème avec l'accès informatique. Pouvez-vous m'aider ?",aide_technique
+J'aimerais savoir : Comment devenir membre d'un club du campus ? Pouvez-vous m'aider ?,vie_etudiante
+Je voudrais des informations générales sur ESIC. Merci.,information_generale
+Comment connaître les conditions d'une bourse ? Merci.,aide_financiere
+Pouvez-vous me renseigner : Quels sont les horaires généraux de l'école ?,information_generale
+Quel est mon planning de la semaine ? Merci.,emploi_du_temps
+Quels documents faut-il fournir pour cette démarche ? Merci.,procedure_admin
+J'aimerais savoir : Quels événements étudiants sont prévus ? Merci.,vie_etudiante
+Y a-t-il des clubs étudiants sur le campus ?,vie_etudiante
+"S'il vous plaît, Quand sont les rattrapages ?",examen
+"Bonjour, Je veux consulter mon emploi du temps. C'est pour ma situation étudiante.",emploi_du_temps
+J'aimerais savoir : Quels documents faut-il fournir pour cette démarche ? C'est pour ma situation étudiante.,procedure_admin
+J'aimerais savoir : Y a-t-il des clubs étudiants sur le campus ? J'ai besoin de cette information.,vie_etudiante
+Pouvez-vous me renseigner : Comment connaître les conditions d'une bourse ?,aide_financiere
+J'aimerais savoir : À quelle heure commence mon cours lundi ? J'ai besoin de cette information.,emploi_du_temps
+J'aimerais savoir : Je veux connaître le planning des partiels.,examen
+Je suis mécontent du traitement de ma demande. Pouvez-vous m'aider ?,reclamation
+"Bonjour, Je n'arrive pas à m'authentifier sur le Wi-Fi étudiant.",aide_technique
+J'aimerais savoir : Le Wi-Fi du campus ne marche pas sur mon ordinateur.,aide_technique
+"Bonjour, Je cherche une aide pour financer mes études. J'ai besoin de cette information.",aide_financiere
+Je n'arrive pas à accéder à la plateforme numérique. J'ai besoin de cette information.,aide_technique
+"Bonjour, Je suis mécontent du traitement de ma demande. J'ai besoin de cette information.",reclamation
+Qu'est-ce qu'on apprend dans ce cursus ? C'est pour ma situation étudiante.,formation
+"Bonjour, Quels cours sont prévus mercredi ? Merci.",emploi_du_temps
+"Bonjour, Comment déclarer mon stage à l'école ? Pouvez-vous m'aider ?",stage_alternance
+J'aimerais savoir : À qui dois-je écrire pour cette question ? C'est pour ma situation étudiante.,contact
+Comment demander un relevé de notes ? Pouvez-vous m'aider ?,procedure_admin
+Pouvez-vous me renseigner : Qu'est-ce qu'on apprend dans ce cursus ? J'ai besoin de cette information.,formation
+"S'il vous plaît, Mon planning de cours a-t-il changé ? C'est pour ma situation étudiante.",emploi_du_temps
+"S'il vous plaît, Quelles consignes de sécurité dois-je respecter ? Pouvez-vous m'aider ?",reglement
+"S'il vous plaît, Quel est l'email du service informatique ? J'ai besoin de cette information.",contact
+J'aimerais savoir : Comment participer à la vie associative ? Pouvez-vous m'aider ?,vie_etudiante
+Les retards répétés sont-ils autorisés par le règlement ? C'est pour ma situation étudiante.,reglement
+"S'il vous plaît, Comment modifier mon inscription ? Pouvez-vous m'aider ?",inscription
+Bonne journée,salutation
+Pouvez-vous me renseigner : Quels sont les prérequis du Master IA ? Merci.,formation
+Pouvez-vous me renseigner : Comment modifier mon inscription ? C'est pour ma situation étudiante.,inscription
+À bientôt et merci,salutation
+"S'il vous plaît, Y a-t-il des clubs étudiants sur le campus ? Pouvez-vous m'aider ?",vie_etudiante
+Je veux connaître les étapes pour finaliser mon inscription. Pouvez-vous m'aider ?,inscription
+"S'il vous plaît, Quel est le délai de traitement de ma demande ? Pouvez-vous m'aider ?",procedure_admin
+Pouvez-vous me renseigner : Où déposer mon dossier de réinscription ?,inscription
+J'aimerais savoir : Que prévoit le règlement intérieur ?,reglement
+J'aimerais savoir : Comment accéder au campus ? Pouvez-vous m'aider ?,information_generale
+"S'il vous plaît, Puis-je contester une sanction disciplinaire ? J'ai besoin de cette information.",reglement
+Pouvez-vous me renseigner : Le portail étudiant affiche une erreur de connexion. Merci.,aide_technique
+J'aimerais savoir : Quels sont les prérequis du Master IA ?,formation
+Merci beaucoup,salutation
+Quels sont les horaires généraux de l'école ? Merci.,information_generale
+Bonne continuation,salutation
+"S'il vous plaît, Quelle est la règle concernant le plagiat ? Merci.",reglement
+"S'il vous plaît, Je veux connaître le planning des partiels. C'est pour ma situation étudiante.",examen
+J'aimerais savoir : Que peut faire l'assistant virtuel ?,information_generale
+"Bonjour, Qu'est-ce qu'on apprend dans ce cursus ?",formation
+"S'il vous plaît, Mon dossier d'inscription est-il complet ?",inscription
+"S'il vous plaît, Comment faire mon inscription pédagogique ? Pouvez-vous m'aider ?",inscription
+J'aimerais savoir : La cafétéria est-elle ouverte aujourd'hui ? Pouvez-vous m'aider ?,service_campus
+"Bonjour, Comment me réinscrire l'année prochaine ? J'ai besoin de cette information.",inscription
+Pouvez-vous me renseigner : Comment récupérer une attestation de réussite ?,procedure_admin
+J'aimerais savoir : Je cherche les étapes pour mon contrat d'alternance. J'ai besoin de cette information.,stage_alternance
+"Bonjour, Y a-t-il des clubs étudiants sur le campus ? Merci.",vie_etudiante
+Pouvez-vous me renseigner : Où se trouve l'infirmerie ? Merci.,service_campus
+J'aimerais savoir : Comment proposer un événement étudiant ?,vie_etudiante
+J'aimerais savoir : Qui doit signer ma convention de stage ?,stage_alternance
+"Bonjour, Quelles activités sportives sont proposées ? J'ai besoin de cette information.",vie_etudiante
+"S'il vous plaît, Quelle poursuite d'études est possible après le Bachelor ? Pouvez-vous m'aider ?",formation
+J'aimerais savoir : Je voudrais des informations générales sur ESIC. C'est pour ma situation étudiante.,information_generale
+Salut ESIC,salutation
+Coucou,salutation
+"Bonjour, Quelles démarches faut-il faire pour une alternance ? Pouvez-vous m'aider ?",stage_alternance
+J'aimerais savoir : Quel est mon planning de la semaine ? C'est pour ma situation étudiante.,emploi_du_temps
+Quand sont les rattrapages ? J'ai besoin de cette information.,examen
+"Bonjour, Mon planning de cours a-t-il changé ? J'ai besoin de cette information.",emploi_du_temps
+Pouvez-vous me renseigner : Que dit le règlement sur les retards ?,reglement
+J'aimerais savoir : Comment joindre le service des admissions ? Pouvez-vous m'aider ?,contact
+J'aimerais savoir : Je rencontre un problème avec l'accès informatique. C'est pour ma situation étudiante.,aide_technique
+"S'il vous plaît, Je cherche une aide pour financer mes études. C'est pour ma situation étudiante.",aide_financiere
+"S'il vous plaît, Quelle est la date limite d'inscription ? Merci.",inscription
+J'aimerais savoir : Quels sont les horaires généraux de l'école ? C'est pour ma situation étudiante.,information_generale
+Pouvez-vous me renseigner : Quelle est la procédure pour modifier mon dossier ? Pouvez-vous m'aider ?,procedure_admin
+"Bonjour, Quels services sont proposés aux étudiants ? Pouvez-vous m'aider ?",service_campus
+Bonjour tout le monde,salutation
+Bonsoir ESIC,salutation
+Merci pour votre aide,salutation
+"S'il vous plaît, À qui dois-je écrire pour cette question ? J'ai besoin de cette information.",contact
+J'aimerais savoir : Quelle est la date limite d'inscription ? Pouvez-vous m'aider ?,inscription
+"S'il vous plaît, Mon compte étudiant est bloqué. Pouvez-vous m'aider ?",aide_technique
+Quelle est la règle concernant le plagiat ? C'est pour ma situation étudiante.,reglement
+"Bonjour, Où trouver le contact d'un responsable pédagogique ? J'ai besoin de cette information.",contact
+"S'il vous plaît, Comment demander une bourse ? Pouvez-vous m'aider ?",aide_financiere
+Pouvez-vous me renseigner : Je suis mécontent du traitement de ma demande. Merci.,reclamation
+Pouvez-vous me renseigner : Quelles activités sportives sont proposées ? Merci.,vie_etudiante
+J'aimerais savoir : Mon planning de cours a-t-il changé ?,emploi_du_temps
+"S'il vous plaît, Le service de psychologie reçoit-il sur rendez-vous ? Merci.",service_campus
+"S'il vous plaît, Le portail étudiant affiche une erreur de connexion. C'est pour ma situation étudiante.",aide_technique
+J'aimerais savoir : Quels métiers peut-on faire après cette formation ? Merci.,formation
+"Bonjour, La procédure annoncée n'a pas été respectée. Pouvez-vous m'aider ?",reclamation
+Je vous remercie,salutation
+"Bonjour, Quels sont mes droits et devoirs ? C'est pour ma situation étudiante.",reglement
+"S'il vous plaît, Quelles associations étudiantes existent ? Pouvez-vous m'aider ?",vie_etudiante
+"Bonjour, Je cherche le calendrier des soutenances.",examen
+"Bonjour, Comment constituer un dossier de bourse ? C'est pour ma situation étudiante.",aide_financiere
+"S'il vous plaît, Quels sont mes droits et devoirs ?",reglement
+Je cherche les étapes pour mon contrat d'alternance.,stage_alternance
+J'aimerais savoir : Je veux signaler un dysfonctionnement. J'ai besoin de cette information.,reclamation
+Je souhaite faire une réclamation. Merci.,reclamation
+"Bonjour, Quand seront publiées les dates d'examen ? Pouvez-vous m'aider ?",examen
+J'aimerais savoir : Comment prendre rendez-vous avec le psychologue du campus ? Merci.,service_campus
+J'aimerais savoir : Comment modifier mon inscription ? J'ai besoin de cette information.,inscription
+"Bonjour, Quels services de santé sont disponibles ? C'est pour ma situation étudiante.",service_campus
+J'aimerais savoir : Quelles sanctions sont prévues en cas de fraude ?,reglement
+Pouvez-vous me renseigner : Quel est l'email du service informatique ?,contact
+Pouvez-vous me renseigner : Je voudrais des informations générales sur ESIC.,information_generale
+Pouvez-vous me renseigner : Dans quelle salle se déroule mon examen ? Merci.,examen
+"S'il vous plaît, Quels services de santé sont disponibles ?",service_campus
+"Bonjour, Comment fonctionne ESIC Assistant ? J'ai besoin de cette information.",information_generale
+Pouvez-vous me renseigner : Je veux signaler une erreur dans mon dossier. C'est pour ma situation étudiante.,reclamation
+Pouvez-vous me renseigner : Mon mot de passe étudiant ne fonctionne plus.,aide_technique
+J'aimerais savoir : Comment réinitialiser mon mot de passe ? Pouvez-vous m'aider ?,aide_technique
+Pouvez-vous me renseigner : Comment joindre le service des admissions ? J'ai besoin de cette information.,contact
+Bonjour,salutation
+"S'il vous plaît, Comment prendre rendez-vous avec le psychologue du campus ?",service_campus
+J'aimerais savoir : Quelles formations sont proposées par ESIC ? J'ai besoin de cette information.,formation
+"S'il vous plaît, Quels modules sont enseignés en cybersécurité ? Merci.",formation
+"Bonjour, Quelle est la date de mon partiel ? Pouvez-vous m'aider ?",examen
+J'aimerais savoir : Je veux signaler une erreur dans mon dossier. J'ai besoin de cette information.,reclamation
+"Bonjour, Qui est le responsable de cette formation ? C'est pour ma situation étudiante.",contact
+Bonjour à vous,salutation
+J'aimerais savoir : Quels documents faut-il pour démarrer un stage ? Pouvez-vous m'aider ?,stage_alternance
+Pouvez-vous me renseigner : Quelles démarches faut-il faire pour une alternance ?,stage_alternance
+Quelle est la date limite d'inscription ? C'est pour ma situation étudiante.,inscription
+Pouvez-vous me renseigner : Qui doit signer ma convention de stage ? Merci.,stage_alternance
+"S'il vous plaît, Quelles aides sont disponibles en cas de difficulté financière ? Pouvez-vous m'aider ?",aide_financiere
+"S'il vous plaît, Je cherche les étapes pour mon contrat d'alternance. Pouvez-vous m'aider ?",stage_alternance
+Le service de psychologie reçoit-il sur rendez-vous ? C'est pour ma situation étudiante.,service_campus
+Salut,salutation
+Comment faire mon inscription pédagogique ?,inscription
+J'aimerais savoir : Où déposer mon dossier de réinscription ? C'est pour ma situation étudiante.,inscription
+J'aimerais savoir : Quels enseignements vais-je suivre en CPDIA ? Merci.,formation
+"S'il vous plaît, Mon problème n'a toujours pas été résolu. Merci.",reclamation
+J'aimerais savoir : Comment demander un relevé de notes ?,procedure_admin
+Pouvez-vous me renseigner : Quelles compétences développe cette formation ? Merci.,formation
+Pouvez-vous me renseigner : Le service de psychologie reçoit-il sur rendez-vous ? J'ai besoin de cette information.,service_campus
+Pouvez-vous me renseigner : Quelles aides sont disponibles en cas de difficulté financière ? C'est pour ma situation étudiante.,aide_financiere
+"Bonjour, Je voudrais adhérer à une association étudiante. C'est pour ma situation étudiante.",vie_etudiante
+"Bonjour, Quel est le contenu de la formation Data Science ? Pouvez-vous m'aider ?",formation
+"S'il vous plaît, Comment connaître les conditions d'une bourse ? J'ai besoin de cette information.",aide_financiere
+"S'il vous plaît, Quelle est la date de mon partiel ? J'ai besoin de cette information.",examen
+"Bonjour, Je veux connaître le planning des partiels. J'ai besoin de cette information.",examen
+La cafétéria est-elle ouverte aujourd'hui ? C'est pour ma situation étudiante.,service_campus
+Quelles aides sont disponibles en cas de difficulté financière ?,aide_financiere
+"Bonjour, Quels sont les principaux services de l'établissement ? Merci.",information_generale
+Pouvez-vous me renseigner : Y a-t-il des clubs étudiants sur le campus ? C'est pour ma situation étudiante.,vie_etudiante
+Pouvez-vous me renseigner : Comment réinitialiser mon mot de passe ? J'ai besoin de cette information.,aide_technique
+"S'il vous plaît, Où trouver le contact d'un responsable pédagogique ? C'est pour ma situation étudiante.",contact
+"Bonjour, Comment demander un relevé de notes ? J'ai besoin de cette information.",procedure_admin
+Pouvez-vous me renseigner : Quelle est la date de mon partiel ?,examen
+"Bonjour, Quelles activités sont organisées pour les étudiants ? Pouvez-vous m'aider ?",vie_etudiante
+"S'il vous plaît, Quels services sont proposés aux étudiants ? J'ai besoin de cette information.",service_campus
+Pouvez-vous me renseigner : Les retards répétés sont-ils autorisés par le règlement ? J'ai besoin de cette information.,reglement
+J'aimerais savoir : Je veux connaître les étapes pour finaliser mon inscription.,inscription
+"Bonjour, Comment demander une bourse ? Merci.",aide_financiere
+"S'il vous plaît, Comment me réinscrire l'année prochaine ? C'est pour ma situation étudiante.",inscription
+"Bonjour, Quels documents sont nécessaires pour m'inscrire ? Pouvez-vous m'aider ?",inscription
+J'aimerais savoir : Comment fonctionne ESIC Assistant ?,information_generale
+Pouvez-vous me renseigner : L'authentification au réseau du campus est refusée. Pouvez-vous m'aider ?,aide_technique
+Quand seront publiées les dates d'examen ? Merci.,examen
+"Bonjour, Quelle est la règle concernant le plagiat ?",reglement
+"Bonjour, Quelles conséquences sont prévues en cas de triche ? C'est pour ma situation étudiante.",reglement
+J'aimerais savoir : Comment contacter la scolarité ? J'ai besoin de cette information.,contact
+"Bonjour, Le portail étudiant affiche une erreur de connexion. J'ai besoin de cette information.",aide_technique
+Pouvez-vous me renseigner : Comment déclarer mon stage à l'école ?,stage_alternance
+Pouvez-vous me renseigner : Puis-je contester une sanction disciplinaire ?,reglement
+"S'il vous plaît, Je n'arrive pas à m'authentifier sur le Wi-Fi étudiant. Merci.",aide_technique
+"Bonjour, Que dit le règlement sur les retards ? Pouvez-vous m'aider ?",reglement
+Au revoir,salutation
+J'aimerais savoir : Comment constituer un dossier de bourse ? Merci.,aide_financiere
+"S'il vous plaît, Quels métiers peut-on faire après cette formation ?",formation
+J'aimerais savoir : Je suis mécontent du traitement de ma demande.,reclamation
+J'aimerais savoir : Je cherche les coordonnées de la bibliothèque. J'ai besoin de cette information.,contact
+"S'il vous plaît, Comment contacter la scolarité ? Pouvez-vous m'aider ?",contact
+Pouvez-vous me renseigner : Comment me réinscrire l'année prochaine ? Merci.,inscription
+Où se trouve l'infirmerie ? Pouvez-vous m'aider ?,service_campus
+Comment prendre rendez-vous avec le psychologue du campus ? J'ai besoin de cette information.,service_campus
+J'aimerais savoir : Dans quelle salle se déroule mon examen ?,examen
+"S'il vous plaît, Le Wi-Fi du campus ne marche pas sur mon ordinateur. C'est pour ma situation étudiante.",aide_technique
+"Bonjour, Quelles informations puis-je demander au chatbot ? C'est pour ma situation étudiante.",information_generale
+Pouvez-vous me renseigner : Comment accéder au campus ? J'ai besoin de cette information.,information_generale
+Pouvez-vous me renseigner : Quels enseignements vais-je suivre en CPDIA ? Pouvez-vous m'aider ?,formation
+"Bonjour, Quels événements étudiants sont prévus ? C'est pour ma situation étudiante.",vie_etudiante
+Pouvez-vous me renseigner : Quels documents sont nécessaires pour m'inscrire ?,inscription
+Comment obtenir une convention de stage ?,stage_alternance
+"S'il vous plaît, Je veux signaler un dysfonctionnement. Pouvez-vous m'aider ?",reclamation
+Pouvez-vous me renseigner : Mon dossier d'inscription est-il complet ? Pouvez-vous m'aider ?,inscription
+J'aimerais savoir : Comment déclarer mon stage à l'école ? C'est pour ma situation étudiante.,stage_alternance
+Pouvez-vous me renseigner : Comment proposer un événement étudiant ? Merci.,vie_etudiante
+Quelles associations étudiantes existent ?,vie_etudiante
+Où déposer mon dossier de réinscription ? Merci.,inscription
+À quelle heure ouvre le restaurant universitaire ? Merci.,service_campus
+"S'il vous plaît, Quel est le numéro de téléphone de l'accueil ? C'est pour ma situation étudiante.",contact
+Pouvez-vous me renseigner : Quelles consignes de sécurité dois-je respecter ? C'est pour ma situation étudiante.,reglement
+Mon planning de cours a-t-il changé ? Pouvez-vous m'aider ?,emploi_du_temps
+Quelles conséquences sont prévues en cas de triche ? J'ai besoin de cette information.,reglement
+"S'il vous plaît, Où déposer mon dossier de réinscription ? J'ai besoin de cette information.",inscription
+Pouvez-vous me renseigner : Quelle est la date limite d'inscription ? J'ai besoin de cette information.,inscription
+Quelles activités sportives sont proposées ? Pouvez-vous m'aider ?,vie_etudiante
+Quels services de santé sont disponibles ? J'ai besoin de cette information.,service_campus
+Quel est le numéro de téléphone de l'accueil ? Pouvez-vous m'aider ?,contact
+J'aimerais savoir : À quelle heure commence mon épreuve ? J'ai besoin de cette information.,examen
+"Bonjour, Quelles aides financières existent pour les étudiants ? Pouvez-vous m'aider ?",aide_financiere
+"Bonjour, Quelle poursuite d'études est possible après le Bachelor ? Merci.",formation
+"S'il vous plaît, Je voudrais des informations générales sur ESIC. J'ai besoin de cette information.",information_generale
+"S'il vous plaît, Que peut faire l'assistant virtuel ? C'est pour ma situation étudiante.",information_generale
+Comment modifier mon inscription ?,inscription
+"S'il vous plaît, Quelles compétences développe cette formation ? C'est pour ma situation étudiante.",formation
+Pouvez-vous me renseigner : À quelle heure commence mon cours lundi ? C'est pour ma situation étudiante.,emploi_du_temps
+"S'il vous plaît, Comment constituer un dossier de bourse ?",aide_financiere
+J'aimerais savoir : Quels services de santé sont disponibles ? Merci.,service_campus
+"Salut, comment ça va ?",salutation
+Comment déclarer mon stage à l'école ? Merci.,stage_alternance
+"S'il vous plaît, Quels documents faut-il fournir pour cette démarche ? J'ai besoin de cette information.",procedure_admin
+"S'il vous plaît, Où se déroule mon cours cet après-midi ? J'ai besoin de cette information.",emploi_du_temps
+Quels modules sont enseignés en cybersécurité ? C'est pour ma situation étudiante.,formation
+Pouvez-vous me renseigner : Quelles sont les règles concernant les absences ? C'est pour ma situation étudiante.,reglement
+"S'il vous plaît, Quels cours sont prévus mercredi ? Pouvez-vous m'aider ?",emploi_du_temps
+"Bonjour, Comment participer à la vie associative ?",vie_etudiante
+Comment contacter la scolarité ?,contact
+"S'il vous plaît, Comment faire valider mon entreprise d'accueil ?",stage_alternance
+J'aimerais savoir : Quelles informations puis-je demander au chatbot ? Merci.,information_generale
+J'aimerais savoir : Je n'arrive pas à accéder à la plateforme numérique. Merci.,aide_technique
+Bonsoir assistant,salutation
+"Bonjour, Je voudrais des informations générales sur ESIC. Pouvez-vous m'aider ?",information_generale
+"Bonjour, Je cherche les étapes pour mon contrat d'alternance. Merci.",stage_alternance
+J'aimerais savoir : Que dit le règlement sur les retards ? C'est pour ma situation étudiante.,reglement
+"S'il vous plaît, Où déposer un document administratif ? Merci.",procedure_admin
+Pouvez-vous me renseigner : Je veux connaître le planning des partiels. Merci.,examen
+J'aimerais savoir : Le service de psychologie reçoit-il sur rendez-vous ? Pouvez-vous m'aider ?,service_campus
+"S'il vous plaît, Quelles activités sont organisées pour les étudiants ? J'ai besoin de cette information.",vie_etudiante
+J'aimerais savoir : Quels documents sont nécessaires pour m'inscrire ? C'est pour ma situation étudiante.,inscription
+Pouvez-vous me renseigner : Où déposer un document administratif ? J'ai besoin de cette information.,procedure_admin
+Pouvez-vous me renseigner : Dans quelle salle ai-je cours demain ? Merci.,emploi_du_temps
+"Bonjour, Quelles consignes de sécurité dois-je respecter ? Merci.",reglement
+Comment obtenir un certificat de scolarité ?,procedure_admin
+Quels documents faut-il pour démarrer un stage ? C'est pour ma situation étudiante.,stage_alternance
+Pouvez-vous me renseigner : Quelles informations puis-je demander au chatbot ? Pouvez-vous m'aider ?,information_generale
+"S'il vous plaît, Quel est le contenu de la formation Data Science ? J'ai besoin de cette information.",formation
+"Bonjour, Quelles compétences développe cette formation ? J'ai besoin de cette information.",formation
+"S'il vous plaît, Comment demander un relevé de notes ? C'est pour ma situation étudiante.",procedure_admin
+"S'il vous plaît, Je conteste la réponse donnée par le service.",reclamation
+Mon compte étudiant est bloqué.,aide_technique
+"Bonjour, Comment joindre le service des admissions ?",contact
+Pouvez-vous me renseigner : À quelle heure commence mon épreuve ? C'est pour ma situation étudiante.,examen
+J'aimerais savoir : Je cherche le calendrier des soutenances. Pouvez-vous m'aider ?,examen
+"S'il vous plaît, Comment devenir membre d'un club du campus ? Merci.",vie_etudiante
+Pouvez-vous me renseigner : Où trouver le contact d'un responsable pédagogique ? Merci.,contact
+"Bonjour, Quels modules sont enseignés en cybersécurité ?",formation
+"Bonjour, Puis-je contester une sanction disciplinaire ? Pouvez-vous m'aider ?",reglement
+J'aimerais savoir : Comment demander une bourse ? J'ai besoin de cette information.,aide_financiere
+Bonsoir,salutation
+Pouvez-vous me renseigner : Comment obtenir une convention de stage ? C'est pour ma situation étudiante.,stage_alternance
+Comment utiliser les ressources numériques du campus ?,service_campus
+J'aimerais savoir : Puis-je obtenir une aide au logement ?,aide_financiere
+Pouvez-vous me renseigner : Quels sont les principaux services de l'établissement ? C'est pour ma situation étudiante.,information_generale
+"Bonjour, À quelle heure commence mon cours lundi ? Merci.",emploi_du_temps
+"Bonjour, Comment rejoindre le BDE ? Pouvez-vous m'aider ?",vie_etudiante
+Pouvez-vous me renseigner : Quelles aides financières existent pour les étudiants ?,aide_financiere
+Quels sont les horaires de la bibliothèque ?,service_campus
+Quelle poursuite d'études est possible après le Bachelor ?,formation
+Pouvez-vous me renseigner : Où se déroule mon cours cet après-midi ?,emploi_du_temps
+"Bonjour, Quelle procédure suivre pour une mission en entreprise ? J'ai besoin de cette information.",stage_alternance
+"Bonjour, je suis étudiant",salutation
+"S'il vous plaît, Je cherche le calendrier des soutenances. Merci.",examen
+"Bonjour, Quels sont les horaires généraux de l'école ? Pouvez-vous m'aider ?",information_generale
+"Bonjour, Comment accéder à la salle de sport ? J'ai besoin de cette information.",service_campus
+Pouvez-vous me renseigner : Je conteste la réponse donnée par le service. Pouvez-vous m'aider ?,reclamation
+"S'il vous plaît, Puis-je obtenir une aide au logement ? C'est pour ma situation étudiante.",aide_financiere
+Je veux signaler un dysfonctionnement.,reclamation
+"Bonjour, Quel est le numéro de téléphone de l'accueil ? J'ai besoin de cette information.",contact
+J'aimerais savoir : Dans quelle salle ai-je cours demain ?,emploi_du_temps
+Je n'arrive pas à m'authentifier sur le Wi-Fi étudiant. C'est pour ma situation étudiante.,aide_technique
+"S'il vous plaît, Quels sont les principaux services de l'établissement ? Pouvez-vous m'aider ?",information_generale
+J'aimerais savoir : Je n'arrive pas à me connecter à l'ENT. J'ai besoin de cette information.,aide_technique
+"Bonjour, Que prévoit le règlement intérieur ? J'ai besoin de cette information.",reglement
+Pouvez-vous me renseigner : Je voudrais adhérer à une association étudiante. Pouvez-vous m'aider ?,vie_etudiante
+"S'il vous plaît, Qui doit signer ma convention de stage ? C'est pour ma situation étudiante.",stage_alternance
+Pouvez-vous me renseigner : Quelles activités sont organisées pour les étudiants ?,vie_etudiante
+"S'il vous plaît, Comment déclarer mon stage à l'école ? J'ai besoin de cette information.",stage_alternance
+J'aimerais savoir : Quel est le numéro de téléphone de l'accueil ?,contact
+Pouvez-vous me renseigner : Puis-je obtenir une aide au logement ? Merci.,aide_financiere
+Puis-je obtenir une aide au logement ? Pouvez-vous m'aider ?,aide_financiere
+Pouvez-vous me renseigner : Quel est le contenu de la formation Data Science ?,formation
+J'aimerais savoir : Comment obtenir une convention de stage ? J'ai besoin de cette information.,stage_alternance
+J'aimerais savoir : Quelle procédure suivre pour une mission en entreprise ?,stage_alternance
+J'aimerais savoir : Quelle est la procédure pour modifier mon dossier ? Merci.,procedure_admin
+"S'il vous plaît, Comment obtenir une convention de stage ? Pouvez-vous m'aider ?",stage_alternance
+J'aimerais savoir : Quelles aides financières existent pour les étudiants ? C'est pour ma situation étudiante.,aide_financiere
+"S'il vous plaît, Comment joindre le service des admissions ? Merci.",contact
+"Bonjour, Quand a lieu mon prochain cours ?",emploi_du_temps
+J'aimerais savoir : L'authentification au réseau du campus est refusée. Merci.,aide_technique
+"S'il vous plaît, À quelle heure commence mon épreuve ? Pouvez-vous m'aider ?",examen
+Puis-je contester une sanction disciplinaire ? Merci.,reglement
+"Bonjour, Mon mot de passe étudiant ne fonctionne plus. Pouvez-vous m'aider ?",aide_technique
+"Bonjour, Quels sont les prérequis du Master IA ? J'ai besoin de cette information.",formation
+Quels sont les principaux services de l'établissement ?,information_generale
+À bientôt,salutation
+Pouvez-vous me renseigner : Comment faire valider mon entreprise d'accueil ? Pouvez-vous m'aider ?,stage_alternance
+J'aimerais savoir : Mon problème n'a toujours pas été résolu. Pouvez-vous m'aider ?,reclamation
+J'aimerais savoir : Le portail étudiant affiche une erreur de connexion.,aide_technique
+Quelles sont les règles concernant les absences ?,reglement
+Pouvez-vous me renseigner : Quels services de santé sont disponibles ? Pouvez-vous m'aider ?,service_campus
+"S'il vous plaît, Comment fonctionne ESIC Assistant ? C'est pour ma situation étudiante.",information_generale
+"S'il vous plaît, À quelle heure ouvre le restaurant universitaire ? J'ai besoin de cette information.",service_campus
+"Bonjour, À quelle heure commence mon épreuve ? Merci.",examen
+Les informations affichées sont incorrectes. Pouvez-vous m'aider ?,reclamation
+Pouvez-vous me renseigner : Je veux connaître le programme de CPDIA.,formation
+Pouvez-vous me renseigner : Quand seront publiées les dates d'examen ?,examen
+"Bonjour, Comment prendre rendez-vous avec le psychologue du campus ? C'est pour ma situation étudiante.",service_campus
+"S'il vous plaît, Comment participer à la vie associative ? Merci.",vie_etudiante
+Quand a lieu mon prochain cours ? C'est pour ma situation étudiante.,emploi_du_temps
+"Bonjour, Comment récupérer une attestation de réussite ? Pouvez-vous m'aider ?",procedure_admin
+"Bonjour, Comment utiliser les ressources numériques du campus ? Merci.",service_campus
+Je n'arrive pas à me connecter à l'ENT.,aide_technique
+J'aimerais savoir : Quand auront lieu les examens ? J'ai besoin de cette information.,examen
+"S'il vous plaît, La cafétéria est-elle ouverte aujourd'hui ? Merci.",service_campus

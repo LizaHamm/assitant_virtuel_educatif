@@ -1,0 +1,22 @@
+{
+  "semantic_intents": [
+    "aide_financiere",
+    "aide_technique",
+    "contact",
+    "emploi_du_temps",
+    "examen",
+    "formation",
+    "information_generale",
+    "inscription",
+    "procedure_admin",
+    "reclamation",
+    "reglement",
+    "salutation",
+    "service_campus",
+    "stage_alternance",
+    "vie_etudiante"
+  ],
+  "count": 15,
+  "training_examples": 642,
+  "holdout_accuracy": 0.9938
+}

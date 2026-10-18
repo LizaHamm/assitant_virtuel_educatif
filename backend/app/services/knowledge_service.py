@@ -691,3 +691,226 @@ def get_formations():
         return None
 
     return formations
+
+
+# ============================================================
+# Recherche dans les données officielles du projet ESIC
+# ============================================================
+
+import json
+import re
+import unicodedata
+from pathlib import Path
+from functools import lru_cache
+
+
+# Le projet a pour structure :
+# assistant_virtuel_educatif/
+#   data/
+#   backend/
+#     app/
+#       services/
+#
+# parents[3] correspond à la racine du projet depuis ce fichier.
+PROJECT_ROOT = Path(__file__).resolve().parents[3]
+OFFICIAL_DATA_DIR = PROJECT_ROOT / "data"
+
+
+OFFICIAL_JSON_FILES = {
+    "faq": "faq_complete.json",
+    "procedures": "procedures_esic.json",
+    "contacts": "annuaire_contacts.json",
+    "timetable": "emploi_du_temps.json",
+}
+
+
+def normalize_search_text(value):
+    """Normalise le texte pour faciliter la recherche."""
+    if value is None:
+        return ""
+
+    value = str(value).lower().strip()
+    value = unicodedata.normalize("NFD", value)
+    value = "".join(
+        char for char in value
+        if unicodedata.category(char) != "Mn"
+    )
+    value = re.sub(r"[^a-z0-9\s'-]", " ", value)
+    return " ".join(value.split())
+
+
+@lru_cache(maxsize=16)
+def load_official_json(filename):
+    """
+    Charge un JSON depuis le dossier data/.
+    Le résultat est mis en cache pour éviter de relire
+    le fichier à chaque question.
+    """
+    path = OFFICIAL_DATA_DIR / filename
+
+    if not path.is_file():
+        print(f"[ESIC DATA] Fichier introuvable : {path}")
+        return None
+
+    try:
+        with path.open("r", encoding="utf-8-sig") as file:
+            data = json.load(file)
+
+        print(f"[ESIC DATA] Fichier chargé : {filename}")
+        return data
+
+    except (json.JSONDecodeError, UnicodeDecodeError, OSError) as exc:
+        print(f"[ESIC DATA] Erreur de lecture de {filename} : {exc}")
+        return None
+
+
+def _collect_text_fields(value, path=""):
+    """
+    Transforme récursivement un objet JSON en champs textuels.
+    Cela fonctionne avec des dictionnaires, des listes et
+    différentes structures de données.
+    """
+    fields = []
+
+    if isinstance(value, dict):
+        for key, item in value.items():
+            child_path = f"{path}.{key}" if path else str(key)
+            fields.extend(_collect_text_fields(item, child_path))
+
+    elif isinstance(value, list):
+        for index, item in enumerate(value):
+            fields.extend(
+                _collect_text_fields(item, f"{path}[{index}]")
+            )
+
+    elif isinstance(value, (str, int, float)) and not isinstance(value, bool):
+        text = str(value).strip()
+        if text:
+            fields.append((path, text))
+
+    return fields
+
+
+def _record_search_text(record):
+    """Construit le texte indexable d'un enregistrement."""
+    return " ".join(
+        value for _, value in _collect_text_fields(record)
+    )
+
+
+def search_official_data(source, question, limit=5):
+    """
+    Recherche les enregistrements les plus pertinents
+    dans une source officielle.
+
+    source : 'faq', 'procedures', 'contacts' ou 'timetable'
+    question : question de l'étudiant
+    limit : nombre maximal de résultats
+    """
+    filename = OFFICIAL_JSON_FILES.get(source)
+
+    if filename is None:
+        return []
+
+    data = load_official_json(filename)
+
+    if data is None:
+        return []
+
+    query = normalize_search_text(question)
+    query_tokens = set(query.split())
+
+    if not query_tokens:
+        return []
+
+    # Les formats JSON peuvent être une liste directe
+    # ou un dictionnaire contenant une liste d'éléments.
+    if isinstance(data, list):
+        records = data
+
+    elif isinstance(data, dict):
+        records = None
+
+        for key in (
+            "questions",
+            "faq",
+            "procedures",
+            "contacts",
+            "formations",
+            "cours",
+            "creneaux",
+            "emploi_du_temps",
+            "data",
+            "items",
+        ):
+            candidate = data.get(key)
+
+            if isinstance(candidate, list):
+                records = candidate
+                break
+
+        # Un dictionnaire unique reste exploitable comme entrée.
+        if records is None:
+            records = [data]
+
+    else:
+        return []
+
+    scored_results = []
+
+    for record in records:
+        if not isinstance(record, (dict, list, str)):
+            continue
+
+        fields = _collect_text_fields(record)
+        searchable_text = normalize_search_text(
+            " ".join(value for _, value in fields)
+        )
+        record_tokens = set(searchable_text.split())
+
+        if not record_tokens:
+            continue
+
+        # Score simple : couverture des mots de la question,
+        # complétée par une petite prime si la question entière
+        # apparaît dans l'enregistrement.
+        matched_tokens = query_tokens & record_tokens
+        score = len(matched_tokens) / len(query_tokens)
+
+        if len(query) >= 5 and query in searchable_text:
+            score += 0.5
+
+        if score > 0:
+            scored_results.append({
+                "source": source,
+                "score": round(score, 3),
+                "record": record,
+            })
+
+    scored_results.sort(
+        key=lambda item: item["score"],
+        reverse=True,
+    )
+
+    return scored_results[:max(1, limit)]
+
+
+def get_official_data_status():
+    """
+    Indique quels fichiers officiels sont présents et lisibles.
+    Utile pour vérifier la configuration sans afficher
+    les coordonnées personnelles de l'annuaire.
+    """
+    status = {}
+
+    for source, filename in OFFICIAL_JSON_FILES.items():
+        path = OFFICIAL_DATA_DIR / filename
+        data = load_official_json(filename) if path.is_file() else None
+
+        status[source] = {
+            "file": filename,
+            "exists": path.is_file(),
+            "loaded": data is not None,
+        }
+
+    return status

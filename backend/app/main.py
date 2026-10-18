@@ -1,8 +1,9 @@
-
 import os
+import logging
 import sqlite3
+import time
 import unicodedata
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from typing import Optional
 
@@ -18,7 +19,22 @@ from app.models.chat import (
     HistoryResponse,
 )
 from app.services.question_service import process_question
-from app.services.bilingual_service import generate_response, translate_text
+from app.services.nlp_services import analyze_question
+from app.services.response_service import generate_response
+
+# Préchargement des modèles lourds au démarrage : le premier pic de trafic ne
+# doit jamais déclencher 20 chargements Sentence-BERT simultanés.
+try:
+    from app.services.semantic_search_service import semantic_search
+except Exception as exc:
+    semantic_search = None
+    logging.getLogger(__name__).warning("Recherche sémantique indisponible au chargement : %r", exc)
+
+try:
+    from app.services.advanced_nlp_service import analyze_advanced_nlp
+except Exception:
+    analyze_advanced_nlp = None
+from app.services.bilingual_service import translate_text
 from app.services.history_service import (
     create_conversation,
     get_conversations,
@@ -39,9 +55,15 @@ from app.kiosk import router as kiosk_router
 from app.notifications import router as notifications_router
 from app.proactive import router as proactive_router
 from app.sso import router as sso_router
+from app.dashboard import (
+    router as dashboard_router,
+    init_dashboard_database,
+    record_dashboard_event,
+)
 
 from collections import Counter
-from datetime import timedelta 
+
+logger = logging.getLogger(__name__)
 
 
 # ============================================================
@@ -58,6 +80,7 @@ app.include_router(kiosk_router)
 app.include_router(notifications_router)
 app.include_router(proactive_router)
 app.include_router(sso_router)
+app.include_router(dashboard_router)
 
 app.add_middleware(
     CORSMiddleware,
@@ -246,6 +269,40 @@ def find_custom_answer(question: str):
 def startup():
     init_log_database()
     init_features_database()
+    init_dashboard_database()
+
+    # IMPORTANT PERFORMANCE : on charge les modèles AVANT d'accepter du trafic.
+    # L'ancien warm-up du test utilisait une question d'horaires, résolue par une
+    # règle déterministe ; Sentence-BERT n'était donc jamais réellement chargé.
+    try:
+        import torch
+        torch.set_num_threads(1)
+        try:
+            torch.set_num_interop_threads(1)
+        except RuntimeError:
+            pass
+    except Exception:
+        pass
+
+    try:
+        analyze_question("Quand ont lieu les rattrapages ?")
+        logger.info("Warm-up NLP classique terminé")
+    except Exception:
+        logger.exception("Warm-up NLP classique impossible")
+
+    if analyze_advanced_nlp is not None:
+        try:
+            analyze_advanced_nlp("Quand ont lieu les rattrapages ?")
+            logger.info("Warm-up NLP avancé terminé")
+        except Exception:
+            logger.exception("Warm-up NLP avancé impossible")
+
+    if semantic_search is not None:
+        try:
+            semantic_search("Quand ont lieu les rattrapages ?", top_k=3)
+            logger.info("Warm-up Sentence-BERT/FAISS terminé")
+        except Exception:
+            logger.exception("Warm-up Sentence-BERT/FAISS impossible")
 
 
 # ============================================================
@@ -283,7 +340,7 @@ def get_one_conversation(conversation_id: str):
     if conversation is None:
         raise HTTPException(
             status_code=404,
-            detail=("Conversation not found." if request.language == "en" else "Conversation introuvable."),
+            detail="Conversation introuvable.",
         )
 
     return conversation
@@ -300,19 +357,28 @@ class Epic8ChatRequest(ChatRequest):
 
 @app.post("/api/chat", response_model=ChatResponse)
 def chat(request: Epic8ChatRequest):
+    request_started = time.perf_counter()
     conversation_id = request.conversation_id
     message = request.message.strip()
 
     if not message:
         raise HTTPException(
             status_code=422,
-            detail=("Message cannot be empty." if request.language == "en" else "Le message ne peut pas être vide."),
+            detail=(
+                "Message cannot be empty."
+                if request.language == "en"
+                else "Le message ne peut pas être vide."
+            ),
         )
 
     if get_conversation(conversation_id) is None:
         raise HTTPException(
             status_code=404,
-            detail=("Conversation not found." if request.language == "en" else "Conversation introuvable."),
+            detail=(
+                "Conversation not found."
+                if request.language == "en"
+                else "Conversation introuvable."
+            ),
         )
 
     # US-013 — Rate limiting
@@ -329,8 +395,8 @@ def chat(request: Epic8ChatRequest):
             status_code=429,
             detail=(
                 "Too many questions. Please wait one minute before trying again."
-                if request.language == "en" else
-                "Trop de questions envoyées. Veuillez patienter une minute avant de continuer."
+                if request.language == "en"
+                else "Trop de questions envoyées. Veuillez patienter une minute avant de continuer."
             ),
         )
 
@@ -348,57 +414,141 @@ def chat(request: Epic8ChatRequest):
             status_code=400,
             detail=(
                 "Your message was blocked because it contains a potentially unsafe or unauthorized instruction."
-                if request.language == "en" else
-                "Votre message a été bloqué car il contient une instruction potentiellement dangereuse ou non autorisée."
+                if request.language == "en"
+                else "Votre message a été bloqué car il contient une instruction potentiellement dangereuse ou non autorisée."
             ),
         )
 
     # US-011 — Logging
-    log_question(
-        question=message,
-        session_id=conversation_id,
-    )
+    # L'identifiant du log relie la question à ses métadonnées NLP dashboard.
+    log_id = log_question(question=message, session_id=conversation_id)
 
-    # Les corrections validées et connaissances personnalisées
-    # sont consultées avant le moteur de réponse habituel.
-    # Les questions anglaises sont traduites pour retrouver les connaissances
-    # stockées en français. La réponse complète est ensuite traduite si besoin.
+    # La base de connaissances et le NLP travaillent en français.
+    # En anglais, on traduit UNE SEULE FOIS la question, puis on réutilise
+    # cette version française pour le NLP, la recherche de réponse et le moteur.
     lookup_question = message
+    input_translation_ok = request.language != "en"
     if request.language == "en":
         try:
-            lookup_question = translate_text(message, target="fr", source="auto")
-        except Exception:
+            lookup_question = translate_text(message, target="fr", source="en")
+            input_translation_ok = True
+        except Exception as exc:
+            logger.warning("Traduction de la question entrante impossible : %r", exc)
             lookup_question = message
+            input_translation_ok = False
 
-    custom_answer = find_custom_answer(lookup_question)
+    # US-014, US-015, US-017 et US-018 — Analyse NLP.
+    # Ne pas envoyer de texte anglais aux modèles entraînés en français si la
+    # traduction a échoué : leurs prédictions seraient trompeuses.
+    nlp_result = None
+    if input_translation_ok:
+        try:
+            nlp_result = analyze_question(lookup_question)
+        except Exception:
+            logger.exception("L'analyse NLP a échoué ; poursuite sans métadonnées NLP")
+            nlp_result = None
 
-    if custom_answer:
+    # La recherche de réponses personnalisées utilise elle aussi le texte français.
+    custom_answer = find_custom_answer(lookup_question) if input_translation_ok else None
+
+    if not input_translation_ok and request.language == "en":
+        answer = (
+            "I'm temporarily unable to translate your question. Please try again, "
+            "or switch to French while the translation service is unavailable."
+        )
+
+    elif custom_answer:
         question = lookup_question
         if request.language == "en":
             try:
-                answer = translate_text(custom_answer, target="en", source="auto")
-            except Exception:
+                answer = translate_text(custom_answer, target="en", source="fr")
+            except Exception as exc:
+                logger.warning("Traduction de la réponse personnalisée impossible : %r", exc)
                 answer = (
-                    "I couldn't translate this saved answer right now. "
+                    "I found a relevant answer, but I couldn't translate it right now. "
                     "Please try again or switch to French."
                 )
         else:
             answer = custom_answer
-    else:
-        question = process_question(lookup_question)
-        answer = generate_response(question, language=request.language)
 
-    # Historique
+    elif nlp_result and nlp_result.get("clarification", {}).get("required"):
+        # US-018 — Demander une précision plutôt que de deviner.
+        question = lookup_question
+        clarification = nlp_result["clarification"]["question"]
+        if request.language == "en":
+            try:
+                answer = translate_text(clarification, target="en", source="fr")
+            except Exception as exc:
+                logger.warning("Traduction de la clarification impossible : %r", exc)
+                answer = (
+                    "Could you clarify your question? Are you asking about a class, "
+                    "an exam, or an administrative procedure?"
+                )
+        else:
+            answer = clarification
+
+    else:
+        # À partir d'ici, question est française. L'adaptateur est appelé en
+        # français pour éviter une seconde traduction EN -> FR.
+        question = process_question(lookup_question)
+
+        # US-016 — Le résultat NLP est transmis séparément au moteur de réponse.
+        # IMPORTANT : on ne concatène plus de texte technique à la question,
+        # sinon ce faux texte pollue la recherche dans la base de connaissances.
+        answer_fr = generate_response(
+            question,
+            nlp_result=nlp_result,
+        )
+        if request.language == "en":
+            try:
+                answer = translate_text(answer_fr, target="en", source="fr")
+            except Exception as exc:
+                logger.warning("Traduction de la réponse finale impossible : %r", exc)
+                answer = (
+                    "I understood your question, but I couldn't translate the answer "
+                    "right now. Please try again or switch to French."
+                )
+        else:
+            answer = answer_fr
+
+    # Analytics : catégorie/intention NLP réellement produites + latence.
+    # Une panne du dashboard ne doit jamais bloquer la réponse du chatbot.
+    try:
+        record_dashboard_event(
+            log_id=log_id,
+            session_id=conversation_id,
+            question=message,
+            nlp_result=nlp_result,
+            response_ms=round((time.perf_counter() - request_started) * 1000, 2),
+        )
+    except Exception:
+        logger.exception("Enregistrement dashboard impossible ; réponse conservée")
+
+    # Historique : on conserve la question d'origine et la réponse affichée.
     add_message(
         conversation_id=conversation_id,
         sender="user",
-        text=question,
+        text=message,
     )
     add_message(
         conversation_id=conversation_id,
         sender="bot",
         text=answer,
     )
+
+    # Les champs NLP sont facultatifs dans ChatResponse.
+    if nlp_result:
+        clarification_data = nlp_result["clarification"]
+        return ChatResponse(
+            answer=answer,
+            category=nlp_result["category"],
+            category_confidence=nlp_result["category_confidence"],
+            intent=nlp_result["intent"],
+            intent_confidence=nlp_result["intent_confidence"],
+            entities=nlp_result["entities"],
+            clarification_required=clarification_data["required"],
+            clarification_question=clarification_data["question"],
+        )
 
     return ChatResponse(answer=answer)
 
@@ -415,7 +565,7 @@ def history(conversation_id: str):
     if get_conversation(conversation_id) is None:
         raise HTTPException(
             status_code=404,
-            detail=("Conversation not found." if request.language == "en" else "Conversation introuvable."),
+            detail="Conversation introuvable.",
         )
 
     return HistoryResponse(
@@ -424,153 +574,12 @@ def history(conversation_id: str):
     )
 
 
-def _dashboard_normalize(text: str) -> str:
-    text = unicodedata.normalize("NFKD", text.lower())
-    text = "".join(c for c in text if not unicodedata.combining(c))
-    return " ".join(text.split())
+# ============================================================
+# DASHBOARD ANALYTICS — US-019 À US-023
+# ============================================================
+# Les routes /api/dashboard/* sont regroupées dans app/dashboard.py.
+# Elles utilisent les logs réels + les sorties du pipeline NLP.
 
-
-def _dashboard_category(question: str) -> str:
-    q = _dashboard_normalize(question)
-
-    rules = {
-        "Horaires": ("horaire", "heure", "ouverture", "fermeture"),
-        "Calendrier": ("calendrier", "date", "vacances", "rentre"),
-        "Formations": ("formation", "cours", "matiere", "diplome"),
-        "Contacts": ("contact", "telephone", "email", "adresse"),
-        "Règlement": ("reglement", "absence", "retard", "procedure"),
-    }
-
-    for category, keywords in rules.items():
-        if any(word in q for word in keywords):
-            return category
-
-    return "Général"
-
-
-def _dashboard_read_logs():
-    connection = get_connection()
-    try:
-        rows = connection.execute(
-            """
-            SELECT question, session_id, timestamp
-            FROM question_logs
-            ORDER BY timestamp ASC
-            """
-        ).fetchall()
-        return [dict(row) for row in rows]
-    finally:
-        connection.close()
-
-
-def _dashboard_parse_date(value: str):
-    try:
-        dt = datetime.fromisoformat(value.replace("Z", "+00:00"))
-        if dt.tzinfo is None:
-            dt = dt.replace(tzinfo=timezone.utc)
-        return dt.astimezone(timezone.utc)
-    except (ValueError, TypeError, AttributeError):
-        return None
-
-
-@app.get("/api/dashboard/top-questions")
-def dashboard_top_questions(limite: int = Query(10, ge=1, le=100)):
-    logs = _dashboard_read_logs()
-    counts = Counter()
-    labels = {}
-
-    for row in logs:
-        question = (row.get("question") or "").strip()
-        if not question:
-            continue
-        key = _dashboard_normalize(question)
-        counts[key] += 1
-        labels.setdefault(key, question)
-
-    return {
-        "top_questions": [
-            {"question": labels[key], "nombre": count}
-            for key, count in counts.most_common(limite)
-        ]
-    }
-
-
-@app.get("/api/dashboard/categories")
-def dashboard_categories():
-    counts = Counter(
-        _dashboard_category(row.get("question") or "")
-        for row in _dashboard_read_logs()
-    )
-    return {
-        "categories": [
-            {"categorie": name, "nombre": count}
-            for name, count in counts.most_common()
-        ]
-    }
-
-
-@app.get("/api/dashboard/evolution")
-def dashboard_evolution(jours: int = Query(14, ge=1, le=365)):
-    today = datetime.now(timezone.utc).date()
-    start = today - timedelta(days=jours - 1)
-    counts = Counter()
-
-    for row in _dashboard_read_logs():
-        dt = _dashboard_parse_date(row.get("timestamp"))
-        if dt and start <= dt.date() <= today:
-            counts[dt.date().isoformat()] += 1
-
-    return {
-        "evolution": [
-            {
-                "date": (start + timedelta(days=i)).isoformat(),
-                "nombre": counts[(start + timedelta(days=i)).isoformat()],
-            }
-            for i in range(jours)
-        ]
-    }
-
-
-@app.get("/api/dashboard/tendances")
-def dashboard_tendances():
-    today = datetime.now(timezone.utc).date()
-    current_start = today - timedelta(days=6)
-    previous_start = today - timedelta(days=13)
-    current = Counter()
-    previous = Counter()
-
-    for row in _dashboard_read_logs():
-        dt = _dashboard_parse_date(row.get("timestamp"))
-        if not dt:
-            continue
-
-        date = dt.date()
-        category = _dashboard_category(row.get("question") or "")
-
-        if current_start <= date <= today:
-            current[category] += 1
-        elif previous_start <= date < current_start:
-            previous[category] += 1
-
-    categories = sorted(set(current) | set(previous))
-    trends = []
-
-    for category in categories:
-        now = current[category]
-        before = previous[category]
-        evolution = (
-            round((now - before) / before * 100, 1)
-            if before
-            else (100.0 if now else 0.0)
-        )
-        trends.append({
-            "categorie": category,
-            "questions_7_derniers_jours": now,
-            "questions_7_jours_precedents": before,
-            "evolution": evolution,
-        })
-
-    return {"tendances": trends}
 
 # ============================================================
 # US-024 — ÉVALUATION DES RÉPONSES
@@ -581,7 +590,7 @@ def submit_feedback(request: FeedbackRequest):
     if get_conversation(request.conversation_id) is None:
         raise HTTPException(
             status_code=404,
-            detail=("Conversation not found." if request.language == "en" else "Conversation introuvable."),
+            detail="Conversation introuvable.",
         )
 
     with get_db() as db:
@@ -785,7 +794,7 @@ def create_escalation(request: EscalationRequest):
     if get_conversation(request.conversation_id) is None:
         raise HTTPException(
             status_code=404,
-            detail=("Conversation not found." if request.language == "en" else "Conversation introuvable."),
+            detail="Conversation introuvable.",
         )
 
     with get_db() as db:
