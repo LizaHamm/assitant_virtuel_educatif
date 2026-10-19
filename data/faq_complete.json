@@ -1,0 +1,1289 @@
+{
+  "metadata": {
+     "author": "Joel BANKA",
+    "purpose": "Document créé exclusivement pour le projet étudiant",
+    "titre": "FAQ - Foire Aux Questions ESIC",
+    "etablissement": "ESIC - École Supérieure d'Informatique et du Commerce",
+    "annee_academique": "2024-2025",
+    "date_maj": "2024-09-01",
+    "version": "1.0",
+    "nombre_total_questions": 150,
+    "langues_disponibles": ["fr", "en"]
+  },
+
+  "categories": [
+    {
+      "id": "emploi_temps",
+      "nom": "Emplois du temps & Planning",
+      "pourcentage": "30%",
+      "nombre_questions": 45,
+      "questions": [
+        {
+          "id": "EDT001",
+          "question": "Où puis-je consulter mon emploi du temps ?",
+          "reponse": "Votre emploi du temps est accessible sur l'ENT (ent.esic.fr) dans la section 'Planning'. Vous pouvez aussi télécharger l'application mobile 'ESIC Campus' disponible sur iOS et Android pour consulter votre planning en temps réel et recevoir des notifications en cas de changements.",
+          "tags": ["emploi du temps", "ENT", "planning", "application mobile"],
+          "frequence": "très élevée",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        },
+        {
+          "id": "EDT002",
+          "question": "Quand commence le semestre 1 ?",
+          "reponse": "Le semestre 1 (S1) commence le lundi 2 septembre 2024 et se termine le 17 janvier 2025. Les examens du S1 ont lieu du 6 au 17 janvier 2025.",
+          "tags": ["rentrée", "calendrier", "semestre", "dates"],
+          "frequence": "élevée",
+          "documents_associes": ["emploi_du_temps.json"]
+        },
+        {
+          "id": "EDT003",
+          "question": "Quand commence le semestre 2 ?",
+          "reponse": "Le semestre 2 (S2) commence le 10 février 2025 et se termine le 27 juin 2025. Les examens du S2 ont lieu du 19 au 30 mai 2025. La période de stages débute le 2 juin 2025.",
+          "tags": ["semestre", "calendrier", "dates", "rentrée"],
+          "frequence": "élevée",
+          "documents_associes": ["emploi_du_temps.json"]
+        },
+        {
+          "id": "EDT004",
+          "question": "Quelles sont les dates des vacances scolaires ?",
+          "reponse": "Voici les périodes de vacances pour 2024-2025 :\n- Vacances de Toussaint : 28 octobre - 3 novembre 2024\n- Vacances de Noël : 23 décembre 2024 - 5 janvier 2025\n- Vacances d'hiver : 24 février - 2 mars 2025\n- Vacances de printemps : 21-27 avril 2025",
+          "tags": ["vacances", "calendrier", "congés"],
+          "frequence": "très élevée",
+          "documents_associes": ["emploi_du_temps.json"]
+        },
+        {
+          "id": "EDT005",
+          "question": "Quand ont lieu les examens ?",
+          "reponse": "Les examens se déroulent à deux périodes :\n- Examens du S1 : 6-17 janvier 2025\n- Examens du S2 : 19-30 mai 2025\n\nLes rattrapages ont lieu :\n- Rattrapages S1 : 3-7 février 2025\n- Rattrapages S2 : 1-12 septembre 2025\n\nVotre calendrier d'examens personnalisé est disponible sur l'ENT 3 semaines avant le début des épreuves.",
+          "tags": ["examens", "calendrier", "session", "rattrapages"],
+          "frequence": "très élevée",
+          "documents_associes": ["reglement_interieur.md", "emploi_du_temps.json"]
+        },
+        {
+          "id": "EDT006",
+          "question": "Combien d'heures de cours par semaine ?",
+          "reponse": "Le volume horaire hebdomadaire varie selon votre niveau :\n- Bachelor 1-2 : 28-30 heures de cours + 15-20h de travail personnel\n- Bachelor 3 : 24-26 heures de cours + 20-25h de travail personnel\n- Master 1-2 : 20-24 heures de cours + 25-30h de travail personnel\n\nCe volume comprend les cours magistraux (CM), travaux dirigés (TD), travaux pratiques (TP) et projets.",
+          "tags": ["volume horaire", "cours", "charge de travail"],
+          "frequence": "moyenne",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        },
+        {
+          "id": "EDT007",
+          "question": "Mon emploi du temps a changé, comment suis-je informé ?",
+          "reponse": "Tous les changements d'emploi du temps sont notifiés automatiquement :\n1. Par email sur votre adresse @esic.fr\n2. Par notification push via l'application mobile ESIC Campus\n3. Sur votre ENT avec un bandeau d'alerte\n\nLes changements sont communiqués au moins 48h à l'avance sauf cas d'urgence (absence imprévue d'un enseignant).",
+          "tags": ["emploi du temps", "modifications", "notifications"],
+          "frequence": "élevée",
+          "documents_associes": []
+        },
+        {
+          "id": "EDT008",
+          "question": "Comment puis-je réserver une salle ?",
+          "reponse": "Pour réserver une salle pour un projet de groupe :\n1. Connectez-vous à l'ENT (ent.esic.fr)\n2. Allez dans 'Services' > 'Réservation de salles'\n3. Sélectionnez la date, l'horaire et le type de salle souhaité\n4. Validez votre réservation\n\nLes salles de groupe (6 salles pour 4-8 personnes) à la bibliothèque peuvent être réservées jusqu'à 7 jours à l'avance. Les salles informatiques nécessitent une validation du responsable pédagogique.",
+          "tags": ["réservation", "salle", "espace travail"],
+          "frequence": "moyenne",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        },
+        {
+          "id": "EDT009",
+          "question": "À quelle heure commencent les cours le matin ?",
+          "reponse": "Les cours commencent à 8h00 le matin. Le campus ouvre à 7h30 pour vous permettre d'arriver en avance. Il est recommandé d'arriver 10-15 minutes avant le début du cours.",
+          "tags": ["horaires", "cours", "matin"],
+          "frequence": "moyenne",
+          "documents_associes": ["reglement_interieur.md"]
+        },
+        {
+          "id": "EDT010",
+          "question": "Jusqu'à quelle heure y a-t-il des cours ?",
+          "reponse": "Les cours peuvent avoir lieu jusqu'à 18h00 maximum. Le dernier créneau horaire est 16h-18h. Le campus reste ouvert jusqu'à 21h en semaine pour le travail personnel et les activités associatives.",
+          "tags": ["horaires", "cours", "soir"],
+          "frequence": "faible",
+          "documents_associes": ["reglement_interieur.md"]
+        },
+        {
+          "id": "EDT011",
+          "question": "Y a-t-il cours le samedi ?",
+          "reponse": "Non, il n'y a généralement pas de cours le samedi. Le campus est ouvert le samedi de 8h à 18h pour :\n- La bibliothèque (9h-17h)\n- La salle de musculation (10h-13h)\n- Les espaces de travail en autonomie\n\nDes événements exceptionnels (conférences, hackathons, forums) peuvent être organisés certains samedis.",
+          "tags": ["samedi", "week-end", "horaires"],
+          "frequence": "moyenne",
+          "documents_associes": []
+        },
+        {
+          "id": "EDT012",
+          "question": "Où se trouve ma salle de cours ?",
+          "reponse": "Les salles sont identifiées par un code :\n- A### : Bâtiment Administration (salles de cours)\n- B### : Bâtiment Cours (amphithéâtres et salles)\n- C### : Bâtiment Informatique (labs informatiques)\n- D### : Bâtiment Services (bibliothèque, resto U)\n- E### : Complexe sportif\n\nUn plan interactif du campus est disponible sur l'ENT et l'application mobile. Des panneaux de signalisation sont présents dans chaque bâtiment.",
+          "tags": ["salle", "localisation", "bâtiment", "plan"],
+          "frequence": "élevée",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        },
+        {
+          "id": "EDT013",
+          "question": "Comment puis-je exporter mon emploi du temps sur mon téléphone ?",
+          "reponse": "Vous avez deux options :\n\n**Option 1 - Application mobile (recommandé) :**\nTéléchargez l'application 'ESIC Campus' (iOS/Android) pour synchroniser automatiquement votre emploi du temps.\n\n**Option 2 - Export iCal/Google Calendar :**\n1. Connectez-vous à l'ENT\n2. Allez dans 'Planning'\n3. Cliquez sur 'Exporter' puis 'Format iCal'\n4. Importez le fichier dans votre application calendrier\n\nL'emploi du temps se met à jour automatiquement toutes les heures.",
+          "tags": ["emploi du temps", "export", "calendrier", "synchronisation"],
+          "frequence": "moyenne",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        },
+        {
+          "id": "EDT014",
+          "question": "Qui dois-je contacter si j'ai un problème avec mon emploi du temps ?",
+          "reponse": "En fonction du type de problème :\n\n**Erreur d'inscription à un cours :** Contactez le service scolarité (scolarite@esic.fr ou 01.53.90.15.20)\n\n**Conflit de planning :** Contactez votre responsable de formation\n\n**Problème technique (ENT, app mobile) :** Contactez le helpdesk IT (support-it@esic.fr ou 01.53.90.15.99)\n\nLes horaires d'ouverture sont : Lundi-Vendredi 9h-12h et 14h-17h.",
+          "tags": ["emploi du temps", "contact", "problème", "support"],
+          "frequence": "moyenne",
+          "documents_associes": ["annuaire_contacts.json"]
+        },
+        {
+          "id": "EDT015",
+          "question": "Quand a lieu la journée d'intégration ?",
+          "reponse": "La journée d'intégration pour les Bachelor 1 a lieu le mardi 3 septembre 2024, le lendemain de la rentrée. Programme :\n- 9h-12h : Présentation de l'école et des services\n- 12h-14h : Déjeuner d'accueil (offert)\n- 14h-18h : Activités team-building et découverte du campus\n\nLa présence est obligatoire. Vous recevrez tous les détails par email fin août.",
+          "tags": ["intégration", "rentrée", "événement", "bachelor 1"],
+          "frequence": "élevée",
+          "documents_associes": ["emploi_du_temps.json"]
+        },
+        {
+          "id": "EDT016",
+          "question": "Quand a lieu le forum des entreprises ?",
+          "reponse": "Deux forums entreprises sont organisés chaque année :\n\n**Forum Stages/Alternance :** Mardi 15 octobre 2024\n- 9h-18h au gymnase\n- 80+ entreprises présentes\n- Ateliers CV et entretiens\n\n**Forum Emploi :** Samedi 15 mars 2025\n- 10h-17h\n- Dédié aux étudiants de M2 et Alumni\n\nInscription obligatoire via l'ENT. Tenue professionnelle exigée.",
+          "tags": ["forum", "entreprises", "stages", "emploi", "carrières"],
+          "frequence": "élevée",
+          "documents_associes": ["emploi_du_temps.json"]
+        },
+        {
+          "id": "EDT017",
+          "question": "Y a-t-il une permanence de mon responsable de formation ?",
+          "reponse": "Oui, chaque responsable de formation assure des permanences hebdomadaires. Les horaires varient selon le responsable (consultables sur l'ENT dans 'Mon parcours' > 'Responsable de formation'). \n\nExemples :\n- Sophie MARTIN (B1) : Mardi et Jeudi 14h-17h\n- Marc ROUSSEAU (B3 Cyber) : Mardi et Jeudi 10h-12h\n- David GARCIA (M1-M2 IA) : Mardi et Jeudi 15h-18h\n\nPrise de rendez-vous obligatoire via l'ENT.",
+          "tags": ["responsable formation", "rendez-vous", "permanence"],
+          "frequence": "moyenne",
+          "documents_associes": ["annuaire_contacts.json"]
+        },
+        {
+          "id": "EDT018",
+          "question": "Combien de temps durent les cours ?",
+          "reponse": "Les cours sont organisés en créneaux de 2 heures :\n- 8h-10h\n- 10h15-12h15\n- 13h45-15h45\n- 16h-18h\n\nIl y a une pause de 15 minutes entre chaque créneau. Pour les TP en laboratoire, certains créneaux peuvent être prolongés à 3 ou 4 heures consécutives.",
+          "tags": ["durée", "cours", "créneaux", "horaires"],
+          "frequence": "faible",
+          "documents_associes": []
+        },
+        {
+          "id": "EDT019",
+          "question": "Quelle est la différence entre CM, TD et TP ?",
+          "reponse": "Les cours sont organisés en trois formats :\n\n**CM (Cours Magistral) :** Cours théorique en amphithéâtre avec tous les étudiants de la promotion (100-150 personnes). Format magistral avec prise de notes.\n\n**TD (Travaux Dirigés) :** Groupes de 25-30 étudiants. Exercices d'application, études de cas, discussions. Plus interactif.\n\n**TP (Travaux Pratiques) :** Groupes de 15-20 étudiants en laboratoire informatique. Mise en pratique sur ordinateur, projets, manipulation.\n\nVotre emploi du temps précise le format de chaque cours.",
+          "tags": ["cours", "format", "CM", "TD", "TP"],
+          "frequence": "moyenne",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        },
+        {
+          "id": "EDT020",
+          "question": "Puis-je avoir un emploi du temps aménagé ?",
+          "reponse": "Des aménagements sont possibles dans certains cas :\n\n**Situation de handicap :** Contactez le service social (social@esic.fr) avec un certificat MDPH\n\n**Sportif de haut niveau :** Contactez votre responsable de formation avec une attestation de la fédération\n\n**Situation médicale :** Contactez le médecin scolaire avec un certificat médical\n\n**Activité professionnelle :** Les aménagements sont limités. Privilégiez l'alternance si vous travaillez.\n\nLes demandes doivent être faites en début de semestre.",
+          "tags": ["aménagement", "emploi du temps", "handicap", "sportif"],
+          "frequence": "faible",
+          "documents_associes": ["reglement_interieur.md"]
+        },
+        {
+          "id": "EDT021",
+          "question": "Comment fonctionne le planning des projets ?",
+          "reponse": "Les projets ont des créneaux dédiés dans votre emploi du temps, généralement le mercredi. Ces créneaux permettent :\n- Le travail en équipe encadré par un tuteur\n- Des points d'avancement réguliers\n- L'accès aux laboratoires informatiques\n\nLe reste du travail se fait en autonomie. Prévoyez 10-15h de travail personnel par semaine en Bachelor 3 et 15-20h en Master pour vos projets.",
+          "tags": ["projets", "planning", "travail équipe"],
+          "frequence": "moyenne",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        },
+        {
+          "id": "EDT022",
+          "question": "Quand dois-je choisir ma spécialisation ?",
+          "reponse": "Le choix de spécialisation se fait :\n\n**Bachelor 3 :** Fin du semestre 4 (Bachelor 2), en avril-mai. Vous recevrez un formulaire de vœux sur l'ENT. Les spécialisations disponibles : Développement, Cybersécurité, Data Science, Digital Marketing, Product Management.\n\n**Master 2 :** Fin du semestre 7 (Master 1), en décembre-janvier.\n\nDes séances d'information sont organisées 1 mois avant la période de choix. L'affectation dépend de vos vœux et de vos résultats académiques.",
+          "tags": ["spécialisation", "choix", "orientation", "bachelor 3", "master"],
+          "frequence": "élevée",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        },
+        {
+          "id": "EDT023",
+          "question": "Y a-t-il des examens blancs ?",
+          "reponse": "Oui, des examens blancs sont organisés :\n- 3 semaines avant les examens officiels\n- En conditions réelles (durée, format, salle)\n- Correction individualisée dans la semaine qui suit\n- Facultatifs mais fortement recommandés\n\nLes dates des examens blancs sont communiquées sur l'ENT début décembre (S1) et début avril (S2). Inscription via l'ENT obligatoire.",
+          "tags": ["examens blancs", "préparation", "révisions"],
+          "frequence": "moyenne",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        },
+        {
+          "id": "EDT024",
+          "question": "Combien de temps durent les examens ?",
+          "reponse": "La durée des examens varie selon la matière et le format :\n- Examens écrits : 1h30 à 4h\n- QCM : 1h à 2h\n- Examens pratiques (programmation) : 2h à 4h\n- Soutenances orales : 15-30 minutes de présentation + 15-30 minutes de questions\n\nLa durée exacte est précisée sur votre convocation disponible sur l'ENT 1 semaine avant l'examen.",
+          "tags": ["examens", "durée", "format"],
+          "frequence": "moyenne",
+          "documents_associes": ["reglement_interieur.md"]
+        },
+        {
+          "id": "EDT025",
+          "question": "Puis-je arriver en retard à un examen ?",
+          "reponse": "Les règles de retard aux examens sont strictes :\n\n**Retard < 15 minutes :** Vous pouvez entrer mais vous ne bénéficiez pas de temps supplémentaire. Vous devez rendre votre copie à l'heure prévue.\n\n**Retard > 15 minutes :** L'accès à la salle d'examen est refusé. Vous serez considéré comme absent et devrez passer le rattrapage.\n\n**Conseil :** Arrivez 20-30 minutes avant le début de l'examen. Apportez votre convocation, votre carte étudiante et une pièce d'identité.",
+          "tags": ["examens", "retard", "règlement", "ponctualité"],
+          "frequence": "moyenne",
+          "documents_associes": ["reglement_interieur.md"]
+        },
+        {
+          "id": "EDT026",
+          "question": "Que se passe-t-il si je suis malade le jour d'un examen ?",
+          "reponse": "En cas de maladie le jour d'un examen :\n\n1. Consultez un médecin dans les 48h\n2. Obtenez un certificat médical original\n3. Envoyez-le par email au service scolarité (scolarite@esic.fr) + remise en main propre dans les 3 jours ouvrés\n4. Vous passerez l'examen lors de la session de rattrapage\n\nAttention : Un simple email n'est pas suffisant. Le certificat médical original est obligatoire. Sans justificatif valide, vous obtenez la note 0/20.",
+          "tags": ["examens", "absence", "maladie", "certificat médical"],
+          "frequence": "élevée",
+          "documents_associes": ["reglement_interieur.md"]
+        },
+        {
+          "id": "EDT027",
+          "question": "Quand aurons-nous les résultats des examens ?",
+          "reponse": "Les délais de publication des résultats :\n\n**Examens écrits/QCM :** 2-3 semaines après la fin de la session\n**Projets et soutenances :** 1-2 semaines après la soutenance\n**Rattrapages :** 10 jours après la session\n\nLes notes sont publiées sur l'ENT dans 'Scolarité' > 'Mes notes'. Vous recevez une notification email à chaque publication. Les relevés de notes officiels sont téléchargeables 1 semaine après la publication complète.",
+          "tags": ["résultats", "notes", "examens", "délais"],
+          "frequence": "très élevée",
+          "documents_associes": []
+        },
+        {
+          "id": "EDT028",
+          "question": "Comment sont organisées les soutenances de projet ?",
+          "reponse": "Les soutenances de projet suivent ce format :\n\n**Durée totale :** 30-45 minutes\n- Présentation : 15-20 minutes\n- Questions du jury : 10-15 minutes\n- Délibération et feedback : 5-10 minutes\n\n**Jury :** 2-3 personnes (enseignant tuteur + expert externe éventuel)\n\n**Planning :** Les créneaux de soutenance sont publiés 2 semaines avant sur l'ENT. Inscription obligatoire au créneau souhaité (premier arrivé, premier servi).\n\n**Livrables :** Rapport + code + présentation à déposer 48h avant.",
+          "tags": ["soutenance", "projet", "présentation", "jury"],
+          "frequence": "élevée",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        },
+        {
+          "id": "EDT029",
+          "question": "Y a-t-il des cours pendant les vacances ?",
+          "reponse": "Non, il n'y a jamais de cours pendant les périodes de vacances officielles. Cependant :\n\n**Périodes de révisions libres :** La bibliothèque et certains espaces de travail restent accessibles pendant les vacances (horaires réduits 9h-17h).\n\n**Travail personnel :** Les projets et travaux peuvent nécessiter du travail pendant les vacances.\n\n**Stages :** En Bachelor 3 et Master, certaines périodes de vacances peuvent coïncider avec votre période de stage.",
+          "tags": ["vacances", "cours", "fermeture"],
+          "frequence": "moyenne",
+          "documents_associes": []
+        },
+        {
+          "id": "EDT030",
+          "question": "Comment puis-je voir les notes de mes camarades ?",
+          "reponse": "Vous ne pouvez pas consulter les notes de vos camarades. Chaque étudiant n'a accès qu'à ses propres notes via son compte ENT personnel. Cette confidentialité est garantie par le RGPD et le règlement intérieur.\n\nVous pouvez cependant consulter :\n- Vos notes individuelles\n- Les statistiques de promotion (moyenne, médiane, écart-type) sans identification des étudiants\n- Votre classement relatif (quintile) dans certaines matières",
+          "tags": ["notes", "confidentialité", "résultats"],
+          "frequence": "faible",
+          "documents_associes": ["reglement_interieur.md"]
+        },
+        {
+          "id": "EDT031",
+          "question": "Quels sont les jours fériés pendant l'année ?",
+          "reponse": "Les jours fériés 2024-2025 (pas de cours) :\n- Toussaint : 1er novembre 2024 (vendredi)\n- Armistice : 11 novembre 2024 (lundi)\n- Noël : 25 décembre 2024 (mercredi)\n- Jour de l'An : 1er janvier 2025 (mercredi)\n- Lundi de Pâques : 21 avril 2025\n- Fête du Travail : 1er mai 2025 (jeudi)\n- Victoire 1945 : 8 mai 2025 (jeudi)\n- Ascension : 29 mai 2025 (jeudi) + pont vendredi 30 mai\n- Lundi de Pentecôte : 9 juin 2025\n\nLe campus est fermé ces jours-là.",
+          "tags": ["jours fériés", "calendrier", "fermeture"],
+          "frequence": "moyenne",
+          "documents_associes": ["emploi_du_temps.json"]
+        },
+        {
+          "id": "EDT032",
+          "question": "Comment connaître la salle d'examen ?",
+          "reponse": "La salle d'examen est indiquée sur votre convocation disponible sur l'ENT dans 'Examens' > 'Mes convocations', accessible 7 jours avant l'examen.\n\nLa convocation précise :\n- Date et heure de l'examen\n- Salle et placement (numéro de place)\n- Durée de l'épreuve\n- Documents et matériel autorisés\n- Nom du surveillant\n\nVous devez imprimer ou avoir la convocation sur votre téléphone le jour J. Des panneaux d'affichage sont aussi installés devant chaque salle d'examen.",
+          "tags": ["examens", "convocation", "salle"],
+          "frequence": "élevée",
+          "documents_associes": []
+        },
+        {
+          "id": "EDT033",
+          "question": "Y a-t-il une période d'essai en début d'année ?",
+          "reponse": "Il n'y a pas de période d'essai formelle, mais les 4 premières semaines sont cruciales :\n\n**Semaines 1-2 :** Adaptation, prise de marques, évaluations diagnostiques (non comptabilisées dans la moyenne)\n\n**Semaines 3-4 :** Début des évaluations comptant pour la note finale\n\n**Point à mi-semestre :** Un bilan individuel est fait en novembre pour identifier les étudiants en difficulté et proposer un accompagnement (tutorat, soutien méthodologique).\n\nLe délai de rétractation administrative est de 7 jours après la rentrée.",
+          "tags": ["rentrée", "période essai", "adaptation"],
+          "frequence": "faible",
+          "documents_associes": []
+        },
+        {
+          "id": "EDT034",
+          "question": "Puis-je assister à un cours d'une autre promotion ?",
+          "reponse": "Cela dépend du type de cours :\n\n**Cours magistraux (CM) en amphithéâtre :** Oui, vous pouvez y assister si des places sont disponibles. Informez simplement l'enseignant en début de cours.\n\n**TD/TP en petits groupes :** Non, les places sont limitées et réservées aux inscrits. Exception possible avec l'accord préalable de l'enseignant.\n\n**Cours de spécialisation différente :** Possible en auditeur libre après validation du responsable pédagogique, mais cela ne compte pas pour vos ECTS.",
+          "tags": ["cours", "autre promotion", "assistance"],
+          "frequence": "faible",
+          "documents_associes": []
+        },
+        {
+          "id": "EDT035",
+          "question": "Comment fonctionne le système de rattrapage ?",
+          "reponse": "Le rattrapage concerne les matières où vous avez obtenu moins de 10/20 après compensation :\n\n**Admissibilité :** Note finale entre 6/20 et 9,99/20 (< 6/20 = redoublement direct)\n\n**Session de rattrapage :**\n- S1 : 3-7 février 2025\n- S2 : 1-12 septembre 2025\n\n**Format :** Même type d'épreuve que la session 1\n\n**Note finale :** La meilleure note entre session 1 et rattrapage est retenue, plafonnée à 10/20\n\n**Convocation :** Disponible sur l'ENT 2 semaines avant",
+          "tags": ["rattrapage", "examens", "session 2", "compensation"],
+          "frequence": "très élevée",
+          "documents_associes": ["reglement_interieur.md"]
+        },
+        {
+          "id": "EDT036",
+          "question": "Combien d'absences sont tolérées ?",
+          "reponse": "L'assiduité est obligatoire. Le règlement fixe des seuils :\n\n**Absences injustifiées :**\n- 3 absences = Avertissement écrit\n- 5 absences = Convocation responsable pédagogique\n- 10 absences = Note de 0 à la matière concernée\n- 20 absences sur le semestre = Exclusion possible\n\n**Absences justifiées :** Illimitées si justificatif valable (certificat médical, convocation officielle). À transmettre dans les 48h au service scolarité.\n\n**Retards :** 3 retards = 1 absence",
+          "tags": ["absences", "assiduité", "règlement", "retards"],
+          "frequence": "très élevée",
+          "documents_associes": ["reglement_interieur.md"]
+        },
+        {
+          "id": "EDT037",
+          "question": "Puis-je partir en vacances avant la fin du semestre ?",
+          "reponse": "Non, les cours et examens sont obligatoires jusqu'à la dernière date du semestre. Partir avant la fin :\n- Entraîne des absences injustifiées comptabilisées\n- Peut vous empêcher de valider votre semestre\n- N'est pas une excuse valable pour manquer un examen\n\n**Exception :** Raisons médicales graves ou familiales exceptionnelles (décès) avec justificatifs. Contactez immédiatement votre responsable pédagogique.\n\n**Astuce :** Organisez vos départs après la dernière date officielle du semestre indiquée sur le calendrier.",
+          "tags": ["vacances", "assiduité", "fin semestre"],
+          "frequence": "moyenne",
+          "documents_associes": ["reglement_interieur.md"]
+        },
+        {
+          "id": "EDT038",
+          "question": "Quand se déroule la semaine de révisions ?",
+          "reponse": "Il n'y a pas de semaine de révisions formelle. Le planning est conçu ainsi :\n\n**Dernière semaine de cours :** Se termine le vendredi précédant les examens\n\n**Week-end + lundi :** 3 jours libres pour révisions personnelles\n\n**Examens :** Débutent le mardi suivant\n\nConseils :\n- La bibliothèque reste ouverte en horaires étendus (8h-22h)\n- Des salles de travail en groupe sont disponibles sur réservation\n- Pendant les examens (janvier/mai), la bibliothèque est ouverte 24h/24",
+          "tags": ["révisions", "préparation examens", "planning"],
+          "frequence": "moyenne",
+          "documents_associes": []
+        },
+        {
+          "id": "EDT039",
+          "question": "Comment puis-je obtenir mon calendrier personnalisé ?",
+          "reponse": "Votre calendrier personnalisé est automatiquement généré sur l'ENT en fonction de :\n- Votre formation et groupe\n- Vos options choisies\n- Vos inscriptions pédagogiques\n\nPour y accéder :\n1. Connectez-vous à l'ENT (ent.esic.fr)\n2. Section 'Planning' ou 'Mon calendrier'\n3. Téléchargez au format PDF ou exportez (iCal/Google Calendar)\n\nL'application mobile ESIC Campus synchronise automatiquement votre planning personnel avec notifications de changements.",
+          "tags": ["calendrier", "planning personnalisé", "ENT"],
+          "frequence": "moyenne",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        },
+        {
+          "id": "EDT040",
+          "question": "Y a-t-il des cours en ligne ou en distanciel ?",
+          "reponse": "Les cours sont en présentiel par défaut. Le distanciel n'est autorisé que dans des cas exceptionnels :\n\n**Situations acceptées :**\n- Maladie contagieuse avec certificat médical (accès Teams)\n- Confinement sanitaire décidé par les autorités\n- Étudiants en mobilité internationale (selon accords)\n\n**Enregistrement des cours :** Certains CM sont enregistrés et mis en ligne sur l'ENT (ressources pédagogiques). Cela ne remplace pas la présence en cours.\n\n**Alternants :** Les alternants en entreprise ont accès aux cours en ligne quand c'est techniquement possible.",
+          "tags": ["distanciel", "en ligne", "cours", "présentiel"],
+          "frequence": "moyenne",
+          "documents_associes": []
+        },
+        {
+          "id": "EDT041",
+          "question": "Quand sont les soutenances de stage ?",
+          "reponse": "Les soutenances de stage sont programmées :\n\n**Bachelor 1 (stage 4 sem) :** Dernière semaine de juillet 2025\n**Bachelor 2 (stage 8 sem) :** Première quinzaine de septembre 2025\n**Bachelor 3 (stage 12 sem) :** Mi-septembre 2025\n**Master 1 (stage 16 sem) :** Début septembre 2025\n**Master 2 (stage 24 sem) :** Fin août / début septembre 2025\n\nLes créneaux précis sont communiqués 1 mois avant. Inscription obligatoire via l'ENT. Le jury est composé de votre tuteur académique, votre maître de stage et un membre externe.",
+          "tags": ["soutenance", "stage", "calendrier"],
+          "frequence": "élevée",
+          "documents_associes": ["reglement_interieur.md"]
+        },
+        {
+          "id": "EDT042",
+          "question": "Puis-je modifier mon groupe de TD/TP ?",
+          "reponse": "Les changements de groupe sont exceptionnels et doivent être justifiés :\n\n**Motifs acceptés :**\n- Conflit d'horaires avec un emploi déclaré\n- Raisons médicales (certificat obligatoire)\n- Contraintes de transport majeures\n\n**Procédure :**\n1. Demande écrite motivée au service scolarité\n2. Accord préalable de votre responsable pédagogique\n3. Changement effectif si places disponibles dans l'autre groupe\n\n**Délai :** Demandes acceptées uniquement les 2 premières semaines du semestre. Email à scolarite@esic.fr",
+          "tags": ["groupe", "changement", "TD", "TP"],
+          "frequence": "faible",
+          "documents_associes": []
+        },
+        {
+          "id": "EDT043",
+          "question": "Comment fonctionne le système ECTS ?",
+          "reponse": "Le système ECTS (European Credit Transfer System) mesure votre charge de travail :\n\n**1 ECTS = 25-30 heures de travail** (cours + travail personnel)\n\n**Par semestre :** 30 ECTS à valider\n**Par année :** 60 ECTS\n**Bachelor complet :** 180 ECTS\n**Master complet :** 120 ECTS (300 ECTS total Bac+5)\n\n**Validation :** Il faut obtenir une moyenne ≥ 10/20 par matière, avec compensation possible au sein d'un même semestre. Minimum 48 ECTS/60 requis pour passer à l'année supérieure.",
+          "tags": ["ECTS", "crédits", "validation", "système européen"],
+          "frequence": "élevée",
+          "documents_associes": ["reglement_interieur.md", "guide_etudiant_esic.md"]
+        },
+        {
+          "id": "EDT044",
+          "question": "Y a-t-il un hackathon organisé par l'école ?",
+          "reponse": "Oui ! Le **Hackathon ESIC** est un événement annuel majeur :\n\n**Date :** 20-22 novembre 2024 (48h non-stop)\n**Lieu :** Campus ESIC (salles informatiques + espace détente)\n**Format :** Équipes de 3-5 personnes, tous niveaux\n**Thème 2024 :** IA et Développement Durable\n**Prix :** 3 000€ à répartir entre les 3 équipes gagnantes + stages en entreprises partenaires\n\n**Inscription :** Via l'ENT à partir du 1er octobre (places limitées à 120 participants)\n**Gratuit** avec repas, snacks et boissons fournis",
+          "tags": ["hackathon", "événement", "compétition", "coding"],
+          "frequence": "élevée",
+          "documents_associes": ["emploi_du_temps.json"]
+        },
+        {
+          "id": "EDT045",
+          "question": "Comment se passe la remise des diplômes ?",
+          "reponse": "La **Cérémonie de remise des diplômes** a lieu chaque année :\n\n**Date :** Vendredi 20 juin 2025 à 18h\n**Lieu :** Grand amphithéâtre + cocktail extérieur\n**Concernés :** Diplômés Bachelor 3 et Master 2 de l'année 2024-2025\n\n**Déroulement :**\n- 18h-19h30 : Cérémonie officielle (discours, remise des diplômes)\n- 19h30-22h : Cocktail et photos\n\n**Invitations :** 2 places par diplômé (famille/amis)\n**Tenue :** Toge académique fournie par l'école\n**Confirmation :** Inscription obligatoire via l'ENT avant le 1er juin",
+          "tags": ["remise diplôme", "cérémonie", "graduation", "événement"],
+          "frequence": "moyenne",
+          "documents_associes": ["emploi_du_temps.json"]
+        }
+      ]
+    },
+    {
+      "id": "procedures_admin",
+      "nom": "Procédures Administratives",
+      "pourcentage": "25%",
+      "nombre_questions": 38,
+      "questions": [
+        {
+          "id": "ADM001",
+          "question": "Comment puis-je obtenir un certificat de scolarité ?",
+          "reponse": "Vous pouvez obtenir un certificat de scolarité de 3 façons :\n\n**Option 1 - En ligne (instantané) :**\n1. Connectez-vous à l'ENT\n2. Allez dans 'Scolarité' > 'Mes documents'\n3. Cliquez sur 'Certificat de scolarité'\n4. Téléchargez le PDF (disponible immédiatement)\n\n**Option 2 - Service scolarité :**\nEmail à scolarite@esic.fr (délai 48h)\n\n**Option 3 - Guichet :**\nBureau A102, Lun-Ven 9h-12h/14h-17h (délivrance immédiate)\n\nLe certificat est gratuit et illimité.",
+          "tags": ["certificat scolarité", "attestation", "document administratif"],
+          "frequence": "très élevée",
+          "documents_associes": []
+        },
+        {
+          "id": "ADM002",
+          "question": "Comment obtenir mon relevé de notes ?",
+          "reponse": "Vos relevés de notes sont disponibles sur l'ENT :\n\n1. Connectez-vous à l'ENT\n2. 'Scolarité' > 'Mes notes'\n3. Sélectionnez le semestre\n4. Cliquez sur 'Télécharger le relevé' (format PDF)\n\nLes relevés sont disponibles 1 semaine après la publication complète des notes du semestre. Le document est officiel avec tampon de l'école et signature électronique.\n\n**Relevé papier avec cachet original :** Demande au service scolarité (délai 3 jours ouvrés)",
+          "tags": ["relevé notes", "bulletin", "résultats"],
+          "frequence": "très élevée",
+          "documents_associes": []
+        },
+        {
+          "id": "ADM003",
+          "question": "Comment faire une demande de bourse CROUS ?",
+          "reponse": "La demande de bourse se fait en ligne sur le site du CROUS :\n\n**Période :** Du 15 janvier au 15 mai pour l'année suivante\n\n**Procédure :**\n1. Créez votre Dossier Social Étudiant (DSE) sur messervices.etudiant.gouv.fr\n2. Renseignez les informations (revenus parents, fratrie, etc.)\n3. Choisissez l'ESIC dans la liste des établissements\n4. Validez et attendez la réponse (juin-juillet)\n\n**Aide sur le campus :** Le service social peut vous accompagner (social@esic.fr ou bureau A105, Lun/Mer 14h-18h)\n\n**Important :** Faites votre demande même si vous pensez ne pas être éligible.",
+          "tags": ["bourse", "CROUS", "aide financière", "DSE"],
+          "frequence": "très élevée",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        },
+        {
+          "id": "ADM004",
+          "question": "Comment obtenir une convention de stage ?",
+          "reponse": "Pour obtenir votre convention de stage :\n\n1. Trouvez votre stage et validez l'offre avec l'entreprise\n2. Connectez-vous à l'ENT > 'Stages' > 'Nouvelle convention'\n3. Remplissez le formulaire en ligne (dates, missions, entreprise, gratification)\n4. Téléchargez la convention pré-remplie\n5. Faites-la signer par l'entreprise\n6. Déposez-la signée au service scolarité (Bureau A102) ou envoyez-la scannée à stages@esic.fr\n7. Récupérez la convention finale signée par l'école (délai 5 jours ouvrés)\n\n**Important :** La convention doit être signée AVANT le début du stage.",
+          "tags": ["stage", "convention", "entreprise", "alternance"],
+          "frequence": "très élevée",
+          "documents_associes": ["reglement_interieur.md"]
+        },
+        {
+          "id": "ADM005",
+          "question": "Comment payer mes frais de scolarité ?",
+          "reponse": "Plusieurs options de paiement sont disponibles :\n\n**Paiement comptant (remise -3%) :**\n- Virement bancaire\n- Chèque\n- CB en ligne sur l'ENT\n\n**Paiement en 3 fois (sans frais) :**\n- Septembre, novembre, janvier\n- Prélèvement automatique\n\n**Paiement en 10 fois (frais +2%) :**\n- Septembre à juin\n- Prélèvement automatique\n\n**Procédure :**\n1. ENT > 'Comptabilité' > 'Mes factures'\n2. Choisissez votre mode de paiement\n3. Validez votre échéancier\n\nContact : comptabilite@esic.fr ou 01.53.90.15.21",
+          "tags": ["frais scolarité", "paiement", "échéancier", "comptabilité"],
+          "frequence": "très élevée",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        },
+        {
+          "id": "ADM006",
+          "question": "Comment obtenir une attestation fiscale ?",
+          "reponse": "L'attestation fiscale (pour réduction d'impôts) est disponible :\n\n**Quand :** À partir de fin février pour l'année civile précédente\n\n**Où :**\n1. ENT > 'Comptabilité' > 'Mes documents fiscaux'\n2. Téléchargez l'attestation (format PDF)\n\nL'attestation indique le montant des frais de scolarité payés l'année précédente, permettant une réduction d'impôts de 25% (plafond 61€ pour le collège, 153€ pour le lycée, 183€ pour le supérieur selon la législation fiscale).\n\n**Important :** Conservez ce document pour votre déclaration d'impôts.",
+          "tags": ["attestation fiscale", "impôts", "réduction", "document"],
+          "frequence": "moyenne",
+          "documents_associes": []
+        },
+        {
+          "id": "ADM007",
+          "question": "J'ai perdu ma carte étudiante, que faire ?",
+          "reponse": "En cas de perte ou de vol de votre carte étudiante :\n\n1. **Déclarez immédiatement** la perte sur l'ENT ('Scolarité' > 'Ma carte' > 'Déclarer une perte') pour désactiver la carte\n\n2. **Faites une demande de duplicata :**\n   - Via l'ENT ou au service scolarité\n   - Coût : 25€ (paiement en ligne ou au guichet)\n   - Photo d'identité requise\n\n3. **Récupération :** Nouvelle carte disponible sous 5 jours ouvrés au bureau A102\n\n**En cas de vol :** Joignez un dépôt de plainte pour que le duplicata soit gratuit.",
+          "tags": ["carte étudiante", "perte", "duplicata", "badge"],
+          "frequence": "moyenne",
+          "documents_associes": []
+        },
+        {
+          "id": "ADM008",
+          "question": "Comment faire une demande d'aide d'urgence ?",
+          "reponse": "L'ESIC propose une **aide financière d'urgence** jusqu'à 1 000€ pour les étudiants en difficulté :\n\n**Conditions :**\n- Situation financière difficile soudaine (accident, perte emploi parental, etc.)\n- Étudiant régulièrement inscrit\n- Avoir épuisé les autres aides (CROUS, CAF)\n\n**Procédure :**\n1. Prenez rendez-vous avec l'assistante sociale (social@esic.fr)\n2. Préparez justificatifs (revenus, charges, événement)\n3. Remplissez le dossier de demande\n4. Commission d'aide d'urgence sous 15 jours\n5. Versement sous 5 jours si accepté\n\nContact : Isabelle DUBOIS, Bureau A105, Lun/Mer 14h-18h",
+          "tags": ["aide urgence", "aide financière", "difficulté", "social"],
+          "frequence": "faible",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        },
+        {
+          "id": "ADM009",
+          "question": "Comment m'inscrire à un examen de rattrapage ?",
+          "reponse": "L'inscription aux rattrapages est **automatique**. Vous n'avez aucune démarche à faire.\n\n**Fonctionnement :**\n1. Les résultats de la session 1 sont publiés\n2. Si vous avez une note < 10/20 après compensation, vous êtes automatiquement inscrit au rattrapage de cette matière\n3. Vous recevez votre convocation par email 2 semaines avant\n4. La convocation est aussi disponible sur l'ENT ('Examens' > 'Mes convocations')\n\n**Dispense :** Si vous ne souhaitez pas passer un rattrapage (note session 1 acceptable pour vous), demande écrite à scolarite@esic.fr avant la date limite indiquée sur l'ENT.",
+          "tags": ["rattrapage", "inscription", "examens", "session 2"],
+          "frequence": "élevée",
+          "documents_associes": []
+        },
+        {
+          "id": "ADM010",
+          "question": "Comment faire une demande de césure ?",
+          "reponse": "Une **année de césure** peut être accordée après le Bachelor 2 ou le Master 1 :\n\n**Durée :** 1 semestre ou 1 année complète\n\n**Projets acceptés :**\n- Stage long en entreprise\n- Projet entrepreneurial\n- Service civique\n- Volontariat international\n- Projet personnel structuré\n\n**Procédure :**\n1. Demande écrite motivée à votre responsable pédagogique (3 mois avant)\n2. Joindre descriptif détaillé du projet\n3. Commission pédagogique (réponse sous 1 mois)\n4. Si accepté : convention de césure à signer\n\n**Statut :** Vous gardez le statut étudiant. Tarif réduit de 20% pour maintenir l'inscription.\n\nContact : etudes@esic.fr",
+          "tags": ["césure", "année sabbatique", "interruption études"],
+          "frequence": "faible",
+          "documents_associes": []
+        },
+        {
+          "id": "ADM011",
+          "question": "Comment obtenir un justificatif de déplacement pour la CAF ?",
+          "reponse": "Pour obtenir un justificatif de présence/déplacement pour la CAF (notamment pour l'APL si vous déménagez) :\n\n1. Connectez-vous à l'ENT\n2. 'Scolarité' > 'Mes documents' > 'Attestation de présence'\n3. Téléchargez le document\n\nOu demandez au service scolarité (scolarite@esic.fr) qui peut émettre une attestation sur mesure mentionnant :\n- Vos nom et prénom\n- Votre formation et année\n- L'adresse du campus\n- La période de formation\n- Le nombre de jours de présence requis par semaine",
+          "tags": ["CAF", "attestation", "justificatif", "déplacement"],
+          "frequence": "moyenne",
+          "documents_associes": []
+        },
+        {
+          "id": "ADM012",
+          "question": "Comment faire une demande de changement de formation ?",
+          "reponse": "Un changement de formation (réorientation) est possible sous conditions :\n\n**Périodes possibles :**\n- Fin du S1 : réorientation au sein du Bachelor 1 uniquement\n- Fin de l'année : réorientation vers une autre spécialisation (sous réserve de places)\n\n**Procédure :**\n1. Rendez-vous obligatoire avec votre responsable pédagogique actuel\n2. Entretien avec le responsable de la formation souhaitée\n3. Dossier de demande à remplir (motivations, résultats)\n4. Commission pédagogique (décision sous 3 semaines)\n5. Si accepté : mise à niveau possible pour rattraper les différences de programme\n\nContact : etudes@esic.fr ou votre responsable pédagogique",
+          "tags": ["réorientation", "changement formation", "passerelle"],
+          "frequence": "faible",
+          "documents_associes": []
+        },
+        {
+          "id": "ADM013",
+          "question": "Comment contester une note ?",
+          "reponse": "Vous avez le droit de contester une note si vous estimez qu'il y a une erreur :\n\n**Délai :** 15 jours après la publication de la note sur l'ENT\n\n**Procédure :**\n1. **Consultation de copie :** Demandez d'abord à consulter votre copie (droit garanti) auprès de l'enseignant\n2. **Demande de révision :** Si l'erreur persiste, demande écrite motivée à scolarite@esic.fr\n3. **Commission :** Votre copie est revue par un autre enseignant + votre enseignant + responsable pédagogique\n4. **Décision finale :** Réponse sous 2 semaines, décision définitive\n\n**Important :** La révision peut entraîner une baisse de note si des erreurs non détectées sont trouvées.",
+          "tags": ["contestation note", "réclamation", "révision", "copie"],
+          "frequence": "moyenne",
+          "documents_associes": ["reglement_interieur.md"]
+        },
+        {
+          "id": "ADM014",
+          "question": "Comment obtenir une attestation d'assurance scolaire ?",
+          "reponse": "L'assurance scolaire n'est pas obligatoire dans l'enseignement supérieur mais vivement recommandée, surtout pour les stages.\n\n**Si vous avez souscrit via l'école :**\n- L'attestation vous a été envoyée par email lors de l'inscription\n- Copie disponible sur l'ENT > 'Scolarité' > 'Mes documents'\n\n**Si vous avez votre propre assurance :**\n- Contactez directement votre assureur\n- Déposez une copie au service scolarité pour que ce soit noté dans votre dossier\n\n**Pour les stages :** L'assurance Responsabilité Civile est obligatoire. Joignez l'attestation à votre convention de stage.",
+          "tags": ["assurance", "attestation", "stage", "responsabilité civile"],
+          "frequence": "moyenne",
+          "documents_associes": []
+        },
+        {
+          "id": "ADM015",
+          "question": "Comment obtenir un duplicata de diplôme ?",
+          "reponse": "En cas de perte, vol ou détérioration de votre diplôme, vous pouvez obtenir un duplicata :\n\n**Conditions :**\n- Être diplômé de l'ESIC\n- Fournir une preuve de la perte (déclaration de vol/perte)\n\n**Procédure :**\n1. Demande écrite à scolarite@esic.fr avec :\n   - Copie pièce d'identité\n   - Déclaration de perte/vol sur l'honneur\n   - Année d'obtention du diplôme\n2. Frais : 50€ (chèque ou virement)\n3. Délai : 4-6 semaines\n\n**Important :** Le duplicata porte la mention 'DUPLICATA' et n'a pas la même valeur légale qu'un original. Un certificat de réussite (gratuit) peut suffire dans la plupart des cas.",
+          "tags": ["diplôme", "duplicata", "perte", "certificat"],
+          "frequence": "faible",
+          "documents_associes": []
+        },
+        {
+          "id": "ADM016",
+          "question": "Comment m'inscrire aux cours de langue ?",
+          "reponse": "Les cours de langues sont **obligatoires** et déjà inscrits dans votre emploi du temps :\n\n**Fonctionnement :**\n- Test de niveau en début d'année (septembre)\n- Affectation automatique à un groupe de niveau (A2, B1, B2, C1)\n- 2h de cours par semaine\n\n**Langues disponibles :**\n- Anglais : obligatoire pour tous\n- LV2 (optionnel en Bachelor 3 et Master) : Espagnol, Allemand, Chinois, Italien\n\n**Pour les LV2 optionnelles :**\n1. ENT > 'Scolarité' > 'Choix pédagogiques'\n2. Inscrivez-vous avant le 15 septembre\n3. Places limitées (30 par groupe)\n\nContact : Christine ROBIN (c.robin@esic.fr)",
+          "tags": ["langue", "anglais", "cours", "inscription"],
+          "frequence": "moyenne",
+          "documents_associes": []
+        },
+        {
+          "id": "ADM017",
+          "question": "Comment obtenir mon diplôme après la validation ?",
+          "reponse": "Après validation définitive de votre diplôme :\n\n**Délai de délivrance :** 3-6 mois après la validation (délais administratifs de signature par le Rectorat)\n\n**Notification :**\n- Email sur votre adresse @esic.fr dès que le diplôme est prêt\n- SMS de rappel\n\n**Retrait :**\n- En personne au service scolarité (Bureau A102, Lun-Ven 9h-17h) avec pièce d'identité\n- Ou par procuration (+ copie ID de la personne)\n- Ou envoi postal (frais 15€, recommandé avec AR)\n\n**En attendant :** Vous pouvez obtenir une attestation de réussite gratuite et immédiate sur l'ENT.",
+          "tags": ["diplôme", "retrait", "remise", "attestation réussite"],
+          "frequence": "moyenne",
+          "documents_associes": []
+        },
+        {
+          "id": "ADM018",
+          "question": "Comment faire valider mes acquis professionnels ?",
+          "reponse": "La **VAE (Validation des Acquis de l'Expérience)** ou la **VAP (Validation des Acquis Professionnels)** permettent de faire reconnaître votre expérience :\n\n**VAP :** Pour accéder à une formation sans avoir le diplôme requis\n**VAE :** Pour obtenir tout ou partie d'un diplôme via l'expérience\n\n**Conditions :**\n- 3 ans minimum d'expérience professionnelle en lien avec le diplôme visé\n- Expérience salariée, indépendante, bénévole ou volontaire\n\n**Procédure :**\n1. Demande de dossier : vae@esic.fr\n2. Rédaction du livret de VAE (accompagnement possible)\n3. Soutenance devant un jury\n4. Décision : validation totale, partielle ou refus\n\nContact : Service VAE, vae@esic.fr ou 01.53.90.15.30",
+          "tags": ["VAE", "VAP", "validation acquis", "expérience professionnelle"],
+          "frequence": "très faible",
+          "documents_associes": []
+        },
+        {
+          "id": "ADM019",
+          "question": "Comment obtenir un duplicata de bulletin ?",
+          "reponse": "Si vous avez perdu votre bulletin/relevé de notes :\n\n**Relevés de notes récents (depuis 2020) :**\n- Disponibles gratuitement et instantanément sur l'ENT\n- 'Scolarité' > 'Mes notes' > 'Télécharger le relevé'\n\n**Relevés anciens (avant 2020) :**\n- Demande par email à scolarite@esic.fr avec :\n  * Nom, prénom, date de naissance\n  * Formation et année concernées\n- Gratuit\n- Délai : 5 jours ouvrés\n- Envoi par email (PDF) ou retrait guichet\n\n**Version papier certifiée :** Disponible sur demande (gratuit, délai 48h)",
+          "tags": ["bulletin", "relevé notes", "duplicata", "copie"],
+          "frequence": "faible",
+          "documents_associes": []
+        },
+        {
+          "id": "ADM020",
+          "question": "Comment s'inscrire en tant qu'alternant ?",
+          "reponse": "L'**alternance** (contrat d'apprentissage ou de professionnalisation) est possible à partir du Bachelor 3 et en Master :\n\n**Calendrier :**\n- Recherche de l'entreprise : janvier à juin\n- Signature du contrat : avant le 31 août\n- Début de l'alternance : septembre\n\n**Procédure :**\n1. Trouvez une entreprise d'accueil\n2. Demandez le dossier d'alternance sur l'ENT ou à carrieres@esic.fr\n3. Remplissez le formulaire d'inscription pédagogique en alternance\n4. L'école vous aide à monter le dossier OPCO\n5. Signature du contrat tripartite (étudiant/école/entreprise)\n\n**Rythme :** 3 semaines entreprise / 1 semaine école (variable selon formation)\n\nContact : Pierre LEGRAND, p.legrand@esic.fr ou 01.53.90.15.33",
+          "tags": ["alternance", "apprentissage", "contrat pro", "inscription"],
+          "frequence": "élevée",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        },
+        {
+          "id": "ADM021",
+          "question": "Comment modifier mes informations personnelles ?",
+          "reponse": "Pour modifier vos informations personnelles (adresse, téléphone, email personnel, etc.) :\n\n1. Connectez-vous à l'ENT\n2. 'Mon profil' > 'Mes informations'\n3. Modifiez les champs concernés\n4. Validez\n\n**Modifications avec justificatif (nom, état civil, nationalité) :**\n- Demande écrite au service scolarité\n- Joindre justificatif officiel (acte de naissance, carte d'identité, etc.)\n- Délai de traitement : 5 jours ouvrés\n\n**Important :** Maintenez vos coordonnées à jour pour recevoir toutes les communications importantes de l'école.\n\nContact : scolarite@esic.fr",
+          "tags": ["informations personnelles", "coordonnées", "profil", "modification"],
+          "frequence": "moyenne",
+          "documents_associes": []
+        },
+        {
+          "id": "ADM022",
+          "question": "Comment faire une demande d'exeat ?",
+          "reponse": "Un **exeat** est un document certifiant que vous êtes en règle avec l'établissement et pouvez vous inscrire ailleurs. Il est nécessaire pour :\n- Changement d'établissement\n- Départ définitif de l'ESIC\n- Transfert de dossier\n\n**Conditions :**\n- Être à jour de vos frais de scolarité\n- Avoir rendu tous les matériels empruntés (bibliothèque, IT)\n- Aucune procédure disciplinaire en cours\n\n**Procédure :**\n1. Demande écrite à scolarite@esic.fr\n2. Précisez la raison et la destination\n3. Règlement des frais en attente\n4. Délai de délivrance : 5 jours ouvrés\n\nL'exeat est gratuit.",
+          "tags": ["exeat", "transfert", "changement établissement", "départ"],
+          "frequence": "faible",
+          "documents_associes": []
+        },
+        {
+          "id": "ADM023",
+          "question": "Puis-je obtenir un reçu fiscal pour mes frais de scolarité ?",
+          "reponse": "Oui, un reçu fiscal vous est automatiquement délivré chaque année :\n\n**Période :** Disponible fin février/début mars pour l'année civile précédente\n\n**Accès :**\n1. ENT > 'Comptabilité' > 'Mes documents fiscaux'\n2. Téléchargez le reçu (PDF)\n\nLe reçu mentionne le montant total des frais de scolarité payés l'année précédente. Il permet :\n- D'obtenir une réduction d'impôts (selon législation)\n- De justifier des frais de scolarité auprès de la CAF ou autres organismes\n\n**Duplicata :** Demande à comptabilite@esic.fr si vous l'avez perdu",
+          "tags": ["reçu fiscal", "impôts", "frais scolarité", "attestation paiement"],
+          "frequence": "moyenne",
+          "documents_associes": []
+        },
+        {
+          "id": "ADM024",
+          "question": "Comment obtenir une attestation de stage ?",
+          "reponse": "Une attestation de stage certifie que vous avez effectué un stage dans le cadre de votre formation :\n\n**Délivrée automatiquement :**\n- À la fin de votre stage, après remise du rapport et soutenance\n- Disponible sur l'ENT > 'Stages' > 'Mes attestations'\n\n**Contenu :**\n- Dates de stage\n- Entreprise d'accueil\n- Missions principales\n- Appréciation du maître de stage\n- Validation pédagogique\n\n**Demande spécifique :** Si vous avez besoin d'une attestation intermédiaire ou avec mentions particulières, contactez stages@esic.fr (délai 3 jours)\n\nGratuit et illimité.",
+          "tags": ["attestation stage", "certificat stage", "validation"],
+          "frequence": "élevée",
+          "documents_associes": []
+        },
+        {
+          "id": "ADM025",
+          "question": "Comment obtenir mon code INE/BEA ?",
+          "reponse": "Le **code INE (Identifiant National Étudiant)** ou **BEA (Base Élèves Académique)** est un numéro unique qui vous suit tout au long de votre scolarité :\n\n**Format :** 11 caractères (10 chiffres + 1 lettre)\n\n**Où le trouver :**\n- Sur votre carte étudiante ESIC (au dos)\n- Sur votre relevé de notes\n- Sur votre certificat de scolarité\n- Sur l'ENT > 'Mon profil' > 'Mes informations'\n\n**Si vous ne l'avez pas :** Contactez le service scolarité (scolarite@esic.fr) qui peut le retrouver dans votre dossier.\n\nCe code est notamment nécessaire pour les inscriptions aux concours et certaines démarches administratives.",
+          "tags": ["INE", "BEA", "identifiant national", "code étudiant"],
+          "frequence": "faible",
+          "documents_associes": []
+        },
+        {
+          "id": "ADM026",
+          "question": "Comment faire une demande de remboursement ?",
+          "reponse": "Les demandes de remboursement (trop-perçu, annulation, etc.) se font auprès du service comptabilité :\n\n**Motifs de remboursement acceptés :**\n- Paiement en double\n- Abandon des études (conditions spécifiques)\n- Erreur de facturation\n- Bourse obtenue après paiement\n\n**Procédure :**\n1. Email à comptabilite@esic.fr avec :\n   - Motif détaillé\n   - Justificatifs\n   - RIB\n2. Examen de la demande (délai 1 semaine)\n3. Si accepté : virement sous 30 jours\n\n**Important :** Les abandons après le 31 octobre ne donnent pas droit à remboursement (sauf cas de force majeure justifiée).\n\nContact : François BLANC, 01.53.90.15.21",
+          "tags": ["remboursement", "annulation", "trop-perçu", "comptabilité"],
+          "frequence": "faible",
+          "documents_associes": []
+        },
+        {
+          "id": "ADM027",
+          "question": "Comment activer mon compte ENT ?",
+          "reponse": "Votre compte ENT est normalement activé dès votre inscription administrative :\n\n**Première connexion :**\n1. Allez sur ent.esic.fr\n2. Utilisez vos identifiants reçus par email lors de l'inscription\n3. Format : prenom.nom@esic.fr\n4. Mot de passe temporaire fourni\n5. Changez obligatoirement le mot de passe à la première connexion\n\n**Problèmes de connexion :**\n- Vérifiez vos emails (y compris spam) pour les identifiants\n- Utilisez la fonction 'Mot de passe oublié'\n- Contactez le helpdesk IT : support-it@esic.fr ou 01.53.90.15.99\n\n**Important :** L'ENT est votre outil principal. Activez-le dès que possible !",
+          "tags": ["ENT", "activation", "compte", "connexion", "identifiants"],
+          "frequence": "élevée",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        },
+        {
+          "id": "ADM028",
+          "question": "Comment faire une demande d'équivalence de diplôme étranger ?",
+          "reponse": "Si vous avez obtenu un diplôme à l'étranger et souhaitez une équivalence ou une admission parallèle :\n\n**Pour une admission :**\n1. Contactez le service admissions (admissions@esic.fr)\n2. Fournissez vos diplômes traduits et légalisés\n3. Lettre de motivation\n4. Dossier académique complet\n5. La commission pédagogique étudie votre dossier\n6. Entretien si présélectionné\n\n**Pour une simple équivalence (hors admission) :**\nL'ESIC ne délivre pas d'équivalences. Contactez ENIC-NARIC France (centre officiel) : www.france-education-international.fr\n\n**Pour les étudiants Erasmus/échange :** Les équivalences sont gérées automatiquement via le Learning Agreement.\n\nContact international : international@esic.fr ou 01.53.90.15.25",
+          "tags": ["équivalence", "diplôme étranger", "admission parallèle", "international"],
+          "frequence": "faible",
+          "documents_associes": []
+        },
+        {
+          "id": "ADM029",
+          "question": "Comment m'inscrire à une certification professionnelle ?",
+          "reponse": "Certaines certifications professionnelles sont **incluses** dans votre cursus (AWS, Azure, Google Analytics, etc.) :\n\n**Certifications incluses :**\n- Inscription automatique\n- Sessions organisées par l'école\n- Coût pris en charge\n- Passage dans le cadre des examens ou en session dédiée\n\n**Liste par formation :**\n- B3 Dev : AWS Solutions Architect Associate\n- B3 Cyber : CEH (Certified Ethical Hacker)\n- B3 Data : TensorFlow Developer\n- Master : Certifications avancées selon spécialisation\n\n**Certifications supplémentaires (non incluses) :**\nVous pouvez les passer de manière indépendante. Certaines salles de l'école sont centres d'examen agréés Pearson VUE.\n\nContact : Votre responsable pédagogique",
+          "tags": ["certification", "professionnelle", "AWS", "Azure", "Google"],
+          "frequence": "moyenne",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        },
+        {
+          "id": "ADM030",
+          "question": "Comment obtenir une prolongation de délai pour un rendu ?",
+          "reponse": "Les prolongations de délai pour les rendus (projets, rapports) sont exceptionnelles et doivent être justifiées :\n\n**Motifs acceptés :**\n- Maladie (certificat médical obligatoire)\n- Événement familial grave (certificat de décès, etc.)\n- Problème technique majeur (à déclarer immédiatement)\n\n**Procédure :**\n1. Contactez l'enseignant concerné AVANT la date limite\n2. Expliquez la situation avec justificatifs\n3. L'enseignant décide d'accorder ou non la prolongation (1-7 jours maximum généralement)\n\n**Important :**\n- Ne pas attendre la dernière minute\n- Les demandes non justifiées ou tardives sont systématiquement refusées\n- Un rendu en retard sans accord = pénalité automatique (généralement -2 points par jour)",
+          "tags": ["prolongation", "délai", "rendu", "projet", "rapport"],
+          "frequence": "moyenne",
+          "documents_associes": []
+        },
+        {
+          "id": "ADM031",
+          "question": "Comment faire une réclamation ou signaler un problème ?",
+          "reponse": "Plusieurs canaux selon le type de problème :\n\n**Problème pédagogique :**\n- D'abord : votre délégué de classe\n- Puis : votre responsable pédagogique\n- En dernier recours : Directrice des Études (etudes@esic.fr)\n\n**Problème administratif :**\n- Service concerné (scolarité, comptabilité, etc.)\n- Si pas de solution : médiation possible via bve@esic.fr\n\n**Problème de harcèlement/discrimination :**\n- Cellule d'écoute : ecoute@esic.fr (confidentiel)\n- Référent harcèlement\n- Médiation et accompagnement possible\n\n**Réclamation formelle :**\nPar écrit à direction@esic.fr. Réponse garantie sous 15 jours.\n\n**Enquêtes de satisfaction :** Remplissez les questionnaires envoyés chaque semestre (anonymes).",
+          "tags": ["réclamation", "problème", "médiation", "plainte"],
+          "frequence": "faible",
+          "documents_associes": ["reglement_interieur.md"]
+        },
+        {
+          "id": "ADM032",
+          "question": "Comment obtenir une carte IZLY pour le restaurant universitaire ?",
+          "reponse": "La carte IZLY est intégrée à votre **carte étudiante ESIC** qui fait aussi office de porte-monnaie électronique :\n\n**Activation :**\n1. Téléchargez l'application 'IZLY' (iOS/Android)\n2. Créez votre compte avec votre email @esic.fr\n3. Liez votre carte étudiante (scannez le QR code au dos)\n4. Rechargez votre compte (CB, virement, espèces au guichet)\n\n**Utilisation :**\n- Au restaurant universitaire : badgez simplement votre carte étudiante\n- À la cafétéria : idem\n- Aux distributeurs : si équipés\n\n**Recharge :** Minimum 10€, en ligne ou aux bornes du campus (bâtiment D)\n\n**Aide :** Bureau A102 ou support IZLY : https://www.izly.fr",
+          "tags": ["IZLY", "carte", "restaurant universitaire", "paiement", "cafétéria"],
+          "frequence": "élevée",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        },
+        {
+          "id": "ADM033",
+          "question": "Puis-je obtenir une bourse de mobilité internationale ?",
+          "reponse": "Oui, plusieurs bourses sont disponibles pour financer votre mobilité internationale :\n\n**Bourses Erasmus+ :**\n- 150-250€/mois selon le pays de destination\n- Pour les échanges académiques en Europe\n- Demande via le service international\n\n**Bourse AMI (Aide à la Mobilité Internationale) :**\n- 400€/mois, jusqu'à 9 mois\n- Pour étudiants boursiers CROUS\n- Séjour d'études ou stage à l'étranger\n\n**Bourses régionales (Île-de-France Mobilité) :**\n- Jusqu'à 2000€\n- Selon ressources et destination\n\n**Procédure :** \nContactez Elena MARTINEZ (international@esic.fr, 01.53.90.15.25) minimum 3 mois avant votre départ.\n\nLes bourses sont cumulables !",
+          "tags": ["bourse", "mobilité internationale", "Erasmus", "étranger", "financement"],
+          "frequence": "moyenne",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        },
+        {
+          "id": "ADM034",
+          "question": "Comment suspendre provisoirement mes études ?",
+          "reponse": "Vous pouvez suspendre vos études (interruption temporaire) pour raisons médicales ou personnelles graves :\n\n**Durée :** 1 semestre ou 1 année maximum\n\n**Motifs acceptés :**\n- Raisons médicales (certificat obligatoire)\n- Problèmes familiaux graves\n- Service civique\n- Projet professionnel nécessitant une pause\n\n**Procédure :**\n1. Demande écrite motivée à votre responsable pédagogique\n2. Joindre justificatifs\n3. Examen par la commission pédagogique\n4. Si accepté : maintien de l'inscription (tarif réduit 20%)\n5. Reprise automatique l'année suivante\n\n**Différence avec la césure :** La suspension est pour motif subi, la césure pour projet choisi.\n\nContact : etudes@esic.fr",
+          "tags": ["suspension", "interruption", "pause", "arrêt études"],
+          "frequence": "faible",
+          "documents_associes": []
+        },
+        {
+          "id": "ADM035",
+          "question": "Comment obtenir un visa étudiant (pour étudiants internationaux) ?",
+          "reponse": "Si vous êtes un étudiant international hors UE, vous avez besoin d'un visa étudiant :\n\n**Procédure Campus France :**\n1. Créez un compte sur campusfrance.org (pays d'origine)\n2. Remplissez le dossier de candidature\n3. Payez les frais Campus France\n4. Obtenez votre acceptation à l'ESIC\n5. Recevez l'attestation d'admission ESIC\n6. Obtenez votre visa étudiant long séjour (VLS-TS)\n\n**Documents nécessaires :**\n- Lettre d'admission ESIC\n- Justificatif de ressources (615€/mois minimum)\n- Assurance santé\n- Justificatif de logement\n\n**Après arrivée en France :**\n- Validation du visa (dans les 3 mois)\n- Inscription à la sécurité sociale étudiante\n\nLe service international vous accompagne : international@esic.fr",
+          "tags": ["visa", "étudiant international", "Campus France", "titre séjour"],
+          "frequence": "faible",
+          "documents_associes": []
+        },
+        {
+          "id": "ADM036",
+          "question": "Comment obtenir une attestation de réussite ?",
+          "reponse": "Une **attestation de réussite** certifie que vous avez validé votre année/diplôme en attendant la délivrance du diplôme officiel :\n\n**Disponibilité :** Dès la publication des résultats finaux et de la délibération du jury\n\n**Obtention :**\n1. ENT > 'Scolarité' > 'Mes documents' > 'Attestation de réussite'\n2. Téléchargement immédiat (PDF)\n\nOu au service scolarité (gratuit, délai immédiat)\n\n**Utilité :**\n- Poursuite d'études\n- Recherche d'emploi\n- Démarches administratives\n- En attendant le diplôme officiel (qui met 3-6 mois)\n\nL'attestation a la même valeur que le diplôme pour la plupart des démarches.",
+          "tags": ["attestation réussite", "validation", "diplôme provisoire"],
+          "frequence": "élevée",
+          "documents_associes": []
+        },
+        {
+          "id": "ADM037",
+          "question": "Comment faire une demande de transfert de dossier vers une autre école ?",
+          "reponse": "Si vous souhaitez transférer votre dossier vers un autre établissement :\n\n**Conditions préalables :**\n- Être à jour de tous vos paiements\n- Aucune procédure disciplinaire en cours\n- Obtenir un exeat (voir FAQ ADM022)\n\n**Documents à demander :**\n1. Exeat\n2. Relevés de notes de toutes les années\n3. Certificat de scolarité\n4. Programme pédagogique détaillé (si demandé par le nouvel établissement)\n\n**Procédure :**\n1. Informez votre responsable pédagogique de votre départ\n2. Demandez les documents à scolarite@esic.fr\n3. Précisez l'établissement de destination\n4. Délai : 5-10 jours ouvrés\n\n**Gratuit** (sauf envoi postal : 15€)",
+          "tags": ["transfert", "changement école", "dossier", "départ"],
+          "frequence": "faible",
+          "documents_associes": []
+        },
+        {
+          "id": "ADM038",
+          "question": "Comment obtenir un justificatif de présence pour la sécurité sociale ?",
+          "reponse": "Pour justifier de votre statut étudiant auprès de la sécurité sociale (notamment si vous restez sur le régime parental ou pour l'assurance maladie) :\n\n**Document nécessaire :** Certificat de scolarité\n\n**Obtention :**\n1. ENT > 'Scolarité' > 'Mes documents' > 'Certificat de scolarité'\n2. Téléchargez le PDF (gratuit, illimité)\n\nLe certificat mentionne :\n- Votre statut d'étudiant\n- Votre formation et année\n- Les dates de l'année académique\n- Le cachet officiel de l'école\n\nCe document est généralement suffisant pour toutes les démarches liées à la sécurité sociale, la mutuelle étudiante, etc.\n\n**Besoin d'une attestation spécifique :** scolarite@esic.fr",
+          "tags": ["sécurité sociale", "attestation", "certificat scolarité", "assurance maladie"],
+          "frequence": "moyenne",
+          "documents_associes": []
+        }
+      ]
+    },
+    {
+      "id": "services_campus",
+      "nom": "Services Campus",
+      "pourcentage": "20%",
+      "nombre_questions": 30,
+      "questions": [
+        {
+          "id": "SVC001",
+          "question": "Quels sont les horaires de la bibliothèque ?",
+          "reponse": "La bibliothèque (Bâtiment D, 1er étage) est ouverte :\n\n**Période normale :**\n- Lundi-Vendredi : 8h-20h\n- Samedi : 9h-17h\n- Dimanche : Fermé\n\n**Période d'examens (janvier et mai-juin) :**\n- 24h/24, 7j/7\n- Accès par badge étudiant\n- Surveillance réduite la nuit (caméras)\n\n**Vacances scolaires :** 9h-17h du lundi au vendredi\n\nContact : bibliotheque@esic.fr ou 01.53.90.15.50",
+          "tags": ["bibliothèque", "horaires", "ouverture"],
+          "frequence": "très élevée",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        },
+        {
+          "id": "SVC002",
+          "question": "Comment emprunter un livre à la bibliothèque ?",
+          "reponse": "L'emprunt de livres est gratuit et illimité :\n\n**Procédure :**\n1. Recherchez le livre dans le catalogue en ligne (bibliotheque.esic.fr) ou sur place\n2. Prenez le livre dans les rayonnages\n3. Présentez-vous au comptoir d'accueil avec votre carte étudiante\n4. Le bibliothécaire enregistre l'emprunt\n\n**Conditions :**\n- Ouvrages : 5 livres maximum pendant 3 semaines (renouvelable 2 fois)\n- Revues anciennes : 2 exemplaires pendant 1 semaine\n- Dictionnaires et encyclopédies : consultation sur place uniquement\n\n**Retard :** 0,50€ par jour et par document\n\n**Renouvellement :** Par email, sur le catalogue en ligne ou au comptoir",
+          "tags": ["bibliothèque", "emprunt", "livre", "prêt"],
+          "frequence": "élevée",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        },
+        {
+          "id": "SVC003",
+          "question": "Puis-je imprimer des documents sur le campus ?",
+          "reponse": "Oui, plusieurs solutions d'impression sont disponibles :\n\n**Bibliothèque :**\n- 200 pages gratuites par semaine (quota)\n- Au-delà : 0,05€ la page N&B, 0,20€ la page couleur\n- Rechargement du crédit via l'ENT ou bornes\n\n**Salles informatiques (C001-C004) :**\n- Impression payante uniquement\n- Même tarif qu'à la bibliothèque\n\n**Procédure :**\n1. Envoyez votre document vers l'imprimante depuis n'importe quel poste\n2. Allez à l'imprimante\n3. Badgez avec votre carte étudiante\n4. Sélectionnez vos documents à imprimer\n5. Validez\n\n**Scan :** Gratuit et illimité à la bibliothèque",
+          "tags": ["impression", "imprimante", "photocopie", "scan"],
+          "frequence": "très élevée",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        },
+        {
+          "id": "SVC004",
+          "question": "Quels sont les horaires du restaurant universitaire ?",
+          "reponse": "Le restaurant universitaire (Bâtiment D, RDC) est ouvert :\n\n**Service déjeuner uniquement :**\n- Lundi-Vendredi : 11h45-14h\n- Samedi-Dimanche : Fermé\n\n**Tarifs :**\n- Étudiant boursier : 1€\n- Étudiant non-boursier : 3,90€\n- Personnel ESIC : 5,50€\n- Visiteur : 8€\n\n**Menu complet :** Entrée + Plat + Fromage/Laitage + Dessert + Pain\n\n**Options :** Végétarien quotidien, sans porc disponible, sans gluten sur demande 48h avant\n\n**Astuce :** Réservez via l'app ESIC Campus avant 10h pour bénéficier de 10% de réduction et éviter l'attente !",
+          "tags": ["restaurant universitaire", "resto U", "cantine", "repas", "horaires"],
+          "frequence": "très élevée",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        },
+        {
+          "id": "SVC005",
+          "question": "Y a-t-il une cafétéria sur le campus ?",
+          "reponse": "Oui, la cafétéria est située au RDC du bâtiment D, à côté du restaurant universitaire :\n\n**Horaires :**\n- Lundi-Vendredi : 8h-18h\n- Samedi : 9h-17h (si activités au campus)\n\n**Offre :**\n- Petit-déjeuner : viennoiseries, café, jus (2-4€)\n- Snacking : sandwichs 4,50-5,50€, salades 5-7€\n- Boissons : café 1,20€, boissons fraîches 1,50-2,50€\n- Formules midi : 3,50-7,50€\n\n**Paiement :** CB, espèces ou carte étudiante IZLY\n\n**Espace détente :** Tables, micro-ondes pour réchauffer vos plats, distributeurs automatiques 24h/7j",
+          "tags": ["cafétéria", "café", "snack", "boissons"],
+          "frequence": "élevée",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        },
+        {
+          "id": "SVC006",
+          "question": "Comment accéder au WiFi sur le campus ?",
+          "reponse": "Le WiFi est gratuit et accessible partout sur le campus :\n\n**Réseau principal : ESIC-Student**\n\n**Connexion :**\n1. Recherchez le réseau 'ESIC-Student'\n2. Connectez-vous avec vos identifiants ENT\n   - Login : prenom.nom@esic.fr\n   - Mot de passe : votre mot de passe ENT\n3. Acceptez les conditions d'utilisation\n4. Vous êtes connecté !\n\n**Performances :**\n- Débit : 100 Mbps par utilisateur\n- Couverture : 100% du campus (bâtiments + extérieurs)\n\n**Problèmes de connexion :**\n- Reconnectez-vous\n- Vérifiez vos identifiants\n- Contactez le helpdesk IT : support-it@esic.fr ou 01.53.90.15.99\n\n**Usage :** Réservé à un usage pédagogique et professionnel",
+          "tags": ["WiFi", "internet", "connexion", "réseau"],
+          "frequence": "très élevée",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        },
+        {
+          "id": "SVC007",
+          "question": "Puis-je emprunter du matériel informatique ?",
+          "reponse": "Oui, le service IT propose un prêt de matériel aux étudiants :\n\n**Matériel disponible :**\n- 20 ordinateurs portables Dell (prêt 48h)\n- Caméras et micros pour projets vidéo (prêt 1 semaine)\n- Calculatrices scientifiques (prêt durée examen)\n- Chargeurs divers (prêt journée)\n\n**Procédure :**\n1. Réservation via l'ENT ('Services' > 'Prêt matériel')\n2. Retrait au helpdesk IT (Bureau C104) avec votre carte étudiante\n3. Caution : 50€ (chèque non encaissé ou empreinte CB)\n4. Restitution dans les délais (retards = suspension du service)\n\n**Disponibilité :** Lundi-Vendredi 9h-12h / 14h-17h\n\n**Responsabilité :** Vous êtes responsable du matériel emprunté",
+          "tags": ["prêt matériel", "ordinateur portable", "emprunt", "IT"],
+          "frequence": "moyenne",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        },
+        {
+          "id": "SVC008",
+          "question": "Y a-t-il une salle de sport sur le campus ?",
+          "reponse": "Oui, le complexe sportif (Bâtiment E) propose plusieurs installations :\n\n**Salle de musculation (150m²) :**\n- Cardio : tapis, vélos, rameurs\n- Musculation : haltères, machines guidées\n- Fonctionnel : kettlebells, TRX, Swiss balls\n- Horaires : Lun-Ven 12h-14h et 18h-20h, Sam 10h-13h\n- **Accès gratuit avec carte étudiante**\n\n**Gymnase (500m²) :**\n- Basket, volley, badminton, futsal\n- Réservation via l'ENT\n\n**Terrains extérieurs :**\n- Football (gazon synthétique)\n- Basket\n- 2 courts de tennis\n- Piste d'athlétisme 200m\n- Accès libre 8h-21h\n\n**Cours collectifs gratuits :** Voir planning sur sports@esic.fr\n\nContact : Thomas LEROY, 01.53.90.15.45",
+          "tags": ["sport", "salle de sport", "musculation", "gymnase"],
+          "frequence": "élevée",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        },
+        {
+          "id": "SVC009",
+          "question": "Comment consulter un médecin ou une infirmière sur le campus ?",
+          "reponse": "Le service santé est à votre disposition :\n\n**Infirmerie (Bâtiment D, RDC) :**\n- Infirmière : Marie LAURENT\n- Horaires : Lundi, Mercredi, Vendredi 9h-17h\n- Accès libre sans rendez-vous\n- Services : soins d'urgence, suivi médical, prévention santé, contraception d'urgence\n\n**Médecin scolaire :**\n- Dr. Marie LAURENT\n- Horaires : Mardi 14h-18h, Jeudi 10h-14h\n- **Sur rendez-vous uniquement** : sante@esic.fr ou 01.53.90.15.40\n- Consultations gratuites et confidentielles\n\n**Urgence médicale :** Composez le 15 (SAMU) ou le 01.53.90.15.00 (urgence campus)\n\nPréservatifs gratuits disponibles à l'infirmerie.",
+          "tags": ["santé", "médecin", "infirmière", "infirmerie", "soins"],
+          "frequence": "élevée",
+          "documents_associes": ["guide_etudiant_esic.md", "annuaire_contacts.json"]
+        },
+        {
+          "id": "SVC010",
+          "question": "Y a-t-il un psychologue sur le campus ?",
+          "reponse": "Oui, une psychologue est disponible pour accompagner les étudiants :\n\n**Psychologue :**\n- Sophie MARTIN\n- Bureau D102\n- Horaires : Mardi et Jeudi 10h-18h\n- **Sur rendez-vous :** sante@esic.fr ou 01.53.90.15.40\n\n**Consultations :**\n- Gratuites et confidentielles\n- Durée : 45 minutes\n- Motifs : difficultés académiques, stress, anxiété, problèmes personnels, adaptation\n\n**Autres ressources :**\n- Fil Santé Jeunes : 0 800 235 236 (gratuit, anonyme, 7j/7, 9h-23h)\n- Nightline (écoute étudiante) : nightline.fr, 21h-2h30\n- En cas d'urgence : SAMU (15) ou SOS Amitié (09 72 39 40 50)\n\nN'hésitez pas à consulter, c'est confidentiel et bienveillant.",
+          "tags": ["psychologue", "santé mentale", "soutien psychologique", "écoute"],
+          "frequence": "moyenne",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        },
+        {
+          "id": "SVC011",
+          "question": "Comment accéder aux ressources numériques de la bibliothèque ?",
+          "reponse": "La bibliothèque donne accès à de nombreuses ressources numériques :\n\n**Bases de données académiques :**\n- IEEE Xplore (informatique, électronique)\n- ACM Digital Library (computer science)\n- SpringerLink (sciences et technologies)\n- ScienceDirect (multidisciplinaire)\n\n**Plateformes e-learning :**\n- O'Reilly Learning (40 000+ ebooks tech)\n- Scholarvox (ebooks académiques)\n- Cairn (sciences humaines et sociales)\n\n**Presse :**\n- Europresse (journaux français et internationaux)\n- Factiva (presse économique)\n\n**Accès :**\n1. Depuis le campus : accès direct via WiFi\n2. Depuis chez vous : Connexion VPN ESIC obligatoire\n3. Identifiants : vos login/password ENT\n\n**VPN ESIC :** Guide d'installation sur ent.esic.fr > 'Services IT' > 'VPN'",
+          "tags": ["bibliothèque", "ressources numériques", "bases données", "ebooks"],
+          "frequence": "moyenne",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        },
+        {
+          "id": "SVC012",
+          "question": "Y a-t-il des casiers disponibles pour les étudiants ?",
+          "reponse": "Oui, des casiers sont disponibles pour ranger vos affaires :\n\n**Localisation :**\n- Bâtiment B (couloirs, rez-de-chaussée et 1er étage)\n- Bâtiment C (près des salles informatiques)\n- Total : 300 casiers disponibles\n\n**Attribution :**\n- Demande via l'ENT ('Services' > 'Casier')\n- Attribution par ordre d'arrivée (liste d'attente si complet)\n- Durée : 1 année scolaire\n- Gratuit\n\n**Fonctionnement :**\n- Casier avec cadenas (fourni par l'école)\n- Code personnel à définir\n- Libération obligatoire en fin d'année\n\n**Important :** Ne laissez pas d'objets de valeur. L'école décline toute responsabilité en cas de vol.",
+          "tags": ["casier", "rangement", "stockage"],
+          "frequence": "moyenne",
+          "documents_associes": []
+        },
+        {
+          "id": "SVC013",
+          "question": "Où puis-je réchauffer mon repas ?",
+          "reponse": "Plusieurs espaces sont équipés de micro-ondes :\n\n**Cafétéria (Bâtiment D, RDC) :**\n- 4 micro-ondes en libre accès\n- Tables et chaises\n- Accès 8h-18h\n\n**Espaces détente :**\n- Bâtiment B (1er étage) : 2 micro-ondes\n- Bâtiment C (près de l'open space) : 1 micro-onde\n\n**Distributeurs automatiques :**\n- Disponibles 24h/7j dans les bâtiments B, C et D\n- Snacks, boissons chaudes et froides\n- Paiement : CB sans contact ou carte IZLY\n\n**Réfrigérateurs :** Non disponibles (hygiène). Prévoyez un sac isotherme si besoin.\n\n**Règles :** Nettoyez après utilisation, temps max 3 minutes par personne si attente",
+          "tags": ["micro-ondes", "repas", "déjeuner", "cafétéria"],
+          "frequence": "élevée",
+          "documents_associes": []
+        },
+        {
+          "id": "SVC014",
+          "question": "Y a-t-il un parking sur le campus ?",
+          "reponse": "Oui, un parking est disponible :\n\n**Parking étudiants :**\n- 200 places\n- Gratuit\n- Inscription obligatoire via l'ENT avec immatriculation du véhicule\n- Badge d'accès (carte étudiante)\n- Disponibilité : premier arrivé, premier servi\n- Gardienné du lundi au vendredi 7h30-21h\n\n**Parking visiteurs :**\n- 50 places\n- Payant : 3€/heure\n- Accès libre (borne automatique)\n\n**Alternatives :**\n- Vélib' : 2 stations à 50m et 150m du campus\n- Parking vélos : 100 places couvertes et sécurisées (accès gratuit avec badge)\n- Trottinettes : Zones de stationnement dédiées\n\n**Transports en commun recommandés :** Métro République (L3) ou Voltaire (L9)",
+          "tags": ["parking", "voiture", "stationnement", "vélo"],
+          "frequence": "élevée",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        },
+        {
+          "id": "SVC015",
+          "question": "Comment contacter le service informatique en cas de problème technique ?",
+          "reponse": "Le helpdesk IT est là pour vous aider :\n\n**Contact :**\n- Email : support-it@esic.fr\n- Téléphone : 01.53.90.15.99\n- Bureau : C104 (Bâtiment Informatique)\n- Horaires : Lun-Ven 9h-12h / 14h-17h\n\n**Chat en ligne :**\n- Via l'ENT : 'Support' > 'Chat IT'\n- Disponible 9h-18h\n- Réponse en temps réel\n\n**Types de problèmes traités :**\n- Connexion ENT/WiFi\n- Configuration email @esic.fr\n- Problèmes VPN\n- Accès aux ressources numériques\n- Installation logiciels\n- Problèmes imprimantes\n\n**Délai de réponse :**\n- Incident bloquant : 48h\n- Demande standard : 1 semaine\n\n**Ticket :** Créé automatiquement pour chaque demande, suivi via l'ENT",
+          "tags": ["IT", "helpdesk", "support", "informatique", "problème technique"],
+          "frequence": "élevée",
+          "documents_associes": ["guide_etudiant_esic.md", "annuaire_contacts.json"]
+        },
+        {
+          "id": "SVC016",
+          "question": "Y a-t-il une aide pour trouver un logement ?",
+          "reponse": "Oui, le service social vous aide dans votre recherche de logement :\n\n**Accompagnement :**\n- Isabelle DUBOIS, assistante sociale\n- Bureau A105\n- Horaires : Lundi et Mercredi 14h-18h\n- Contact : social@esic.fr ou 01.53.90.15.42\n\n**Services proposés :**\n- Informations sur les résidences CROUS\n- Liste de résidences étudiantes privées partenaires\n- Aide au dossier CAF (APL, ALS)\n- Conseils sur les garanties (Visale, garant)\n- Médiation locative si conflit\n\n**Ressources :**\n- CROUS de Paris : www.crous-paris.fr\n- Visale (garant gratuit) : www.visale.fr\n- Lokaviz : trouver-un-logement.lescrous.fr\n\n**Partenaires :** Plusieurs résidences étudiantes à proximité du campus offrent des tarifs préférentiels",
+          "tags": ["logement", "hébergement", "résidence", "CROUS", "aide sociale"],
+          "frequence": "élevée",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        },
+        {
+          "id": "SVC017",
+          "question": "Puis-je organiser un événement sur le campus ?",
+          "reponse": "Oui, les étudiants peuvent organiser des événements sur le campus :\n\n**Types d'événements acceptés :**\n- Conférences techniques\n- Ateliers (coding, design, etc.)\n- Événements associatifs\n- Tournois sportifs\n- Projections, concerts (sous conditions)\n\n**Procédure d'autorisation :**\n1. Demande écrite au Bureau de la Vie Étudiante (bve@esic.fr) minimum 3 semaines avant\n2. Précisez : date, lieu souhaité, description, nombre participants, budget\n3. Commission BVE examine la demande\n4. Si accepté : réservation salles + accompagnement logistique\n\n**Soutien disponible :**\n- Aide financière possible (jusqu'à 500€ selon projet)\n- Prêt de matériel (sono, vidéoprojecteur)\n- Communication (réseaux sociaux de l'école)\n\nContact : Laura GARCIA, bve@esic.fr ou 01.53.90.15.50",
+          "tags": ["événement", "organisation", "BVE", "association"],
+          "frequence": "moyenne",
+          "documents_associes": []
+        },
+        {
+          "id": "SVC018",
+          "question": "Y a-t-il un service de photocopies ?",
+          "reponse": "Oui, le service photocopies est intégré au service impression :\n\n**Localisation :** Bibliothèque (Bât D, 1er étage)\n\n**Matériel disponible :**\n- 3 photocopieurs multifonctions (copie, scan, impression)\n- Recto-verso automatique\n- N&B et couleur\n\n**Tarifs :**\n- 200 pages N&B gratuites par semaine (quota)\n- Au-delà : 0,05€/page N&B, 0,20€/page couleur\n- Scan : gratuit et illimité\n\n**Utilisation :**\n1. Badgez avec votre carte étudiante\n2. Placez vos documents\n3. Sélectionnez options (N&B/couleur, recto/recto-verso)\n4. Lancez\n\n**Recharge crédit :** Via l'ENT ('Services' > 'Impressions') ou bornes sur place\n\n**Horaires :** Horaires d'ouverture de la bibliothèque",
+          "tags": ["photocopie", "copie", "impression", "scan"],
+          "frequence": "élevée",
+          "documents_associes": []
+        },
+        {
+          "id": "SVC019",
+          "question": "Comment rejoindre ou créer une association étudiante ?",
+          "reponse": "Les associations étudiantes dynamisent la vie du campus :\n\n**Associations existantes :**\n- BDE (Bureau des Étudiants) - Événements fédérateurs\n- BDS (Bureau des Sports) - Activités sportives\n- DevCampus - Club développeurs\n- ESICyber - Cybersécurité\n- ESIC Entrepreneurship - Startups\n- ESIC Green - Développement durable\n- + 9 autres associations\n\n**Rejoindre une asso :**\n- Forum des associations : 10 septembre 2024\n- Contactez directement les présidents (contacts sur l'ENT)\n- Cotisation annuelle : 5-20€ selon l'asso\n\n**Créer une association :**\n1. Minimum 5 membres fondateurs\n2. Dossier de création au BVE (bve@esic.fr)\n3. Présentation du projet devant la commission\n4. Si validé : reconnaissance officielle + subvention de démarrage possible\n\nContact BVE : Laura GARCIA, 01.53.90.15.50",
+          "tags": ["association", "BDE", "BDS", "vie étudiante"],
+          "frequence": "élevée",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        },
+        {
+          "id": "SVC020",
+          "question": "Y a-t-il un service de navette entre les campus ?",
+          "reponse": "L'ESIC dispose d'un campus unique situé au 42 Avenue de la République, 75011 Paris. Il n'y a donc pas de service de navette.\n\n**Accès au campus :**\n- Métro : Ligne 3 (République), Ligne 9 (Voltaire)\n- Bus : Lignes 20, 56, 65, 69\n- Vélib' : Stations 11023 (50m) et 11045 (150m)\n- Voiture : Parking 200 places (gratuit sur inscription)\n\n**Proximité :** Tout est sur un seul site, vous pouvez circuler à pied entre tous les bâtiments en moins de 5 minutes.\n\n**Accessibilité PMR :** Tous les bâtiments sont accessibles aux personnes à mobilité réduite.",
+          "tags": ["navette", "transport", "accès", "campus"],
+          "frequence": "faible",
+          "documents_associes": []
+        },
+        {
+          "id": "SVC021",
+          "question": "Où puis-je recharger mon ordinateur portable sur le campus ?",
+          "reponse": "Des prises électriques sont disponibles dans de nombreux espaces :\n\n**Bibliothèque :**\n- Toutes les tables individuelles sont équipées de prises\n- Salles de groupe également équipées\n\n**Salles informatiques (C001-C004) :**\n- Prises disponibles sur tous les postes\n- Accès libre quand pas de cours\n\n**Espaces détente et couloirs :**\n- Bâtiment B et C : prises murales tous les 5 mètres\n- Espaces canapés avec prises intégrées\n\n**Cafétéria :**\n- Tables équipées de prises\n\n**Salles de cours :**\n- La plupart des salles ont des prises accessibles\n\n**Conseil :** Vérifiez toujours que votre appareil est bien branché et ne laissez jamais vos affaires sans surveillance",
+          "tags": ["recharge", "prise électrique", "ordinateur", "batterie"],
+          "frequence": "moyenne",
+          "documents_associes": []
+        },
+        {
+          "id": "SVC022",
+          "question": "Y a-t-il un distributeur de billets (DAB) sur le campus ?",
+          "reponse": "Non, il n'y a pas de distributeur automatique de billets directement sur le campus.\n\n**DAB les plus proches :**\n- Crédit Agricole : 38 Avenue de la République (100m)\n- BNP Paribas : Place de la République (250m)\n- Société Générale : 45 Boulevard Voltaire (300m)\n\n**Paiement sur le campus :**\n- Restaurant U et cafétéria : CB, espèces, carte IZLY\n- Bibliothèque (impressions) : Carte étudiante (rechargeable en ligne)\n- Distributeurs automatiques : CB sans contact\n\n**Conseil :** La plupart des paiements peuvent se faire par carte bancaire. Privilégiez la carte IZLY pour le restaurant U.",
+          "tags": ["distributeur", "DAB", "argent", "banque"],
+          "frequence": "faible",
+          "documents_associes": []
+        },
+        {
+          "id": "SVC023",
+          "question": "Puis-je accéder au campus le week-end ?",
+          "reponse": "Oui, le campus est partiellement ouvert le samedi :\n\n**Samedi :**\n- Campus ouvert : 8h-18h\n- Bibliothèque : 9h-17h\n- Salle de musculation : 10h-13h\n- Terrains sportifs extérieurs : 8h-18h\n- Espaces de travail (salles groupe) : Sur réservation ENT\n- Cafétéria : Fermée (distributeurs disponibles)\n- Restaurant U : Fermé\n\n**Dimanche et jours fériés :**\n- Campus fermé (sauf événements exceptionnels)\n\n**Accès :** Votre carte étudiante vous permet d'entrer même quand l'accueil est fermé\n\n**Événements :** Certains week-ends, des événements peuvent être organisés (hackathons, conférences, forums)",
+          "tags": ["week-end", "samedi", "dimanche", "accès", "ouverture"],
+          "frequence": "moyenne",
+          "documents_associes": []
+        },
+        {
+          "id": "SVC024",
+          "question": "Y a-t-il une aide pour les étudiants en situation de handicap ?",
+          "reponse": "Oui, l'ESIC accompagne les étudiants en situation de handicap :\n\n**Référent handicap :**\n- Isabelle DUBOIS (assistante sociale)\n- Bureau A105\n- Contact : social@esic.fr ou 01.53.90.15.42\n- Horaires : Lundi et Mercredi 14h-18h\n\n**Aménagements possibles :**\n- Tiers-temps aux examens\n- Assistance technique (logiciels adaptés)\n- Aménagement de l'emploi du temps\n- Adaptation des supports de cours\n- Accessibilité physique (ascenseurs, rampes)\n\n**Procédure :**\n1. Contactez le référent handicap dès votre inscription\n2. Fournissez certificat MDPH ou médical\n3. Entretien pour définir les besoins\n4. Mise en place des aménagements\n\n**Important :** Signalez votre situation au plus tôt pour bénéficier des aménagements dès la rentrée",
+          "tags": ["handicap", "aménagement", "MDPH", "accessibilité", "aide"],
+          "frequence": "faible",
+          "documents_associes": ["reglement_interieur.md"]
+        },
+        {
+          "id": "SVC025",
+          "question": "Comment obtenir une carte de réduction transport (Imagine R) ?",
+          "reponse": "La carte **Imagine R** offre des transports illimités en Île-de-France pour les étudiants :\n\n**Tarif 2024-2025 :**\n- Forfait annuel : 350€\n- Ou mensuel : 37,50€/mois\n- Boursiers : tarif réduit 165,60€/an\n\n**Commande :**\n1. Sur le site imaginer.fr\n2. Créez votre compte\n3. Sélectionnez 'Étudiant'\n4. Fournissez votre certificat de scolarité ESIC (téléchargeable sur l'ENT)\n5. Photo d'identité\n6. Paiement en ligne\n7. Réception à domicile sous 10 jours\n\n**Avantages :**\n- Zones 1-5 illimitées (métro, RER, bus, tram, Transilien)\n- Valable du 1er septembre au 31 août\n- Acceptée sur les Vélib'\n\n**Aide :** Le service social peut vous aider : social@esic.fr",
+          "tags": ["Imagine R", "transport", "navigo", "RATP", "carte"],
+          "frequence": "élevée",
+          "documents_associes": []
+        },
+        {
+          "id": "SVC026",
+          "question": "Y a-t-il une boutique ou une librairie sur le campus ?",
+          "reponse": "Il n'y a pas de librairie physique sur le campus.\n\n**Pour vos besoins académiques :**\n\n**Livres :**\n- Bibliothèque ESIC : 25 000 ouvrages disponibles\n- O'Reilly Learning : 40 000+ ebooks tech (accès gratuit via ENT)\n- Scholarvox : Ebooks académiques (accès gratuit)\n\n**Fournitures :**\n- Petite papeterie disponible à l'accueil (stylos, cahiers)\n- Distributeur automatique : fournitures de base\n- Librairies à proximité : Gibert Joseph République (5 min à pied)\n\n**Merchandising ESIC :**\n- Boutique en ligne : boutique.esic.fr\n- Sweat, t-shirt, gourde, sac aux couleurs de l'école\n- Vente physique lors d'événements (forum des assos, journée d'intégration)\n\nLa plupart des supports de cours sont fournis par les enseignants via l'ENT.",
+          "tags": ["librairie", "boutique", "livres", "fournitures"],
+          "frequence": "faible",
+          "documents_associes": []
+        },
+        {
+          "id": "SVC027",
+          "question": "Comment signaler un objet trouvé ou perdu ?",
+          "reponse": "Un service Objets Trouvés est géré par l'accueil :\n\n**Objet trouvé :**\n1. Déposez-le à l'accueil (Bâtiment A, RDC)\n2. L'objet est enregistré et conservé 3 mois\n3. Affichage sur le tableau d'annonces + publication sur l'ENT\n\n**Objet perdu :**\n1. Vérifiez sur l'ENT : 'Services' > 'Objets trouvés'\n2. Consultez l'affichage à l'accueil\n3. Si non présent : Signalez la perte à accueil@esic.fr avec description précise\n4. Vous serez contacté si l'objet est retrouvé\n\n**Objets fréquemment trouvés :**\n- Clés, badges, cartes\n- Vêtements\n- Livres, cahiers\n- Chargeurs, écouteurs\n- Gourdes, tupperware\n\n**Important :** Pour les objets de valeur (téléphone, ordinateur, portefeuille), contactez immédiatement l'accueil",
+          "tags": ["objets trouvés", "perte", "found"],
+          "frequence": "moyenne",
+          "documents_associes": []
+        },
+        {
+          "id": "SVC028",
+          "question": "Y a-t-il une connexion VPN pour accéder aux ressources depuis chez moi ?",
+          "reponse": "Oui, le **VPN ESIC** vous permet d'accéder aux ressources internes depuis n'importe où :\n\n**Utilité du VPN :**\n- Accès aux bases de données académiques (IEEE, ACM, SpringerLink)\n- Accès aux licences logicielles (MATLAB, certains IDE)\n- Connexion sécurisée aux serveurs de l'école\n- Accès aux cours en streaming réservés\n\n**Installation :**\n1. Connectez-vous à l'ENT\n2. 'Services IT' > 'VPN ESIC'\n3. Téléchargez le client selon votre OS (Windows/Mac/Linux)\n4. Installez le client\n5. Connectez-vous avec vos identifiants ENT\n\n**Compatible :** Windows 10/11, macOS, Linux, iOS, Android\n\n**Support :** Guide d'installation détaillé sur l'ENT. En cas de problème : support-it@esic.fr\n\n**Important :** Le VPN est obligatoire pour accéder aux ressources numériques depuis l'extérieur",
+          "tags": ["VPN", "accès distant", "connexion", "ressources"],
+          "frequence": "élevée",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        },
+        {
+          "id": "SVC029",
+          "question": "Puis-je utiliser les installations le soir ou pendant les vacances ?",
+          "reponse": "Les horaires d'accès varient selon les installations et les périodes :\n\n**En période de cours (soir) :**\n- Campus : Ouvert jusqu'à 21h\n- Bibliothèque : Jusqu'à 20h (24h/24 pendant les examens)\n- Salles informatiques : Jusqu'à 20h\n- Salle de sport : Jusqu'à 20h (créneaux 18h-20h)\n- Espaces de travail : Jusqu'à 21h\n\n**Pendant les vacances :**\n- Campus : 9h-17h du lundi au vendredi\n- Bibliothèque : 9h-17h\n- Salle de sport : Fermée\n- Cafétéria : Fermée (distributeurs disponibles)\n- Salles informatiques : Accès limité\n\n**Examens (janvier/mai-juin) :**\n- Bibliothèque : 24h/24, 7j/7\n- Espaces de travail : Horaires étendus\n\n**Accès :** Votre carte étudiante permet l'accès automatique aux horaires autorisés",
+          "tags": ["horaires", "soir", "vacances", "accès", "ouverture"],
+          "frequence": "moyenne",
+          "documents_associes": []
+        },
+        {
+          "id": "SVC030",
+          "question": "Y a-t-il un service de restauration pour les personnes ayant des régimes spéciaux ?",
+          "reponse": "Oui, le restaurant universitaire propose des options pour différents régimes :\n\n**Options quotidiennes :**\n- Menu végétarien : Tous les jours\n- Sans porc : Systématiquement disponible\n- Menu du jour classique\n\n**Régimes spéciaux (sur demande 48h avant) :**\n- Sans gluten\n- Sans lactose\n- Végétalien/vegan\n- Allergies alimentaires spécifiques\n\n**Procédure :**\n1. Signalez votre régime alimentaire à restauration@esic.fr\n2. Pour un repas ponctuel : demande 48h avant\n3. Pour un régime permanent : certificat médical pour les allergies\n4. Réservation via l'app ESIC Campus en précisant 'régime spécial'\n\n**Allergènes :** Toujours affichés sur les plats (gluten, lactose, fruits à coque, etc.)\n\n**Alternative :** La cafétéria propose également des options végétariennes et sans allergènes courants.",
+          "tags": ["restauration", "régime alimentaire", "végétarien", "allergie", "sans gluten"],
+          "frequence": "moyenne",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        }
+      ]
+    },
+    {
+      "id": "reglement_vie_etudiante",
+      "nom": "Règlement & Vie Étudiante",
+      "pourcentage": "15%",
+      "nombre_questions": 23,
+      "questions": [
+        {
+          "id": "REG001",
+          "question": "Ai-je le droit de fumer sur le campus ?",
+          "reponse": "Non, **le campus est entièrement non-fumeur** (cigarettes, cigarettes électroniques, tabac) :\n\n**Interdiction :**\n- Tous les bâtiments (y compris espaces extérieurs couverts)\n- Espaces extérieurs du campus\n- Abords immédiats des entrées\n\n**Zone fumeurs :**\n- 1 zone dédiée à l'extérieur de l'enceinte du campus (rue, sortie principale)\n- Cendriers mis à disposition\n\n**Sanctions :**\n- 1ère infraction : Avertissement\n- 2ème infraction : Amende 68€ (code de la santé publique)\n- Infractions répétées : Sanctions disciplinaires\n\nCette règle vise à protéger la santé de tous et respecte la législation française.",
+          "tags": ["fumer", "tabac", "cigarette", "règlement", "interdiction"],
+          "frequence": "moyenne",
+          "documents_associes": ["reglement_interieur.md"]
+        },
+        {
+          "id": "REG002",
+          "question": "Puis-je amener mon animal de compagnie sur le campus ?",
+          "reponse": "Non, les animaux de compagnie ne sont **pas autorisés** sur le campus, sauf exception :\n\n**Interdiction générale :**\n- Chiens, chats et autres animaux interdits dans tous les bâtiments\n- Interdits également dans les espaces extérieurs du campus\n\n**Exceptions :**\n- **Chiens d'assistance/guides d'aveugle** : Autorisés partout avec justificatif officiel\n- Dérogation possible pour projets pédagogiques spécifiques (avec autorisation préalable)\n\n**Motifs :**\n- Hygiène et sécurité\n- Allergies de certains étudiants/personnel\n- Respect de la réglementation des ERP (Établissements Recevant du Public)\n\n**Question :** Pour toute situation particulière, contactez direction@esic.fr",
+          "tags": ["animaux", "chien", "chat", "règlement", "interdiction"],
+          "frequence": "faible",
+          "documents_associes": ["reglement_interieur.md"]
+        },
+        {
+          "id": "REG003",
+          "question": "Quelles sont les règles concernant l'alcool sur le campus ?",
+          "reponse": "La consommation d'alcool est **strictement interdite** sur le campus :\n\n**Interdictions :**\n- Consommation d'alcool dans tous les bâtiments\n- Consommation dans les espaces extérieurs du campus\n- Introduction de boissons alcoolisées\n- État d'ébriété sur le campus\n\n**Exceptions :**\n- Événements officiels autorisés par la Direction (gala, cérémonies)\n- Consommation contrôlée et encadrée\n\n**Sanctions :**\n- Avertissement pour 1ère infraction\n- Exclusion temporaire (3-7 jours) en cas de récidive\n- Exclusion définitive en cas d'infractions graves ou répétées\n\n**Événements étudiants :** Les soirées BDE se déroulent à l'extérieur du campus dans des lieux appropriés.\n\nCette règle vise à garantir un environnement d'études sûr et serein.",
+          "tags": ["alcool", "règlement", "interdiction", "soirée"],
+          "frequence": "moyenne",
+          "documents_associes": ["reglement_interieur.md"]
+        },
+        {
+          "id": "REG004",
+          "question": "Quelle est la politique de l'école concernant le plagiat ?",
+          "reponse": "Le **plagiat est une faute grave** passible de sanctions sévères :\n\n**Définition du plagiat :**\n- Copier le travail d'autrui (texte, code, images) sans citation\n- Paraphraser sans mentionner la source\n- Réutiliser son propre travail antérieur (auto-plagiat)\n- Utiliser l'IA (ChatGPT, etc.) sans le mentionner\n\n**Détection :**\n- Tous les travaux sont passés au logiciel anti-plagiat (Compilatio)\n- Vérification du code source pour les projets informatiques\n- Entretiens oraux si suspicion\n\n**Sanctions :**\n- Note de 0/20 pour le travail concerné (minimum)\n- Exclusion du cours ou du semestre\n- Exclusion définitive en cas de récidive\n- Mention au dossier universitaire\n\n**Prévention :** Des ateliers sont proposés en début d'année sur les règles de citation et la propriété intellectuelle.",
+          "tags": ["plagiat", "triche", "fraude", "règlement", "sanctions"],
+          "frequence": "élevée",
+          "documents_associes": ["reglement_interieur.md"]
+        },
+        {
+          "id": "REG005",
+          "question": "Puis-je porter ce que je veux sur le campus ?",
+          "reponse": "Oui, il n'y a **pas de code vestimentaire strict** à l'ESIC, mais quelques règles de bon sens :\n\n**Principes généraux :**\n- Tenue correcte et décente exigée\n- Respect des autres étudiants et du personnel\n- Pas de messages offensants, discriminatoires ou politiques sur les vêtements\n\n**Situations spécifiques :**\n- **Cours ordinaires** : Tenue libre (jean, basket, etc.)\n- **Soutenances, présentations, examens oraux** : Tenue professionnelle recommandée (pas obligatoire)\n- **Forums entreprises, événements professionnels** : Tenue professionnelle **obligatoire**\n- **Laboratoires** : Port de la blouse fournie par l'école\n- **Sport** : Tenue de sport obligatoire\n\n**Interdictions :**\n- Signes religieux ostentatoires (loi française)\n- Tenues compromettant la sécurité (en laboratoire)\n\nLe principe : \"restez vous-même tout en restant respectueux\"",
+          "tags": ["tenue", "vestimentaire", "habillement", "dress code"],
+          "frequence": "faible",
+          "documents_associes": ["reglement_interieur.md"]
+        },
+        {
+          "id": "REG006",
+          "question": "Y a-t-il des sanctions disciplinaires et lesquelles ?",
+          "reponse": "Le règlement intérieur prévoit une échelle de sanctions disciplinaires selon la gravité des fautes :\n\n**Fautes mineures** (absences, retards répétés, attitude perturbatrice) :\n1. Avertissement oral\n2. Avertissement écrit\n3. Blâme\n\n**Fautes graves** (fraude, violence verbale, dégradations) :\n1. Exclusion temporaire (3-8 jours)\n2. Exclusion de cours/matière\n3. Exclusion du semestre\n\n**Fautes très graves** (violence physique, harcèlement, trafic) :\n1. Exclusion définitive de l'établissement\n2. Poursuite judiciaire possible\n\n**Procédure disciplinaire :**\n- Convocation devant le Conseil de Discipline\n- Droit d'être assisté et de se défendre\n- Décision motivée sous 15 jours\n- Possibilité de recours (30 jours)\n\nLe règlement complet est accessible sur l'ENT.",
+          "tags": ["sanctions", "discipline", "règlement", "conseil de discipline"],
+          "frequence": "faible",
+          "documents_associes": ["reglement_interieur.md"]
+        },
+        {
+          "id": "REG007",
+          "question": "Quels sont mes droits en tant qu'étudiant ?",
+          "reponse": "En tant qu'étudiant de l'ESIC, vous bénéficiez de nombreux droits :\n\n**Droits académiques :**\n- Accès à un enseignement de qualité\n- Consultation de vos copies d'examen\n- Contestation de notes (procédure encadrée)\n- Accès aux ressources pédagogiques\n\n**Libertés fondamentales :**\n- Liberté d'expression (dans le respect d'autrui)\n- Liberté d'association\n- Droit de réunion\n- Représentation via les délégués\n\n**Protection :**\n- Confidentialité du dossier scolaire (RGPD)\n- Non-discrimination\n- Protection contre le harcèlement\n- Droit à la santé et au bien-être\n\n**Recours :**\n- Médiation en cas de conflit\n- Recours hiérarchique\n- Saisie du médiateur de l'établissement\n\nCes droits s'accompagnent de devoirs (assiduité, respect, intégrité).",
+          "tags": ["droits", "libertés", "étudiant", "règlement"],
+          "frequence": "faible",
+          "documents_associes": ["reglement_interieur.md"]
+        },
+        {
+          "id": "REG008",
+          "question": "Comment fonctionne la représentation étudiante ?",
+          "reponse": "Les étudiants sont représentés à plusieurs niveaux :\n\n**Délégués de classe :**\n- 2 par promotion (titulaire + suppléant)\n- Élus en début d'année\n- Rôle : Relayer les préoccupations, participer aux conseils de classe\n\n**Bureau de la Vie Étudiante (BVE) :**\n- Composé d'étudiants élus\n- Rôle : Animer la vie du campus, représenter les étudiants\n- Interlocuteur avec la direction\n\n**Conseil de Perfectionnement :**\n- Étudiants, enseignants, professionnels, direction\n- 2 réunions/an\n- Rôle : Évaluer et améliorer les formations\n\n**Commission Qualité de Vie :**\n- Étudiants + administration\n- Rôle : Améliorer services et infrastructures\n\n**Élections :** Septembre/octobre chaque année. Tous les étudiants peuvent se présenter ou voter.",
+          "tags": ["représentation", "délégué", "BVE", "élections", "conseil"],
+          "frequence": "faible",
+          "documents_associes": []
+        },
+        {
+          "id": "REG009",
+          "question": "Que faire en cas de harcèlement ou de discrimination ?",
+          "reponse": "L'ESIC applique une **tolérance zéro** contre le harcèlement et la discrimination :\n\n**Types de comportements prohibés :**\n- Harcèlement moral ou sexuel\n- Discrimination (origine, genre, orientation sexuelle, religion, handicap)\n- Violences verbales ou physiques\n- Cyberharcèlement\n\n**Que faire si vous êtes victime ou témoin :**\n1. **En urgence :** Contactez la cellule d'écoute : ecoute@esic.fr (confidentiel 24h/7j)\n2. **Référent harcèlement :** Rendez-vous confidentiel\n3. **Signalement formel :** direction@esic.fr\n\n**Procédure :**\n- Enquête diligentée immédiatement\n- Mesures conservatoires si nécessaire\n- Sanctions disciplinaires sévères pour l'auteur\n- Accompagnement psychologique de la victime\n- Poursuite judiciaire possible\n\n**Externe :** Police (17), Numéro contre les discriminations (3928)",
+          "tags": ["harcèlement", "discrimination", "violence", "aide", "signalement"],
+          "frequence": "faible",
+          "documents_associes": ["reglement_interieur.md"]
+        },
+        {
+          "id": "REG010",
+          "question": "Puis-je travailler en parallèle de mes études ?",
+          "reponse": "Oui, vous pouvez exercer une activité professionnelle en parallèle, mais avec modération :\n\n**Recommandations :**\n- Maximum 15-20h/semaine pour réussir vos études\n- Privilégiez les jobs étudiants compatibles (soirs, week-ends)\n- L'alternance est une option si vous voulez travailler plus\n\n**Jobs étudiants courants :**\n- Cours particuliers, baby-sitting\n- Restauration, commerce (soirs, week-ends)\n- Freelance informatique (selon compétences)\n- Jobs sur le campus (bibliothèque, tutorat)\n\n**Aide à la recherche :**\n- Service carrières : carrieres@esic.fr\n- Offres sur l'ENT ('Carrières' > 'Jobs étudiants')\n- Partenariats avec entreprises locales\n\n**Important :**\n- Pas d'aménagement d'emploi du temps automatique\n- L'assiduité reste obligatoire\n- Le travail ne justifie pas les absences\n\n**Alternative :** L'alternance (B3/Master) vous permet d'être rémunéré tout en étudiant",
+          "tags": ["job étudiant", "travail", "emploi", "salaire"],
+          "frequence": "élevée",
+          "documents_associes": []
+        },
+        {
+          "id": "REG011",
+          "question": "Comment protège-t-on mes données personnelles (RGPD) ?",
+          "reponse": "L'ESIC respecte strictement le **RGPD** (Règlement Général sur la Protection des Données) :\n\n**Données collectées :**\n- Identité, coordonnées, scolarité\n- Notes, absences, sanctions éventuelles\n- Photos (événements, carte étudiante)\n\n**Utilisation :**\n- Uniquement pour la gestion de votre scolarité\n- Communication institutionnelle\n- Statistiques anonymisées\n\n**Vos droits :**\n- Accès à vos données\n- Rectification d'erreurs\n- Suppression (après départ de l'école)\n- Portabilité\n- Opposition au traitement\n\n**Protection :**\n- Données hébergées en France (serveurs sécurisés)\n- Accès limité au personnel habilité\n- Pas de vente ou cession à des tiers\n- Conservation limitée (archivage après 5 ans)\n\n**Contact DPO** (Délégué à la Protection des Données) : dpo@esic.fr",
+          "tags": ["RGPD", "données personnelles", "confidentialité", "vie privée"],
+          "frequence": "faible",
+          "documents_associes": ["reglement_interieur.md"]
+        },
+        {
+          "id": "REG012",
+          "question": "Puis-je filmer ou photographier sur le campus ?",
+          "reponse": "Oui, mais avec des règles strictes concernant le respect de la vie privée :\n\n**Espaces publics du campus :**\n- Photos/vidéos autorisées pour usage personnel\n- Si d'autres personnes apparaissent : floutage obligatoire ou accord préalable\n\n**En cours :**\n- Interdiction sans accord de l'enseignant\n- Si autorisé : usage personnel uniquement (pas de diffusion)\n\n**Événements :**\n- Photographes officiels lors des événements ESIC\n- Si vous photographiez : demandez l'accord des personnes identifiables\n\n**Diffusion sur réseaux sociaux :**\n- Accord obligatoire des personnes reconnaissables\n- Taguez @ESIC_Official pour les événements officiels\n- Respect du droit à l'image\n\n**Projets pédagogiques :**\n- Formulaires de droit à l'image à faire signer (disponibles au BVE)\n\n**Sanctions :** Le non-respect du droit à l'image peut entraîner des poursuites judiciaires",
+          "tags": ["photo", "vidéo", "droit à l'image", "vie privée", "réseaux sociaux"],
+          "frequence": "moyenne",
+          "documents_associes": ["reglement_interieur.md"]
+        },
+        {
+          "id": "REG013",
+          "question": "Comment rejoindre le Bureau Des Étudiants (BDE) ?",
+          "reponse": "Le **BDE** (Bureau Des Étudiants) est l'association qui anime la vie du campus :\n\n**Rôle du BDE :**\n- Organisation des soirées, du gala de fin d'année\n- Journée d'intégration\n- Week-ends d'intégration et de cohésion\n- Partenariats étudiants (réductions)\n\n**Devenir membre :**\n- Adhésion : 10€/an\n- Avantages : Réductions sur événements, goodies, vote aux AG\n- Inscription lors du Forum des Assos (septembre) ou sur bde@esic.fr\n\n**Candidater au bureau (liste BDE) :**\n- Constituer une liste de 8-12 personnes\n- Campagne électorale (mars)\n- Élections (avril)\n- Mandat : 1 an (avril N à avril N+1)\n\n**S'impliquer sans être élu :**\n- Bénévole sur les événements\n- Membre d'une commission (événements, partenariats, communication)\n\nContact : Thomas LAURENT, président BDE 2024-2025, bde@esic.fr",
+          "tags": ["BDE", "association", "vie étudiante", "adhésion", "élections"],
+          "frequence": "élevée",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        },
+        {
+          "id": "REG014",
+          "question": "Y a-t-il des bourses ou aides spécifiques de l'école ?",
+          "reponse": "Oui, l'ESIC propose plusieurs aides financières en complément des bourses CROUS :\n\n**Aide d'urgence :**\n- Jusqu'à 1 000€ pour difficultés soudaines\n- Procédure via l'assistante sociale\n- Décision sous 15 jours\n\n**Bourses au mérite :**\n- Pour étudiants avec excellents résultats (moyenne >16/20)\n- 500-2 000€ selon le niveau\n- Attribution automatique après délibération\n\n**Aide à la mobilité internationale :**\n- Complément aux bourses Erasmus\n- 500-1 500€ selon destination et durée\n\n**Prêt étudiant bonifié :**\n- Partenariat avec banques\n- Taux préférentiel\n- Différé de remboursement\n\n**Exonération partielle de frais :**\n- Pour situations exceptionnelles (sur dossier)\n- Jusqu'à 30% de réduction\n\n**Contact :** Isabelle DUBOIS, social@esic.fr ou 01.53.90.15.42",
+          "tags": ["aide financière", "bourse", "aides", "financement"],
+          "frequence": "élevée",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        },
+        {
+          "id": "REG015",
+          "question": "Quels événements sont organisés pendant l'année ?",
+          "reponse": "De nombreux événements rythment l'année universitaire :\n\n**Septembre :**\n- Rentrée (2 sept)\n- Journée d'intégration Bachelor 1 (3 sept)\n- Forum des associations (10 sept)\n- Week-end d'intégration BDE (fin sept)\n\n**Octobre-Novembre :**\n- Forum entreprises Stages/Alternance (15 oct)\n- Hackathon ESIC 48h (20-22 nov)\n- Tournoi de football inter-promos (nov)\n\n**Décembre :**\n- Soirée de Noël BDE (15 déc)\n\n**Janvier-Février :**\n- Examens S1\n- Week-end ski BDS (fév)\n\n**Mars-Avril :**\n- Forum entreprises Emploi (15 mars)\n- Tournoi de basket (mars)\n- Élections BDE (avril)\n- Gala Junior Entreprise (avril)\n\n**Mai-Juin :**\n- Olympiades sportives ESIC (mai)\n- Course ESIC 5/10km (dernier sam mai)\n- Gala de fin d'année (mi-juin)\n- Remise des diplômes (20 juin)\n\nProgramme complet sur l'ENT et bve@esic.fr",
+          "tags": ["événements", "calendrier", "gala", "vie étudiante", "BDE"],
+          "frequence": "élevée",
+          "documents_associes": ["emploi_du_temps.json"]
+        },
+        {
+          "id": "REG016",
+          "question": "Comment fonctionnent les équipes sportives de l'école ?",
+          "reponse": "L'ESIC propose plusieurs **équipes sportives** compétitives :\n\n**Sports proposés :**\n- Football Masculin et Féminin\n- Basketball mixte\n- Volleyball mixte\n- Running Club\n\n**Fonctionnement :**\n- Entraînements : 2 fois par semaine (soir 19h-21h)\n- Compétitions : Championnat universitaire parisien (FFSU)\n- Tournois inter-écoles\n- Encadrement par coach professionnel ou étudiant expérimenté\n\n**Inscription :**\n1. Forum du BDS (septembre) ou sports@esic.fr\n2. Certificat médical obligatoire (moins de 3 mois)\n3. Cotisation : 20€/an (licence + maillot)\n4. Essais libres les 2 premières semaines\n\n**Engagement :**\n- Assiduité aux entraînements\n- Disponibilité pour matchs (généralement samedi)\n- Esprit d'équipe\n\nContact : Julie MERCIER, présidente BDS, bds@esic.fr",
+          "tags": ["sport", "équipe sportive", "BDS", "compétition", "FFSU"],
+          "frequence": "moyenne",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        },
+        {
+          "id": "REG017",
+          "question": "Puis-je créer ma propre startup pendant mes études ?",
+          "reponse": "Oui, l'ESIC encourage fortement l'entrepreneuriat étudiant :\n\n**Accompagnement disponible :**\n- **ESIC Entrepreneurship** : Association d'aide aux porteurs de projet\n- Mentorat par des entrepreneurs\n- Ateliers Business Model, pitch, levée de fonds\n- Accès à un espace de coworking sur le campus\n\n**Statut Étudiant-Entrepreneur :**\n- Permet de garder le statut étudiant tout en créant son entreprise\n- Aménagements d'emploi du temps possibles\n- Substitution du stage par le projet entrepreneurial (sur validation)\n- Demande via Pépite (Pôle Étudiant Pour l'Innovation)\n\n**Incubateur partenaire :**\n- Accès à Station F (Paris)\n- Programme d'incubation de 6 mois\n\n**Concours :**\n- Concours ESIC Startup Challenge (prix : 5 000€)\n- Participation aux concours nationaux\n\nContact : Alexandre DURAND, entrepreneurship@esic.fr",
+          "tags": ["entrepreneuriat", "startup", "création entreprise", "projet"],
+          "frequence": "moyenne",
+          "documents_associes": []
+        },
+        {
+          "id": "REG018",
+          "question": "Comment fonctionne l'assurance scolaire ?",
+          "reponse": "L'assurance scolaire n'est **pas obligatoire** dans le supérieur, mais vivement recommandée :\n\n**Couvertures recommandées :**\n- **Responsabilité Civile (RC)** : Obligatoire pour les stages\n- **Individuelle Accident** : Couvre vos propres blessures\n- **Protection juridique** : En cas de litige\n\n**Options :**\n\n**1. Assurance proposée par l'école :**\n- Partenariat avec assureur\n- RC + Individuelle Accident + Protection juridique\n- Tarif : 25€/an\n- Souscription lors de l'inscription\n\n**2. Assurance personnelle :**\n- Vérifiez votre assurance habitation (RC souvent incluse)\n- Complétez si nécessaire\n- Fournissez une attestation au service scolarité\n\n**Pour les stages :**\n- RC obligatoire (mention sur la convention)\n- Attestation à joindre au dossier de stage\n\n**Sinistre :** Déclarez à votre assureur sous 5 jours. Pour l'assurance école : scolarite@esic.fr",
+          "tags": ["assurance", "responsabilité civile", "protection", "stage"],
+          "frequence": "moyenne",
+          "documents_associes": ["reglement_interieur.md"]
+        },
+        {
+          "id": "REG019",
+          "question": "Comment accéder au réseau des Alumni ?",
+          "reponse": "Le réseau **ESIC Alumni** compte plus de 15 000 diplômés dans le monde :\n\n**Accès au réseau :**\n- Automatique dès l'obtention de votre diplôme ESIC\n- Plateforme en ligne : alumni.esic.fr\n- Application mobile ESIC Alumni\n\n**Services :**\n- Annuaire des diplômés (recherche par promo, secteur, entreprise)\n- Offres d'emploi exclusives\n- Mentorat (un alumni parraine votre début de carrière)\n- Événements networking (4-6 par an)\n- Conférences métiers\n\n**En tant qu'étudiant :**\n- Accès anticipé à certains services\n- Participation aux événements alumni-étudiants\n- Demande de mentorat possible dès le Master 1\n\n**Cotisation alumni :**\n- Gratuite la première année après diplôme\n- Puis 50€/an (optionnel mais recommandé pour services premium)\n\nContact : alumni@esic.fr ou 01.53.90.15.35",
+          "tags": ["alumni", "réseau", "anciens élèves", "emploi", "networking"],
+          "frequence": "moyenne",
+          "documents_associes": ["reglement_interieur.md"]
+        },
+        {
+          "id": "REG020",
+          "question": "Quelles sont les règles en cas d'urgence ou d'évacuation ?",
+          "reponse": "Des procédures d'urgence sont en place pour votre sécurité :\n\n**En cas d'alerte incendie :**\n1. Évacuez immédiatement et calmement\n2. Suivez les panneaux « Sortie de secours » (éclairage vert)\n3. Ne prenez pas vos affaires\n4. N'utilisez pas les ascenseurs\n5. Rejoignez le point de rassemblement (parking principal)\n6. Ne rentrez pas avant autorisation\n\n**Numéros d'urgence :**\n- Urgence campus : 01.53.90.15.00 (24h/7j)\n- Sécurité campus : 01.53.90.15.01\n- SAMU : 15\n- Pompiers : 18\n- Police : 17\n- Urgence européenne : 112\n\n**Exercices d'évacuation :**\n- 2 fois par an (septembre et février)\n- Participation obligatoire\n\n**Gestes qui sauvent :**\n- Formations PSC1 proposées gratuitement (inscription via BVE)\n- Défibrillateurs accessibles dans chaque bâtiment\n\n**Plan d'urgence :** Affiché dans chaque salle et sur l'ENT",
+          "tags": ["urgence", "évacuation", "sécurité", "incendie", "secours"],
+          "frequence": "faible",
+          "documents_associes": ["reglement_interieur.md"]
+        },
+        {
+          "id": "REG021",
+          "question": "Comment obtenir une réduction étudiante ?",
+          "reponse": "Votre carte étudiante ESIC vous donne accès à de nombreuses réductions :\n\n**Culture :**\n- Cinémas : Tarif réduit 5-7€ (UGC, Gaumont, MK2, etc.)\n- Musées : Gratuit ou réduit (-18-25 ans dans musées nationaux)\n- Théâtres : Places à partir de 8€ (Théâtre de la Ville, Châtelet, etc.)\n- Concerts : Réductions via partenaires BDE\n\n**Shopping :**\n- Apple : -5% sur Mac, iPad (Apple Education)\n- Microsoft : Office 365 gratuit (via ENT)\n- Adobe : -65% Creative Cloud étudiante\n- Spotify Premium étudiant : 5,99€/mois\n\n**Alimentation :**\n- Partenariats BDE : -10-15% dans restaurants sélectionnés\n\n**Sport :**\n- Salles de sport : Réductions (voir partenariats BDS)\n- Arkose, MurMur (escalade) : -15-20%\n\n**Transports :**\n- SNCF : Carte Avantage Jeune (30€/an, -30% trajets)\n- Flixbus, BlaBlaCar : Réductions régulières\n\n**Liste complète :** Sur l'ENT > 'Vie étudiante' > 'Bons plans étudiants'",
+          "tags": ["réduction", "bon plan", "carte étudiante", "avantages"],
+          "frequence": "élevée",
+          "documents_associes": []
+        },
+        {
+          "id": "REG022",
+          "question": "Comment participer à des projets solidaires ou bénévoles ?",
+          "reponse": "L'ESIC encourage l'engagement citoyen et solidaire :\n\n**Sur le campus :**\n\n**ESIC Green (association développement durable) :**\n- Actions écologiques sur le campus\n- Sensibilisation étudiants\n- Contact : green@esic.fr\n\n**Tutorat étudiant :**\n- Aider les B1-B2 en difficulté\n- 2-4h/semaine, bénévole\n- Valorisé dans votre CV\n- Inscription : bve@esic.fr\n\n**Hors campus :**\n\n**Service Civique :**\n- Missions de 6-12 mois\n- Indemnité 600€/mois\n- Possible pendant césure ou après diplôme\n- Info : service-civique.gouv.fr\n\n**Associations partenaires :**\n- Restos du Cœur (maraudes)\n- Apprentis d'Auteuil (aide aux devoirs)\n- Croix-Rouge (secourisme)\n\n**Valorisation :**\n- Engagement bénévole comptabilisé (certificat)\n- Mentionnable sur CV et LinkedIn\n- Possible validation en ECTS selon projets\n\nContact BVE : Laura GARCIA, bve@esic.fr",
+          "tags": ["bénévolat", "solidaire", "engagement", "service civique", "association"],
+          "frequence": "faible",
+          "documents_associes": []
+        },
+        {
+          "id": "REG023",
+          "question": "Existe-t-il des cours de soutien ou du tutorat ?",
+          "reponse": "Oui, plusieurs dispositifs d'aide sont disponibles :\n\n**Tutorat étudiant (gratuit) :**\n- Étudiants de M1-M2 aident les B1-B2\n- Matières : Programmation, Maths, Anglais, Méthodologie\n- Séances de 1h30, 1-2 fois/semaine\n- Inscription : tutorat@esic.fr ou via ENT\n\n**Soutien institutionnel :**\n- Identifié automatiquement si moyenne <8/20 en contrôle continu\n- Convocation obligatoire à des séances de remise à niveau\n- Gratuit\n\n**Permanences enseignants :**\n- Horaires de bureau de chaque enseignant (voir annuaire)\n- N'hésitez pas à les solliciter\n\n**Ressources en ligne :**\n- Coursera, LinkedIn Learning : accès gratuit via ENT\n- Vidéos de cours enregistrés\n- Exercices corrigés sur l'ENT\n\n**Cours particuliers payants :**\n- Liste de tuteurs recommandés disponible au BVE\n- Tarifs étudiants : 15-25€/h selon niveau\n\n**Ateliers méthodologiques :**\n- Gestion du temps, prise de notes, préparation examens\n- Gratuits, organisés par le BVE (calendrier sur ENT)",
+          "tags": ["tutorat", "soutien", "aide", "cours particuliers", "méthodologie"],
+          "frequence": "élevée",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        }
+      ]
+    },
+    {
+      "id": "orientation_formation",
+      "nom": "Orientation & Formation",
+      "pourcentage": "10%",
+      "nombre_questions": 16,
+      "questions": [
+        {
+          "id": "ORI001",
+          "question": "Quelles sont les spécialisations disponibles en Bachelor 3 ?",
+          "reponse": "Le Bachelor 3 propose 5 spécialisations :\n\n**1. Développement & Ingénierie Logicielle**\n- Langages : Java, Python, JavaScript, Go\n- Frameworks : Spring, React, Angular\n- DevOps, microservices, cloud (AWS/Azure)\n- Débouchés : Développeur Full-Stack, DevOps Engineer, Architecte logiciel\n\n**2. Cybersécurité**\n- Ethical hacking, pentesting\n- Forensics, SIEM, réponse aux incidents\n- Certifications : CEH incluse\n- Débouchés : Analyste cybersécurité, Pentester, Consultant sécurité\n\n**3. Data Science & IA**\n- Machine Learning, Deep Learning\n- Big Data (Spark), visualisation\n- NLP, Computer Vision\n- Débouchés : Data Scientist, ML Engineer, Data Analyst\n\n**4. Digital Marketing**\n- SEO/SEA, social media, analytics\n- Growth hacking, e-commerce\n- Débouchés : Digital Marketer, Growth Hacker, Traffic Manager\n\n**5. Product Management**\n- Product vision, roadmapping\n- Agile scale, OKRs\n- Débouchés : Product Owner, Product Manager\n\n**Choix :** Avril-mai de B2, selon vœux et résultats",
+          "tags": ["spécialisation", "bachelor 3", "choix", "orientation"],
+          "frequence": "très élevée",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        },
+        {
+          "id": "ORI002",
+          "question": "Puis-je faire un double diplôme à l'étranger ?",
+          "reponse": "Oui, l'ESIC propose des **doubles diplômes internationaux** :\n\n**Universités partenaires :**\n- **Royaume-Uni :** University of Manchester (MSc Computer Science)\n- **Allemagne :** TU Munich (MSc Data Engineering)\n- **Espagne :** Universidad Carlos III de Madrid (MSc Cybersecurity)\n- **Canada :** Université de Montréal (MSc IA)\n\n**Déroulement :**\n- Master 1 à l'ESIC (France)\n- Master 2 à l'université partenaire\n- Obtention de 2 diplômes (ESIC + université étrangère)\n\n**Conditions d'admission :**\n- Moyenne ≥ 13/20 en Bachelor 3\n- Niveau d'anglais : B2 minimum (TOEFL/IELTS requis)\n- Lettre de motivation\n- Entretien avec le jury\n\n**Financement :**\n- Bourses Erasmus+ disponibles (EU)\n- Bourses de mobilité ESIC\n- Prêts bancaires bonifiés\n\n**Candidature :** Décembre-janvier de M1\n\nContact : Elena MARTINEZ, international@esic.fr ou 01.53.90.15.25",
+          "tags": ["double diplôme", "international", "étranger", "mobilité"],
+          "frequence": "élevée",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        },
+        {
+          "id": "ORI003",
+          "question": "Quels sont les débouchés professionnels après le diplôme ?",
+          "reponse": "L'ESIC affiche un **taux d'insertion de 92% à 6 mois** après le diplôme :\n\n**Débouchés par spécialisation :**\n\n**Développement :**\n- Développeur Full-Stack, DevOps Engineer\n- Architecte logiciel, Tech Lead\n- Salaire moyen débutant : 38-45K€\n\n**Cybersécurité :**\n- Analyste SOC, Pentester, Consultant sécurité\n- RSSI junior, Ingénieur sécurité cloud\n- Salaire moyen : 40-48K€\n\n**Data Science & IA :**\n- Data Scientist, ML Engineer, Data Analyst\n- Data Engineer, AI Researcher\n- Salaire moyen : 42-50K€\n\n**Digital Marketing :**\n- Digital Marketer, Traffic Manager\n- SEO Manager, Growth Hacker\n- Salaire moyen : 35-42K€\n\n**Product Management :**\n- Product Owner, Product Manager\n- Chef de projet digital\n- Salaire moyen : 38-45K€\n\n**Secteurs d'activité :** Tech (40%), Banque/Assurance (25%), Conseil (20%), Industrie (10%), Startup (5%)\n\n**Enquête insertion :** Rapport annuel disponible sur alumni.esic.fr",
+          "tags": ["débouchés", "emploi", "carrière", "salaire", "insertion professionnelle"],
+          "frequence": "très élevée",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        },
+        {
+          "id": "ORI004",
+          "question": "Comment se déroule un semestre d'échange à l'étranger ?",
+          "reponse": "L'ESIC encourage la **mobilité internationale** avec 45 universités partenaires :\n\n**Périodes possibles :**\n- Semestre 5 (S1 de B3) : Recommandé\n- Semestre 6 (S2 de B3) : Possible mais moins courant (stage)\n- Semestre 7 (S1 de M1) : Possible\n\n**Destinations populaires :**\n- Europe : Espagne, Allemagne, UK, Italie, Pays-Bas\n- Hors Europe : Canada, USA, Australie, Japon, Corée du Sud\n\n**Procédure :**\n1. Réunion d'information (octobre N-1)\n2. Candidature (novembre-décembre)\n3. Sélection (janvier) : dossier + entretien\n4. Acceptation université partenaire (février-mars)\n5. Préparation administrative et pédagogique\n6. Départ (août-septembre)\n\n**Validation :**\n- Learning Agreement signé avant départ\n- 30 ECTS à valider sur place\n- Équivalence automatique si validé\n\n**Financement :**\n- Bourse Erasmus+ : 150-250€/mois (Europe)\n- AMI : 400€/mois (boursiers)\n- Bourses régionales possibles\n\nContact : international@esic.fr",
+          "tags": ["échange", "international", "Erasmus", "mobilité", "étranger"],
+          "frequence": "élevée",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        },
+        {
+          "id": "ORI005",
+          "question": "Puis-je poursuivre en doctorat après le Master ?",
+          "reponse": "Oui, le **doctorat** (Bac+8) est accessible après le Master 2 :\n\n**Profils concernés :**\n- Étudiants avec projet de recherche académique\n- Volonté de travailler dans la R&D ou l'enseignement supérieur\n- Excellents résultats (moyenne ≥ 14/20 en Master)\n\n**Spécialités ESIC compatibles :**\n- Intelligence Artificielle\n- Cybersécurité\n- Data Science\n- Informatique théorique\n\n**Démarches :**\n1. Identifier un directeur de thèse (enseignant-chercheur)\n2. Définir sujet de recherche\n3. Monter dossier de financement (bourse doctorale)\n4. Candidature école doctorale (avril-juin)\n5. Soutenance projet devant jury\n\n**Financement :**\n- Contrat doctoral (CIFRE, université) : 1 700€/mois\n- Bourse ministérielle\n- Financement entreprise (thèse CIFRE)\n\n**Durée :** 3 ans minimum\n\n**Accompagnement :** Philippe LEFEVRE, Directeur Recherche\nrecherche@esic.fr ou 01.53.90.15.35",
+          "tags": ["doctorat", "thèse", "recherche", "PhD", "poursuite études"],
+          "frequence": "faible",
+          "documents_associes": []
+        },
+        {
+          "id": "ORI006",
+          "question": "Comment choisir entre stage et alternance ?",
+          "reponse": "Le choix entre **stage** et **alternance** dépend de votre situation :\n\n**Stage (Bachelor 3 et Master) :**\n- **Avantages :**\n  * Flexibilité pour essayer plusieurs entreprises\n  * Moins d'engagement\n  * Période plus courte\n- **Inconvénients :**\n  * Rémunération moindre (gratification minimale 4,35€/h)\n  * Statut étudiant (pas de cotisations retraite)\n- **Durée :** 12-24 semaines selon niveau\n\n**Alternance (Bachelor 3 et Master) :**\n- **Avantages :**\n  * Rémunération attractive (60-100% SMIC selon âge/niveau)\n  * Statut salarié (congés payés, protection sociale)\n  * Frais de scolarité pris en charge par l'entreprise\n  * Expérience longue (1-2 ans)\n- **Inconvénients :**\n  * Rythme soutenu (3 sem entreprise / 1 sem école)\n  * Engagement fort\n  * Moins de mobilité\n- **Rythme :** Septembre N à août N+1 (ou N+2)\n\n**Recommandation :**\n- B3 : Stage OU alternance (au choix)\n- M1-M2 : Alternance fortement recommandée\n\nContact : carrieres@esic.fr",
+          "tags": ["stage", "alternance", "choix", "contrat", "professionnalisation"],
+          "frequence": "très élevée",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        },
+        {
+          "id": "ORI007",
+          "question": "Quelles certifications professionnelles puis-je obtenir ?",
+          "reponse": "L'ESIC intègre plusieurs **certifications professionnelles reconnues** dans les cursus :\n\n**Bachelor 3 - Développement :**\n- AWS Solutions Architect Associate\n- Azure Fundamentals\n\n**Bachelor 3 - Cybersécurité :**\n- CEH (Certified Ethical Hacker)\n- CompTIA Security+\n\n**Bachelor 3 - Data Science :**\n- TensorFlow Developer Certificate\n- DataCamp Data Scientist\n\n**Master 1-2 :**\n- Kubernetes CKA (Certified Kubernetes Administrator)\n- PSM I (Professional Scrum Master)\n- Google Analytics Individual Qualification\n- CISSP (Certified Information Systems Security Professional) - préparation\n- OSCP (Offensive Security Certified Professional) - préparation\n\n**Modalités :**\n- Préparation intégrée aux cours\n- Session d'examen organisée par l'école\n- 1ère tentative incluse dans les frais de scolarité\n- 2ème tentative à vos frais\n\n**Valeur ajoutée :** Ces certifications sont très valorisées par les recruteurs (tech notamment)",
+          "tags": ["certification", "professionnelle", "AWS", "Azure", "CEH", "diplôme"],
+          "frequence": "élevée",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        },
+        {
+          "id": "ORI008",
+          "question": "Puis-je me réorienter après la première année ?",
+          "reponse": "Oui, une **réorientation est possible** après le Bachelor 1 :\n\n**Réorientation interne (au sein de l'ESIC) :**\n- Période : Fin du S1 ou fin de l'année\n- Démarche :\n  1. Entretien avec responsable pédagogique actuel\n  2. Entretien avec responsable de la formation visée\n  3. Dossier de candidature interne\n  4. Décision sous 3 semaines\n- Possibilités limitées (pas de réorientation vers formation plus sélective)\n\n**Réorientation externe (vers autre établissement) :**\n- Période : Toute l'année\n- Documents nécessaires : Exeat (voir FAQ ADM022)\n- Accompagnement par le service orientation\n\n**Passerelles internes :**\n- Bachelor 1 → Bachelor 1 autre spécialité : Possible\n- Bachelor 2 → Autre parcours : Selon places disponibles\n- Modules de mise à niveau si nécessaires\n\n**Accompagnement :**\n- Rendez-vous d'orientation disponibles\n- Tests d'intérêts professionnels\n- Contact : etudes@esic.fr\n\n**Important :** Réfléchissez bien, parlez-en avec votre famille et vos enseignants avant de décider",
+          "tags": ["réorientation", "changement", "passerelle", "orientation"],
+          "frequence": "moyenne",
+          "documents_associes": []
+        },
+        {
+          "id": "ORI009",
+          "question": "Comment préparer mon projet professionnel ?",
+          "reponse": "L'ESIC vous accompagne dans la construction de votre **projet professionnel** :\n\n**Outils disponibles :**\n\n**Tests et bilans :**\n- Test d'orientation RIASEC (intérêts professionnels)\n- Bilan de compétences simplifié\n- Via le service carrières\n\n**Ateliers :**\n- CV et lettre de motivation (B1-B2)\n- LinkedIn et personal branding (B2-B3)\n- Préparation entretiens d'embauche (B3-M1)\n- Négociation salariale (M2)\n- Calendrier sur l'ENT\n\n**Accompagnement individuel :**\n- Rendez-vous avec conseillers carrières\n- Sur RDV : carrieres@esic.fr\n- Relecture CV, simulation entretien\n\n**Événements :**\n- Forums entreprises (oct et mars)\n- Conférences métiers (1/mois)\n- Speed-recruiting\n- Rencontres alumni\n\n**Ressources :**\n- Fiches métiers sur l'ENT\n- Témoignages d'alumni\n- Offres d'emploi/stage/alternance\n\n**Conseils :**\n- Commencez dès la B1\n- Multipliez les stages et expériences\n- Réseau = clé de réussite",
+          "tags": ["projet professionnel", "orientation", "carrière", "emploi"],
+          "frequence": "moyenne",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        },
+        {
+          "id": "ORI010",
+          "question": "Quelles sont les passerelles vers d'autres écoles ?",
+          "reponse": "Des **passerelles** existent pour intégrer d'autres établissements :\n\n**Après le Bachelor (Bac+3) :**\n- Écoles d'ingénieurs (admissions parallèles)\n- Écoles de commerce (Master)\n- Universités (Master sélectif)\n- Écoles spécialisées (design, data, etc.)\n\n**Conditions générales :**\n- Diplôme Bachelor validé (180 ECTS)\n- Dossier académique solide\n- Concours ou sélection sur dossier selon école\n\n**Écoles partenaires privilégiées :**\n- Réseau des écoles Polytech (ingénieurs)\n- IAE (Master universitaire)\n- Écoles de la CGE\n\n**Accompagnement :**\n- Information sur les concours (service carrières)\n- Préparation aux entretiens\n- Lettres de recommandation des enseignants\n\n**Conseil :** Si vous envisagez une passerelle, anticipez :\n1. Renseignez-vous dès le B2\n2. Visez d'excellents résultats (14+/20)\n3. Multipliez les expériences extra-académiques\n4. Préparez intensément les concours\n\nContact : etudes@esic.fr",
+          "tags": ["passerelle", "réorientation", "admission parallèle", "école"],
+          "frequence": "faible",
+          "documents_associes": []
+        },
+        {
+          "id": "ORI011",
+          "question": "Comment fonctionne le système de majeure/mineure ?",
+          "reponse": "L'ESIC propose un système de **majeures et mineures** pour personnaliser votre parcours :\n\n**Système :**\n- **Majeure** : Votre spécialisation principale (80% des cours)\n- **Mineure** : Spécialisation complémentaire (20% des cours)\n\n**Disponibilité :**\n- À partir du Bachelor 3\n- Obligatoire en Master\n\n**Exemples de combinaisons :**\n- Majeure Développement + Mineure Cybersécurité → DevSecOps\n- Majeure Data Science + Mineure Business → Data Product Manager\n- Majeure IA + Mineure Éthique → IA Responsable\n\n**Mineures disponibles :**\n- Business & Entrepreneuriat\n- Cybersécurité\n- Data Science\n- UX/UI Design\n- Management de projet\n- Éthique du numérique\n\n**Choix :**\n- En même temps que la spécialisation (avril-mai)\n- Validation : 12 ECTS minimum\n- Mentionnée sur le diplôme\n\n**Avantage :** Profil plus complet et différenciant sur le marché",
+          "tags": ["majeure", "mineure", "spécialisation", "parcours", "personnalisation"],
+          "frequence": "moyenne",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        },
+        {
+          "id": "ORI012",
+          "question": "L'école propose-t-elle des formations continues ou de la VAE ?",
+          "reponse": "Oui, l'ESIC propose des dispositifs pour les **professionnels en activité** :\n\n**Formation Continue :**\n- Publics : Salariés, demandeurs d'emploi, entrepreneurs\n- Formats :\n  * Executive MBA (temps partiel, 18 mois)\n  * Certificats professionnels (3-6 mois)\n  * Formations courtes (2-5 jours)\n- Thèmes : IA, Cybersécurité, Data, Management digital, DevOps\n- Financement : CPF, Plan de formation entreprise, Pôle Emploi\n\n**VAE (Validation des Acquis de l'Expérience) :**\n- Permet d'obtenir tout ou partie d'un diplôme ESIC via l'expérience pro\n- Conditions : 3 ans minimum d'expérience en lien avec le diplôme visé\n- Procédure :\n  1. Dossier de recevabilité\n  2. Rédaction du livret VAE (accompagnement possible)\n  3. Soutenance devant jury\n  4. Validation totale, partielle ou refus\n- Durée : 8-12 mois\n\n**VAP (Validation des Acquis Professionnels) :**\n- Pour accéder à une formation sans avoir le diplôme requis\n\nContact : fc@esic.fr ou vae@esic.fr",
+          "tags": ["formation continue", "VAE", "VAP", "professionnels", "CPF"],
+          "frequence": "faible",
+          "documents_associes": []
+        },
+        {
+          "id": "ORI013",
+          "question": "Puis-je faire mes stages/alternance à l'étranger ?",
+          "reponse": "Oui, les **stages et alternances à l'étranger** sont possibles et encouragés :\n\n**Stage à l'étranger :**\n- Tous niveaux (B1 à M2)\n- Destinations : Monde entier\n- Durée : Identique aux stages en France\n- Convention de stage obligatoire (fournie par l'ESIC)\n\n**Démarches :**\n1. Trouvez votre entreprise d'accueil\n2. Informez le service stages : stages@esic.fr\n3. Convention tripartite (étudiant/ESIC/entreprise)\n4. Pour UE : Convention Erasmus+ Stage possible\n5. Assurance internationale obligatoire\n\n**Alternance à l'étranger :**\n- Plus complexe (législation sociale différente)\n- Possible dans certains pays (Allemagne, UK, Belgique)\n- Contactez carrieres@esic.fr pour faisabilité\n\n**Financement :**\n- Bourses Erasmus+ Stage : 150-300€/mois (UE)\n- AMI (boursiers) : 400€/mois\n- Aide ESIC possible au cas par cas\n\n**Conseil :** Anticipez 6 mois à l'avance minimum. Niveau d'anglais B2 recommandé.\n\nContact : international@esic.fr + stages@esic.fr",
+          "tags": ["stage", "alternance", "étranger", "international", "Erasmus"],
+          "frequence": "moyenne",
+          "documents_associes": []
+        },
+        {
+          "id": "ORI014",
+          "question": "Comment l'école nous aide-t-elle à trouver un stage ou une alternance ?",
+          "reponse": "Le **Service Carrières** vous accompagne dans votre recherche :\n\n**Plateforme d'offres :**\n- ENT > 'Carrières' > 'Offres'\n- 500+ offres de stages/alternance/emploi\n- Filtre par niveau, spécialité, localisation\n- Candidature en 1 clic\n\n**Accompagnement individuel :**\n- Relecture CV et lettre de motivation\n- Simulation d'entretien\n- Conseils recherche\n- Sur RDV : carrieres@esic.fr\n\n**Ateliers collectifs :**\n- Rédaction CV (B1)\n- Optimisation LinkedIn (B2)\n- Techniques de recherche (B2-B3)\n- Entretiens vidéo différés (B3-M1)\n- Négociation salariale (M2)\n\n**Événements :**\n- Forum Stages/Alternance (oct) : 80+ entreprises\n- Forum Emploi (mars) : 60+ entreprises\n- Speed-recruiting réguliers\n- Job dating sectoriels\n\n**Réseau entreprises :**\n- 300+ entreprises partenaires\n- Visites d'entreprises\n- Conférences métiers\n\n**Taux de réussite :** 95% des étudiants trouvent un stage/alternance\n\nContact : carrieres@esic.fr ou 01.53.90.15.31",
+          "tags": ["stage", "alternance", "recherche", "emploi", "aide", "carrières"],
+          "frequence": "très élevée",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        },
+        {
+          "id": "ORI015",
+          "question": "Y a-t-il des cours en anglais ?",
+          "reponse": "Oui, l'ESIC propose des **cours en anglais** :\n\n**Bachelor :**\n- Cours d'anglais obligatoires (2h/semaine)\n- Quelques modules techniques en anglais (B3) : 10-20% des cours\n- Projets internationaux en anglais\n\n**Master :**\n- 30-40% des cours en anglais\n- Séminaires et conférences en anglais\n- Projets et soutenances possibles en anglais\n\n**Master International Track (optionnel) :**\n- 100% en anglais\n- Promotion internationale\n- Niveau B2-C1 requis\n- Supplément diplôme en anglais\n\n**Certifications :**\n- TOEIC : Passage obligatoire en B3 et M2\n- Objectif B2 (785+) en B3, C1 (945+) en M2\n- Préparation intégrée\n\n**Mobilité :**\n- Semestre d'échange en anglais\n- Summer schools partenaires\n\n**Ressources :**\n- Plateforme e-learning d'anglais (GlobalExam)\n- Ateliers conversation (English Club, jeudi 12h30)\n- Films/séries en VO à la bibliothèque\n\nContact : Christine ROBIN, c.robin@esic.fr",
+          "tags": ["anglais", "langue", "cours", "international", "TOEIC"],
+          "frequence": "élevée",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        },
+        {
+          "id": "ORI016",
+          "question": "Quels sont les projets proposés pendant la formation ?",
+          "reponse": "Les **projets** sont au cœur de la pédagogie ESIC :\n\n**Bachelor 1 :**\n- Projet web (S2) : Site web complet (HTML/CSS/JS + BDD)\n- Travail en groupe de 4-5\n\n**Bachelor 2 :**\n- Projet fil rouge (toute l'année) : Application mobile + backend\n- Méthodologie Agile/Scrum\n- Client réel (association ou startup)\n\n**Bachelor 3 :**\n- Projet de spécialisation (S1) : Selon votre majeure\n  * Dev : Application full-stack complexe\n  * Cyber : Audit de sécurité complet\n  * Data : Projet ML/IA de bout en bout\n- Projet professionnel (S2) : En lien avec le stage\n\n**Master 1 :**\n- Projet d'expertise (S1) : Niveau avancé, innovation\n- Projet recherche/innovation (S2)\n- Possibilité de travailler sur projets d'entreprises partenaires\n\n**Master 2 :**\n- Mémoire de recherche ou professionnel\n- Grand projet entrepreneurial (optionnel)\n\n**Modalités communes :**\n- Équipes de 3-6 personnes\n- Suivi par un tuteur enseignant\n- Soutenance finale\n- Note de groupe + note individuelle\n- Comptent pour 20-30% de la note du semestre",
+          "tags": ["projets", "travail équipe", "pédagogie", "pratique"],
+          "frequence": "élevée",
+          "documents_associes": ["guide_etudiant_esic.md"]
+        }
+      ]
+    }
+  ],
+
+  "statistiques": {
+    "questions_les_plus_frequentes": [
+      "EDT001",
+      "EDT002",
+      "EDT005",
+      "EDT027",
+      "ADM001",
+      "ADM002",
+      "ADM004",
+      "ADM026",
+      "EDT036"
+    ],
+    "taux_resolution_autonome": "75%",
+    "temps_moyen_reponse_service": "24h",
+    "satisfaction_faq": "4.2/5"
+  }
+}
