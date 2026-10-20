@@ -1,6 +1,12 @@
 # ESIC Assistant — Assistant Virtuel Éducatif
 
-Assistant virtuel éducatif développé dans le cadre du projet transverse **ESIC / ESIS-2 / CPDIA-2**.
+Assistant virtuel éducatif développé dans le cadre du projet transverse **ESIC / ESIS-2 / CPDIA-2** réalisé par : 
+
+Liza Hamadene
+Célia Ait Ouarab
+Marie Claude Bela
+Mehmet Aydemir
+Ahmed Hilal
 
 ESIC Assistant est une application web permettant aux étudiants d'obtenir rapidement des informations sur les formations, les emplois du temps, les procédures administratives, les services du campus, les contacts, le règlement et la vie étudiante.
 
