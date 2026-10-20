@@ -601,6 +601,11 @@ function App() {
   const [currentView, setCurrentView] = useState("chat");
   const [sidebarOpen, setSidebarOpen] = useState(() => typeof window !== "undefined" && window.innerWidth > 768);
   const [pageError, setPageError] = useState("");
+  const [openConversationMenuId, setOpenConversationMenuId] = useState(null);
+  const [pinnedConversationIds, setPinnedConversationIds] = useState(() => {
+    try { return JSON.parse(localStorage.getItem("esicPinnedConversationIds") || "[]"); }
+    catch { return []; }
+  });
   const [isKioskMode, setIsKioskMode] = useState(false);
   const [isListening, setIsListening] = useState(false);
   const [speechSupported, setSpeechSupported] = useState(true);
@@ -624,6 +629,18 @@ function App() {
   useEffect(() => {
     localStorage.setItem("esicLanguage", language);
   }, [language]);
+
+  useEffect(() => {
+    localStorage.setItem("esicPinnedConversationIds", JSON.stringify(pinnedConversationIds));
+  }, [pinnedConversationIds]);
+
+  useEffect(() => {
+    const close = (event) => { if (!event.target.closest(".conversation-wrapper")) setOpenConversationMenuId(null); };
+    const escape = (event) => { if (event.key === "Escape") setOpenConversationMenuId(null); };
+    document.addEventListener("mousedown", close);
+    document.addEventListener("keydown", escape);
+    return () => { document.removeEventListener("mousedown", close); document.removeEventListener("keydown", escape); };
+  }, []);
 
   useEffect(() => {
     // Keep the untouched welcome screen aligned with the selected language.
@@ -946,6 +963,43 @@ function App() {
     }
   }
 
+  function togglePinnedConversation(id) {
+    setPinnedConversationIds((prev) => prev.includes(id) ? prev.filter((x) => x !== id) : [id, ...prev]);
+    setOpenConversationMenuId(null);
+  }
+
+  async function renameConversationItem(conversation) {
+    const oldTitle = conversation.title || "Nouvelle conversation";
+    const title = window.prompt(language === "en" ? "Rename conversation" : "Renommer la conversation", oldTitle);
+    if (title === null || !title.trim() || title.trim() === oldTitle) { setOpenConversationMenuId(null); return; }
+    try {
+      const updated = await readResponse(await fetch(`${API_URL}/api/conversations/${conversation.id}`, { method: "PATCH", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ title: title.trim() }) }));
+      setConversations((prev) => prev.map((x) => x.id === conversation.id ? updated : x));
+      setOpenConversationMenuId(null);
+    } catch (err) { setPageError(err.message); }
+  }
+
+  async function deleteConversationItem(conversation) {
+    if (!window.confirm(language === "en" ? "Delete this conversation permanently?" : "Supprimer définitivement cette conversation ?")) { setOpenConversationMenuId(null); return; }
+    try {
+      await readResponse(await fetch(`${API_URL}/api/conversations/${conversation.id}`, { method: "DELETE" }));
+      setPinnedConversationIds((prev) => prev.filter((id) => id !== conversation.id));
+      const remaining = conversations.filter((x) => x.id !== conversation.id);
+      setConversations(remaining);
+      setOpenConversationMenuId(null);
+      if (conversation.id === currentConversationId) {
+        localStorage.removeItem("currentConversationId");
+        if (remaining.length) await loadConversation(remaining[0].id); else await createNewConversation();
+      }
+    } catch (err) { setPageError(err.message); }
+  }
+
+  const orderedConversations = [...conversations].sort((a, b) => {
+    const ap = pinnedConversationIds.includes(a.id) ? 1 : 0;
+    const bp = pinnedConversationIds.includes(b.id) ? 1 : 0;
+    return ap !== bp ? bp - ap : String(b.updated_at || "").localeCompare(String(a.updated_at || ""));
+  });
+
   async function sendMessage(event, suggestion = null) {
     if (event?.preventDefault) event.preventDefault();
 
@@ -1088,21 +1142,30 @@ function App() {
           {conversations.length === 0 ? (
             <p className="empty-history">{ui.noHistory}</p>
           ) : (
-            conversations.map((conversation) => (
-              <button
-                type="button"
-                key={conversation.id}
-                className={`conversation-item ${
-                  conversation.id === currentConversationId ? "active" : ""
-                }`}
-                onClick={() => { loadConversation(conversation.id); setSidebarOpen(false); }}
-                disabled={loading}
-              >
-                <span className="conversation-title">
-                  {conversation.title || (language === "en" ? "New conversation" : "Nouvelle conversation")}
-                </span>
-              </button>
-            ))
+            orderedConversations.map((conversation) => {
+              const isPinned = pinnedConversationIds.includes(conversation.id);
+              const isActive = conversation.id === currentConversationId;
+              const menuOpen = openConversationMenuId === conversation.id;
+              return (
+                <div key={conversation.id} className={`conversation-wrapper ${isActive ? "active" : ""}`}>
+                  <button type="button" className="conversation-item" disabled={loading}
+                    onClick={() => { loadConversation(conversation.id); setOpenConversationMenuId(null); if (window.innerWidth <= 768) setSidebarOpen(false); }}>
+                    {isPinned && <span className="conversation-pin-indicator" title="Épinglée">◆</span>}
+                    <span className="conversation-title">{conversation.title || (language === "en" ? "New conversation" : "Nouvelle conversation")}</span>
+                  </button>
+                  <button type="button" className="conversation-menu-button" aria-expanded={menuOpen}
+                    onClick={(event) => { event.stopPropagation(); setOpenConversationMenuId((current) => current === conversation.id ? null : conversation.id); }}>⋯</button>
+                  {menuOpen && (
+                    <div className="conversation-menu" role="menu">
+                      <button type="button" onClick={() => renameConversationItem(conversation)}><span>✎</span><span>{language === "en" ? "Rename" : "Renommer"}</span></button>
+                      <button type="button" onClick={() => togglePinnedConversation(conversation.id)}><span>⌖</span><span>{isPinned ? (language === "en" ? "Unpin" : "Désépingler") : (language === "en" ? "Pin" : "Épingler")}</span></button>
+                      <div className="menu-separator" />
+                      <button type="button" className="delete-menu-item" onClick={() => deleteConversationItem(conversation)}><span>♲</span><span>{language === "en" ? "Delete" : "Supprimer"}</span></button>
+                    </div>
+                  )}
+                </div>
+              );
+            })
           )}
         </div>
 

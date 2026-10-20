@@ -88,3 +88,18 @@ def get_history(conversation_id: str) -> List[dict]:
         return []
 
     return conversation["messages"]
+
+def rename_conversation(conversation_id: str, title: str) -> dict | None:
+    conversation = conversations.get(conversation_id)
+    if conversation is None:
+        return None
+    clean_title = " ".join(title.split()).strip()
+    if not clean_title:
+        raise ValueError("Le titre ne peut pas être vide.")
+    conversation["title"] = clean_title[:80]
+    conversation["updated_at"] = datetime.now().isoformat()
+    return conversation
+
+
+def delete_conversation(conversation_id: str) -> bool:
+    return conversations.pop(conversation_id, None) is not None

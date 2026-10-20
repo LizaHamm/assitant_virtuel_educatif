@@ -31,9 +31,13 @@ except Exception as exc:
     logging.getLogger(__name__).warning("Recherche sémantique indisponible au chargement : %r", exc)
 
 try:
-    from app.services.advanced_nlp_service import analyze_advanced_nlp
+    from app.services.advanced_nlp_service import (
+        analyze_advanced_nlp,
+        detect_sentiment_urgency,
+    )
 except Exception:
     analyze_advanced_nlp = None
+    detect_sentiment_urgency = None
 from app.services.bilingual_service import translate_text
 from app.services.history_service import (
     create_conversation,
@@ -41,6 +45,8 @@ from app.services.history_service import (
     get_conversation,
     add_message,
     get_history,
+    rename_conversation,
+    delete_conversation,
 )
 from app.services.log_service import (
     init_log_database,
@@ -346,6 +352,28 @@ def get_one_conversation(conversation_id: str):
     return conversation
 
 
+class ConversationRenameRequest(BaseModel):
+    title: str = Field(min_length=1, max_length=80)
+
+
+@app.patch("/api/conversations/{conversation_id}", response_model=Conversation)
+def rename_one_conversation(conversation_id: str, request: ConversationRenameRequest):
+    try:
+        conversation = rename_conversation(conversation_id, request.title)
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
+    if conversation is None:
+        raise HTTPException(status_code=404, detail="Conversation introuvable.")
+    return conversation
+
+
+@app.delete("/api/conversations/{conversation_id}")
+def delete_one_conversation(conversation_id: str):
+    if not delete_conversation(conversation_id):
+        raise HTTPException(status_code=404, detail="Conversation introuvable.")
+    return {"deleted": True, "conversation_id": conversation_id}
+
+
 # ============================================================
 # US-001 / US-011 / US-012 / US-013 / US-032 — CHAT
 # ============================================================
@@ -448,6 +476,25 @@ def chat(request: Epic8ChatRequest):
             logger.exception("L'analyse NLP a échoué ; poursuite sans métadonnées NLP")
             nlp_result = None
 
+    # US-027 / Démo finale — détection frustration / urgence.
+    # Si le NLP avancé recommande une intervention humaine, on crée directement
+    # une demande d'escalade au lieu d'envoyer la phrase émotionnelle dans la
+    # recherche documentaire (ce qui pouvait sélectionner un document sans rapport).
+    emotion_result = {}
+    auto_human_escalation = False
+    if input_translation_ok and detect_sentiment_urgency is not None:
+        try:
+            emotion_result = detect_sentiment_urgency(lookup_question) or {}
+            auto_human_escalation = bool(
+                emotion_result.get("human_escalation_recommended", False)
+            )
+        except Exception:
+            logger.exception(
+                "Détection sentiment/urgence impossible ; poursuite normale du chat"
+            )
+            emotion_result = {}
+            auto_human_escalation = False
+
     # La recherche de réponses personnalisées utilise elle aussi le texte français.
     custom_answer = find_custom_answer(lookup_question) if input_translation_ok else None
 
@@ -456,6 +503,67 @@ def chat(request: Epic8ChatRequest):
             "I'm temporarily unable to translate your question. Please try again, "
             "or switch to French while the translation service is unavailable."
         )
+
+    elif auto_human_escalation:
+        question = lookup_question
+
+        # Évite de créer plusieurs demandes identiques si l'utilisateur renvoie
+        # exactement le même message pendant que la première est encore en attente.
+        sentiment = str(emotion_result.get("sentiment") or "non_precise")
+        urgency_score = emotion_result.get("urgency_score")
+        signals = emotion_result.get("signals") or {}
+        reason = (
+            "Escalade automatique après détection NLP — "
+            f"sentiment={sentiment}; urgency_score={urgency_score}; signals={signals}"
+        )
+
+        try:
+            with get_db() as db:
+                existing = db.execute(
+                    """
+                    SELECT id
+                    FROM escalation_requests
+                    WHERE conversation_id = ?
+                      AND question = ?
+                      AND status = 'pending'
+                    ORDER BY id DESC
+                    LIMIT 1
+                    """,
+                    (conversation_id, message),
+                ).fetchone()
+
+                if existing is None:
+                    db.execute(
+                        """
+                        INSERT INTO escalation_requests
+                            (conversation_id, question, reason, status, created_at)
+                        VALUES (?, ?, ?, 'pending', ?)
+                        """,
+                        (conversation_id, message, reason, now_iso()),
+                    )
+        except Exception:
+            # Une panne de la file d'escalade ne doit pas faire tomber le chat.
+            logger.exception("Création automatique de l'escalade impossible")
+
+        answer_fr = (
+            "J'ai détecté que votre message exprime une frustration importante "
+            "ou une situation urgente. Votre demande a été transmise à l'équipe "
+            "ESIC pour une prise en charge humaine. Vous pouvez également utiliser "
+            "le bouton « Demander de l'aide humaine » sous la réponse.\n\n"
+            "Si votre demande concerne un sujet précis, vous pouvez l'indiquer dans "
+            "un nouveau message pendant que la demande d'aide reste enregistrée."
+        )
+
+        if request.language == "en":
+            try:
+                answer = translate_text(answer_fr, target="en", source="fr")
+            except Exception:
+                answer = (
+                    "I detected significant frustration or urgency in your message. "
+                    "Your request has been forwarded to the ESIC team for human support."
+                )
+        else:
+            answer = answer_fr
 
     elif custom_answer:
         question = lookup_question
