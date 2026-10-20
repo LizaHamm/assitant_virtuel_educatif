@@ -2157,3 +2157,12 @@ body { background: #f5f7fb; color: #172b3a; letter-spacing: -.01em; }
     z-index: 2000;
   }
 }
+
+
+/* Menu conversations : renommer / épingler / supprimer */
+.conversation-pin-indicator { flex-shrink:0; width:14px; color:var(--esic-blue); font-size:9px; line-height:1; transform:rotate(45deg); }
+.conversation-wrapper.active { background:#eef5f7; }
+.conversation-wrapper.active .conversation-item { font-weight:600; }
+.conversation-wrapper:has(.conversation-menu) { z-index:1100; }
+.conversation-menu { overflow:hidden; }
+@media (max-width:768px) { .conversation-menu-button { opacity:1; } .conversation-menu { right:4px; width:185px; } }
