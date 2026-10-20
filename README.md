@@ -460,6 +460,10 @@ Installer les dépendances :
 pip install -r requirements.txt
 ```
 
+```powershell
+pip install recharts
+```
+
 Installer le modèle spaCy :
 
 ```powershell
