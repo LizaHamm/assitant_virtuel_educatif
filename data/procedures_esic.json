@@ -1,0 +1,2308 @@
+{
+  "metadata": {
+    "author": "Joel BANKA",
+    "purpose": "Document créé exclusivement pour le projet étudiant",
+    "titre": "Fiches de Procédures ESIC",
+    "etablissement": "ESIC - École Supérieure d'Informatique et du Commerce",
+    "annee_academique": "2024-2025",
+    "date_maj": "2024-09-01",
+    "version": "1.0",
+    "nombre_procedures": 25
+  },
+
+  "procedures": [
+    {
+      "id": "PROC001",
+      "titre": "Inscription Administrative",
+      "categorie": "Administrative",
+      "description": "Procédure complète pour effectuer votre inscription administrative à l'ESIC",
+      "public_concerne": ["Nouveaux étudiants", "Étudiants en réinscription"],
+      "periode": "Juillet-Septembre",
+      "duree_estimee": "30-45 minutes",
+      "prerequis": [
+        "Avoir été admis à l'ESIC (lettre d'admission reçue)",
+        "Disposer des documents requis",
+        "Avoir un moyen de paiement"
+      ],
+      "documents_necessaires": [
+        "Pièce d'identité en cours de validité",
+        "Photo d'identité récente (format numérique)",
+        "Diplôme du baccalauréat ou dernier diplôme obtenu (copie certifiée)",
+        "Relevés de notes des 2 dernières années",
+        "Attestation d'assurance responsabilité civile",
+        "RIB (pour prélèvement automatique si paiement échelonné)",
+        "Justificatif de bourse (si applicable)"
+      ],
+      "etapes": [
+        {
+          "numero": 1,
+          "titre": "Accès au portail d'inscription",
+          "description": "Connectez-vous au portail d'inscription en ligne sur admission.esic.fr avec les identifiants reçus par email",
+          "conseils": ["Vérifiez vos spams si vous n'avez pas reçu l'email", "Notez vos identifiants dans un endroit sûr"]
+        },
+        {
+          "numero": 2,
+          "titre": "Remplissage du formulaire",
+          "description": "Complétez toutes les sections du formulaire : état civil, coordonnées, formation antérieure, contacts d'urgence",
+          "conseils": ["Prenez votre temps pour remplir correctement", "Toutes les informations sont obligatoires", "Vous pouvez sauvegarder et reprendre plus tard"]
+        },
+        {
+          "numero": 3,
+          "titre": "Téléchargement des documents",
+          "description": "Scannez et téléchargez tous les documents requis au format PDF ou JPG (max 2 Mo par fichier)",
+          "conseils": ["Assurez-vous que les documents sont lisibles", "Nommez les fichiers clairement (ex: NOM_Prenom_Diplome.pdf)"]
+        },
+        {
+          "numero": 4,
+          "titre": "Choix du mode de paiement",
+          "description": "Sélectionnez votre mode de paiement des frais de scolarité : comptant (-3%), 3 fois ou 10 fois",
+          "conseils": ["Le paiement comptant offre une remise de 3%", "Le paiement en 3 fois est sans frais", "Le paiement en 10 fois comporte des frais de +2%"]
+        },
+        {
+          "numero": 5,
+          "titre": "Validation et paiement",
+          "description": "Vérifiez toutes les informations, acceptez le règlement intérieur, validez et procédez au paiement (1er versement ou totalité)",
+          "conseils": ["Relisez attentivement avant de valider", "Conservez le reçu de paiement"]
+        },
+        {
+          "numero": 6,
+          "titre": "Confirmation",
+          "description": "Vous recevez un email de confirmation avec votre certificat de scolarité provisoire et vos identifiants ENT",
+          "conseils": ["Conservez cet email précieusement", "Activez votre compte ENT dès réception"]
+        },
+        {
+          "numero": 7,
+          "titre": "Retrait de la carte étudiante",
+          "description": "Retirez votre carte étudiante au service scolarité lors de la rentrée (journée d'intégration ou première semaine)",
+          "conseils": ["Apportez une pièce d'identité", "La carte vous sera remise en main propre"]
+        }
+      ],
+      "delais": "Inscription en ligne possible à partir du 1er juillet. À effectuer avant le 31 août pour bénéficier de tous les services dès la rentrée",
+      "cout": "Selon la formation : Bachelor 6 500€/an, Master 8 500€/an. Possibilité de paiement échelonné",
+      "contacts": [
+        {
+          "service": "Admissions",
+          "email": "admissions@esic.fr",
+          "telephone": "01.53.90.15.10",
+          "horaires": "Lun-Ven 9h-18h"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Puis-je modifier mes informations après validation ?",
+          "reponse": "Oui, contactez le service scolarité dans les 7 jours suivant la validation"
+        },
+        {
+          "question": "Que faire si je n'ai pas encore mon diplôme ?",
+          "reponse": "Fournissez une attestation de réussite provisoire, puis le diplôme définitif dès réception"
+        }
+      ],
+      "documents_generes": ["Certificat de scolarité provisoire", "Carte étudiante", "Identifiants ENT"],
+      "references": ["Règlement intérieur", "Guide de l'étudiant"]
+    },
+    {
+      "id": "PROC002",
+      "titre": "Obtention d'un Certificat de Scolarité",
+      "categorie": "Administrative",
+      "description": "Procédure pour obtenir un certificat de scolarité officiel",
+      "public_concerne": ["Tous les étudiants inscrits"],
+      "periode": "Toute l'année",
+      "duree_estimee": "Instantané (en ligne) ou 24h (guichet)",
+      "prerequis": ["Être inscrit administrativement"],
+      "documents_necessaires": [],
+      "etapes": [
+        {
+          "numero": 1,
+          "titre": "Méthode en ligne (instantanée)",
+          "description": "Connectez-vous à l'ENT > 'Scolarité' > 'Mes documents' > 'Certificat de scolarité' > Téléchargez le PDF",
+          "conseils": ["Le document est généré instantanément", "Il porte le cachet électronique officiel de l'école"]
+        },
+        {
+          "numero": 2,
+          "titre": "Méthode par email (délai 48h)",
+          "description": "Envoyez un email à scolarite@esic.fr en précisant : nom, prénom, formation, année et motif de la demande",
+          "conseils": ["Indiquez votre adresse email dans le corps du message", "Précisez si vous avez besoin d'un format particulier"]
+        },
+        {
+          "numero": 3,
+          "titre": "Méthode au guichet (immédiat)",
+          "description": "Présentez-vous au service scolarité (Bureau A102) avec votre carte étudiante",
+          "conseils": ["Horaires : Lun-Ven 9h-12h / 14h-17h", "Le document vous est remis immédiatement"]
+        }
+      ],
+      "delais": "Instantané (ENT), 48h (email), immédiat (guichet)",
+      "cout": "Gratuit et illimité",
+      "contacts": [
+        {
+          "service": "Scolarité",
+          "email": "scolarite@esic.fr",
+          "telephone": "01.53.90.15.20",
+          "horaires": "Lun-Ven 9h-12h / 14h-17h"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Le certificat en ligne a-t-il la même valeur qu'un certificat papier ?",
+          "reponse": "Oui, le certificat téléchargé depuis l'ENT a la même valeur légale grâce au cachet électronique"
+        },
+        {
+          "question": "Puis-je obtenir un certificat pour l'année précédente ?",
+          "reponse": "Oui, les certificats de toutes vos années d'inscription restent disponibles sur l'ENT"
+        }
+      ],
+      "documents_generes": ["Certificat de scolarité (format PDF)"],
+      "references": []
+    },
+    {
+      "id": "PROC003",
+      "titre": "Déclaration d'Absence",
+      "categorie": "Académique",
+      "description": "Procédure pour déclarer et justifier une absence à un cours ou un examen",
+      "public_concerne": ["Tous les étudiants"],
+      "periode": "Toute l'année",
+      "duree_estimee": "5-10 minutes",
+      "prerequis": ["Avoir un motif valable d'absence"],
+      "documents_necessaires": [
+        "Certificat médical (si absence pour maladie)",
+        "Convocation officielle (tribunal, administration, etc.)",
+        "Certificat de décès (en cas de deuil familial)",
+        "Tout autre justificatif officiel"
+      ],
+      "etapes": [
+        {
+          "numero": 1,
+          "titre": "Déclaration immédiate",
+          "description": "Le jour même de l'absence ou au plus tard le lendemain, connectez-vous à l'ENT > 'Scolarité' > 'Mes absences' > 'Déclarer une absence'",
+          "conseils": ["Plus vous déclarez tôt, mieux c'est", "Même sans justificatif, déclarez d'abord l'absence"]
+        },
+        {
+          "numero": 2,
+          "titre": "Remplissage du formulaire",
+          "description": "Indiquez : date(s) d'absence, cours concerné(s), motif de l'absence",
+          "conseils": ["Soyez précis sur les dates et horaires", "Choisissez le bon motif dans la liste"]
+        },
+        {
+          "numero": 3,
+          "titre": "Obtention du justificatif",
+          "description": "Consultez un médecin dans les 48h (si maladie) ou obtenez le justificatif officiel nécessaire",
+          "conseils": ["Le certificat médical doit être daté du jour de l'absence ou du lendemain", "Conservez l'original"]
+        },
+        {
+          "numero": 4,
+          "titre": "Envoi du justificatif",
+          "description": "Scannez et téléchargez le justificatif sur l'ENT OU envoyez-le par email à scolarite@esic.fr ET remettez l'original au service scolarité",
+          "conseils": ["Format PDF ou JPG", "Fichier lisible et complet", "Remise de l'original obligatoire dans les 3 jours ouvrés"]
+        },
+        {
+          "numero": 5,
+          "titre": "Validation",
+          "description": "Le service scolarité examine le justificatif et valide ou refuse l'absence justifiée (sous 5 jours ouvrés)",
+          "conseils": ["Vérifiez sur l'ENT que votre absence est passée de 'non justifiée' à 'justifiée'", "En cas de refus, vous pouvez contester"]
+        }
+      ],
+      "delais": "Déclaration : immédiate. Justificatif : dans les 48h. Validation : 5 jours ouvrés",
+      "cout": "Gratuit",
+      "contacts": [
+        {
+          "service": "Scolarité",
+          "email": "scolarite@esic.fr",
+          "telephone": "01.53.90.15.20",
+          "horaires": "Lun-Ven 9h-12h / 14h-17h"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Que se passe-t-il si je ne fournis pas de justificatif ?",
+          "reponse": "L'absence reste 'non justifiée' et compte dans votre total d'absences. Au-delà de 10 absences non justifiées, vous risquez des sanctions"
+        },
+        {
+          "question": "Puis-je justifier une absence pour un entretien d'embauche ?",
+          "reponse": "Les entretiens ne sont généralement pas considérés comme motifs valables. Privilégiez les créneaux hors cours"
+        },
+        {
+          "question": "Que faire si je suis absent le jour d'un examen ?",
+          "reponse": "Même procédure. En cas d'absence justifiée à un examen, vous le repasserez lors de la session de rattrapage"
+        }
+      ],
+      "documents_generes": [],
+      "references": ["Règlement intérieur - Article 4 : Assiduité et présence"]
+    },
+    {
+      "id": "PROC004",
+      "titre": "Demande de Convention de Stage",
+      "categorie": "Stage & Alternance",
+      "description": "Procédure complète pour obtenir une convention de stage",
+      "public_concerne": ["Tous les étudiants effectuant un stage obligatoire ou optionnel"],
+      "periode": "Toute l'année (selon calendrier de stage)",
+      "duree_estimee": "20-30 minutes (en ligne) + 5 jours (traitement)",
+      "prerequis": [
+        "Avoir trouvé une entreprise d'accueil",
+        "Avoir validé l'offre de stage avec l'entreprise",
+        "Connaître les détails du stage (dates, missions, gratification)"
+      ],
+      "documents_necessaires": [
+        "Coordonnées complètes de l'entreprise",
+        "Nom et fonction du maître de stage",
+        "Description des missions",
+        "Dates de début et fin de stage",
+        "Montant de la gratification",
+        "Attestation d'assurance responsabilité civile"
+      ],
+      "etapes": [
+        {
+          "numero": 1,
+          "titre": "Connexion à l'ENT",
+          "description": "Connectez-vous à l'ENT > 'Stages' > 'Nouvelle convention de stage'",
+          "conseils": ["Assurez-vous d'avoir toutes les informations nécessaires avant de commencer"]
+        },
+        {
+          "numero": 2,
+          "titre": "Remplissage du formulaire en ligne",
+          "description": "Remplissez toutes les sections : informations entreprise, maître de stage, période, missions, gratification, assurance",
+          "conseils": [
+            "Soyez précis dans la description des missions (3-5 lignes minimum)",
+            "Vérifiez le montant de la gratification (minimum légal : 4,35€/h pour stage > 2 mois)",
+            "N'oubliez pas de télécharger votre attestation d'assurance RC"
+          ]
+        },
+        {
+          "numero": 3,
+          "titre": "Validation et génération",
+          "description": "Validez le formulaire. La convention est générée automatiquement en PDF (exemplaire en 3 parties)",
+          "conseils": ["Relisez attentivement avant de valider", "Téléchargez immédiatement les 3 exemplaires"]
+        },
+        {
+          "numero": 4,
+          "titre": "Signature de l'entreprise",
+          "description": "Envoyez la convention à votre entreprise d'accueil pour signature (vous + maître de stage + représentant légal entreprise)",
+          "conseils": ["Expliquez que 3 signatures entreprise sont nécessaires", "Relancez si besoin après 1 semaine"]
+        },
+        {
+          "numero": 5,
+          "titre": "Dépôt au service scolarité",
+          "description": "Une fois signée par l'entreprise, déposez la convention (3 exemplaires) au service scolarité (Bureau A102) OU envoyez-la scannée à stages@esic.fr",
+          "conseils": ["Conservez une copie pour vous avant de déposer", "Si envoi email : PDF de bonne qualité"]
+        },
+        {
+          "numero": 6,
+          "titre": "Signature de l'école",
+          "description": "L'école examine et signe la convention (délai : 5 jours ouvrés maximum)",
+          "conseils": ["Vous recevez un email dès que c'est signé"]
+        },
+        {
+          "numero": 7,
+          "titre": "Récupération",
+          "description": "Récupérez les 3 exemplaires signés au service scolarité : 1 pour vous, 1 pour l'entreprise, 1 conservé par l'école",
+          "conseils": ["Remettez l'exemplaire entreprise à votre maître de stage le 1er jour"]
+        }
+      ],
+      "delais": "5 jours ouvrés après dépôt de la convention signée par l'entreprise. À PRÉVOIR AU MOINS 3 SEMAINES AVANT LE DÉBUT DU STAGE",
+      "cout": "Gratuit",
+      "contacts": [
+        {
+          "service": "Stages",
+          "email": "stages@esic.fr",
+          "telephone": "01.53.90.15.23",
+          "horaires": "Lun-Ven 9h-12h / 14h-17h"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Puis-je commencer mon stage sans convention signée ?",
+          "reponse": "NON, absolument pas. La convention DOIT être signée par toutes les parties AVANT le premier jour de stage. C'est une obligation légale"
+        },
+        {
+          "question": "Mon stage dure moins de 2 mois, ai-je besoin d'une convention ?",
+          "reponse": "Oui, toute période de stage nécessite une convention, quelle que soit sa durée"
+        },
+        {
+          "question": "L'entreprise refuse de signer la convention, que faire ?",
+          "reponse": "Contactez immédiatement le service stages. Il est possible que l'entreprise ne comprenne pas l'obligation légale ou ait des questions"
+        }
+      ],
+      "documents_generes": ["Convention de stage tripartite (3 exemplaires)"],
+      "references": ["Règlement intérieur - Article 6 : Stages et alternance", "Guide de l'étudiant"]
+    },
+    {
+      "id": "PROC005",
+      "titre": "Contestation d'une Note",
+      "categorie": "Académique",
+      "description": "Procédure pour contester une note que vous estimez erronée",
+      "public_concerne": ["Tous les étudiants"],
+      "periode": "Dans les 15 jours suivant la publication de la note",
+      "duree_estimee": "Variable (2-4 semaines pour la procédure complète)",
+      "prerequis": [
+        "Avoir une raison légitime de contester (erreur de correction, note manifestement anormale, etc.)",
+        "Respecter le délai de 15 jours après publication"
+      ],
+      "documents_necessaires": [
+        "Copie de la note contestée (capture d'écran ENT)",
+        "Arguments détaillés de la contestation"
+      ],
+      "etapes": [
+        {
+          "numero": 1,
+          "titre": "Consultation de copie",
+          "description": "ÉTAPE OBLIGATOIRE : Demandez d'abord à consulter votre copie auprès de l'enseignant concerné (par email ou lors de ses permanences)",
+          "conseils": ["C'est votre droit", "Cela permet souvent de comprendre la notation et résoudre le problème à l'amiable", "Prenez des notes lors de la consultation"]
+        },
+        {
+          "numero": 2,
+          "titre": "Tentative de résolution amiable",
+          "description": "Discutez avec l'enseignant des points de désaccord. Souvent, une explication suffit ou une erreur matérielle est identifiée",
+          "conseils": ["Restez courtois et factuel", "Si l'enseignant reconnaît une erreur, elle sera corrigée directement"]
+        },
+        {
+          "numero": 3,
+          "titre": "Demande formelle de révision (si non résolu)",
+          "description": "Si le désaccord persiste, envoyez un email à scolarite@esic.fr avec : votre identité, matière, date de l'examen, note contestée, arguments détaillés (erreur de saisie, barème non respecté, réponse correcte non validée, etc.)",
+          "conseils": ["Soyez précis et factuel", "Joignez tout élément probant (copie, barème, sujet)", "Restez professionnel dans le ton"]
+        },
+        {
+          "numero": 4,
+          "titre": "Examen par la commission",
+          "description": "Votre copie est réexaminée par une commission composée de : l'enseignant, un autre enseignant de la matière, votre responsable pédagogique",
+          "conseils": ["La commission est neutre et objective", "Vous n'êtes pas présent lors de l'examen"]
+        },
+        {
+          "numero": 5,
+          "titre": "Décision",
+          "description": "La commission rend sa décision sous 2 semaines maximum. Trois issues possibles : (1) Note maintenue, (2) Note augmentée, (3) Note diminuée (si d'autres erreurs à votre désavantage sont découvertes)",
+          "conseils": ["La décision est définitive et ne peut pas être contestée à nouveau", "Vous êtes informé par email"]
+        },
+        {
+          "numero": 6,
+          "titre": "Modification de la note (si applicable)",
+          "description": "Si la note est modifiée, le changement apparaît sur l'ENT sous 48h",
+          "conseils": ["Vérifiez bien que la modification est effective"]
+        }
+      ],
+      "delais": "Demande : 15 jours après publication de la note. Décision : 2 semaines maximum",
+      "cout": "Gratuit",
+      "contacts": [
+        {
+          "service": "Scolarité",
+          "email": "scolarite@esic.fr",
+          "telephone": "01.53.90.15.20",
+          "horaires": "Lun-Ven 9h-12h / 14h-17h"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Y a-t-il un risque que ma note baisse ?",
+          "reponse": "Oui, si la commission découvre des erreurs de correction en votre faveur lors du premier examen, votre note peut être diminuée. C'est rare mais possible"
+        },
+        {
+          "question": "Puis-je contester une note de projet ou de soutenance ?",
+          "reponse": "Oui, même procédure. Cependant, les notes de compétences (oral, communication, etc.) sont plus difficiles à contester car subjectives"
+        },
+        {
+          "question": "Puis-je être accompagné lors de la procédure ?",
+          "reponse": "Vous ne participez pas à la commission. Cependant, votre délégué de classe peut vous conseiller dans la rédaction de votre demande"
+        }
+      ],
+      "documents_generes": [],
+      "references": ["Règlement intérieur - Article 11 : Réclamations et recours"]
+    },
+    {
+      "id": "PROC006",
+      "titre": "Demande de Bourse CROUS",
+      "categorie": "Administrative",
+      "description": "Procédure pour demander une bourse sur critères sociaux du CROUS",
+      "public_concerne": ["Tous les étudiants éligibles aux bourses"],
+      "periode": "15 janvier - 15 mai (pour l'année N+1)",
+      "duree_estimee": "30-60 minutes",
+      "prerequis": [
+        "Avoir moins de 28 ans au 1er septembre de l'année universitaire",
+        "Être de nationalité française ou remplir les conditions pour les étrangers",
+        "Être inscrit en formation initiale",
+        "Ne pas redoubler (sauf exceptions)"
+      ],
+      "documents_necessaires": [
+        "Avis fiscal des parents (année N-2)",
+        "Numéro INE (sur certificat de scolarité)",
+        "Informations sur les frères et sœurs étudiants",
+        "RIB"
+      ],
+      "etapes": [
+        {
+          "numero": 1,
+          "titre": "Création du Dossier Social Étudiant (DSE)",
+          "description": "Rendez-vous sur messervices.etudiant.gouv.fr et créez votre compte ou connectez-vous",
+          "conseils": ["Utilisez de préférence FranceConnect si vous avez un compte", "Notez bien vos identifiants"]
+        },
+        {
+          "numero": 2,
+          "titre": "Remplissage du formulaire",
+          "description": "Remplissez le DSE avec : vos informations personnelles, revenus des parents (avis fiscal N-2), nombre de frères et sœurs étudiants, distance domicile-établissement",
+          "conseils": [
+            "Ayez l'avis fiscal de vos parents à portée de main",
+            "Comptez tous les frères et sœurs étudiants (université, BTS, etc.)",
+            "La distance domicile-lieu d'études influence le montant"
+          ]
+        },
+        {
+          "numero": 3,
+          "titre": "Choix de l'établissement",
+          "description": "Dans la liste des établissements, recherchez et sélectionnez 'ESIC - École Supérieure d'Informatique et du Commerce, Paris 11e'",
+          "conseils": ["Vous pouvez saisir jusqu'à 4 vœux d'établissement", "Mettez l'ESIC en premier vœu"]
+        },
+        {
+          "numero": 4,
+          "titre": "Validation et envoi",
+          "description": "Vérifiez toutes les informations, acceptez les conditions, validez le DSE",
+          "conseils": ["Vous recevez un email de confirmation avec un numéro de dossier", "Conservez précieusement ce numéro"]
+        },
+        {
+          "numero": 5,
+          "titre": "Réponse du CROUS",
+          "description": "Le CROUS étudie votre dossier et vous envoie une notification conditionnelle (juin-juillet) indiquant si vous êtes éligible et l'échelon attribué",
+          "conseils": ["Consultez régulièrement votre compte", "Vérifiez vos emails et le portail"]
+        },
+        {
+          "numero": 6,
+          "titre": "Confirmation d'inscription",
+          "description": "Une fois inscrit administrativement à l'ESIC (septembre), votre dossier est automatiquement validé par l'école auprès du CROUS",
+          "conseils": ["Assurez-vous que votre inscription administrative est bien finalisée"]
+        },
+        {
+          "numero": 7,
+          "titre": "Premier versement",
+          "description": "La bourse est versée mensuellement sur votre compte bancaire à partir de septembre (généralement vers le 5 de chaque mois)",
+          "conseils": ["10 mensualités (septembre à juin)", "Vérifiez votre RIB sur le portail"]
+        }
+      ],
+      "delais": "Demande : 15 janvier - 15 mai. Réponse conditionnelle : juin-juillet. Premier versement : début septembre",
+      "cout": "Gratuit",
+      "contacts": [
+        {
+          "service": "CROUS de Paris",
+          "email": "contact@crous-paris.fr",
+          "telephone": "01.40.51.36.00",
+          "site": "https://www.crous-paris.fr"
+        },
+        {
+          "service": "Service social ESIC (aide au dossier)",
+          "email": "social@esic.fr",
+          "telephone": "01.53.90.15.42",
+          "horaires": "Lun, Mer 14h-18h"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Puis-je faire ma demande après le 15 mai ?",
+          "reponse": "Oui, mais vous perdez la priorité et risquez de ne pas avoir de réponse avant la rentrée. Faites-le impérativement entre janvier et mai"
+        },
+        {
+          "question": "Combien puis-je recevoir ?",
+          "reponse": "Selon votre échelon (0 bis à 7) : de 0€ (exonération seule) à 7 236€/an (échelon 7, soit 723,60€/mois sur 10 mois)"
+        },
+        {
+          "question": "Dois-je refaire un dossier chaque année ?",
+          "reponse": "Oui, le DSE est à renouveler chaque année entre le 15 janvier et le 15 mai"
+        }
+      ],
+      "documents_generes": ["Notification conditionnelle de bourse", "Notification définitive"],
+      "references": ["Guide de l'étudiant"]
+    },
+    {
+      "id": "PROC007",
+      "titre": "Réservation d'une Salle",
+      "categorie": "Services Campus",
+      "description": "Procédure pour réserver une salle pour un projet de groupe ou une réunion",
+      "public_concerne": ["Tous les étudiants"],
+      "periode": "Toute l'année",
+      "duree_estimee": "5-10 minutes",
+      "prerequis": [
+        "Avoir un motif pédagogique (projet, révisions en groupe, etc.)"
+      ],
+      "documents_necessaires": [],
+      "etapes": [
+        {
+          "numero": 1,
+          "titre": "Connexion à l'ENT",
+          "description": "Connectez-vous à l'ENT > 'Services' > 'Réservation de salles'",
+          "conseils": []
+        },
+        {
+          "numero": 2,
+          "titre": "Consultation des disponibilités",
+          "description": "Sélectionnez le type de salle souhaité (salle de groupe bibliothèque, salle informatique, salle de réunion), la date et l'horaire",
+          "conseils": ["Les salles de groupe bibliothèque (4-8 personnes) sont les plus simples à réserver", "Les salles informatiques nécessitent validation enseignant"]
+        },
+        {
+          "numero": 3,
+          "titre": "Sélection du créneau",
+          "description": "Choisissez un créneau disponible (créneaux de 2h minimum, 4h maximum par jour)",
+          "conseils": ["Réservez tôt, surtout en période d'examens", "Vous pouvez réserver jusqu'à 7 jours à l'avance"]
+        },
+        {
+          "numero": 4,
+          "titre": "Remplissage du formulaire",
+          "description": "Indiquez : motif de la réservation, nombre de participants, matériel éventuel nécessaire",
+          "conseils": ["Soyez précis sur le motif", "Si vous avez besoin de matériel (vidéoprojecteur, etc.), précisez-le"]
+        },
+        {
+          "numero": 5,
+          "titre": "Validation",
+          "description": "Pour salles de groupe bibliothèque : validation immédiate. Pour salles informatiques : validation par le responsable pédagogique sous 24h",
+          "conseils": ["Vous recevez un email de confirmation", "Vérifiez vos emails"]
+        },
+        {
+          "numero": 6,
+          "titre": "Utilisation",
+          "description": "Le jour J, présentez-vous à la salle réservée. Accès avec votre carte étudiante. Respectez les horaires et l'état des lieux",
+          "conseils": ["Arrivez à l'heure", "Laissez la salle propre et rangée", "En cas d'empêchement, annulez votre réservation"]
+        }
+      ],
+      "delais": "Réservation possible jusqu'à 7 jours à l'avance. Validation immédiate ou sous 24h",
+      "cout": "Gratuit",
+      "contacts": [
+        {
+          "service": "Bibliothèque (salles de groupe)",
+          "email": "bibliotheque@esic.fr",
+          "telephone": "01.53.90.15.50"
+        },
+        {
+          "service": "Services informatiques (salles info)",
+          "email": "support-it@esic.fr",
+          "telephone": "01.53.90.15.99"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Puis-je annuler une réservation ?",
+          "reponse": "Oui, via l'ENT, jusqu'à 2h avant le créneau. Au-delà, la réservation est perdue"
+        },
+        {
+          "question": "Que se passe-t-il si je ne viens pas ?",
+          "reponse": "Après 2 absences non annulées, vous risquez une suspension temporaire de votre droit de réservation"
+        },
+        {
+          "question": "Puis-je prolonger ma réservation ?",
+          "reponse": "Si la salle est libre après votre créneau, oui (demandez à la bibliothèque ou sur l'ENT)"
+        }
+      ],
+      "documents_generes": ["Confirmation de réservation (email)"],
+      "references": ["Guide de l'étudiant"]
+    },
+    {
+      "id": "PROC008",
+      "titre": "Emprunt de Livres à la Bibliothèque",
+      "categorie": "Services Campus",
+      "description": "Procédure pour emprunter des ouvrages à la bibliothèque ESIC",
+      "public_concerne": ["Tous les étudiants inscrits"],
+      "periode": "Toute l'année (selon horaires bibliothèque)",
+      "duree_estimee": "5 minutes",
+      "prerequis": [
+        "Avoir sa carte étudiante",
+        "Ne pas avoir de retard de restitution en cours",
+        "Ne pas avoir atteint la limite d'emprunts (5 livres)"
+      ],
+      "documents_necessaires": ["Carte étudiante ESIC"],
+      "etapes": [
+        {
+          "numero": 1,
+          "titre": "Recherche du livre",
+          "description": "Option 1 : Recherchez le livre dans le catalogue en ligne (bibliotheque.esic.fr) et notez sa cote. Option 2 : Parcourez directement les rayonnages",
+          "conseils": ["Le catalogue en ligne indique si le livre est disponible ou emprunté", "Notez bien la cote pour localiser le livre"]
+        },
+        {
+          "numero": 2,
+          "titre": "Localisation dans les rayonnages",
+          "description": "Les livres sont classés par cote (visible sur la tranche). Suivez les panneaux de signalisation dans la bibliothèque",
+          "conseils": ["Si vous ne trouvez pas, demandez à un bibliothécaire", "Vérifiez que le livre n'est pas en consultation sur place dans la salle de lecture"]
+        },
+        {
+          "numero": 3,
+          "titre": "Emprunt au comptoir",
+          "description": "Présentez-vous au comptoir d'accueil avec le(s) livre(s) et votre carte étudiante",
+          "conseils": ["Vous pouvez emprunter jusqu'à 5 livres simultanément"]
+        },
+        {
+          "numero": 4,
+          "titre": "Enregistrement",
+          "description": "Le bibliothécaire scanne votre carte et les livres. L'emprunt est enregistré dans le système",
+          "conseils": ["Vérifiez la date de retour annoncée (3 semaines)"]
+        },
+        {
+          "numero": 5,
+          "titre": "Consultation du prêt",
+          "description": "Vous pouvez consulter vos emprunts en cours sur bibliotheque.esic.fr > 'Mon compte' ou sur l'ENT",
+          "conseils": ["Un rappel automatique vous est envoyé 3 jours avant la date de retour"]
+        },
+        {
+          "numero": 6,
+          "titre": "Restitution",
+          "description": "Rendez les livres avant la date limite au comptoir d'accueil ou dans la boîte de retour (si bibliothèque fermée)",
+          "conseils": ["Vous pouvez renouveler l'emprunt 2 fois (jusqu'à 9 semaines total) via le catalogue ou au comptoir", "En cas de retard : 0,50€ par jour et par livre"]
+        }
+      ],
+      "delais": "Durée d'emprunt : 3 semaines, renouvelable 2 fois (si pas de réservation par un autre étudiant)",
+      "cout": "Gratuit. Pénalité de retard : 0,50€/jour/livre",
+      "contacts": [
+        {
+          "service": "Bibliothèque",
+          "email": "bibliotheque@esic.fr",
+          "telephone": "01.53.90.15.50",
+          "horaires": "Lun-Ven 8h-20h, Sam 9h-17h"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Puis-je emprunter des revues ?",
+          "reponse": "Les revues récentes sont consultables uniquement sur place. Les anciens numéros peuvent être empruntés (2 max, 1 semaine)"
+        },
+        {
+          "question": "Que se passe-t-il si je perds un livre ?",
+          "reponse": "Vous devez le signaler immédiatement et racheter le livre (ou rembourser sa valeur) + frais de traitement 10€"
+        },
+        {
+          "question": "Puis-je réserver un livre déjà emprunté ?",
+          "reponse": "Oui, via le catalogue en ligne. Vous serez notifié par email dès qu'il est disponible"
+        }
+      ],
+      "documents_generes": [],
+      "references": ["Guide de l'étudiant"]
+    },
+    {
+      "id": "PROC009",
+      "titre": "Inscription à un Examen de Rattrapage",
+      "categorie": "Académique",
+      "description": "Procédure pour s'inscrire à une session de rattrapage",
+      "public_concerne": ["Étudiants ayant obtenu une note < 10/20 après compensation"],
+      "periode": "2 semaines avant la session de rattrapage",
+      "duree_estimee": "Automatique (pas de démarche)",
+      "prerequis": [
+        "Avoir une note inférieure à 10/20 dans une ou plusieurs matières après compensation"
+      ],
+      "documents_necessaires": [],
+      "etapes": [
+        {
+          "numero": 1,
+          "titre": "Publication des résultats",
+          "description": "Après la session 1, les résultats sont publiés sur l'ENT avec indication des matières à rattraper",
+          "conseils": ["Consultez attentivement vos résultats", "Les matières à rattraper sont identifiées clairement"]
+        },
+        {
+          "numero": 2,
+          "titre": "Inscription automatique",
+          "description": "Vous êtes AUTOMATIQUEMENT inscrit aux rattrapages des matières où vous avez moins de 10/20",
+          "conseils": ["Aucune démarche de votre part n'est nécessaire", "Vous ne pouvez pas vous désinscrire (sauf demande exceptionnelle)"]
+        },
+        {
+          "numero": 3,
+          "titre": "Réception des convocations",
+          "description": "2 semaines avant la session de rattrapage, vous recevez vos convocations par email et elles sont disponibles sur l'ENT > 'Examens' > 'Mes convocations'",
+          "conseils": ["Vérifiez votre boîte email régulièrement", "Téléchargez et imprimez vos convocations"]
+        },
+        {
+          "numero": 4,
+          "titre": "Préparation",
+          "description": "Révisez les matières concernées. Les rattrapages sont dans le même format que la session 1",
+          "conseils": ["Consultez vos cours et vos anciennes copies", "N'hésitez pas à solliciter les enseignants pendant leurs permanences"]
+        },
+        {
+          "numero": 5,
+          "titre": "Passage des examens",
+          "description": "Présentez-vous aux examens de rattrapage avec votre convocation, carte étudiante et pièce d'identité",
+          "conseils": ["Arrivez 20-30 min en avance", "Retard > 15 min = interdiction d'entrer"]
+        },
+        {
+          "numero": 6,
+          "titre": "Note finale",
+          "description": "La meilleure note entre session 1 et rattrapage est retenue, plafonnée à 10/20",
+          "conseils": ["Même si vous faites moins bien au rattrapage, votre note de session 1 est conservée", "Objectif : obtenir au moins 10/20 pour valider"]
+        }
+      ],
+      "delais": "Convocations : 2 semaines avant. Session de rattrapage S1 : début février. Session S2 : début septembre",
+      "cout": "Gratuit",
+      "contacts": [
+        {
+          "service": "Scolarité",
+          "email": "scolarite@esic.fr",
+          "telephone": "01.53.90.15.20",
+          "horaires": "Lun-Ven 9h-12h / 14h-17h"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Puis-je ne pas passer un rattrapage si je suis satisfait de ma note ?",
+          "reponse": "Par défaut, non. Cependant, vous pouvez demander une dispense par email au service scolarité avant la date limite indiquée"
+        },
+        {
+          "question": "Si j'ai 11/20 en session 1 et 8/20 au rattrapage, quelle note est retenue ?",
+          "reponse": "Votre note de session 1 (11/20) est conservée. La meilleure note entre les deux sessions est toujours retenue"
+        },
+        {
+          "question": "Que se passe-t-il si je rate aussi le rattrapage ?",
+          "reponse": "Si après rattrapage vous n'avez pas validé suffisamment d'ECTS (< 48/60), vous risquez le redoublement"
+        }
+      ],
+      "documents_generes": ["Convocations de rattrapage"],
+      "references": ["Règlement intérieur - Article 5 : Évaluation et validation"]
+    },
+    {
+      "id": "PROC010",
+      "titre": "Demande d'Aide Financière d'Urgence",
+      "categorie": "Administrative",
+      "description": "Procédure pour demander une aide financière exceptionnelle de l'ESIC",
+      "public_concerne": ["Étudiants en difficulté financière soudaine"],
+      "periode": "Toute l'année",
+      "duree_estimee": "1h (constitution dossier) + 15 jours (traitement)",
+      "prerequis": [
+        "Être en difficulté financière avérée et soudaine",
+        "Avoir épuisé les autres aides (CROUS, CAF, famille)"
+      ],
+      "documents_necessaires": [
+        "Justificatifs de ressources (3 derniers mois) : bulletins de salaire, attestation Pôle Emploi, etc.",
+        "Justificatifs de charges : loyer, factures, etc.",
+        "Justificatif de la situation d'urgence : licenciement parent, accident, problème de santé, etc.",
+        "Relevés bancaires (3 derniers mois)"
+      ],
+      "etapes": [
+        {
+          "numero": 1,
+          "titre": "Prise de rendez-vous",
+          "description": "Contactez l'assistante sociale Isabelle DUBOIS par email (social@esic.fr) ou téléphone (01.53.90.15.42) pour prendre rendez-vous",
+          "conseils": ["Expliquez brièvement votre situation dans l'email", "Les rendez-vous ont lieu les lundis et mercredis 14h-18h"]
+        },
+        {
+          "numero": 2,
+          "titre": "Entretien avec l'assistante sociale",
+          "description": "Lors du rendez-vous, présentez votre situation et apportez tous les justificatifs nécessaires",
+          "conseils": ["Soyez transparent sur votre situation financière", "N'oubliez aucun document", "L'entretien est confidentiel"]
+        },
+        {
+          "numero": 3,
+          "titre": "Constitution du dossier",
+          "description": "L'assistante sociale vous aide à constituer le dossier de demande d'aide d'urgence",
+          "conseils": ["Elle évaluera aussi votre éligibilité à d'autres aides (CAF, FSU, etc.)"]
+        },
+        {
+          "numero": 4,
+          "titre": "Examen par la commission",
+          "description": "Votre dossier est présenté à la commission d'aide d'urgence (composée de la direction, service social, représentant étudiant)",
+          "conseils": ["La commission se réunit toutes les 2 semaines", "Délai de réponse : 15 jours maximum"]
+        },
+        {
+          "numero": 5,
+          "titre": "Notification de décision",
+          "description": "Vous êtes informé par email et courrier de la décision : acceptation (avec montant accordé), refus motivé ou demande de compléments",
+          "conseils": ["En cas d'acceptation, le montant est versé sous 5 jours", "En cas de refus, vous pouvez demander une révision si situation change"]
+        },
+        {
+          "numero": 6,
+          "titre": "Versement",
+          "description": "Si accepté, l'aide est versée directement sur votre compte bancaire (virement)",
+          "conseils": ["Montant variable selon situation : 200€ à 1 000€", "Cette aide est exceptionnelle et non renouvelable dans l'année"]
+        }
+      ],
+      "delais": "Délai de traitement : 15 jours après dépôt du dossier complet. Versement : 5 jours après acceptation",
+      "cout": "Gratuit",
+      "contacts": [
+        {
+          "service": "Service Social",
+          "nom": "Isabelle DUBOIS",
+          "email": "social@esic.fr",
+          "telephone": "01.53.90.15.42",
+          "bureau": "A105",
+          "horaires": "Lun, Mer 14h-18h"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Dois-je rembourser cette aide ?",
+          "reponse": "Non, il s'agit d'une aide à fonds perdus (pas de remboursement)"
+        },
+        {
+          "question": "Puis-je en bénéficier plusieurs fois ?",
+          "reponse": "Cette aide est exceptionnelle. En principe, une seule fois par année académique, sauf nouvelle situation d'urgence"
+        },
+        {
+          "question": "L'aide est-elle cumulable avec d'autres aides ?",
+          "reponse": "Oui, elle vient en complément des bourses CROUS, APL, etc."
+        }
+      ],
+      "documents_generes": ["Notification de décision"],
+      "references": ["Guide de l'étudiant"]
+    },
+    {
+      "id": "PROC011",
+      "titre": "Création d'une Association Étudiante",
+      "categorie": "Vie Étudiante",
+      "description": "Procédure pour créer une nouvelle association étudiante à l'ESIC",
+      "public_concerne": ["Groupes d'étudiants porteurs d'un projet associatif"],
+      "periode": "Toute l'année (de préférence septembre-octobre)",
+      "duree_estimee": "2-3 semaines (de la candidature à la validation)",
+      "prerequis": [
+        "Avoir au minimum 5 membres fondateurs",
+        "Avoir un projet associatif clair et viable",
+        "Ne pas faire doublon avec une association existante"
+      ],
+      "documents_necessaires": [
+        "Liste des membres fondateurs (nom, prénom, formation, email)",
+        "Statuts de l'association (modèle fourni par le BVE)",
+        "Descriptif du projet (objectifs, activités prévues, budget prévisionnel)",
+        "Règlement intérieur de l'association (optionnel)"
+      ],
+      "etapes": [
+        {
+          "numero": 1,
+          "titre": "Prise de contact avec le BVE",
+          "description": "Contactez le Bureau de la Vie Étudiante (bve@esic.fr) pour exposer votre projet et obtenir le dossier de création",
+          "conseils": ["Préparez une présentation claire de votre projet", "Le BVE vous conseillera sur la faisabilité"]
+        },
+        {
+          "numero": 2,
+          "titre": "Constitution du dossier",
+          "description": "Réunissez les 5 membres minimum, rédigez les statuts (modèle BVE), définissez le bureau (président, trésorier, secrétaire minimum), établissez un budget prévisionnel pour la première année",
+          "conseils": ["Inspirez-vous des statuts d'associations existantes", "Soyez réalistes dans votre budget", "Définissez clairement les rôles de chacun"]
+        },
+        {
+          "numero": 3,
+          "titre": "Dépôt du dossier",
+          "description": "Envoyez le dossier complet par email à bve@esic.fr",
+          "conseils": ["Vérifiez que tous les documents sont présents", "Soignez la présentation"]
+        },
+        {
+          "numero": 4,
+          "titre": "Examen préalable",
+          "description": "Le BVE examine votre dossier et peut demander des compléments ou ajustements (délai : 1 semaine)",
+          "conseils": ["Répondez rapidement aux demandes de complément"]
+        },
+        {
+          "numero": 5,
+          "titre": "Présentation devant la commission",
+          "description": "Vous êtes convoqués (président + 1-2 membres) pour présenter votre projet devant la commission (BVE + représentants direction + étudiants)",
+          "conseils": ["Préparez une présentation orale de 10 min", "Anticipez les questions", "Soyez enthousiastes mais réalistes"]
+        },
+        {
+          "numero": 6,
+          "titre": "Décision",
+          "description": "La commission rend sa décision : validation, refus motivé ou validation sous conditions. Délai : 1 semaine après l'audition",
+          "conseils": ["En cas de validation conditionnelle, vous devrez remplir les conditions avant le lancement"]
+        },
+        {
+          "numero": 7,
+          "titre": "Formalisation",
+          "description": "Si validé : signature de la charte des associations ESIC, attribution d'un espace de stockage, d'une adresse email (@esic.fr), inscription au registre des associations",
+          "conseils": []
+        },
+        {
+          "numero": 8,
+          "titre": "Déclaration en préfecture (optionnel)",
+          "description": "Pour ouvrir un compte bancaire, vous devez déclarer votre association en préfecture (loi 1901). Le BVE peut vous accompagner",
+          "conseils": ["Cette étape est obligatoire si vous voulez gérer un budget conséquent"]
+        },
+        {
+          "numero": 9,
+          "titre": "Subvention de démarrage",
+          "description": "Les nouvelles associations validées peuvent bénéficier d'une subvention de démarrage (200-500€) sur présentation d'un budget détaillé",
+          "conseils": ["Utilisez cette aide pour vos premières actions"]
+        }
+      ],
+      "delais": "2-3 semaines de la candidature à la validation. Commencer de préférence en septembre pour avoir toute l'année devant vous",
+      "cout": "Gratuit",
+      "contacts": [
+        {
+          "service": "Bureau de la Vie Étudiante",
+          "nom": "Laura GARCIA",
+          "email": "bve@esic.fr",
+          "telephone": "01.53.90.15.50",
+          "bureau": "A107",
+          "horaires": "Lun-Ven 10h-18h"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Peut-on créer une association à but lucratif ?",
+          "reponse": "Non, les associations étudiantes ESIC sont à but non lucratif (loi 1901)"
+        },
+        {
+          "question": "Combien de temps faut-il s'engager ?",
+          "reponse": "Le mandat du bureau est généralement d'un an, renouvelable"
+        },
+        {
+          "question": "Qui peut être membre ?",
+          "reponse": "Priorité aux étudiants ESIC. Les étudiants d'autres écoles peuvent être membres selon les statuts"
+        }
+      ],
+      "documents_generes": ["Reconnaissance officielle", "Charte signée", "Email association (@esic.fr)"],
+      "references": ["Guide de l'étudiant"]
+    },
+    {
+      "id": "PROC012",
+      "titre": "Organisation d'un Événement sur le Campus",
+      "categorie": "Vie Étudiante",
+      "description": "Procédure pour organiser un événement (conférence, atelier, soirée, etc.) sur le campus ESIC",
+      "public_concerne": ["Associations étudiantes", "Groupes d'étudiants"],
+      "periode": "Toute l'année",
+      "duree_estimee": "Minimum 3 semaines avant l'événement",
+      "prerequis": [
+        "Avoir un projet d'événement défini",
+        "Être une association reconnue OU avoir l'appui d'un enseignant/service"
+      ],
+      "documents_necessaires": [
+        "Descriptif de l'événement (type, objectifs, déroulé)",
+        "Date, horaire, lieu souhaité",
+        "Nombre de participants attendus",
+        "Budget prévisionnel",
+        "Liste des intervenants (si applicable)",
+        "Besoins logistiques (matériel, restauration, etc.)"
+      ],
+      "etapes": [
+        {
+          "numero": 1,
+          "titre": "Conception du projet",
+          "description": "Définissez clairement votre événement : objectifs, public cible, format, date souhaitée",
+          "conseils": ["Vérifiez le calendrier académique pour éviter les périodes d'examens", "Consultez les autres associations pour éviter les doublons de dates"]
+        },
+        {
+          "numero": 2,
+          "titre": "Demande d'autorisation préalable",
+          "description": "Minimum 3 semaines avant la date souhaitée, envoyez un email à bve@esic.fr avec : descriptif détaillé, date/lieu souhaités, budget prévisionnel, nombre de participants",
+          "conseils": ["Plus vous anticipez, mieux c'est (idéal : 1-2 mois avant)", "Ayez des dates alternatives"]
+        },
+        {
+          "numero": 3,
+          "titre": "Examen de la demande",
+          "description": "La commission BVE examine votre demande : cohérence avec les valeurs ESIC, faisabilité logistique, budget, pertinence pédagogique",
+          "conseils": ["Délai de réponse : 1 semaine", "La commission peut demander des ajustements"]
+        },
+        {
+          "numero": 4,
+          "titre": "Autorisation et réservations",
+          "description": "Si accepté : le BVE valide la réservation de salle, autorise l'événement et vous aide dans l'organisation logistique",
+          "conseils": ["Vous recevez un accusé d'autorisation par email à conserver"]
+        },
+        {
+          "numero": 5,
+          "titre": "Préparation logistique",
+          "description": "Selon vos besoins : demande de matériel (sono, vidéoprojecteur, etc.) auprès du service IT, commande de restauration si applicable, création des supports de communication (affiches, posts réseaux sociaux)",
+          "conseils": ["Le BVE peut vous aider sur la communication", "Respectez la charte graphique ESIC"]
+        },
+        {
+          "numero": 6,
+          "titre": "Communication",
+          "description": "Faites la promotion de votre événement : affiches sur le campus (avec tampon BVE), posts sur réseaux sociaux, email via le BVE (pour envoi à tous les étudiants)",
+          "conseils": ["Commencez la communication 2 semaines avant", "Créez un événement sur l'ENT pour les inscriptions"]
+        },
+        {
+          "numero": 7,
+          "titre": "Jour J - Installation",
+          "description": "Installez la salle en respectant les horaires autorisés. Vérifiez le matériel",
+          "conseils": ["Arrivez au moins 1h avant le début", "Testez tout le matériel technique"]
+        },
+        {
+          "numero": 8,
+          "titre": "Déroulement",
+          "description": "Accueillez les participants, assurez le bon déroulement, respectez les horaires",
+          "conseils": ["Désignez un responsable sécurité/urgence", "Ayez le numéro de l'urgence campus (01.53.90.15.00)"]
+        },
+        {
+          "numero": 9,
+          "titre": "Rangement",
+          "description": "Remettez la salle en état, rendez le matériel emprunté",
+          "conseils": ["État des lieux obligatoire avec le responsable salle", "Tout dégât sera facturé"]
+        },
+        {
+          "numero": 10,
+          "titre": "Bilan",
+          "description": "Envoyez un bilan au BVE (nombre de participants, retours, photos, budget final) dans les 7 jours suivant l'événement",
+          "conseils": ["Ce bilan est important pour vos futures demandes", "Il peut être publié sur les réseaux sociaux ESIC"]
+        }
+      ],
+      "delais": "Demande minimum 3 semaines avant (idéal : 1-2 mois). Autorisation : 1 semaine",
+      "cout": "Gratuit. Aide financière possible selon le projet (jusqu'à 500€)",
+      "contacts": [
+        {
+          "service": "Bureau de la Vie Étudiante",
+          "email": "bve@esic.fr",
+          "telephone": "01.53.90.15.50"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Peut-on organiser un événement payant ?",
+          "reponse": "Oui, sous conditions : tarif modéré, à but non lucratif, recettes reversées à l'association ou projet caritatif"
+        },
+        {
+          "question": "Peut-on faire venir des intervenants extérieurs ?",
+          "reponse": "Oui, c'est même encouragé. Précisez-le dans votre demande (nom, qualité, sujet)"
+        },
+        {
+          "question": "Peut-on servir de l'alcool ?",
+          "reponse": "Non, l'alcool est strictement interdit sur le campus (sauf événements officiels autorisés par la Direction)"
+        }
+      ],
+      "documents_generes": ["Autorisation d'événement"],
+      "references": ["Règlement intérieur - Article 9 : Vie étudiante et associations"]
+    },
+    {
+      "id": "PROC013",
+      "titre": "Signalement d'un Incident Technique (IT)",
+      "categorie": "Services Campus",
+      "description": "Procédure pour signaler un problème technique (ENT, WiFi, matériel, etc.)",
+      "public_concerne": ["Tous les étudiants"],
+      "periode": "Toute l'année",
+      "duree_estimee": "5 minutes (signalement)",
+      "prerequis": [],
+      "documents_necessaires": ["Captures d'écran du problème (si applicable)"],
+      "etapes": [
+        {
+          "numero": 1,
+          "titre": "Identification du problème",
+          "description": "Déterminez précisément le problème : connexion ENT impossible, WiFi ne fonctionne pas, imprimante en panne, logiciel qui plante, problème d'accès VPN, etc.",
+          "conseils": ["Notez les messages d'erreur exacts", "Essayez de redémarrer (ordinateur, navigateur) avant de signaler"]
+        },
+        {
+          "numero": 2,
+          "titre": "Vérification rapide",
+          "description": "Vérifiez que le problème ne vient pas de vous : mauvais identifiants, navigateur obsolète, connexion internet personnelle coupée, etc.",
+          "conseils": ["Testez sur un autre appareil si possible", "Vérifiez que vous utilisez les bons identifiants"]
+        },
+        {
+          "numero": 3,
+          "titre": "Signalement",
+          "description": "3 options : (1) Email à support-it@esic.fr avec description détaillée + captures d'écran, (2) Formulaire sur ENT > 'Support' > 'Nouveau ticket', (3) Chat en ligne sur ENT (9h-18h)",
+          "conseils": ["L'email et le formulaire créent automatiquement un ticket", "Le chat est le plus rapide pour problèmes simples"]
+        },
+        {
+          "numero": 4,
+          "titre": "Informations à fournir",
+          "description": "Dans votre signalement, indiquez : votre nom et formation, description précise du problème, message d'erreur (si applicable), appareil utilisé (PC, Mac, smartphone), navigateur, quand le problème est apparu, ce que vous avez déjà essayé",
+          "conseils": ["Plus vous êtes précis, plus vite le problème sera résolu", "Joignez des captures d'écran"]
+        },
+        {
+          "numero": 5,
+          "titre": "Confirmation",
+          "description": "Vous recevez un email de confirmation avec un numéro de ticket",
+          "conseils": ["Conservez ce numéro", "Vous pouvez suivre l'avancement du ticket sur l'ENT"]
+        },
+        {
+          "numero": 6,
+          "titre": "Traitement",
+          "description": "L'équipe IT examine votre ticket et vous contacte si besoin. Délai : 48h pour incident bloquant, 1 semaine pour demande standard",
+          "conseils": ["Consultez vos emails régulièrement", "Répondez rapidement si l'équipe IT vous contacte"]
+        },
+        {
+          "numero": 7,
+          "titre": "Résolution",
+          "description": "Une fois le problème résolu, vous recevez un email de clôture du ticket",
+          "conseils": ["Vérifiez que le problème est bien résolu", "Vous pouvez rouvrir le ticket si le problème persiste"]
+        }
+      ],
+      "delais": "Délai de traitement : 48h (incident bloquant), 1 semaine (standard)",
+      "cout": "Gratuit",
+      "contacts": [
+        {
+          "service": "Helpdesk IT",
+          "email": "support-it@esic.fr",
+          "telephone": "01.53.90.15.99",
+          "bureau": "C104",
+          "horaires": "Lun-Ven 9h-12h / 14h-17h",
+          "chat": "ENT > Support (9h-18h)"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Que faire en cas d'urgence (examen en ligne impossible) ?",
+          "reponse": "Téléphonez immédiatement au 01.53.90.15.99 ou présentez-vous au bureau C104"
+        },
+        {
+          "question": "Puis-je apporter mon ordinateur personnel au helpdesk ?",
+          "reponse": "Oui, pour problèmes de connexion ENT, VPN, WiFi. Pour autres problèmes, adressez-vous à un réparateur"
+        },
+        {
+          "question": "Le helpdesk peut-il installer des logiciels sur mon PC personnel ?",
+          "reponse": "Non, uniquement sur les postes de l'école. Pour votre PC, téléchargez depuis l'ENT (Office, VPN, etc.)"
+        }
+      ],
+      "documents_generes": ["Ticket de support (numéro de suivi)"],
+      "references": ["Guide de l'étudiant"]
+    },
+    {
+      "id": "PROC014",
+      "titre": "Demande de Prêt de Matériel Informatique",
+      "categorie": "Services Campus",
+      "description": "Procédure pour emprunter du matériel informatique (ordinateur portable, caméra, etc.)",
+      "public_concerne": ["Tous les étudiants"],
+      "periode": "Toute l'année",
+      "duree_estimee": "10 minutes (réservation + retrait)",
+      "prerequis": [
+        "Avoir sa carte étudiante",
+        "Ne pas avoir de retard de restitution en cours",
+        "Pouvoir fournir une caution"
+      ],
+      "documents_necessaires": [
+        "Carte étudiante",
+        "Pièce d'identité",
+        "Caution : chèque de 50€ (non encaissé) OU empreinte CB"
+      ],
+      "etapes": [
+        {
+          "numero": 1,
+          "titre": "Réservation en ligne",
+          "description": "Connectez-vous à l'ENT > 'Services' > 'Prêt matériel'. Consultez les disponibilités et sélectionnez le matériel souhaité : ordinateur portable (20 disponibles, prêt 48h), caméra/micro (5 kits, prêt 1 sem), calculatrice (20, prêt durée examen), chargeurs (30, prêt journée)",
+          "conseils": ["Réservez à l'avance, surtout pour les portables et caméras", "Vérifiez les disponibilités avant de vous déplacer"]
+        },
+        {
+          "numero": 2,
+          "titre": "Confirmation de réservation",
+          "description": "Vous recevez un email de confirmation avec la date et l'heure de retrait",
+          "conseils": ["Notez bien le créneau de retrait (bureau C104, horaires 9h-12h / 14h-17h)"]
+        },
+        {
+          "numero": 3,
+          "titre": "Retrait",
+          "description": "Présentez-vous au helpdesk IT (bureau C104) avec votre carte étudiante, pièce d'identité et caution (chèque 50€ ou CB)",
+          "conseils": ["La caution n'est pas encaissée sauf dégradation ou perte", "Venez aux horaires confirmés"]
+        },
+        {
+          "numero": 4,
+          "titre": "État des lieux",
+          "description": "Le technicien vérifie l'état du matériel avec vous et vous fait signer un formulaire d'emprunt",
+          "conseils": ["Vérifiez vous-même l'état (rayures, fonctionnement)", "Signalez tout défaut constaté"]
+        },
+        {
+          "numero": 5,
+          "titre": "Utilisation",
+          "description": "Utilisez le matériel avec précaution. Vous êtes responsable pendant la durée du prêt",
+          "conseils": ["Ne prêtez pas à d'autres personnes", "Rangez dans un sac protégé", "Assurez-vous de ne pas l'oublier quelque part"]
+        },
+        {
+          "numero": 6,
+          "titre": "Restitution",
+          "description": "Rendez le matériel au helpdesk IT AVANT la date et l'heure limite indiquées",
+          "conseils": ["Anticipez pour ne pas être en retard", "Retard = suspension du droit d'emprunt", "Vérifiez que vous n'avez rien oublié (chargeur, câbles, etc.)"]
+        },
+        {
+          "numero": 7,
+          "titre": "Vérification et restitution caution",
+          "description": "Le technicien vérifie l'état. Si tout est OK : votre caution vous est rendue immédiatement",
+          "conseils": ["Si dégradation : caution encaissée + éventuel complément selon dommages"]
+        }
+      ],
+      "delais": "Durée de prêt selon matériel : Portables 48h, Caméras 1 sem, Calculatrices durée examen, Chargeurs journée",
+      "cout": "Gratuit. Caution 50€ restituée si matériel rendu en bon état",
+      "contacts": [
+        {
+          "service": "Helpdesk IT",
+          "email": "support-it@esic.fr",
+          "telephone": "01.53.90.15.99",
+          "bureau": "C104",
+          "horaires": "Lun-Ven 9h-12h / 14h-17h"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Puis-je prolonger la durée de prêt ?",
+          "reponse": "Oui, si personne n'a réservé après vous. Contactez le helpdesk IT avant la fin du prêt"
+        },
+        {
+          "question": "Que se passe-t-il si je perds ou casse le matériel ?",
+          "reponse": "Vous devez le signaler immédiatement. Caution encaissée + remboursement du coût du matériel (PC : ~500€, caméra : ~300€)"
+        },
+        {
+          "question": "Puis-je emprunter plusieurs équipements en même temps ?",
+          "reponse": "Oui, dans la limite des disponibilités. Maximum 2 équipements simultanément"
+        }
+      ],
+      "documents_generes": ["Formulaire d'emprunt signé"],
+      "references": ["Guide de l'étudiant"]
+    },
+    {
+      "id": "PROC015",
+      "titre": "Inscription à un Programme de Mobilité Internationale",
+      "categorie": "International",
+      "description": "Procédure pour candidater à un échange académique (Erasmus ou hors Europe)",
+      "public_concerne": ["Étudiants de Bachelor 3 et Master"],
+      "periode": "Octobre-Décembre (pour départ année suivante)",
+      "duree_estimee": "2-3 mois (candidature à départ)",
+      "prerequis": [
+        "Être inscrit en B3 ou Master",
+        "Avoir une moyenne ≥ 12/20",
+        "Niveau d'anglais B2 minimum (TOEFL/IELTS requis pour certaines destinations)"
+      ],
+      "documents_necessaires": [
+        "Relevés de notes (toutes les années)",
+        "CV en anglais",
+        "Lettre de motivation en anglais (1-2 pages)",
+        "Test d'anglais (TOEFL/IELTS) si destination anglophone",
+        "Lettre de recommandation d'un enseignant (optionnelle mais conseillée)"
+      ],
+      "etapes": [
+        {
+          "numero": 1,
+          "titre": "Réunion d'information",
+          "description": "Participez à la réunion d'information sur la mobilité internationale (organisée en octobre). Toutes les destinations et modalités sont présentées",
+          "conseils": ["Date annoncée sur l'ENT en septembre", "Présence vivement recommandée", "Posez toutes vos questions"]
+        },
+        {
+          "numero": 2,
+          "titre": "Choix des destinations",
+          "description": "Consultez la liste des 45 universités partenaires sur l'ENT. Choisissez 3 destinations par ordre de préférence",
+          "conseils": ["Renseignez-vous sur les cours disponibles", "Vérifiez que votre spécialisation existe", "Pensez au coût de la vie"]
+        },
+        {
+          "numero": 3,
+          "titre": "Constitution du dossier",
+          "description": "Préparez tous les documents requis : formulaire de candidature (ENT), relevés de notes, CV anglais, lettre de motivation anglais (spécifique pour chaque destination), test d'anglais si nécessaire",
+          "conseils": ["Soignez particulièrement la lettre de motivation", "Faites-vous relire par un anglophone", "Soyez sincère sur vos motivations"]
+        },
+        {
+          "numero": 4,
+          "titre": "Dépôt de candidature",
+          "description": "Déposez votre dossier complet sur l'ENT avant la date limite (généralement mi-décembre)",
+          "conseils": ["Ne vous y prenez pas à la dernière minute", "Vérifiez que tous les documents sont bien téléchargés"]
+        },
+        {
+          "numero": 5,
+          "titre": "Sélection",
+          "description": "Une commission examine tous les dossiers (fin décembre-début janvier). Critères : résultats académiques (50%), motivation (30%), niveau langue (20%)",
+          "conseils": ["Les meilleurs dossiers ont priorité sur les destinations les plus demandées"]
+        },
+        {
+          "numero": 6,
+          "titre": "Entretien (si nécessaire)",
+          "description": "Vous pouvez être convoqué pour un entretien de motivation (janvier)",
+          "conseils": ["Préparez une présentation de 5 min de votre projet", "L'entretien peut être en anglais"]
+        },
+        {
+          "numero": 7,
+          "titre": "Résultats",
+          "description": "Les résultats sont publiés fin janvier. Vous êtes affecté à l'une de vos destinations ou mis sur liste d'attente",
+          "conseils": ["En cas de refus, possibilité de candidater aux places restantes"]
+        },
+        {
+          "numero": 8,
+          "titre": "Candidature auprès de l'université partenaire",
+          "description": "Si sélectionné, l'ESIC transmet votre dossier à l'université partenaire. Acceptation généralement automatique (février-mars)",
+          "conseils": ["Certaines universités demandent des documents complémentaires"]
+        },
+        {
+          "numero": 9,
+          "titre": "Learning Agreement",
+          "description": "Établissez votre contrat pédagogique (choix des cours, équivalences ECTS) avec le coordinateur international",
+          "conseils": ["Choisissez 30 ECTS minimum", "Vérifiez les équivalences avec votre formation ESIC"]
+        },
+        {
+          "numero": 10,
+          "titre": "Préparation au départ",
+          "description": "Dossiers administratifs : visa (si hors UE), logement, assurance santé internationale, inscriptions, Bourses : Erasmus+ (EU) ou AMI (hors EU), Préparez votre départ : billets, vaccins si nécessaire, etc.",
+          "conseils": ["Le service international vous accompagne", "Rejoignez le groupe Facebook des étudiants en mobilité"]
+        }
+      ],
+      "delais": "Candidature : Octobre-Décembre. Résultats : Fin janvier. Départ : Août-Septembre année suivante",
+      "cout": "Frais ESIC maintenus (pas de frais dans université partenaire). Bourses disponibles : Erasmus+ 150-250€/mois (EU), AMI 400€/mois (boursiers CROUS)",
+      "contacts": [
+        {
+          "service": "Relations Internationales",
+          "nom": "Elena MARTINEZ",
+          "email": "international@esic.fr",
+          "telephone": "01.53.90.15.25",
+          "bureau": "A204",
+          "horaires": "Lun-Ven 9h-17h"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Puis-je partir au S2 plutôt qu'au S1 ?",
+          "reponse": "C'est possible mais moins courant. La plupart des échanges se font au S1. Contactez le service international"
+        },
+        {
+          "question": "Mes cours à l'étranger seront-ils en français ?",
+          "reponse": "Non, généralement en anglais ou dans la langue locale. Préparez-vous linguistiquement"
+        },
+        {
+          "question": "Puis-je partir 1 année complète ?",
+          "reponse": "Oui, pour certaines destinations. Vous validez alors 60 ECTS (2 semestres)"
+        }
+      ],
+      "documents_generes": ["Learning Agreement", "Attestation de mobilité", "Certificat de séjour à l'étranger"],
+      "references": ["Guide de l'étudiant"]
+    },
+    {
+      "id": "PROC016",
+      "titre": "Demande de Validation des Acquis de l'Expérience (VAE)",
+      "categorie": "Administrative",
+      "description": "Procédure pour obtenir tout ou partie d'un diplôme ESIC par la VAE",
+      "public_concerne": ["Professionnels justifiant de 3 ans d'expérience minimum"],
+      "periode": "Toute l'année (candidatures permanentes)",
+      "duree_estimee": "8-12 mois (procédure complète)",
+      "prerequis": [
+        "Justifier de 3 ans minimum d'expérience professionnelle en lien avec le diplôme visé",
+        "Expérience salariée, indépendante, bénévole ou volontaire"
+      ],
+      "documents_necessaires": [
+        "CV détaillé",
+        "Descriptif des activités professionnelles",
+        "Certificats de travail, attestations",
+        "Pièce d'identité",
+        "Diplômes obtenus"
+      ],
+      "etapes": [
+        {
+          "numero": 1,
+          "titre": "Information et conseil",
+          "description": "Contactez le service VAE (vae@esic.fr) pour un entretien préalable gratuit. Présentation de votre parcours et du diplôme visé",
+          "conseils": ["Cet entretien permet de vérifier la faisabilité de votre projet", "Durée : 1h"]
+        },
+        {
+          "numero": 2,
+          "titre": "Dossier de recevabilité (Livret 1)",
+          "description": "Si le projet est jugé recevable, vous remplissez le dossier de recevabilité avec : CV, descriptif expériences, attestations employeurs, diplômes",
+          "conseils": ["Soyez exhaustif sur vos expériences", "Le dossier fait environ 10-15 pages"]
+        },
+        {
+          "numero": 3,
+          "titre": "Examen de la recevabilité",
+          "description": "Le service VAE examine votre dossier (délai : 2 mois). Décision : recevable ou non recevable (avec motivations)",
+          "conseils": ["Si non recevable : vous pouvez représenter un dossier après avoir acquis plus d'expérience"]
+        },
+        {
+          "numero": 4,
+          "titre": "Accompagnement (optionnel mais recommandé)",
+          "description": "Si recevable, vous pouvez bénéficier d'un accompagnement méthodologique (24h, payant : 1 500€ finançable par CPF ou employeur)",
+          "conseils": ["Fortement recommandé pour maximiser vos chances", "Séances individuelles et collectives"]
+        },
+        {
+          "numero": 5,
+          "titre": "Rédaction du Livret 2",
+          "description": "Rédigez le dossier de validation (Livret 2) : description détaillée de vos activités, analyse des compétences acquises, lien avec le référentiel du diplôme",
+          "conseils": ["C'est le travail le plus conséquent (50-80 pages)", "Prévoyez 4-6 mois de rédaction", "L'accompagnement vous aide beaucoup"]
+        },
+        {
+          "numero": 6,
+          "titre": "Dépôt du Livret 2",
+          "description": "Déposez votre Livret 2 complet au service VAE",
+          "conseils": ["Respectez la date limite (3 sessions par an : mars, juin, novembre)", "Prévoyez une relecture attentive avant dépôt"]
+        },
+        {
+          "numero": 7,
+          "titre": "Soutenance devant le jury",
+          "description": "Vous présentez votre parcours et votre dossier devant un jury d'experts (durée : 1h). 20 min présentation + 40 min questions",
+          "conseils": ["Préparez votre présentation PowerPoint", "Le jury évalue vos compétences au regard du diplôme", "Restez factuel et illustrez par des exemples concrets"]
+        },
+        {
+          "numero": 8,
+          "titre": "Délibération",
+          "description": "Le jury délibère et rend sa décision : Validation totale (diplôme obtenu), Validation partielle (modules validés, autres à acquérir), Refus de validation",
+          "conseils": ["La décision vous est notifiée sous 15 jours"]
+        },
+        {
+          "numero": 9,
+          "titre": "Validation partielle (si applicable)",
+          "description": "En cas de validation partielle, vous devez suivre les modules non validés ou acquérir l'expérience manquante puis représenter un dossier",
+          "conseils": ["Vous avez 5 ans pour compléter"]
+        },
+        {
+          "numero": 10,
+          "titre": "Délivrance du diplôme",
+          "description": "En cas de validation totale, vous obtenez le diplôme ESIC, identique au diplôme délivré par la formation initiale",
+          "conseils": ["Délai de délivrance : 3-6 mois après la validation"]
+        }
+      ],
+      "delais": "Procédure complète : 8-12 mois. Recevabilité : 2 mois. Rédaction Livret 2 : 4-6 mois. Soutenance : 3 sessions/an",
+      "cout": "Accompagnement (optionnel) : 1 500€ (finançable CPF, employeur, Pôle Emploi). Frais de dossier : 350€",
+      "contacts": [
+        {
+          "service": "Service VAE",
+          "email": "vae@esic.fr",
+          "telephone": "01.53.90.15.30",
+          "horaires": "Lun-Ven 9h-17h"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Le diplôme obtenu par VAE a-t-il la même valeur qu'en formation initiale ?",
+          "reponse": "Oui, strictement la même valeur et le même diplôme (aucune mention de VAE sur le diplôme)"
+        },
+        {
+          "question": "Puis-je faire une VAE tout en travaillant ?",
+          "reponse": "Oui, c'est fait pour ça. La rédaction se fait sur votre temps personnel mais certains employeurs accordent des heures pour la VAE"
+        },
+        {
+          "question": "Quels diplômes ESIC sont accessibles par VAE ?",
+          "reponse": "Tous : Bachelor (Bac+3) et Master (Bac+5) dans toutes les spécialités"
+        }
+      ],
+      "documents_generes": ["Notification de recevabilité", "Livret 2 complété", "Diplôme (si validation totale)", "Attestation de validation partielle (si applicable)"],
+      "references": []
+    },
+    {
+      "id": "PROC017",
+      "titre": "Demande de Césure",
+      "categorie": "Académique",
+      "description": "Procédure pour demander une année ou un semestre de césure",
+      "public_concerne": ["Étudiants de Bachelor 2, Bachelor 3, Master 1"],
+      "periode": "3 mois avant la date de début souhaitée",
+      "duree_estimee": "1 mois (constitution dossier + décision)",
+      "prerequis": [
+        "Avoir validé au moins 1 année complète",
+        "Avoir un projet structuré de césure"
+      ],
+      "documents_necessaires": [
+        "Lettre de motivation détaillée",
+        "Descriptif du projet de césure (stage long, entrepreneuriat, service civique, projet personnel, etc.)",
+        "Justificatifs (promesse d'embauche, convention, etc.) si applicable"
+      ],
+      "etapes": [
+        {
+          "numero": 1,
+          "titre": "Élaboration du projet",
+          "description": "Définissez clairement votre projet de césure : nature (stage, service civique, projet entrepreneurial, voyage studieux, etc.), durée (1 semestre ou 1 an), période (dates de début et fin), objectifs (compétences à acquérir, apports pour votre formation)",
+          "conseils": ["La césure doit avoir une valeur ajoutée pour votre parcours", "Les projets simplement 'récréatifs' sont rarement acceptés"]
+        },
+        {
+          "numero": 2,
+          "titre": "Entretien avec le responsable pédagogique",
+          "description": "Prenez rendez-vous avec votre responsable de formation pour présenter votre projet",
+          "conseils": ["Cet entretien est obligatoire", "Votre responsable vous conseillera sur la faisabilité"]
+        },
+        {
+          "numero": 3,
+          "titre": "Constitution du dossier",
+          "description": "Rédigez une lettre de motivation (2-3 pages) expliquant : votre parcours, votre projet détaillé, les bénéfices attendus, comment vous comptez maintenir le lien avec l'école. Joignez tous les justificatifs pertinents",
+          "conseils": ["Soyez précis et convaincant", "Montrez que vous avez bien réfléchi au projet"]
+        },
+        {
+          "numero": 4,
+          "titre": "Dépôt du dossier",
+          "description": "Envoyez votre dossier complet à etudes@esic.fr avec copie à votre responsable pédagogique. Délai : MINIMUM 3 mois avant la date de début souhaitée",
+          "conseils": ["Anticipez car la procédure prend du temps", "Ne commencez pas votre césure avant d'avoir l'autorisation !"]
+        },
+        {
+          "numero": 5,
+          "titre": "Examen par la commission pédagogique",
+          "description": "Votre dossier est examiné par une commission composée de : votre responsable pédagogique, la Directrice des Études, 1 enseignant référent",
+          "conseils": ["Critères : qualité du projet, cohérence avec le parcours, bénéfices pédagogiques"]
+        },
+        {
+          "numero": 6,
+          "titre": "Décision",
+          "description": "Vous recevez la décision sous 3-4 semaines : acceptation, refus motivé, acceptation conditionnelle (sous réserve de compléments)",
+          "conseils": ["En cas de refus, vous pouvez représenter un dossier amélioré", "En cas d'acceptation : ne relâchez pas vos efforts académiques avant le départ !"]
+        },
+        {
+          "numero": 7,
+          "titre": "Convention de césure",
+          "description": "Si accepté : signature d'une convention de césure entre vous et l'ESIC précisant : dates, nature du projet, modalités de suivi, maintien du statut étudiant",
+          "conseils": ["Vous gardez le statut étudiant pendant la césure", "Vous devez payer un tarif réduit pour maintenir l'inscription (20% des frais annuels)"]
+        },
+        {
+          "numero": 8,
+          "titre": "Suivi pendant la césure",
+          "description": "Pendant votre césure, vous devez : envoyer 2 rapports d'étape (mi-parcours et fin), maintenir le contact avec votre référent pédagogique",
+          "conseils": ["Ce suivi permet de valoriser votre expérience dans votre cursus"]
+        },
+        {
+          "numero": 9,
+          "titre": "Retour en formation",
+          "description": "À la fin de la césure, vous réintégrez automatiquement votre formation (pas de nouvelle candidature)",
+          "conseils": ["Préparez un bilan de votre expérience", "Certains projets de césure peuvent être validés en crédits ECTS (à discuter avec votre responsable)"]
+        }
+      ],
+      "delais": "Demande : 3 mois minimum avant le début souhaité. Décision : 3-4 semaines",
+      "cout": "Maintien de l'inscription : 20% des frais annuels pendant la césure",
+      "contacts": [
+        {
+          "service": "Service des Études",
+          "email": "etudes@esic.fr",
+          "telephone": "01.53.90.15.03",
+          "horaires": "Lun-Ven 9h-17h"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Puis-je faire une césure rémunérée ?",
+          "reponse": "Oui, tout à fait. C'est même encouragé (stage long rémunéré, service civique indemnisé, etc.)"
+        },
+        {
+          "question": "Puis-je cumuler bourse CROUS et césure ?",
+          "reponse": "Non, la bourse est suspendue pendant la césure (sauf service civique)"
+        },
+        {
+          "question": "La césure retarde-t-elle mon diplôme ?",
+          "reponse": "Oui, d'autant de temps que dure votre césure (6 mois ou 1 an)"
+        }
+      ],
+      "documents_generes": ["Convention de césure", "Attestation de césure pour organismes (CAF, etc.)"],
+      "references": []
+    },
+    {
+      "id": "PROC018",
+      "titre": "Demande de Transfert de Dossier et Exeat",
+      "categorie": "Administrative",
+      "description": "Procédure pour obtenir un exeat et transférer son dossier vers un autre établissement",
+      "public_concerne": ["Étudiants souhaitant quitter l'ESIC"],
+      "periode": "Toute l'année",
+      "duree_estimee": "5-10 jours ouvrés",
+      "prerequis": [
+        "Être à jour de tous les paiements",
+        "Avoir rendu tous les matériels empruntés",
+        "Aucune procédure disciplinaire en cours"
+      ],
+      "documents_necessaires": [
+        "Justificatif d'inscription dans le nouvel établissement (si déjà obtenu)",
+        "Lettre de demande d'exeat"
+      ],
+      "etapes": [
+        {
+          "numero": 1,
+          "titre": "Entretien avec le responsable pédagogique",
+          "description": "Avant toute démarche, prenez rendez-vous avec votre responsable pédagogique pour discuter de votre projet de départ",
+          "conseils": ["Cet entretien n'est pas obligatoire mais fortement recommandé", "Votre responsable peut vous conseiller ou vous aider à trouver des solutions si vous partez pour des raisons de difficultés"]
+        },
+        {
+          "numero": 2,
+          "titre": "Vérification de votre situation administrative",
+          "description": "Assurez-vous d'être en règle : (1) Frais de scolarité payés intégralement, (2) Aucun livre emprunté à la bibliothèque, (3) Matériel IT rendu, (4) Carte étudiante à restituer",
+          "conseils": ["Régularisez tout retard avant de demander l'exeat", "Consultez votre compte ENT pour vérifier"]
+        },
+        {
+          "numero": 3,
+          "titre": "Demande écrite d'exeat",
+          "description": "Envoyez un email à scolarite@esic.fr avec : vos nom, prénom, formation, année, motif du départ, établissement de destination (si connu), date de départ souhaitée",
+          "conseils": ["Soyez poli et professionnel dans votre email", "Un départ en bons termes facilite d'éventuels retours futurs"]
+        },
+        {
+          "numero": 4,
+          "titre": "Régularisation des paiements",
+          "description": "Si vous avez des frais en attente, réglez-les. En cas de paiement échelonné, contactez le service comptabilité pour un ajustement éventuel",
+          "conseils": ["Les frais déjà payés ne sont généralement pas remboursés (sauf cas exceptionnels)", "Voir conditions de remboursement dans votre contrat d'inscription"]
+        },
+        {
+          "numero": 5,
+          "titre": "Restitution du matériel",
+          "description": "Rendez votre carte étudiante au service scolarité, tous les livres à la bibliothèque, tout matériel IT emprunté",
+          "conseils": ["Demandez un reçu de restitution pour chaque élément"]
+        },
+        {
+          "numero": 6,
+          "titre": "Établissement de l'exeat",
+          "description": "Une fois toutes les conditions remplies, le service scolarité établit votre exeat (délai : 5 jours ouvrés)",
+          "conseils": ["L'exeat certifie que vous quittez l'ESIC en règle"]
+        },
+        {
+          "numero": 7,
+          "titre": "Documents de transfert",
+          "description": "Avec l'exeat, vous pouvez demander : relevés de notes de toutes vos années ESIC, certificat de scolarité, programme pédagogique détaillé (si demandé par le nouvel établissement)",
+          "conseils": ["Ces documents sont gratuits", "Précisez l'adresse email du nouvel établissement si envoi direct souhaité"]
+        },
+        {
+          "numero": 8,
+          "titre": "Clôture de votre compte ENT",
+          "description": "Votre compte ENT sera désactivé 30 jours après votre départ officiel",
+          "conseils": ["Sauvegardez tous vos documents importants avant", "Votre email @esic.fr sera supprimé"]
+        }
+      ],
+      "delais": "5-10 jours ouvrés après demande (si situation régularisée)",
+      "cout": "Gratuit. Envoi postal des documents : 15€ (recommandé avec AR)",
+      "contacts": [
+        {
+          "service": "Scolarité",
+          "email": "scolarite@esic.fr",
+          "telephone": "01.53.90.15.20",
+          "horaires": "Lun-Ven 9h-12h / 14h-17h"
+        },
+        {
+          "service": "Comptabilité (pour régularisations)",
+          "email": "comptabilite@esic.fr",
+          "telephone": "01.53.90.15.21"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Puis-je revenir à l'ESIC après avoir obtenu un exeat ?",
+          "reponse": "Oui, mais vous devrez repasser par la procédure de candidature normale. Avoir quitté en bons termes facilite les choses"
+        },
+        {
+          "question": "Puis-je obtenir un exeat si je n'ai pas payé tous mes frais ?",
+          "reponse": "Non, l'exeat n'est délivré qu'une fois tous les frais réglés"
+        },
+        {
+          "question": "L'exeat est-il obligatoire pour s'inscrire ailleurs ?",
+          "reponse": "Oui, la plupart des établissements le demandent pour s'assurer que vous quittez votre école précédente en règle"
+        }
+      ],
+      "documents_generes": ["Exeat", "Relevés de notes", "Certificat de scolarité", "Programme pédagogique (si demandé)"],
+      "references": []
+    },
+    {
+      "id": "PROC019",
+      "titre": "Activation et Utilisation du Compte ENT",
+      "categorie": "Services Campus",
+      "description": "Procédure pour activer et utiliser votre compte ENT (Environnement Numérique de Travail)",
+      "public_concerne": ["Nouveaux étudiants", "Étudiants ayant des problèmes de connexion"],
+      "periode": "Dès l'inscription administrative",
+      "duree_estimee": "10-15 minutes",
+      "prerequis": ["Avoir finalisé son inscription administrative"],
+      "documents_necessaires": [],
+      "etapes": [
+        {
+          "numero": 1,
+          "titre": "Réception des identifiants",
+          "description": "Après votre inscription administrative, vous recevez un email contenant vos identifiants ENT : Login : prenom.nom@esic.fr, Mot de passe temporaire",
+          "conseils": ["Vérifiez vos spams si vous ne recevez pas l'email sous 48h", "Conservez cet email"]
+        },
+        {
+          "numero": 2,
+          "titre": "Première connexion",
+          "description": "Allez sur ent.esic.fr, Entrez vos identifiants (login + mot de passe temporaire)",
+          "conseils": ["Utilisez un navigateur récent (Chrome, Firefox, Edge, Safari)"]
+        },
+        {
+          "numero": 3,
+          "titre": "Changement du mot de passe",
+          "description": "À la première connexion, vous DEVEZ changer votre mot de passe temporaire. Choisissez un mot de passe fort : 12 caractères minimum, majuscules + minuscules + chiffres + caractères spéciaux",
+          "conseils": ["Ne partagez JAMAIS votre mot de passe", "Notez-le dans un gestionnaire de mots de passe", "Changez-le régulièrement (tous les 6 mois)"]
+        },
+        {
+          "numero": 4,
+          "titre": "Validation de l'email",
+          "description": "Vous recevez un email de validation sur votre adresse personnelle. Cliquez sur le lien pour valider",
+          "conseils": ["Cette étape est importante pour la récupération de mot de passe"]
+        },
+        {
+          "numero": 5,
+          "titre": "Découverte de l'interface",
+          "description": "Explorez les différentes sections de l'ENT : 'Scolarité' : emploi du temps, notes, documents, 'Cours' : ressources pédagogiques, devoirs, 'Messagerie' : email @esic.fr, 'Services' : bibliothèque, réservations, IT, 'Carrières' : stages, offres d'emploi",
+          "conseils": ["Familiarisez-vous avec l'interface dès le début", "Personnalisez votre tableau de bord"]
+        },
+        {
+          "numero": 6,
+          "titre": "Configuration de l'email étudiant",
+          "description": "Votre adresse email ESIC (prenom.nom@esic.fr) est accessible via l'ENT > 'Messagerie' OU via un client mail (Outlook, Gmail, iOS Mail, etc.)",
+          "conseils": ["Configurez l'email sur votre smartphone pour recevoir les notifications", "Consultez votre email ESIC quotidiennement"]
+        },
+        {
+          "numero": 7,
+          "titre": "Téléchargement de l'application mobile",
+          "description": "Téléchargez l'application 'ESIC Campus' sur iOS (App Store) ou Android (Google Play)",
+          "conseils": ["L'app donne accès à l'emploi du temps, notes, messagerie, etc.", "Activez les notifications"]
+        },
+        {
+          "numero": 8,
+          "titre": "Configuration du VPN (optionnel mais recommandé)",
+          "description": "Pour accéder aux ressources ESIC depuis chez vous (bases de données, licences logicielles), installez le VPN ESIC : ENT > 'Services IT' > 'VPN ESIC' > Téléchargez le client > Installez > Connectez-vous avec vos identifiants ENT",
+          "conseils": ["Le VPN est obligatoire pour accéder à certaines ressources à distance"]
+        }
+      ],
+      "delais": "Activation immédiate après réception des identifiants",
+      "cout": "Gratuit",
+      "contacts": [
+        {
+          "service": "Helpdesk IT",
+          "email": "support-it@esic.fr",
+          "telephone": "01.53.90.15.99",
+          "horaires": "Lun-Ven 9h-12h / 14h-17h"
+        }
+      ],
+      "faq": [
+        {
+          "question": "J'ai oublié mon mot de passe, que faire ?",
+          "reponse": "Sur la page de connexion ENT, cliquez sur 'Mot de passe oublié'. Suivez la procédure (email de réinitialisation)"
+        },
+        {
+          "question": "Puis-je utiliser mon email ESIC après mon diplôme ?",
+          "reponse": "Oui, pendant 1 an après l'obtention du diplôme. Ensuite, il est désactivé. Pensez à migrer vos contacts importants"
+        },
+        {
+          "question": "Mon compte est bloqué, que faire ?",
+          "reponse": "Après 5 tentatives de connexion échouées, le compte est bloqué pour sécurité. Contactez le helpdesk IT pour déblocage"
+        }
+      ],
+      "documents_generes": [],
+      "references": ["Guide de l'étudiant"]
+    },
+    {
+      "id": "PROC020",
+      "titre": "Signalement de Harcèlement ou Discrimination",
+      "categorie": "Vie Étudiante",
+      "description": "Procédure pour signaler un cas de harcèlement ou de discrimination",
+      "public_concerne": ["Toute personne victime ou témoin"],
+      "periode": "Dès que possible",
+      "duree_estimee": "Variable selon la situation",
+      "prerequis": [],
+      "documents_necessaires": [
+        "Tout élément probant (emails, SMS, témoignages, captures d'écran, etc.)"
+      ],
+      "etapes": [
+        {
+          "numero": 1,
+          "titre": "Mise en sécurité (priorité absolue)",
+          "description": "Si vous êtes en danger immédiat : Composez le 17 (Police) ou 112 (urgences européennes), Ou contactez l'urgence campus : 01.53.90.15.00 (24h/7j)",
+          "conseils": ["Votre sécurité prime sur tout", "N'hésitez pas à demander de l'aide"]
+        },
+        {
+          "numero": 2,
+          "titre": "Premier contact confidentiel",
+          "description": "Contactez la cellule d'écoute : ecoute@esic.fr (boîte sécurisée et confidentielle, consultée 7j/7)",
+          "conseils": ["Vous n'êtes pas obligé de vous identifier immédiatement", "Un membre formé vous répondra rapidement", "L'écoute est bienveillante et sans jugement"]
+        },
+        {
+          "numero": 3,
+          "titre": "Entretien avec le référent",
+          "description": "Un référent harcèlement/discrimination vous contacte pour un entretien confidentiel (en personne, visio ou téléphone selon votre souhait)",
+          "conseils": ["Vous pouvez être accompagné par une personne de confiance", "L'entretien vise à comprendre la situation et vous informer de vos options"]
+        },
+        {
+          "numero": 4,
+          "titre": "Choix de la suite",
+          "description": "Après l'entretien, plusieurs options s'offrent à vous : (1) Soutien psychologique uniquement (sans procédure), (2) Médiation (si la situation s'y prête), (3) Signalement formel et enquête, (4) Dépôt de plainte (accompagnement possible)",
+          "conseils": ["C'est VOUS qui choisissez la suite", "Aucune pression ne sera exercée", "Vous pouvez changer d'avis à tout moment"]
+        },
+        {
+          "numero": 5,
+          "titre": "Signalement formel (si vous le souhaitez)",
+          "description": "Si vous décidez d'un signalement formel, un dossier est constitué avec : votre témoignage écrit, tous les éléments probants, identification de l'auteur présumé",
+          "conseils": ["Rassemblez tous les éléments (emails, SMS, témoins, etc.)", "Le référent vous aide dans cette démarche"]
+        },
+        {
+          "numero": 6,
+          "titre": "Mesures conservatoires (si nécessaire)",
+          "description": "Pendant l'enquête, des mesures peuvent être prises : changement de groupe/emploi du temps, interdiction de contact, suspension provisoire de l'auteur présumé (cas graves)",
+          "conseils": ["Ces mesures visent à vous protéger pendant l'enquête"]
+        },
+        {
+          "numero": 7,
+          "titre": "Enquête",
+          "description": "Une enquête interne est diligentée : auditions de toutes les parties, collecte de preuves, respect du contradictoire",
+          "conseils": ["L'enquête est menée de façon neutre et professionnelle", "Délai variable selon complexité (2-6 semaines)"]
+        },
+        {
+          "numero": 8,
+          "titre": "Décision et sanctions",
+          "description": "Si les faits sont avérés : sanctions disciplinaires selon gravité (avertissement à exclusion définitive), accompagnement renforcé de la victime, suivi pour prévenir toute récidive. Si les faits ne sont pas établis : classement sans suite, mais accompagnement si besoin",
+          "conseils": ["Vous êtes informé de la décision", "En cas d'exclusion, possibilité de dépôt de plainte pénale (assistance possible)"]
+        },
+        {
+          "numero": 9,
+          "titre": "Accompagnement de la victime",
+          "description": "Tout au long du processus et après : soutien psychologique (psychologue campus ou externe), aménagements académiques si nécessaire, suivi régulier",
+          "conseils": ["N'hésitez pas à solliciter l'accompagnement", "Il est là pour vous aider à vous reconstruire"]
+        }
+      ],
+      "delais": "Réponse cellule d'écoute : 24-48h. Enquête : 2-6 semaines selon complexité",
+      "cout": "Gratuit. Tout accompagnement est gratuit et confidentiel",
+      "contacts": [
+        {
+          "service": "Cellule d'écoute (confidentiel)",
+          "email": "ecoute@esic.fr",
+          "disponibilite": "7j/7, email consulté quotidiennement"
+        },
+        {
+          "service": "Direction (signalement formel)",
+          "email": "direction@esic.fr",
+          "telephone": "01.53.90.15.01"
+        },
+        {
+          "service": "Externe - Numéro contre les discriminations",
+          "telephone": "3928",
+          "disponibilite": "Lun-Ven 9h-18h"
+        },
+        {
+          "service": "Externe - Violences Femmes Info",
+          "telephone": "3919",
+          "disponibilite": "7j/7, 9h-22h",
+          "gratuit": true
+        }
+      ],
+      "faq": [
+        {
+          "question": "Mon signalement restera-t-il confidentiel ?",
+          "reponse": "Oui, au maximum. Seules les personnes strictement nécessaires à l'enquête en sont informées. L'anonymat complet n'est possible que dans la phase d'écoute initiale"
+        },
+        {
+          "question": "Puis-je me rétracter après un signalement ?",
+          "reponse": "Oui, à tout moment avant l'ouverture formelle de l'enquête. Une fois l'enquête lancée, elle se poursuit (obligation de l'établissement)"
+        },
+        {
+          "question": "Y a-t-il un risque de représailles ?",
+          "reponse": "Non, toute représaille est elle-même sanctionnée très sévèrement. Vous êtes protégé"
+        }
+      ],
+      "documents_generes": [],
+      "references": ["Règlement intérieur - Article 8 : Droits et devoirs des étudiants"]
+    },
+    {
+      "id": "PROC021",
+      "titre": "Demande d'Aménagement pour Situation de Handicap",
+      "categorie": "Administrative",
+      "description": "Procédure pour bénéficier d'aménagements liés à une situation de handicap",
+      "public_concerne": ["Étudiants en situation de handicap"],
+      "periode": "Dès que possible (idéalement avant la rentrée)",
+      "duree_estimee": "2-4 semaines (mise en place des aménagements)",
+      "prerequis": [
+        "Avoir un handicap reconnu (MDPH, certificat médical, etc.)"
+      ],
+      "documents_necessaires": [
+        "Notification MDPH (si vous en avez une)",
+        "Ou certificat médical détaillé du médecin spécialiste",
+        "Tout document attestant du handicap et de ses répercussions sur les études"
+      ],
+      "etapes": [
+        {
+          "numero": 1,
+          "titre": "Prise de contact avec le référent handicap",
+          "description": "Contactez Isabelle DUBOIS, référent handicap ESIC : social@esic.fr ou 01.53.90.15.42",
+          "conseils": ["Plus tôt vous contactez, mieux c'est", "Idéal : avant la rentrée ou dans les 2 premières semaines", "L'entretien est confidentiel"]
+        },
+        {
+          "numero": 2,
+          "titre": "Premier entretien",
+          "description": "Rendez-vous avec le référent handicap (Bureau A105, Lun/Mer 14h-18h) pour : présenter votre situation, identifier vos besoins, envisager les aménagements possibles",
+          "conseils": ["Vous pouvez être accompagné", "Apportez tous les documents médicaux", "Soyez transparent sur vos difficultés et besoins"]
+        },
+        {
+          "numero": 3,
+          "titre": "Constitution du dossier",
+          "description": "Le référent vous aide à constituer un dossier avec : justificatifs médicaux (MDPH ou certificats), description de l'impact du handicap sur les études, liste des aménagements souhaités",
+          "conseils": ["Le référent connaît tous les aménagements possibles", "N'hésitez pas à tout exprimer"]
+        },
+        {
+          "numero": 4,
+          "titre": "Examen par la commission",
+          "description": "Votre dossier est présenté à la commission handicap (médecin scolaire, référent, responsable pédagogique). La commission valide les aménagements adaptés",
+          "conseils": ["Délai : 2 semaines maximum", "Les aménagements sont adaptés au handicap et aux besoins réels"]
+        },
+        {
+          "numero": 5,
+          "titre": "Notification des aménagements",
+          "description": "Vous recevez une notification écrite listant tous les aménagements accordés. Exemples : tiers-temps aux examens, secrétaire pour noter, utilisation d'ordinateur, salle isolée, supports de cours adaptés, aménagement d'emploi du temps, etc.",
+          "conseils": ["Conservez précieusement ce document"]
+        },
+        {
+          "numero": 6,
+          "titre": "Information des enseignants",
+          "description": "Le référent informe vos enseignants des aménagements (avec votre accord) sans préciser la nature exacte du handicap",
+          "conseils": ["Seule l'information nécessaire est transmise", "Vous pouvez aussi en parler directement aux enseignants si vous le souhaitez"]
+        },
+        {
+          "numero": 7,
+          "titre": "Mise en œuvre",
+          "description": "Les aménagements sont mis en place : Pour les examens : organisation automatique (salles adaptées, tiers-temps, etc.), Pour les cours : adaptations selon besoins, Suivi régulier par le référent",
+          "conseils": ["Vérifiez avant chaque examen que les aménagements sont bien prévus"]
+        },
+        {
+          "numero": 8,
+          "titre": "Suivi et ajustements",
+          "description": "Rendez-vous réguliers avec le référent (1-2 fois par semestre) pour : évaluer l'efficacité des aménagements, ajuster si nécessaire, anticiper les besoins futurs",
+          "conseils": ["N'attendez pas pour signaler un problème", "Les aménagements peuvent évoluer selon vos besoins"]
+        }
+      ],
+      "delais": "Mise en place : 2-4 semaines après dépôt du dossier",
+      "cout": "Gratuit",
+      "contacts": [
+        {
+          "service": "Référent Handicap",
+          "nom": "Isabelle DUBOIS",
+          "email": "social@esic.fr",
+          "telephone": "01.53.90.15.42",
+          "bureau": "A105",
+          "horaires": "Lun, Mer 14h-18h"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Mes camarades sauront-ils que j'ai des aménagements ?",
+          "reponse": "Seuls les enseignants et personnels concernés sont informés (strictement nécessaire). Vos camarades ne le sauront que si vous le souhaitez"
+        },
+        {
+          "question": "Les aménagements sont-ils mentionnés sur mon diplôme ?",
+          "reponse": "Non, absolument pas. Votre diplôme est identique aux autres"
+        },
+        {
+          "question": "Puis-je refuser certains aménagements ?",
+          "reponse": "Oui, c'est vous qui décidez. Les aménagements sont là pour vous aider, pas pour vous imposer quoi que ce soit"
+        }
+      ],
+      "documents_generes": ["Notification d'aménagements"],
+      "references": ["Règlement intérieur"]
+    },
+    {
+      "id": "PROC022",
+      "titre": "Inscription à une Certification Professionnelle",
+      "categorie": "Académique",
+      "description": "Procédure pour s'inscrire aux certifications professionnelles incluses dans le cursus",
+      "public_concerne": ["Étudiants de Bachelor 3 et Master"],
+      "periode": "Variable selon la certification",
+      "duree_estimee": "Automatique (inscription gérée par l'école)",
+      "prerequis": [
+        "Être inscrit dans une formation incluant une certification",
+        "Avoir suivi les cours de préparation"
+      ],
+      "documents_necessaires": [],
+      "etapes": [
+        {
+          "numero": 1,
+          "titre": "Préparation intégrée aux cours",
+          "description": "La préparation aux certifications est intégrée dans vos cours. Exemples : B3 Dev : AWS Solutions Architect (préparation sur 2 mois), B3 Cyber : CEH (préparation sur le semestre), B3 Data : TensorFlow Developer (préparation sur 6 semaines)",
+          "conseils": ["Assistez assidûment aux cours de préparation", "Les certifications sont exigeantes"]
+        },
+        {
+          "numero": 2,
+          "titre": "Ressources de révision",
+          "description": "L'école met à disposition : supports de cours dédiés, examens blancs, accès à des plateformes de préparation en ligne (selon certification)",
+          "conseils": ["Utilisez tous les supports disponibles", "Faites les examens blancs en conditions réelles"]
+        },
+        {
+          "numero": 3,
+          "titre": "Inscription automatique",
+          "description": "L'école vous inscrit automatiquement à la session de certification. Vous n'avez AUCUNE démarche à faire",
+          "conseils": ["Vous recevez un email de confirmation avec la date d'examen 2-3 semaines avant"]
+        },
+        {
+          "numero": 4,
+          "titre": "Convocation",
+          "description": "Vous recevez votre convocation par email : date, heure, lieu, format de l'examen (en ligne ou centre d'examen), instructions spécifiques",
+          "conseils": ["Lisez attentivement la convocation", "Certaines certifications sont passées en ligne depuis chez vous, d'autres dans un centre d'examen"]
+        },
+        {
+          "numero": 5,
+          "titre": "Préparation finale",
+          "description": "Dernière semaine avant l'examen : révisions intensives, examen blanc final en conditions réelles",
+          "conseils": ["Ne négligez pas cette dernière ligne droite", "Reposez-vous bien la veille"]
+        },
+        {
+          "numero": 6,
+          "titre": "Passage de la certification",
+          "description": "Jour J : Présentez-vous à l'heure (ou connectez-vous en ligne), Munissez-vous de votre pièce d'identité, Respectez toutes les consignes (très strictes pour les certifications)",
+          "conseils": ["Pour les examens en ligne : préparez votre environnement (webcam, calme, connexion stable)", "Durée variable : 1h à 4h selon certification"]
+        },
+        {
+          "numero": 7,
+          "titre": "Résultats",
+          "description": "Les résultats sont communiqués selon la certification : Immédiatement (certifications en ligne type AWS), Sous 2-4 semaines (certifications type CEH)",
+          "conseils": ["Vous recevez le résultat par email de l'organisme certificateur"]
+        },
+        {
+          "numero": 8,
+          "titre": "Obtention du certificat",
+          "description": "Si réussi : vous recevez votre certificat officiel (format PDF généralement). Si échoué : possibilité de repasser (2ème tentative à vos frais sauf si ratage de justesse)",
+          "conseils": ["Ajoutez votre certification sur votre CV et LinkedIn immédiatement", "Certaines certifications ont une durée de validité (2-3 ans) et nécessitent renouvellement"]
+        }
+      ],
+      "delais": "Passage : selon calendrier académique (généralement en fin de semestre)",
+      "cout": "1ère tentative incluse dans les frais de scolarité. 2ème tentative : à vos frais (150-400€ selon certification)",
+      "contacts": [
+        {
+          "service": "Votre responsable pédagogique",
+          "description": "Pour toute question sur votre certification"
+        }
+      ],
+      "faq": [
+        {
+          "question": "La certification est-elle obligatoire ?",
+          "reponse": "Oui, elle fait partie intégrante de votre formation. Cependant, l'obtention n'est pas obligatoire pour valider l'année (mais fortement recommandée)"
+        },
+        {
+          "question": "Que se passe-t-il si j'échoue ?",
+          "reponse": "Vous pouvez repasser à vos frais. L'école peut exceptionnellement financer une 2ème tentative si vous avez échoué de peu (score > 60%)"
+        },
+        {
+          "question": "La certification apparaît-elle sur mon diplôme ?",
+          "reponse": "Non, c'est un certificat séparé délivré par l'organisme certificateur (AWS, EC-Council, Google, etc.). Mais elle est mentionnée dans votre supplément au diplôme"
+        }
+      ],
+      "documents_generes": ["Certificat officiel de l'organisme certificateur (si réussi)", "Badge numérique (selon certification)"],
+      "references": ["Guide de l'étudiant"]
+    },
+    {
+      "id": "PROC023",
+      "titre": "Demande de Contrat d'Alternance",
+      "categorie": "Stage & Alternance",
+      "description": "Procédure pour mettre en place un contrat d'alternance (apprentissage ou professionnalisation)",
+      "public_concerne": ["Étudiants de Bachelor 3 et Master souhaitant effectuer leur formation en alternance"],
+      "periode": "Recherche : Janvier-Juin. Signature : Avant le 31 août",
+      "duree_estimee": "2-4 semaines (montage du dossier)",
+      "prerequis": [
+        "Être en Bachelor 3 ou Master",
+        "Avoir trouvé une entreprise d'accueil",
+        "Entreprise d'accord pour l'alternance",
+        "Âge : Moins de 30 ans pour l'apprentissage (pas de limite pour professionnalisation)"
+      ],
+      "documents_necessaires": [
+        "Promesse d'embauche de l'entreprise",
+        "Coordonnées complètes entreprise et maître d'apprentissage",
+        "Descriptif des missions",
+        "Rémunération proposée"
+      ],
+      "etapes": [
+        {
+          "numero": 1,
+          "titre": "Recherche de l'entreprise",
+          "description": "Trouvez une entreprise prête à vous accueillir en alternance. Utilisez : offres sur l'ENT, forums entreprises, candidatures spontanées, réseau alumni, service carrières",
+          "conseils": ["Commencez tôt (janvier-février)", "Le service carrières peut vous aider", "Présentez clairement le rythme alternance (3 sem entreprise / 1 sem école)"]
+        },
+        {
+          "numero": 2,
+          "titre": "Validation du projet par l'école",
+          "description": "Une fois l'entreprise trouvée, envoyez un email à carrieres@esic.fr avec : coordonnées entreprise, missions prévues, rémunération. L'école valide la cohérence avec votre formation",
+          "conseils": ["Cette étape est obligatoire avant signature", "Délai de validation : 1 semaine"]
+        },
+        {
+          "numero": 3,
+          "titre": "Choix du type de contrat",
+          "description": "Avec l'aide de l'école et de l'entreprise, déterminez : Contrat d'apprentissage (privilégié, plus avantageux fiscalement), Ou contrat de professionnalisation",
+          "conseils": ["L'apprentissage est possible jusqu'à 29 ans révolus", "Le contrat pro n'a pas de limite d'âge"]
+        },
+        {
+          "numero": 4,
+          "titre": "Demande du dossier alternance",
+          "description": "Téléchargez le dossier d'inscription en alternance sur l'ENT > 'Formations' > 'Alternance'",
+          "conseils": ["Lisez bien toutes les instructions"]
+        },
+        {
+          "numero": 5,
+          "titre": "Constitution du dossier OPCO",
+          "description": "L'école vous aide à monter le dossier de prise en charge auprès de l'OPCO (Opérateur de Compétences) de l'entreprise. Ce dossier permet : le financement de vos frais de scolarité par l'OPCO, la validation du contrat",
+          "conseils": ["L'école gère cette partie administrative complexe", "Vous devez juste fournir les infos demandées"]
+        },
+        {
+          "numero": 6,
+          "titre": "Rédaction du contrat",
+          "description": "L'entreprise rédige le contrat d'alternance (CERFA) avec : durée du contrat (1 ou 2 ans), rémunération (% SMIC selon âge et niveau), missions, rythme (3 sem entreprise / 1 sem école)",
+          "conseils": ["Vérifiez tous les éléments du contrat avant signature", "Rémunération minimum légale : 43-100% du SMIC selon âge et année d'études"]
+        },
+        {
+          "numero": 7,
+          "titre": "Signatures tripartites",
+          "description": "Le contrat est signé par : Vous (l'apprenti), L'entreprise (employeur + maître d'apprentissage), L'ESIC (CFA)",
+          "conseils": ["Les 3 signatures sont obligatoires avant le début", "Ordre : vous, puis entreprise, puis école"]
+        },
+        {
+          "numero": 8,
+          "titre": "Dépôt du contrat à l'OPCO",
+          "description": "L'entreprise (ou l'école) dépose le contrat auprès de l'OPCO pour validation et prise en charge financière",
+          "conseils": ["Délai de traitement OPCO : 2-4 semaines", "Vous pouvez commencer avant la validation OPCO"]
+        },
+        {
+          "numero": 9,
+          "titre": "Début de l'alternance",
+          "description": "Vous commencez votre alternance (généralement début septembre). Rythme : 3 semaines en entreprise, 1 semaine à l'école",
+          "conseils": ["Vous avez le statut de salarié (congés payés, protection sociale, retraite)", "Vous êtes payé tous les mois", "Vos frais de scolarité sont pris en charge par l'OPCO"]
+        }
+      ],
+      "delais": "Constitution dossier : 2-4 semaines. IMPORTANT : Contrat à signer AVANT le 31 août pour rentrée septembre",
+      "cout": "Gratuit pour vous. Frais de scolarité pris en charge par l'OPCO (entreprise)",
+      "contacts": [
+        {
+          "service": "Service Alternance",
+          "nom": "Pierre LEGRAND",
+          "email": "p.legrand@esic.fr",
+          "telephone": "01.53.90.15.33",
+          "horaires": "Lun-Ven 9h-17h"
+        },
+        {
+          "service": "Service Carrières",
+          "email": "carrieres@esic.fr",
+          "telephone": "01.53.90.15.31"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quelle est la différence entre apprentissage et professionnalisation ?",
+          "reponse": "Apprentissage : pour les moins de 30 ans, plus d'avantages fiscaux pour l'entreprise. Professionnalisation : pas de limite d'âge, conditions légèrement différentes"
+        },
+        {
+          "question": "Combien vais-je gagner ?",
+          "reponse": "Selon votre âge et niveau : B3 (18-20 ans : 43-51% SMIC, 21-25 ans : 53-61% SMIC, 26+ ans : 100% SMIC). Master : +15 points. Soit environ 750-1650€/mois"
+        },
+        {
+          "question": "Puis-je rompre mon contrat ?",
+          "reponse": "Période d'essai de 45 jours pendant laquelle rupture libre. Après : rupture possible mais complexe (commun accord, faute grave, inaptitude). Accompagnement école en cas de problème"
+        }
+      ],
+      "documents_generes": ["Contrat d'alternance (CERFA)", "Convention tripartite ESIC-Entreprise-Alternant"],
+      "references": ["Guide de l'étudiant", "Règlement intérieur - Article 6 : Stages et alternance"]
+    },
+    {
+      "id": "PROC024",
+      "titre": "Procédure Disciplinaire",
+      "categorie": "Académique",
+      "description": "Déroulement d'une procédure disciplinaire en cas de manquement grave au règlement",
+      "public_concerne": ["Étudiants convoqués par le Conseil de Discipline"],
+      "periode": "Si nécessaire",
+      "duree_estimee": "2-4 semaines",
+      "prerequis": [],
+      "documents_necessaires": [
+        "Tout élément de défense que vous souhaitez présenter"
+      ],
+      "etapes": [
+        {
+          "numero": 1,
+          "titre": "Constatation de l'infraction",
+          "description": "Un manquement grave au règlement est constaté : fraude/plagiat, violence, dégradations, absences répétées injustifiées, comportement inapproprié, etc.",
+          "conseils": ["Tout comportement problématique doit d'abord faire l'objet d'avertissements moins formels"]
+        },
+        {
+          "numero": 2,
+          "titre": "Rapport de l'incident",
+          "description": "Un rapport est rédigé par : l'enseignant témoin, le personnel, ou tout membre de la communauté ESIC. Ce rapport est transmis à la Direction des Études",
+          "conseils": []
+        },
+        {
+          "numero": 3,
+          "titre": "Convocation au Conseil de Discipline",
+          "description": "Si l'infraction est jugée suffisamment grave, vous êtes convoqué par email et courrier recommandé au moins 15 jours avant la séance du Conseil",
+          "conseils": ["La convocation précise : date, heure, lieu, faits reprochés, votre droit d'être assisté"]
+        },
+        {
+          "numero": 4,
+          "titre": "Préparation de votre défense",
+          "description": "Vous avez le droit de : préparer votre défense par écrit, rassembler des éléments probants (témoignages, documents), être assisté par : un avocat (à vos frais), un délégué étudiant, un membre de votre famille, un représentant étudiant",
+          "conseils": ["Prenez cette procédure au sérieux", "Préparez votre défense soigneusement", "Être accompagné est fortement recommandé"]
+        },
+        {
+          "numero": 5,
+          "titre": "Séance du Conseil de Discipline",
+          "description": "Composition du Conseil : Président : Directeur ou Directeur des Études, 2 enseignants, 2 représentants étudiants, 1 membre administratif. Déroulement : Présentation des faits par le rapporteur, Votre audition et celle de votre défenseur, Audition de témoins éventuels, Questions du Conseil, Délibération à huis clos (vous n'êtes pas présent)",
+          "conseils": ["Restez calme et respectueux", "Présentez les faits de votre point de vue", "Reconnaître ses torts (si c'est le cas) et montrer sa volonté de s'amender joue en votre faveur"]
+        },
+        {
+          "numero": 6,
+          "titre": "Délibération",
+          "description": "Le Conseil délibère à la majorité et décide : Relaxe (pas de sanction), Avertissement, Blâme, Exclusion temporaire (3 jours à 1 mois), Exclusion définitive",
+          "conseils": ["La décision est motivée (explication des raisons)"]
+        },
+        {
+          "numero": 7,
+          "titre": "Notification de la décision",
+          "description": "La décision vous est notifiée : Oralement à la fin de la séance (information), Par courrier recommandé sous 15 jours (notification officielle)",
+          "conseils": ["Vous avez 30 jours pour faire appel (voir étape suivante)"]
+        },
+        {
+          "numero": 8,
+          "titre": "Recours possible",
+          "description": "Si vous contestez la décision, vous pouvez : Former un recours gracieux auprès de la Direction (30 jours), Saisir le médiateur de l'établissement, Recours contentieux devant le tribunal administratif (2 mois)",
+          "conseils": ["Le recours gracieux suspend l'exécution de la sanction (sauf exclusion définitive)", "Faites-vous conseiller pour le recours"]
+        },
+        {
+          "numero": 9,
+          "titre": "Exécution de la sanction",
+          "description": "Si pas de recours ou recours rejeté : la sanction est exécutée. Elle est inscrite dans votre dossier",
+          "conseils": ["Une exclusion définitive entraîne la radiation", "Les sanctions mineures (avertissement, blâme) peuvent être effacées après 1-2 ans de bonne conduite"]
+        }
+      ],
+      "delais": "Convocation : 15 jours avant la séance. Décision : 15 jours après la séance. Recours : 30 jours après notification",
+      "cout": "Gratuit (sauf si vous faites appel à un avocat)",
+      "contacts": [
+        {
+          "service": "Direction des Études",
+          "email": "etudes@esic.fr",
+          "telephone": "01.53.90.15.03"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Puis-je refuser de me présenter au Conseil ?",
+          "reponse": "Oui, mais le Conseil statue quand même en votre absence. C'est fortement déconseillé car vous ne pouvez pas vous défendre"
+        },
+        {
+          "question": "La sanction apparaîtra-t-elle sur mon diplôme ?",
+          "reponse": "Non, jamais. Les sanctions sont internes à l'établissement"
+        },
+        {
+          "question": "Puis-je contacter un avocat ?",
+          "reponse": "Oui, vous avez le droit d'être assisté par un avocat. C'est à vos frais"
+        }
+      ],
+      "documents_generes": ["Convocation au Conseil", "Décision motivée du Conseil"],
+      "references": ["Règlement intérieur - Article 10 : Discipline et sanctions"]
+    },
+    {
+      "id": "PROC025",
+      "titre": "Obtention du Diplôme Final",
+      "categorie": "Administrative",
+      "description": "Procédure pour obtenir son diplôme après validation de la formation",
+      "public_concerne": ["Étudiants ayant validé leur dernière année (B3 ou M2)"],
+      "periode": "3-6 mois après validation",
+      "duree_estimee": "Variable (attente signature officielle)",
+      "prerequis": [
+        "Avoir validé tous les ECTS requis (180 pour Bachelor, 300 pour Master)",
+        "Avoir soutenu son mémoire/projet de fin d'études (si applicable)",
+        "Être à jour de tous les paiements"
+      ],
+      "documents_necessaires": [],
+      "etapes": [
+        {
+          "numero": 1,
+          "titre": "Validation finale",
+          "description": "Le jury de délibération valide votre diplôme après : validation de tous les ECTS, note de stage/alternance, soutenance de mémoire (Master), relevé intégral des notes",
+          "conseils": ["Les résultats définitifs sont publiés sur l'ENT"]
+        },
+        {
+          "numero": 2,
+          "titre": "Attestation de réussite provisoire",
+          "description": "Dès validation du diplôme par le jury, vous pouvez télécharger une attestation de réussite sur l'ENT > 'Scolarité' > 'Mes documents'",
+          "conseils": ["Cette attestation a valeur de diplôme provisoire", "Utilisez-la pour vos démarches (emploi, poursuite d'études)"]
+        },
+        {
+          "numero": 3,
+          "titre": "Transmission au Rectorat",
+          "description": "L'ESIC transmet votre dossier au Rectorat de Paris pour signature officielle et enregistrement (RNCP)",
+          "conseils": ["C'est une étape administrative obligatoire pour les diplômes visés", "Cela prend 3-6 mois"]
+        },
+        {
+          "numero": 4,
+          "titre": "Cérémonie de remise des diplômes",
+          "description": "En attendant le diplôme officiel, vous êtes invité à la cérémonie de remise des diplômes (juin). Vous recevez un diplôme de cérémonie (symbolique)",
+          "conseils": ["Invitation par email 1 mois avant", "2 places par diplômé (famille/amis)", "Tenue : toge académique fournie", "Moment convivial et photos"]
+        },
+        {
+          "numero": 5,
+          "titre": "Notification de disponibilité",
+          "description": "Quand votre diplôme officiel est prêt (3-6 mois après validation), vous recevez un email et un SMS",
+          "conseils": ["Vérifiez régulièrement vos emails"]
+        },
+        {
+          "numero": 6,
+          "titre": "Retrait du diplôme",
+          "description": "3 options pour récupérer votre diplôme : Option 1 : En personne au service scolarité (Bureau A102) avec pièce d'identité (Lun-Ven 9h-17h), Option 2 : Par procuration (personne de confiance + votre pièce d'identité), Option 3 : Envoi postal (frais 15€, recommandé avec AR)",
+          "conseils": ["Vérifiez que toutes les informations sur le diplôme sont correctes (nom, prénom, dates)", "Conservez précieusement l'original"]
+        },
+        {
+          "numero": 7,
+          "titre": "Supplément au diplôme",
+          "description": "Avec le diplôme, vous recevez le supplément au diplôme (document détaillant votre parcours, compétences, équivalences ECTS)",
+          "conseils": ["Le supplément au diplôme est très utile pour les employeurs et la mobilité internationale"]
+        },
+        {
+          "numero": 8,
+          "titre": "Adhésion au réseau Alumni",
+          "description": "Vous êtes automatiquement inscrit au réseau ESIC Alumni. Accès à : plateforme alumni.esic.fr, annuaire des 15 000 diplômés, offres d'emploi exclusives, événements networking",
+          "conseils": ["Créez votre profil alumni dès réception du diplôme", "Restez connecté à l'ESIC !"]
+        }
+      ],
+      "delais": "3-6 mois après validation (délais administratifs Rectorat)",
+      "cout": "Gratuit. Envoi postal : 15€ (optionnel)",
+      "contacts": [
+        {
+          "service": "Scolarité",
+          "email": "scolarite@esic.fr",
+          "telephone": "01.53.90.15.20",
+          "horaires": "Lun-Ven 9h-12h / 14h-17h"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Puis-je avoir plusieurs originaux du diplôme ?",
+          "reponse": "Non, un seul original est délivré. En cas de perte, vous pouvez obtenir un duplicata (50€) qui porte la mention 'DUPLICATA'"
+        },
+        {
+          "question": "Le diplôme mentionne-t-il ma spécialisation ?",
+          "reponse": "Oui, votre spécialisation et votre mineure (si applicable) sont mentionnées sur le diplôme"
+        },
+        {
+          "question": "Mon email @esic.fr sera-t-il supprimé après le diplôme ?",
+          "reponse": "Vous conservez votre email pendant 1 an après l'obtention du diplôme. Pensez à migrer vos contacts importants avant"
+        }
+      ],
+      "documents_generes": ["Diplôme officiel", "Supplément au diplôme", "Attestation de réussite (provisoire)"],
+      "references": ["Règlement intérieur - Article 12 : Dispositions finales"]
+    }
+  ]
+}

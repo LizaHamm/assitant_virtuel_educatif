@@ -1,0 +1,16 @@
+{
+  "categories": [
+    "Contacts et information générale",
+    "Emplois du temps et planning",
+    "Orientation et formation",
+    "Procédures administratives",
+    "Règlement et vie étudiante",
+    "Services campus"
+  ],
+  "intents": [
+    "aide",
+    "info",
+    "reclamation"
+  ],
+  "training_examples": 1043
+}
